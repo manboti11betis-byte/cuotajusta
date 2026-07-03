@@ -5,135 +5,199 @@ window.DATOS_LIGAS = {
   "Mundial 2026": {
    "codigo": "WC",
    "neutral": true,
-   "nota": "Campo neutral · Medias de la fase de grupos · Probabilidades a 90 minutos (sin prórroga ni penaltis)",
+   "nota": "Campo neutral · Medias de todo el torneo · Probabilidades a 90 minutos (sin prórroga ni penaltis)",
    "equipos": {
-    "Alemania": [
-     2.7,
-     1.0
-    ],
-    "Argelia": [
-     1.0,
-     1.2
+    "Algeria": [
+     1.25,
+     2.25
     ],
     "Argentina": [
-     2.7,
-     0.7
+     2.67,
+     0.33
     ],
     "Australia": [
-     1.3,
-     1.3
-    ],
-    "Austria": [
-     1.7,
-     1.3
-    ],
-    "Bélgica": [
-     2.0,
-     0.67
-    ],
-    "Bosnia y Herzegovina": [
-     1.67,
-     2.0
-    ],
-    "Brasil": [
-     2.3,
-     0.7
-    ],
-    "Cabo Verde": [
      0.67,
      0.67
     ],
-    "Canadá": [
-     1.7,
-     0.7
+    "Austria": [
+     1.5,
+     2.25
+    ],
+    "Belgium": [
+     2.25,
+     1.0
+    ],
+    "Bosnia-H.": [
+     1.25,
+     2.0
+    ],
+    "Brazil": [
+     2.25,
+     0.5
+    ],
+    "Canada": [
+     2.25,
+     0.75
+    ],
+    "Cape Verde": [
+     0.67,
+     0.67
     ],
     "Colombia": [
-     1.7,
-     1.0
+     1.33,
+     0.33
     ],
-    "Costa de Marfil": [
-     1.0,
-     1.3
+    "Congo DR": [
+     1.25,
+     1.25
     ],
-    "Croacia": [
-     1.6,
-     1.2
+    "Croatia": [
+     1.5,
+     1.75
+    ],
+    "Curaçao": [
+     0.33,
+     3.0
+    ],
+    "Czechia": [
+     0.67,
+     2.0
     ],
     "Ecuador": [
+     0.5,
+     1.0
+    ],
+    "Egypt": [
+     1.67,
+     1.0
+    ],
+    "England": [
+     2.0,
+     0.75
+    ],
+    "France": [
+     3.25,
+     0.5
+    ],
+    "Germany": [
+     3.5,
+     2.25
+    ],
+    "Ghana": [
+     0.67,
+     0.67
+    ],
+    "Haiti": [
+     0.67,
+     2.67
+    ],
+    "Iran": [
      1.0,
      1.0
     ],
-    "Egipto": [
-     1.67,
+    "Iraq": [
+     0.33,
+     4.0
+    ],
+    "Ivory Coast": [
+     1.25,
      1.0
     ],
-    "España": [
-     1.67,
-     0.35
-    ],
-    "Estados Unidos": [
-     2.3,
-     0.7
-    ],
-    "Francia": [
-     2.33,
-     1.67
-    ],
-    "Ghana": [
-     1.3,
-     1.3
-    ],
-    "Inglaterra": [
+    "Japan": [
      2.0,
-     0.8
+     1.25
     ],
-    "Japón": [
-     2.33,
+    "Jordan": [
+     1.0,
+     2.67
+    ],
+    "Korea Republic": [
+     0.67,
      1.0
     ],
-    "Marruecos": [
-     1.3,
-     0.8
-    ],
-    "México": [
+    "Mexico": [
      2.0,
-     0.35
+     0.3
     ],
-    "Noruega": [
-     3.67,
-     1.33
+    "Morocco": [
+     2.5,
+     1.5
     ],
-    "Países Bajos": [
-     3.33,
+    "Netherlands": [
+     3.25,
+     2.0
+    ],
+    "New Zealand": [
+     1.33,
+     3.33
+    ],
+    "Norway": [
+     2.5,
+     2.0
+    ],
+    "Panama": [
+     0.0,
      1.33
     ],
     "Paraguay": [
-     0.8,
-     1.3
+     1.75,
+     2.0
     ],
     "Portugal": [
-     2.3,
-     1.0
+     2.0,
+     0.5
     ],
-    "RD Congo": [
-     1.0,
-     1.5
+    "Qatar": [
+     0.67,
+     3.33
+    ],
+    "Saudi Arabia": [
+     0.33,
+     1.67
+    ],
+    "Scotland": [
+     0.33,
+     1.33
     ],
     "Senegal": [
-     2.67,
-     2.33
+     2.5,
+     2.25
     ],
-    "Sudáfrica": [
-     0.67,
+    "South Africa": [
+     0.5,
      1.0
     ],
-    "Suecia": [
-     2.33,
-     2.33
-    ],
-    "Suiza": [
+    "Spain": [
      2.0,
+     0.3
+    ],
+    "Sweden": [
+     1.75,
+     2.5
+    ],
+    "Switzerland": [
+     2.25,
+     0.75
+    ],
+    "Tunisia": [
+     0.67,
+     4.0
+    ],
+    "Turkey": [
+     1.0,
+     1.67
+    ],
+    "USA": [
+     2.5,
      1.0
+    ],
+    "Uruguay": [
+     1.0,
+     1.33
+    ],
+    "Uzbekistan": [
+     0.67,
+     3.67
     ]
    }
   },
