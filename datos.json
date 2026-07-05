@@ -1,202 +1,1344 @@
 {
- "actualizado": "2026-07-05",
+ "actualizado": "2026-07-03",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
    "neutral": true,
-   "nota": "Campo neutral · Medias de todo el torneo · Probabilidades a 90 minutos (sin prórroga ni penaltis)",
+   "nota": "Campo neutral · Medias de la fase de grupos · Probabilidades a 90 minutos (sin prórroga ni penaltis)",
    "equipos": {
-    "Algeria": [
-     1.25,
-     2.25
+    "Alemania": [
+     2.7,
+     1.0
+    ],
+    "Argelia": [
+     1.0,
+     1.2
     ],
     "Argentina": [
-     2.75,
-     0.75
+     2.7,
+     0.7
     ],
     "Australia": [
-     1.25,
-     1.75
+     1.3,
+     1.3
     ],
     "Austria": [
-     1.5,
-     2.25
+     1.7,
+     1.3
     ],
-    "Belgium": [
-     2.25,
-     1.0
+    "Bélgica": [
+     2.0,
+     0.67
     ],
-    "Bosnia-H.": [
-     1.25,
+    "Bosnia y Herzegovina": [
+     1.67,
      2.0
     ],
-    "Brazil": [
-     2.25,
-     0.5
+    "Brasil": [
+     2.3,
+     0.7
     ],
-    "Canada": [
-     1.8,
-     1.2
+    "Cabo Verde": [
+     0.67,
+     0.67
     ],
-    "Cape Verde": [
-     1.0,
-     1.25
+    "Canadá": [
+     1.7,
+     0.7
     ],
     "Colombia": [
-     1.25,
-     0.3
-    ],
-    "Congo DR": [
-     1.25,
-     1.25
-    ],
-    "Croatia": [
-     1.5,
-     1.75
-    ],
-    "Curaçao": [
-     0.33,
-     3.0
-    ],
-    "Czechia": [
-     0.67,
-     2.0
-    ],
-    "Ecuador": [
-     0.5,
+     1.7,
      1.0
     ],
-    "Egypt": [
-     2.5,
-     1.5
-    ],
-    "England": [
-     2.0,
-     0.75
-    ],
-    "France": [
-     2.8,
-     0.4
-    ],
-    "Germany": [
-     3.5,
-     2.25
-    ],
-    "Ghana": [
-     0.5,
-     0.75
-    ],
-    "Haiti": [
-     0.67,
-     2.67
-    ],
-    "Iran": [
+    "Costa de Marfil": [
      1.0,
-     1.0
+     1.3
     ],
-    "Iraq": [
-     0.33,
-     4.0
-    ],
-    "Ivory Coast": [
-     1.25,
-     1.0
-    ],
-    "Japan": [
-     2.0,
-     1.25
-    ],
-    "Jordan": [
-     1.0,
-     2.67
-    ],
-    "Korea Republic": [
-     0.67,
-     1.0
-    ],
-    "Mexico": [
-     2.0,
-     0.3
-    ],
-    "Morocco": [
-     2.6,
+    "Croacia": [
+     1.6,
      1.2
     ],
-    "Netherlands": [
-     3.25,
-     2.0
+    "Ecuador": [
+     1.0,
+     1.0
     ],
-    "New Zealand": [
-     1.33,
-     3.33
+    "Egipto": [
+     1.67,
+     1.0
     ],
-    "Norway": [
-     2.5,
-     2.0
+    "España": [
+     1.67,
+     0.35
     ],
-    "Panama": [
-     0.0,
+    "Estados Unidos": [
+     2.3,
+     0.7
+    ],
+    "Francia": [
+     2.33,
+     1.67
+    ],
+    "Ghana": [
+     1.3,
+     1.3
+    ],
+    "Inglaterra": [
+     2.0,
+     0.8
+    ],
+    "Japón": [
+     2.33,
+     1.0
+    ],
+    "Marruecos": [
+     1.3,
+     0.8
+    ],
+    "México": [
+     2.0,
+     0.35
+    ],
+    "Noruega": [
+     3.67,
+     1.33
+    ],
+    "Países Bajos": [
+     3.33,
      1.33
     ],
     "Paraguay": [
-     1.4,
-     1.8
+     0.8,
+     1.3
     ],
     "Portugal": [
-     2.0,
-     0.5
+     2.3,
+     1.0
     ],
-    "Qatar": [
-     0.67,
-     3.33
-    ],
-    "Saudi Arabia": [
-     0.33,
-     1.67
-    ],
-    "Scotland": [
-     0.33,
-     1.33
+    "RD Congo": [
+     1.0,
+     1.5
     ],
     "Senegal": [
-     2.5,
-     2.25
+     2.67,
+     2.33
     ],
-    "South Africa": [
-     0.5,
+    "Sudáfrica": [
+     0.67,
      1.0
     ],
-    "Spain": [
+    "Suecia": [
+     2.33,
+     2.33
+    ],
+    "Suiza": [
      2.0,
-     0.3
-    ],
-    "Sweden": [
-     1.75,
-     2.5
-    ],
-    "Switzerland": [
-     2.25,
-     0.75
-    ],
-    "Tunisia": [
-     0.67,
-     4.0
-    ],
-    "Turkey": [
-     1.0,
-     1.67
-    ],
-    "USA": [
-     2.5,
      1.0
+    ]
+   },
+   "plantillas": {
+    "España": [
+     [
+      "Lamine Yamal",
+      "DEL",
+      1
+     ],
+     [
+      "Nico Williams",
+      "DEL",
+      1
+     ],
+     [
+      "Mikel Oyarzabal",
+      "DEL",
+      0
+     ],
+     [
+      "Pedri",
+      "MED",
+      1
+     ],
+     [
+      "Fabián Ruiz",
+      "MED",
+      0
+     ],
+     [
+      "Martín Zubimendi",
+      "MED",
+      0
+     ],
+     [
+      "Robin Le Normand",
+      "DEF",
+      0
+     ],
+     [
+      "Marc Cucurella",
+      "DEF",
+      0
+     ],
+     [
+      "Unai Simón",
+      "POR",
+      0
+     ]
     ],
-    "Uruguay": [
-     1.0,
-     1.33
+    "Portugal": [
+     [
+      "Cristiano Ronaldo",
+      "DEL",
+      1
+     ],
+     [
+      "Rafael Leão",
+      "DEL",
+      1
+     ],
+     [
+      "Bruno Fernandes",
+      "MED",
+      1
+     ],
+     [
+      "Bernardo Silva",
+      "MED",
+      0
+     ],
+     [
+      "Vitinha",
+      "MED",
+      0
+     ],
+     [
+      "João Cancelo",
+      "DEF",
+      0
+     ],
+     [
+      "Rúben Dias",
+      "DEF",
+      0
+     ],
+     [
+      "Diogo Costa",
+      "POR",
+      0
+     ]
     ],
-    "Uzbekistan": [
-     0.67,
-     3.67
+    "Francia": [
+     [
+      "Kylian Mbappé",
+      "DEL",
+      1
+     ],
+     [
+      "Ousmane Dembélé",
+      "DEL",
+      1
+     ],
+     [
+      "Michael Olise",
+      "MED",
+      1
+     ],
+     [
+      "Aurélien Tchouaméni",
+      "MED",
+      0
+     ],
+     [
+      "Jules Koundé",
+      "DEF",
+      0
+     ],
+     [
+      "William Saliba",
+      "DEF",
+      0
+     ],
+     [
+      "Mike Maignan",
+      "POR",
+      0
+     ]
+    ],
+    "Argentina": [
+     [
+      "Lionel Messi",
+      "DEL",
+      1
+     ],
+     [
+      "Julián Álvarez",
+      "DEL",
+      1
+     ],
+     [
+      "Lautaro Martínez",
+      "DEL",
+      1
+     ],
+     [
+      "Alexis Mac Allister",
+      "MED",
+      0
+     ],
+     [
+      "Enzo Fernández",
+      "MED",
+      0
+     ],
+     [
+      "Rodrigo De Paul",
+      "MED",
+      0
+     ],
+     [
+      "Cristian Romero",
+      "DEF",
+      0
+     ],
+     [
+      "Emiliano Martínez",
+      "POR",
+      0
+     ]
+    ],
+    "Brasil": [
+     [
+      "Vinicius Júnior",
+      "DEL",
+      1
+     ],
+     [
+      "Raphinha",
+      "DEL",
+      1
+     ],
+     [
+      "Gabriel Martinelli",
+      "DEL",
+      0
+     ],
+     [
+      "Rodrygo",
+      "DEL",
+      0
+     ],
+     [
+      "Casemiro",
+      "MED",
+      0
+     ],
+     [
+      "Bruno Guimarães",
+      "MED",
+      0
+     ],
+     [
+      "Marquinhos",
+      "DEF",
+      0
+     ],
+     [
+      "Alisson",
+      "POR",
+      0
+     ]
+    ],
+    "Inglaterra": [
+     [
+      "Harry Kane",
+      "DEL",
+      1
+     ],
+     [
+      "Bukayo Saka",
+      "DEL",
+      1
+     ],
+     [
+      "Noni Madueke",
+      "DEL",
+      0
+     ],
+     [
+      "Jude Bellingham",
+      "MED",
+      1
+     ],
+     [
+      "Cole Palmer",
+      "MED",
+      1
+     ],
+     [
+      "Declan Rice",
+      "MED",
+      0
+     ],
+     [
+      "John Stones",
+      "DEF",
+      0
+     ],
+     [
+      "Jordan Pickford",
+      "POR",
+      0
+     ]
+    ],
+    "México": [
+     [
+      "Raúl Jiménez",
+      "DEL",
+      1
+     ],
+     [
+      "Santiago Giménez",
+      "DEL",
+      0
+     ],
+     [
+      "Hirving Lozano",
+      "DEL",
+      0
+     ],
+     [
+      "Gilberto Mora",
+      "MED",
+      1
+     ],
+     [
+      "Edson Álvarez",
+      "MED",
+      0
+     ],
+     [
+      "César Montes",
+      "DEF",
+      0
+     ],
+     [
+      "Luis Malagón",
+      "POR",
+      0
+     ]
+    ],
+    "Noruega": [
+     [
+      "Erling Haaland",
+      "DEL",
+      1
+     ],
+     [
+      "Alexander Sørloth",
+      "DEL",
+      0
+     ],
+     [
+      "Antonio Nusa",
+      "DEL",
+      0
+     ],
+     [
+      "Martin Ødegaard",
+      "MED",
+      1
+     ],
+     [
+      "Sander Berge",
+      "MED",
+      0
+     ],
+     [
+      "Kristoffer Ajer",
+      "DEF",
+      0
+     ],
+     [
+      "Ørjan Nyland",
+      "POR",
+      0
+     ]
+    ],
+    "Países Bajos": [
+     [
+      "Cody Gakpo",
+      "DEL",
+      1
+     ],
+     [
+      "Memphis Depay",
+      "DEL",
+      0
+     ],
+     [
+      "Xavi Simons",
+      "MED",
+      1
+     ],
+     [
+      "Ryan Gravenberch",
+      "MED",
+      0
+     ],
+     [
+      "Frenkie de Jong",
+      "MED",
+      0
+     ],
+     [
+      "Virgil van Dijk",
+      "DEF",
+      1
+     ],
+     [
+      "Denzel Dumfries",
+      "DEF",
+      0
+     ],
+     [
+      "Bart Verbruggen",
+      "POR",
+      0
+     ]
+    ],
+    "Alemania": [
+     [
+      "Kai Havertz",
+      "DEL",
+      1
+     ],
+     [
+      "Florian Wirtz",
+      "MED",
+      1
+     ],
+     [
+      "Jamal Musiala",
+      "MED",
+      1
+     ],
+     [
+      "Joshua Kimmich",
+      "MED",
+      0
+     ],
+     [
+      "Antonio Rüdiger",
+      "DEF",
+      0
+     ],
+     [
+      "Jonathan Tah",
+      "DEF",
+      0
+     ],
+     [
+      "Marc-André ter Stegen",
+      "POR",
+      0
+     ]
+    ],
+    "Bélgica": [
+     [
+      "Romelu Lukaku",
+      "DEL",
+      1
+     ],
+     [
+      "Loïs Openda",
+      "DEL",
+      0
+     ],
+     [
+      "Jérémy Doku",
+      "DEL",
+      1
+     ],
+     [
+      "Kevin De Bruyne",
+      "MED",
+      1
+     ],
+     [
+      "Leandro Trossard",
+      "MED",
+      0
+     ],
+     [
+      "Wout Faes",
+      "DEF",
+      0
+     ],
+     [
+      "Thibaut Courtois",
+      "POR",
+      1
+     ]
+    ],
+    "Estados Unidos": [
+     [
+      "Christian Pulisic",
+      "DEL",
+      1
+     ],
+     [
+      "Folarin Balogun",
+      "DEL",
+      1
+     ],
+     [
+      "Timothy Weah",
+      "DEL",
+      0
+     ],
+     [
+      "Malik Tillman",
+      "MED",
+      1
+     ],
+     [
+      "Weston McKennie",
+      "MED",
+      0
+     ],
+     [
+      "Chris Richards",
+      "DEF",
+      0
+     ],
+     [
+      "Matt Turner",
+      "POR",
+      0
+     ]
+    ],
+    "Suiza": [
+     [
+      "Breel Embolo",
+      "DEL",
+      1
+     ],
+     [
+      "Dan Ndoye",
+      "DEL",
+      0
+     ],
+     [
+      "Ruben Vargas",
+      "DEL",
+      0
+     ],
+     [
+      "Granit Xhaka",
+      "MED",
+      1
+     ],
+     [
+      "Fabian Rieder",
+      "MED",
+      0
+     ],
+     [
+      "Manuel Akanji",
+      "DEF",
+      0
+     ],
+     [
+      "Yann Sommer",
+      "POR",
+      0
+     ]
+    ],
+    "Croacia": [
+     [
+      "Andrej Kramaric",
+      "DEL",
+      0
+     ],
+     [
+      "Ivan Perisic",
+      "DEL",
+      0
+     ],
+     [
+      "Luka Modric",
+      "MED",
+      1
+     ],
+     [
+      "Mateo Kovacic",
+      "MED",
+      0
+     ],
+     [
+      "Josko Gvardiol",
+      "DEF",
+      1
+     ],
+     [
+      "Josip Sutalo",
+      "DEF",
+      0
+     ],
+     [
+      "Dominik Livakovic",
+      "POR",
+      0
+     ]
+    ],
+    "Marruecos": [
+     [
+      "Youssef En-Nesyri",
+      "DEL",
+      1
+     ],
+     [
+      "Brahim Díaz",
+      "DEL",
+      1
+     ],
+     [
+      "Hakim Ziyech",
+      "DEL",
+      0
+     ],
+     [
+      "Azzedine Ounahi",
+      "MED",
+      0
+     ],
+     [
+      "Sofyan Amrabat",
+      "MED",
+      0
+     ],
+     [
+      "Achraf Hakimi",
+      "DEF",
+      1
+     ],
+     [
+      "Yassine Bounou",
+      "POR",
+      1
+     ]
+    ],
+    "Senegal": [
+     [
+      "Sadio Mané",
+      "DEL",
+      1
+     ],
+     [
+      "Ismaila Sarr",
+      "DEL",
+      0
+     ],
+     [
+      "Nicolas Jackson",
+      "DEL",
+      1
+     ],
+     [
+      "Pape Matar Sarr",
+      "MED",
+      0
+     ],
+     [
+      "Idrissa Gueye",
+      "MED",
+      0
+     ],
+     [
+      "Kalidou Koulibaly",
+      "DEF",
+      0
+     ],
+     [
+      "Edouard Mendy",
+      "POR",
+      0
+     ]
+    ],
+    "Egipto": [
+     [
+      "Mohamed Salah",
+      "DEL",
+      1
+     ],
+     [
+      "Omar Marmoush",
+      "DEL",
+      1
+     ],
+     [
+      "Trezeguet",
+      "DEL",
+      0
+     ],
+     [
+      "Emam Ashour",
+      "MED",
+      0
+     ],
+     [
+      "Mohamed Elneny",
+      "MED",
+      0
+     ],
+     [
+      "Mohamed Abdelmonem",
+      "DEF",
+      0
+     ],
+     [
+      "Mohamed El Shenawy",
+      "POR",
+      0
+     ]
+    ],
+    "Colombia": [
+     [
+      "Luis Díaz",
+      "DEL",
+      1
+     ],
+     [
+      "Jhon Durán",
+      "DEL",
+      1
+     ],
+     [
+      "Jhon Córdoba",
+      "DEL",
+      0
+     ],
+     [
+      "James Rodríguez",
+      "MED",
+      1
+     ],
+     [
+      "Richard Ríos",
+      "MED",
+      0
+     ],
+     [
+      "Davinson Sánchez",
+      "DEF",
+      0
+     ],
+     [
+      "Camilo Vargas",
+      "POR",
+      0
+     ]
+    ],
+    "Japón": [
+     [
+      "Takefusa Kubo",
+      "DEL",
+      1
+     ],
+     [
+      "Kaoru Mitoma",
+      "DEL",
+      1
+     ],
+     [
+      "Ayase Ueda",
+      "DEL",
+      0
+     ],
+     [
+      "Daichi Kamada",
+      "MED",
+      0
+     ],
+     [
+      "Kaishu Sano",
+      "MED",
+      0
+     ],
+     [
+      "Ko Itakura",
+      "DEF",
+      0
+     ],
+     [
+      "Zion Suzuki",
+      "POR",
+      0
+     ]
+    ],
+    "Suecia": [
+     [
+      "Alexander Isak",
+      "DEL",
+      1
+     ],
+     [
+      "Viktor Gyökeres",
+      "DEL",
+      1
+     ],
+     [
+      "Dejan Kulusevski",
+      "MED",
+      1
+     ],
+     [
+      "Yasin Ayari",
+      "MED",
+      0
+     ],
+     [
+      "Lucas Bergvall",
+      "MED",
+      0
+     ],
+     [
+      "Victor Lindelöf",
+      "DEF",
+      0
+     ],
+     [
+      "Robin Olsen",
+      "POR",
+      0
+     ]
+    ],
+    "Canadá": [
+     [
+      "Jonathan David",
+      "DEL",
+      1
+     ],
+     [
+      "Cyle Larin",
+      "DEL",
+      0
+     ],
+     [
+      "Tajon Buchanan",
+      "DEL",
+      0
+     ],
+     [
+      "Stephen Eustáquio",
+      "MED",
+      0
+     ],
+     [
+      "Ismaël Koné",
+      "MED",
+      0
+     ],
+     [
+      "Alphonso Davies",
+      "DEF",
+      1
+     ],
+     [
+      "Maxime Crépeau",
+      "POR",
+      0
+     ]
+    ],
+    "Paraguay": [
+     [
+      "Julio Enciso",
+      "DEL",
+      1
+     ],
+     [
+      "Antonio Sanabria",
+      "DEL",
+      0
+     ],
+     [
+      "Miguel Almirón",
+      "MED",
+      1
+     ],
+     [
+      "Andrés Cubas",
+      "MED",
+      0
+     ],
+     [
+      "Gustavo Gómez",
+      "DEF",
+      0
+     ],
+     [
+      "Omar Alderete",
+      "DEF",
+      0
+     ],
+     [
+      "Orlando Gill",
+      "POR",
+      0
+     ]
+    ],
+    "Austria": [
+     [
+      "Marko Arnautovic",
+      "DEL",
+      0
+     ],
+     [
+      "Michael Gregoritsch",
+      "DEL",
+      0
+     ],
+     [
+      "Marcel Sabitzer",
+      "MED",
+      1
+     ],
+     [
+      "Christoph Baumgartner",
+      "MED",
+      0
+     ],
+     [
+      "Konrad Laimer",
+      "MED",
+      0
+     ],
+     [
+      "David Alaba",
+      "DEF",
+      1
+     ],
+     [
+      "Patrick Pentz",
+      "POR",
+      0
+     ]
+    ],
+    "Argelia": [
+     [
+      "Riyad Mahrez",
+      "DEL",
+      1
+     ],
+     [
+      "Mohamed Amoura",
+      "DEL",
+      1
+     ],
+     [
+      "Amine Gouiri",
+      "DEL",
+      0
+     ],
+     [
+      "Houssem Aouar",
+      "MED",
+      0
+     ],
+     [
+      "Ismaël Bennacer",
+      "MED",
+      0
+     ],
+     [
+      "Aïssa Mandi",
+      "DEF",
+      0
+     ],
+     [
+      "Alexis Guendouz",
+      "POR",
+      0
+     ]
+    ],
+    "Ghana": [
+     [
+      "Mohammed Kudus",
+      "DEL",
+      1
+     ],
+     [
+      "Antoine Semenyo",
+      "DEL",
+      1
+     ],
+     [
+      "Jordan Ayew",
+      "DEL",
+      0
+     ],
+     [
+      "Thomas Partey",
+      "MED",
+      0
+     ],
+     [
+      "Abdul Salis Samed",
+      "MED",
+      0
+     ],
+     [
+      "Alexander Djiku",
+      "DEF",
+      0
+     ],
+     [
+      "Lawrence Ati-Zigi",
+      "POR",
+      0
+     ]
+    ],
+    "Costa de Marfil": [
+     [
+      "Sébastien Haller",
+      "DEL",
+      0
+     ],
+     [
+      "Simon Adingra",
+      "DEL",
+      0
+     ],
+     [
+      "Nicolas Pépé",
+      "DEL",
+      0
+     ],
+     [
+      "Franck Kessié",
+      "MED",
+      0
+     ],
+     [
+      "Seko Fofana",
+      "MED",
+      0
+     ],
+     [
+      "Evan Ndicka",
+      "DEF",
+      0
+     ],
+     [
+      "Yahia Fofana",
+      "POR",
+      0
+     ]
+    ],
+    "Australia": [
+     [
+      "Nestory Irankunda",
+      "DEL",
+      1
+     ],
+     [
+      "Mitchell Duke",
+      "DEL",
+      0
+     ],
+     [
+      "Craig Goodwin",
+      "DEL",
+      0
+     ],
+     [
+      "Jackson Irvine",
+      "MED",
+      0
+     ],
+     [
+      "Connor Metcalfe",
+      "MED",
+      0
+     ],
+     [
+      "Harry Souttar",
+      "DEF",
+      0
+     ],
+     [
+      "Mathew Ryan",
+      "POR",
+      0
+     ]
+    ],
+    "Ecuador": [
+     [
+      "Enner Valencia",
+      "DEL",
+      0
+     ],
+     [
+      "Kevin Rodríguez",
+      "DEL",
+      0
+     ],
+     [
+      "Gonzalo Plata",
+      "DEL",
+      0
+     ],
+     [
+      "Moisés Caicedo",
+      "MED",
+      1
+     ],
+     [
+      "Alan Franco",
+      "MED",
+      0
+     ],
+     [
+      "Piero Hincapié",
+      "DEF",
+      0
+     ],
+     [
+      "Hernán Galíndez",
+      "POR",
+      0
+     ]
+    ],
+    "Sudáfrica": [
+     [
+      "Lyle Foster",
+      "DEL",
+      0
+     ],
+     [
+      "Themba Zwane",
+      "MED",
+      0
+     ],
+     [
+      "Teboho Mokoena",
+      "MED",
+      0
+     ],
+     [
+      "Sphephelo Sithole",
+      "MED",
+      0
+     ],
+     [
+      "Aubrey Modiba",
+      "DEF",
+      0
+     ],
+     [
+      "Ronwen Williams",
+      "POR",
+      0
+     ]
+    ],
+    "Bosnia y Herzegovina": [
+     [
+      "Edin Džeko",
+      "DEL",
+      1
+     ],
+     [
+      "Ermedin Demirovic",
+      "DEL",
+      0
+     ],
+     [
+      "Haris Tabakovic",
+      "DEL",
+      0
+     ],
+     [
+      "Benjamin Tahirovic",
+      "MED",
+      0
+     ],
+     [
+      "Sead Kolasinac",
+      "DEF",
+      0
+     ],
+     [
+      "Nikola Vasilj",
+      "POR",
+      0
+     ]
+    ],
+    "RD Congo": [
+     [
+      "Yoane Wissa",
+      "DEL",
+      1
+     ],
+     [
+      "Cédric Bakambu",
+      "DEL",
+      0
+     ],
+     [
+      "Simon Banza",
+      "DEL",
+      0
+     ],
+     [
+      "Théo Bongonda",
+      "MED",
+      0
+     ],
+     [
+      "Chancel Mbemba",
+      "DEF",
+      0
+     ],
+     [
+      "Lionel Mpasi",
+      "POR",
+      0
+     ]
+    ],
+    "Cabo Verde": [
+     [
+      "Ryan Mendes",
+      "DEL",
+      0
+     ],
+     [
+      "Garry Rodrigues",
+      "DEL",
+      0
+     ],
+     [
+      "Willy Semedo",
+      "DEL",
+      0
+     ],
+     [
+      "Jamiro Monteiro",
+      "MED",
+      0
+     ],
+     [
+      "Kenny Rocha",
+      "MED",
+      0
+     ],
+     [
+      "Logan Costa",
+      "DEF",
+      0
+     ],
+     [
+      "Vozinha",
+      "POR",
+      0
+     ]
     ]
    }
   },
@@ -324,6 +1466,171 @@
      1.1,
      1.5,
      1.3
+    ]
+   },
+   "plantillas": {
+    "Betis": [
+     [
+      "Cucho Hernández",
+      "DEL",
+      0
+     ],
+     [
+      "Antony",
+      "DEL",
+      1
+     ],
+     [
+      "Abde Ezzalzouli",
+      "DEL",
+      0
+     ],
+     [
+      "Isco",
+      "MED",
+      1
+     ],
+     [
+      "Giovani Lo Celso",
+      "MED",
+      0
+     ],
+     [
+      "Pablo Fornals",
+      "MED",
+      0
+     ],
+     [
+      "Marc Bartra",
+      "DEF",
+      0
+     ],
+     [
+      "Álvaro Valles",
+      "POR",
+      0
+     ]
+    ],
+    "Sevilla": [
+     [
+      "Isaac Romero",
+      "DEL",
+      0
+     ],
+     [
+      "Dodi Lukébakio",
+      "DEL",
+      0
+     ],
+     [
+      "Chidera Ejuke",
+      "DEL",
+      0
+     ],
+     [
+      "Djibril Sow",
+      "MED",
+      0
+     ],
+     [
+      "Lucien Agoumé",
+      "MED",
+      0
+     ],
+     [
+      "Nemanja Gudelj",
+      "DEF",
+      0
+     ],
+     [
+      "Orjan Nyland",
+      "POR",
+      0
+     ]
+    ],
+    "Real Madrid": [
+     [
+      "Kylian Mbappé",
+      "DEL",
+      1
+     ],
+     [
+      "Vinicius Júnior",
+      "DEL",
+      1
+     ],
+     [
+      "Rodrygo",
+      "DEL",
+      0
+     ],
+     [
+      "Jude Bellingham",
+      "MED",
+      1
+     ],
+     [
+      "Federico Valverde",
+      "MED",
+      0
+     ],
+     [
+      "Aurélien Tchouaméni",
+      "MED",
+      0
+     ],
+     [
+      "Éder Militão",
+      "DEF",
+      0
+     ],
+     [
+      "Thibaut Courtois",
+      "POR",
+      1
+     ]
+    ],
+    "Barcelona": [
+     [
+      "Lamine Yamal",
+      "DEL",
+      1
+     ],
+     [
+      "Robert Lewandowski",
+      "DEL",
+      1
+     ],
+     [
+      "Raphinha",
+      "DEL",
+      1
+     ],
+     [
+      "Ferran Torres",
+      "DEL",
+      0
+     ],
+     [
+      "Pedri",
+      "MED",
+      1
+     ],
+     [
+      "Gavi",
+      "MED",
+      0
+     ],
+     [
+      "Pau Cubarsí",
+      "DEF",
+      0
+     ],
+     [
+      "Joan García",
+      "POR",
+      0
+     ]
     ]
    }
   },
