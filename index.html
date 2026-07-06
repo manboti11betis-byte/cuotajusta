@@ -10,16 +10,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --tinta:#141B30;
-    --tinta-suave:#1C2542;
-    --papel:#F6F1E4;
-    --papel-sombra:#E9E2CF;
-    --ink:#222B47;
-    --ink-suave:#5A6377;
-    --rojo:#C4342C;
-    --albero:#DFA32B;
-    --verde:#2F8F63;
-    --muted:#96A0BE;
+    --fondo:#0C120F;          /* casi negro con matiz verde */
+    --panel:#121B16;          /* paneles */
+    --panel2:#18241D;         /* superficies elevadas */
+    --linea:#24352B;          /* bordes */
+    --verde:#20A566;          /* verde principal */
+    --verde-osc:#155C3C;      /* cabeceras, tapete */
+    --verde-brillo:#3DD68C;   /* éxito, valor */
+    --oro:#E9B23C;            /* cuotas y botones de añadir */
+    --rojo:#E15A52;           /* sin valor, errores */
+    --texto:#E9F1EB;
+    --muted:#93A69B;
     --radius:12px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -29,171 +30,215 @@
     *,*::before,*::after{animation:none!important;transition:none!important}
   }
   body{
-    background:var(--tinta);
-    background-image:radial-gradient(ellipse 80% 50% at 50% -10%, #223056 0%, transparent 60%);
-    color:var(--papel);
+    background:var(--fondo);
+    background-image:
+      radial-gradient(ellipse 90% 40% at 50% -5%, rgba(32,165,102,.14) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 30% at 100% 100%, rgba(32,165,102,.05) 0%, transparent 60%);
+    color:var(--texto);
     font-family:'Barlow',system-ui,-apple-system,sans-serif;
     font-size:16px;line-height:1.5;
     min-height:100vh;
-    padding:0 16px 64px;
+    padding:0 14px 64px;
   }
-  .wrap{max-width:680px;margin:0 auto}
+  .wrap{max-width:700px;margin:0 auto}
 
-  header{padding:36px 0 26px;text-align:center}
+  header{padding:34px 0 24px;text-align:center}
   .eyebrow{
     font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;
     letter-spacing:.22em;text-transform:uppercase;color:var(--muted);
   }
   h1{
     font-family:'Barlow Condensed',sans-serif;font-weight:700;
-    font-size:clamp(52px,12vw,84px);line-height:.95;letter-spacing:.01em;
-    text-transform:uppercase;margin:10px 0 14px;
+    font-size:clamp(50px,12vw,80px);line-height:.95;letter-spacing:.01em;
+    text-transform:uppercase;margin:10px 0 12px;
   }
-  h1 .justa{color:var(--albero)}
+  h1 .justa{color:var(--verde-brillo)}
   .demo-badge{
     display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;
-    letter-spacing:.14em;color:var(--tinta);background:var(--albero);
+    letter-spacing:.14em;color:#0C120F;background:var(--verde-brillo);
     padding:5px 12px;border-radius:999px;text-transform:uppercase;
   }
-  .lede{color:var(--muted);max-width:500px;margin:16px auto 0;font-size:15px}
+  .lede{color:var(--muted);max-width:520px;margin:14px auto 0;font-size:15px}
   .fecha-datos{
     margin-top:10px;font-family:'IBM Plex Mono',monospace;font-size:11px;
     letter-spacing:.08em;color:var(--muted);
   }
 
+  /* --- Panel principal --- */
   .boleto{
-    background:var(--papel);color:var(--ink);
+    background:var(--panel);
+    border:1px solid var(--linea);
     border-radius:var(--radius);
-    box-shadow:0 24px 60px rgba(0,0,0,.45), 0 2px 0 var(--papel-sombra) inset;
-    padding:26px 22px 28px;
+    box-shadow:0 30px 70px rgba(0,0,0,.55);
+    padding:22px 18px 24px;
     position:relative;
+    overflow:hidden;
+  }
+  .boleto::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:4px;
+    background:linear-gradient(90deg, var(--verde), var(--verde-brillo));
   }
   .boleto-head{
     display:flex;justify-content:space-between;align-items:baseline;
-    border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:6px;
+    border-bottom:1px solid var(--linea);padding-bottom:12px;margin-bottom:4px;
   }
   .boleto-head .titulo{
-    font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;
-    text-transform:uppercase;letter-spacing:.04em;
+    font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:21px;
+    text-transform:uppercase;letter-spacing:.05em;
   }
   .boleto-head .serie{
-    font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--rojo);font-weight:600;
+    font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--verde-brillo);font-weight:600;
     letter-spacing:.08em;
   }
 
   .paso{padding:18px 0}
-  .paso + .paso{position:relative}
-  .paso + .paso::before{
-    content:"";position:absolute;top:0;left:-8px;right:-8px;
-    border-top:2px dashed rgba(34,43,71,.28);
-  }
+  .paso + .paso{border-top:1px dashed var(--linea)}
   .paso-label{
     font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;
-    letter-spacing:.18em;text-transform:uppercase;color:var(--rojo);
+    letter-spacing:.18em;text-transform:uppercase;color:var(--verde-brillo);
     display:block;margin-bottom:12px;
   }
 
   .fila{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:end}
   .vs{
     font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;
-    color:var(--ink-suave);text-transform:uppercase;padding-bottom:12px;
+    color:var(--muted);text-transform:uppercase;padding-bottom:12px;
   }
   label.campo{display:block}
   .campo + .campo{margin-top:12px}
-  .campo-nombre{font-size:13px;font-weight:600;color:var(--ink-suave);display:block;margin-bottom:6px}
+  .campo-nombre{font-size:13px;font-weight:600;color:var(--muted);display:block;margin-bottom:6px}
   .nota-comp{
-    margin-top:12px;font-size:12.5px;color:var(--ink-suave);
-    border-left:3px solid var(--albero);padding-left:10px;
+    margin-top:12px;font-size:12.5px;color:var(--muted);
+    border-left:3px solid var(--verde);padding-left:10px;
   }
 
   select,input[type="text"]{
     width:100%;appearance:none;-webkit-appearance:none;
-    background:#FFFDF6;color:var(--ink);
-    border:1.5px solid rgba(34,43,71,.45);border-radius:10px;
+    background:var(--panel2);color:var(--texto);
+    border:1.5px solid var(--linea);border-radius:10px;
     padding:11px 12px;font-family:'Barlow',sans-serif;font-size:15px;font-weight:500;
   }
   select{
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23222B47' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2393A69B' stroke-width='2' fill='none'/%3E%3C/svg%3E");
     background-repeat:no-repeat;background-position:right 12px center;
     padding-right:32px;cursor:pointer;
   }
+  select:hover,input[type="text"]:hover{border-color:#31473A}
   input[type="text"]{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:16px}
   select:focus-visible,input:focus-visible,button:focus-visible{
-    outline:2px solid var(--albero);outline-offset:2px;
+    outline:2px solid var(--verde-brillo);outline-offset:2px;
   }
 
-  /* --- Constructor de mercados --- */
+  /* --- Cabecera del partido con escudos --- */
+  .banner-partido{
+    margin-top:14px;
+    background:linear-gradient(180deg, var(--verde-osc), #114A30);
+    border:1px solid #1E6B45;border-radius:10px;
+    padding:14px 12px;
+    display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center;
+  }
+  .banner-equipo{display:flex;flex-direction:column;align-items:center;gap:7px;min-width:0}
+  .banner-equipo .nombre{
+    font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;
+    letter-spacing:.03em;text-transform:uppercase;text-align:center;line-height:1.1;
+    overflow:hidden;text-overflow:ellipsis;max-width:100%;
+  }
+  .banner-vs{
+    font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:12px;color:#BFE8D2;
+    letter-spacing:.1em;
+  }
+  .escudo{
+    width:46px;height:46px;display:flex;align-items:center;justify-content:center;
+    flex:none;
+  }
+  .escudo img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 2px 4px rgba(0,0,0,.4))}
+  .escudo .bandera{font-size:38px;line-height:1;filter:drop-shadow(0 2px 3px rgba(0,0,0,.35))}
+  .escudo .iniciales{
+    width:44px;height:46px;display:flex;align-items:center;justify-content:center;
+    clip-path:polygon(0 0, 100% 0, 100% 62%, 50% 100%, 0 62%);
+    font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;color:#fff;
+    text-shadow:0 1px 2px rgba(0,0,0,.4);
+  }
+  .escudo.mini{width:24px;height:24px}
+  .escudo.mini .bandera{font-size:20px}
+  .escudo.mini .iniciales{width:22px;height:24px;font-size:10px}
+
+  /* --- Mercados --- */
   .grupo{
-    border:1.5px solid rgba(34,43,71,.3);border-radius:10px;
-    margin-bottom:10px;background:rgba(255,253,246,.5);
+    border:1px solid var(--linea);border-radius:10px;
+    margin-bottom:10px;background:var(--panel2);overflow:hidden;
   }
   .grupo summary{
     cursor:pointer;list-style:none;padding:12px 14px;
     display:flex;justify-content:space-between;align-items:center;
     font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;
     letter-spacing:.05em;text-transform:uppercase;
+    background:linear-gradient(180deg, rgba(32,165,102,.16), rgba(32,165,102,.05));
+    border-bottom:1px solid transparent;
   }
+  .grupo[open] summary{border-bottom-color:var(--linea)}
   .grupo summary::-webkit-details-marker{display:none}
-  .grupo summary::after{content:"+";font-size:20px;color:var(--rojo);font-family:'Barlow',sans-serif}
+  .grupo summary::after{content:"+";font-size:20px;color:var(--verde-brillo);font-family:'Barlow',sans-serif}
   .grupo[open] summary::after{content:"–"}
-  .grupo-body{padding:2px 14px 14px;display:grid;gap:12px}
+  .grupo-body{padding:12px 14px 14px;display:grid;gap:14px}
   .fila-mercado{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
   .fila-titulo{
-    flex-basis:100%;font-size:12px;font-weight:600;color:var(--ink-suave);
+    flex-basis:100%;font-size:12px;font-weight:600;color:var(--muted);
     text-transform:uppercase;letter-spacing:.06em;margin-bottom:-2px;
   }
   select.mini{width:auto;padding:8px 30px 8px 10px;font-size:14px;border-radius:8px}
   select.jugador{min-width:200px;flex:1}
   .btn-add{
     cursor:pointer;border:none;border-radius:8px;
-    background:var(--albero);color:var(--tinta);
+    background:var(--oro);color:#161104;
     font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;
-    letter-spacing:.06em;text-transform:uppercase;padding:9px 14px;
+    letter-spacing:.06em;text-transform:uppercase;padding:9px 16px;
     transition:transform .1s, filter .12s;
   }
-  .btn-add:hover{filter:brightness(1.06)}
+  .btn-add:hover{filter:brightness(1.08)}
   .btn-add:active{transform:scale(.97)}
   .add-chips{display:flex;flex-wrap:wrap;gap:8px}
   .add-chip{
-    cursor:pointer;border:1.5px solid rgba(34,43,71,.45);border-radius:9px;
-    background:#FFFDF6;color:var(--ink);padding:9px 13px;
+    cursor:pointer;border:1.5px solid var(--linea);border-radius:9px;
+    background:var(--panel);color:var(--texto);padding:9px 13px;
     font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:15px;
     letter-spacing:.03em;text-transform:uppercase;
     transition:background .12s,color .12s,border-color .12s,transform .1s;
   }
-  .add-chip:hover{border-color:var(--rojo)}
+  .add-chip:hover{border-color:var(--verde-brillo);color:var(--verde-brillo)}
   .add-chip:active{transform:scale(.97)}
   .add-chip.simbolo{min-width:44px;font-size:17px}
-  .aviso-plantilla{font-size:13px;color:var(--ink-suave)}
+  .aviso-plantilla{font-size:13px;color:var(--muted)}
 
-  /* --- Tu boleto (selecciones) --- */
+  /* --- Tu boleto --- */
   .slip{
-    border:2px solid var(--ink);border-radius:10px;
-    background:#FFFDF6;padding:14px;margin-top:14px;
+    border:1px solid #1E6B45;border-radius:10px;
+    background:var(--panel2);margin-top:14px;overflow:hidden;
   }
   .slip-titulo{
     display:flex;justify-content:space-between;align-items:baseline;
     font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;
-    letter-spacing:.05em;text-transform:uppercase;margin-bottom:10px;
+    letter-spacing:.05em;text-transform:uppercase;
+    background:linear-gradient(180deg, var(--verde-osc), #114A30);
+    padding:11px 14px;
   }
-  .slip-titulo .n{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--rojo)}
-  .slip-vacio{font-size:14px;color:var(--ink-suave)}
+  .slip-titulo .n{font-family:'IBM Plex Mono',monospace;font-size:12px;color:#BFE8D2}
+  .slip-body{padding:12px 14px}
+  .slip-vacio{font-size:14px;color:var(--muted)}
   .slip-item{
     display:grid;grid-template-columns:22px 1fr auto;gap:8px;align-items:center;
-    padding:8px 0;border-top:1px dashed rgba(34,43,71,.25);font-size:14.5px;
+    padding:8px 0;border-top:1px dashed var(--linea);font-size:14.5px;
   }
   .slip-item:first-of-type{border-top:none}
   .slip-item .num{
-    font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:12px;color:var(--rojo);
+    font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:12px;color:var(--verde-brillo);
   }
   .slip-x{
-    cursor:pointer;border:none;background:none;color:var(--ink-suave);
+    cursor:pointer;border:none;background:none;color:var(--muted);
     font-size:18px;line-height:1;padding:4px 6px;border-radius:6px;
   }
-  .slip-x:hover{color:var(--rojo);background:rgba(196,52,44,.08)}
-  .aviso-jugadores{
-    margin-top:8px;font-size:12.5px;color:var(--rojo);display:none;
-  }
+  .slip-x:hover{color:var(--rojo);background:rgba(225,90,82,.12)}
+  .aviso-jugadores{margin:8px 14px 12px;font-size:12.5px;color:var(--oro);display:none}
   .aviso-jugadores.visible{display:block}
 
   .paso3-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:12px}
@@ -208,55 +253,81 @@
 
   .analizar{
     width:100%;margin-top:6px;cursor:pointer;
-    background:var(--ink);color:var(--papel);
+    background:linear-gradient(180deg, var(--verde), #178A54);
+    color:#06130C;
     border:none;border-radius:10px;padding:15px;
     font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;
     letter-spacing:.08em;text-transform:uppercase;
-    transition:transform .1s, background .12s;
+    transition:transform .1s, filter .12s;
   }
-  .analizar:hover{background:#2E3A61}
+  .analizar:hover{filter:brightness(1.08)}
   .analizar:active{transform:scale(.99)}
 
   /* --- Resguardo --- */
   .stub{
     display:none;position:relative;margin-top:26px;
-    background:var(--papel);color:var(--ink);
+    background:var(--panel);border:1px solid var(--linea);
     border-radius:var(--radius);
-    box-shadow:0 24px 60px rgba(0,0,0,.45);
-    padding:30px 24px 26px;
+    box-shadow:0 30px 70px rgba(0,0,0,.55);
+    padding:28px 20px 24px;
   }
   .stub.visible{display:block;animation:stubIn .35s ease-out}
   @keyframes stubIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
   .stub::before{
     content:"";position:absolute;top:-7px;left:12px;right:12px;height:14px;
-    background-image:radial-gradient(circle 7px at 7px 7px, var(--tinta) 6.5px, transparent 7px);
+    background-image:radial-gradient(circle 7px at 7px 7px, var(--fondo) 6.5px, transparent 7px);
     background-size:26px 14px;background-repeat:repeat-x;
   }
   .stub-label{
     font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;
-    letter-spacing:.18em;text-transform:uppercase;color:var(--ink-suave);
+    letter-spacing:.18em;text-transform:uppercase;color:var(--muted);
   }
   .stub-partido{
-    font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:26px;
-    line-height:1.1;text-transform:uppercase;margin:6px 0 14px;
+    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+    font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px;
+    line-height:1.1;text-transform:uppercase;margin:8px 0 14px;
   }
-  .sel-lineas{border-top:2px dashed rgba(34,43,71,.28);margin-bottom:18px}
+  .sel-lineas{border-top:1px dashed var(--linea);margin-bottom:18px}
   .sel-linea{
     display:grid;grid-template-columns:22px 1fr auto;gap:8px;align-items:center;
-    padding:9px 0;border-bottom:1px dashed rgba(34,43,71,.2);font-size:14.5px;
+    padding:9px 0;border-bottom:1px dashed var(--linea);font-size:14.5px;
   }
-  .sel-linea .num{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:12px;color:var(--rojo)}
-  .sel-linea .pct{font-family:'IBM Plex Mono',monospace;font-weight:600;white-space:nowrap}
+  .sel-linea .num{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:12px;color:var(--verde-brillo)}
+  .sel-linea .pct{font-family:'IBM Plex Mono',monospace;font-weight:600;white-space:nowrap;color:var(--oro)}
 
-  .prob-grande{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:8px}
+  .prob-grande{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:4px}
   .prob-num{
-    font-family:'IBM Plex Mono',monospace;font-weight:600;
+    font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--verde-brillo);
     font-size:clamp(52px,13vw,80px);line-height:.9;letter-spacing:-.02em;
   }
-  .prob-desc{font-size:14px;color:var(--ink-suave);max-width:210px;padding-bottom:8px}
+  .prob-desc{font-size:14px;color:var(--muted);max-width:220px;padding-bottom:8px}
+  .frecuencia{
+    font-size:15.5px;margin:6px 0 18px;color:var(--texto);
+  }
+  .frecuencia b{color:var(--verde-brillo)}
+
+  /* Comparador visual modelo vs cuota */
+  .compara{
+    border:1px solid var(--linea);border-radius:10px;background:var(--panel2);
+    padding:14px;margin-bottom:18px;
+  }
+  .compara-titulo{
+    font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;display:block;
+  }
+  .cbarra{display:grid;grid-template-columns:150px 1fr 58px;gap:10px;align-items:center;font-size:13.5px;margin-bottom:9px}
+  .cbarra:last-of-type{margin-bottom:0}
+  .cbarra .etiqueta{color:var(--muted)}
+  .cbarra .track{height:12px;background:rgba(255,255,255,.07);border-radius:99px;overflow:hidden}
+  .cbarra .fill{height:100%;border-radius:99px;transition:width .5s ease}
+  .cbarra.modelo .fill{background:linear-gradient(90deg, var(--verde), var(--verde-brillo))}
+  .cbarra.cuota .fill{background:linear-gradient(90deg, #B8862B, var(--oro))}
+  .cbarra .pct{font-family:'IBM Plex Mono',monospace;font-weight:600;text-align:right}
+  .compara-leyenda{font-size:12.5px;color:var(--muted);margin-top:10px}
+  @media (max-width:520px){ .cbarra{grid-template-columns:110px 1fr 52px} }
 
   .sello{
-    display:inline-block;margin:14px 0 4px;
+    display:inline-block;margin:2px 0 4px;
     padding:8px 18px;border:3px solid currentColor;border-radius:8px;
     font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:26px;
     letter-spacing:.14em;text-transform:uppercase;
@@ -264,53 +335,52 @@
     animation:stamp .3s cubic-bezier(.2,1.6,.4,1) both;
   }
   @keyframes stamp{from{opacity:0;transform:rotate(-5deg) scale(1.7)}to{opacity:1;transform:rotate(-5deg) scale(1)}}
-  .sello.verde{color:var(--verde)}
-  .sello.albero{color:#B07E14}
+  .sello.verde{color:var(--verde-brillo)}
+  .sello.oro{color:var(--oro)}
   .sello.rojo{color:var(--rojo)}
-  .veredicto-frase{font-size:15px;margin:12px 0 8px;max-width:480px}
-  .nota-indep{font-size:13px;color:var(--ink-suave);margin-bottom:18px;max-width:480px}
+  .veredicto-frase{font-size:15px;margin:12px 0 6px;max-width:500px}
+  .dinero{font-size:14.5px;color:var(--texto);margin-bottom:8px;max-width:500px}
+  .dinero b.pos{color:var(--verde-brillo)} .dinero b.neg{color:var(--rojo)}
+  .nota-indep{font-size:13px;color:var(--muted);margin-bottom:18px;max-width:500px}
 
-  .datos{
-    border-top:2px dashed rgba(34,43,71,.28);
-    padding-top:16px;display:grid;gap:9px;
-  }
+  .datos{border-top:1px dashed var(--linea);padding-top:16px;display:grid;gap:9px}
   .dato{display:flex;justify-content:space-between;gap:16px;font-size:14.5px}
-  .dato .k{color:var(--ink-suave)}
+  .dato .k{color:var(--muted)}
   .dato .v{font-family:'IBM Plex Mono',monospace;font-weight:600;white-space:nowrap}
 
-  .modelo{margin-top:20px;border-top:2px dashed rgba(34,43,71,.28);padding-top:16px}
+  .modelo{margin-top:20px;border-top:1px dashed var(--linea);padding-top:16px}
   .modelo-titulo{
     font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;
-    letter-spacing:.18em;text-transform:uppercase;color:var(--ink-suave);margin-bottom:12px;display:block;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;display:block;
   }
   .barras{display:grid;gap:8px}
   .barra{display:grid;grid-template-columns:26px 1fr 52px;gap:10px;align-items:center;font-size:13.5px}
   .barra .sig{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px}
-  .barra .track{height:10px;background:rgba(34,43,71,.12);border-radius:99px;overflow:hidden}
-  .barra .fill{height:100%;background:var(--ink);border-radius:99px;transition:width .5s ease}
+  .barra .track{height:10px;background:rgba(255,255,255,.07);border-radius:99px;overflow:hidden}
+  .barra .fill{height:100%;background:linear-gradient(90deg, var(--verde), var(--verde-brillo));border-radius:99px;transition:width .5s ease}
   .barra .pct{font-family:'IBM Plex Mono',monospace;font-weight:600;text-align:right}
-  .marcadores{margin-top:14px;font-size:13.5px;color:var(--ink-suave)}
-  .marcadores b{color:var(--ink);font-family:'IBM Plex Mono',monospace;font-weight:600}
+  .marcadores{margin-top:14px;font-size:13.5px;color:var(--muted)}
+  .marcadores b{color:var(--texto);font-family:'IBM Plex Mono',monospace;font-weight:600}
   .nota-demo{
-    margin-top:18px;font-size:12.5px;color:var(--ink-suave);
-    border-left:3px solid var(--albero);padding-left:10px;
+    margin-top:18px;font-size:12.5px;color:var(--muted);
+    border-left:3px solid var(--verde);padding-left:10px;
   }
 
   .como{margin-top:34px}
   .como details{
-    background:var(--tinta-suave);border:1px solid rgba(150,160,190,.18);
+    background:var(--panel);border:1px solid var(--linea);
     border-radius:var(--radius);padding:18px 20px;
   }
   .como summary{
     cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-weight:600;
     font-size:19px;letter-spacing:.04em;text-transform:uppercase;list-style:none;
-    display:flex;justify-content:space-between;align-items:center;color:var(--papel);
+    display:flex;justify-content:space-between;align-items:center;color:var(--texto);
   }
   .como summary::-webkit-details-marker{display:none}
-  .como summary::after{content:"+";font-size:22px;color:var(--albero)}
+  .como summary::after{content:"+";font-size:22px;color:var(--verde-brillo)}
   .como details[open] summary::after{content:"–"}
   .como-body{margin-top:14px;color:var(--muted);font-size:14.5px;display:grid;gap:10px}
-  .como-body b{color:var(--papel);font-weight:600}
+  .como-body b{color:var(--texto);font-weight:600}
 
   footer{margin-top:40px;text-align:center;color:var(--muted);font-size:12.5px;line-height:1.7}
   footer .mas18{
@@ -334,7 +404,7 @@
   <section class="boleto" aria-label="Boleto de apuesta">
     <div class="boleto-head">
       <span class="titulo">Boleto de análisis</span>
-      <span class="serie">Nº 000003</span>
+      <span class="serie">Nº 000004</span>
     </div>
 
     <div class="paso">
@@ -355,6 +425,11 @@
             <select id="visitante"></select>
           </label>
         </div>
+      </div>
+      <div class="banner-partido" id="banner-partido">
+        <div class="banner-equipo"><span class="escudo" id="escudo-l"></span><span class="nombre" id="banner-nombre-l"></span></div>
+        <span class="banner-vs">VS</span>
+        <div class="banner-equipo"><span class="escudo" id="escudo-v"></span><span class="nombre" id="banner-nombre-v"></span></div>
       </div>
       <p class="nota-comp" id="nota-comp"></p>
       <p class="error" id="error-equipos">Elige dos equipos distintos.</p>
@@ -477,7 +552,7 @@
 
       <div class="slip">
         <div class="slip-titulo"><span>Tu boleto</span><span class="n" id="slip-n">0 selecciones</span></div>
-        <div id="slip-lista"><p class="slip-vacio">Añade selecciones de los mercados de arriba. Puedes combinar varias en la misma apuesta.</p></div>
+        <div class="slip-body" id="slip-lista"><p class="slip-vacio">Añade selecciones de los mercados de arriba. Puedes combinar varias en la misma apuesta.</p></div>
         <p class="aviso-jugadores" id="aviso-jugadores">Al cambiar de partido se han quitado las selecciones de jugadores, que ya no estaban en juego.</p>
       </div>
       <p class="error" id="error-slip">Añade al menos una selección al boleto.</p>
@@ -503,7 +578,11 @@
 
   <section class="stub" id="stub" aria-live="polite">
     <span class="stub-label">Resguardo · Resultado del análisis</span>
-    <p class="stub-partido" id="stub-partido"></p>
+    <div class="stub-partido">
+      <span class="escudo mini" id="stub-escudo-l"></span>
+      <span id="stub-titulo"></span>
+      <span class="escudo mini" id="stub-escudo-v"></span>
+    </div>
 
     <div class="sel-lineas" id="sel-lineas"></div>
 
@@ -511,9 +590,26 @@
       <span class="prob-num" id="prob-num">—</span>
       <span class="prob-desc" id="prob-desc">probabilidad estimada de que tu apuesta acierte, según el modelo</span>
     </div>
+    <p class="frecuencia" id="frecuencia"></p>
+
+    <div class="compara">
+      <span class="compara-titulo">El modelo frente a tu cuota</span>
+      <div class="cbarra modelo">
+        <span class="etiqueta">Lo que dice el modelo</span>
+        <span class="track"><span class="fill" id="cfill-modelo"></span></span>
+        <span class="pct" id="cpct-modelo">—</span>
+      </div>
+      <div class="cbarra cuota">
+        <span class="etiqueta">Lo que implica tu cuota</span>
+        <span class="track"><span class="fill" id="cfill-cuota"></span></span>
+        <span class="pct" id="cpct-cuota">—</span>
+      </div>
+      <p class="compara-leyenda">Si la barra verde supera a la dorada, la casa te está pagando de más: hay valor. Si queda por debajo, te paga de menos.</p>
+    </div>
 
     <div><span class="sello" id="sello">—</span></div>
     <p class="veredicto-frase" id="veredicto-frase"></p>
+    <p class="dinero" id="dinero"></p>
     <p class="nota-indep" id="nota-indep"></p>
 
     <div class="datos">
@@ -528,7 +624,7 @@
       <div class="barras">
         <div class="barra"><span class="sig">1</span><span class="track"><span class="fill" id="fill-1"></span></span><span class="pct" id="pct-1">—</span></div>
         <div class="barra"><span class="sig">X</span><span class="track"><span class="fill" id="fill-x"></span></span><span class="pct" id="pct-x">—</span></div>
-        <div class="barra"><span class="sig">2</span><span class="track"><span class="fill" id="fill-2"></span></span><span class="pct" id="pct-2">—</span></div>
+        <div class="barra"><span class="sig">2</span><span class="track"><span class="fill" id="pct-fill-2"></span></span><span class="pct" id="pct-2">—</span></div>
       </div>
       <p class="marcadores" id="marcadores"></p>
     </div>
@@ -572,7 +668,6 @@
     ["Luckia", 6.9], ["Kirolbet", 7.0], ["Retabet", 7.1], ["Jokerbet", 7.2]
   ];
 
-  // Perfiles medios por competición (tarjetas amarillas y faltas por equipo y partido)
   var PERFIL = {
     WC:  { tar: 1.9,  fal: 11.5 },
     PD:  { tar: 2.45, fal: 13.4 },
@@ -582,18 +677,31 @@
     FL1: { tar: 2.0,  fal: 12.3 },
     def: { tar: 2.1,  fal: 12.0 }
   };
-  var F1P = { gol: 0.44, tar: 0.36, fal: 0.47, tir: 0.45 }; // peso de la 1ª parte
+  var F1P = { gol: 0.44, tar: 0.36, fal: 0.47, tir: 0.45 };
 
-  // Perfiles de jugador por posición
   var SHARE_GOL = { DEL: 0.17, MED: 0.07, DEF: 0.028, POR: 0.002 };
   var P_TARJETA = { DEL: 0.08, MED: 0.14, DEF: 0.17, POR: 0.02 };
   var FALT_REC  = { DEL: 1.7,  MED: 1.35, DEF: 0.75, POR: 0.12 };
   var POS_TXT   = { DEL: "delantero", MED: "centrocampista", DEF: "defensa", POR: "portero" };
 
+  // Banderas del Mundial (con alias en inglés para cuando el robot traiga nombres de la API)
+  var BANDERAS = {
+    "España":"🇪🇸","Spain":"🇪🇸","Portugal":"🇵🇹","Francia":"🇫🇷","France":"🇫🇷",
+    "Argentina":"🇦🇷","Brasil":"🇧🇷","Brazil":"🇧🇷","Inglaterra":"🏴󠁧󠁢󠁥󠁮󠁧󠁿","England":"🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "México":"🇲🇽","Mexico":"🇲🇽","Noruega":"🇳🇴","Norway":"🇳🇴","Países Bajos":"🇳🇱","Netherlands":"🇳🇱",
+    "Alemania":"🇩🇪","Germany":"🇩🇪","Bélgica":"🇧🇪","Belgium":"🇧🇪","Estados Unidos":"🇺🇸","USA":"🇺🇸","United States":"🇺🇸",
+    "Suiza":"🇨🇭","Switzerland":"🇨🇭","Croacia":"🇭🇷","Croatia":"🇭🇷","Marruecos":"🇲🇦","Morocco":"🇲🇦",
+    "Senegal":"🇸🇳","Egipto":"🇪🇬","Egypt":"🇪🇬","Colombia":"🇨🇴","Japón":"🇯🇵","Japan":"🇯🇵",
+    "Suecia":"🇸🇪","Sweden":"🇸🇪","Canadá":"🇨🇦","Canada":"🇨🇦","Paraguay":"🇵🇾","Austria":"🇦🇹",
+    "Argelia":"🇩🇿","Algeria":"🇩🇿","Ghana":"🇬🇭","Costa de Marfil":"🇨🇮","Ivory Coast":"🇨🇮","Côte d'Ivoire":"🇨🇮",
+    "Australia":"🇦🇺","Ecuador":"🇪🇨","Sudáfrica":"🇿🇦","South Africa":"🇿🇦",
+    "Bosnia y Herzegovina":"🇧🇦","Bosnia and Herzegovina":"🇧🇦","RD Congo":"🇨🇩","DR Congo":"🇨🇩","Cabo Verde":"🇨🇻","Cape Verde":"🇨🇻"
+  };
+
   // --- Matemáticas ---
   function fact(n){ var r = 1; for (var i = 2; i <= n; i++) r *= i; return r; }
   function pois(k, l){ return Math.exp(-l) * Math.pow(l, k) / fact(k); }
-  function pMasDe(l, linea){ // P(X > linea) con linea tipo 2,5
+  function pMasDe(l, linea){
     var acumulada = 0, tope = Math.floor(linea);
     for (var k = 0; k <= tope; k++) acumulada += pois(k, l);
     return 1 - acumulada;
@@ -638,7 +746,7 @@
              bttsY: bttsY, top: top.slice(0, 3) };
   }
 
-  // --- Formato es-ES ---
+  // --- Formato ---
   function fPct(x, dec){
     var v = Math.max(Math.min(x, 0.999), 0.001);
     return (v * 100).toLocaleString("es-ES", { minimumFractionDigits: dec, maximumFractionDigits: dec }) + " %";
@@ -650,10 +758,56 @@
     return parseInt(t[2], 10) + " " + meses[parseInt(t[1], 10) - 1] + " " + t[0];
   }
   function numLinea(txt){ return parseFloat(txt.replace(",", ".")); }
+  function fraseFrecuencia(p){
+    if (p >= 0.5){
+      var n = Math.round(p * 10);
+      if (n >= 10) n = 9;
+      return "acertarías unas <b>" + n + " de cada 10</b> veces";
+    }
+    var d = Math.round(1 / p);
+    if (d > 100) d = 100;
+    return "acertarías más o menos <b>1 de cada " + d + "</b> veces";
+  }
 
-  // --- Estado ---
+  // --- Escudos ---
+  function colorEquipo(nombre){
+    var hash = 0;
+    for (var i = 0; i < nombre.length; i++) hash = (hash * 31 + nombre.charCodeAt(i)) % 360;
+    return "hsl(" + hash + ", 45%, 38%)";
+  }
+  function iniciales(nombre){
+    var partes = nombre.split(/\s+/).filter(function(x){ return x.length > 1; });
+    if (partes.length >= 2) return (partes[0][0] + partes[1][0]).toUpperCase();
+    return nombre.slice(0, 2).toUpperCase();
+  }
+  function pintarEscudo(cont, nombre){
+    cont.innerHTML = "";
+    if (BANDERAS[nombre]){
+      var b = document.createElement("span");
+      b.className = "bandera"; b.textContent = BANDERAS[nombre];
+      cont.appendChild(b); return;
+    }
+    var urls = compActual().escudos || {};
+    if (urls[nombre]){
+      var img = document.createElement("img");
+      img.alt = "Escudo de " + nombre; img.loading = "lazy";
+      img.src = urls[nombre];
+      img.onerror = function(){ pintarIniciales(cont, nombre); };
+      cont.appendChild(img); return;
+    }
+    pintarIniciales(cont, nombre);
+  }
+  function pintarIniciales(cont, nombre){
+    cont.innerHTML = "";
+    var d = document.createElement("span");
+    d.className = "iniciales";
+    d.style.background = colorEquipo(nombre);
+    d.textContent = iniciales(nombre);
+    cont.appendChild(d);
+  }
+
+  // --- Estado y DOM ---
   var selecciones = [];
-
   function $(id){ return document.getElementById(id); }
   var selComp = $("competicion"), selLocal = $("local"), selVisit = $("visitante"), selCasa = $("casa");
 
@@ -672,6 +826,16 @@
     var pls = compActual().plantillas || {};
     return pls[nombreLado(side)] || null;
   }
+  function etiquetaEquipo(nombre){
+    return BANDERAS[nombre] ? BANDERAS[nombre] + " " + nombre : nombre;
+  }
+
+  function refrescarBanner(){
+    pintarEscudo($("escudo-l"), selLocal.value);
+    pintarEscudo($("escudo-v"), selVisit.value);
+    $("banner-nombre-l").textContent = selLocal.value;
+    $("banner-nombre-v").textContent = selVisit.value;
+  }
 
   function refrescarSelectoresEquipo(){
     document.querySelectorAll(".sel-equipo").forEach(function(s){
@@ -683,6 +847,7 @@
     });
     $("chip-dnb1").textContent = selLocal.value + " · empate no vale";
     $("chip-dnb2").textContent = selVisit.value + " · empate no vale";
+    refrescarBanner();
   }
 
   function refrescarJugadores(){
@@ -731,8 +896,8 @@
     selLocal.innerHTML = ""; selVisit.innerHTML = "";
     var nombres = Object.keys(comp.equipos).sort(function(a, b){ return a.localeCompare(b, "es"); });
     nombres.forEach(function(n){
-      selLocal.add(new Option(n, n));
-      selVisit.add(new Option(n, n));
+      selLocal.add(new Option(etiquetaEquipo(n), n));
+      selVisit.add(new Option(etiquetaEquipo(n), n));
     });
     if (comp.neutral){
       $("label-local").textContent = "Primer equipo";
@@ -858,7 +1023,7 @@
     return null;
   }
 
-  // --- El boleto (slip) ---
+  // --- El boleto ---
   function renderSlip(){
     var cont = $("slip-lista");
     $("slip-n").textContent = selecciones.length + (selecciones.length === 1 ? " selección" : " selecciones");
@@ -942,7 +1107,10 @@
     var ev = probTotal * cuota - 1;
     var cuotaJusta = 1 / Math.max(probTotal, 0.0001);
 
-    $("stub-partido").textContent = local + " – " + visitante + " · " + selComp.value;
+    pintarEscudo($("stub-escudo-l"), local);
+    pintarEscudo($("stub-escudo-v"), visitante);
+    $("stub-titulo").textContent = local + " – " + visitante;
+
     var cont = $("sel-lineas"); cont.innerHTML = "";
     lineas.forEach(function(l, i){
       var fila = document.createElement("div"); fila.className = "sel-linea";
@@ -957,6 +1125,13 @@
     $("prob-desc").textContent = selecciones.length > 1
       ? "probabilidad estimada de que acierten las " + selecciones.length + " selecciones a la vez"
       : "probabilidad estimada de que tu apuesta acierte, según el modelo";
+    $("frecuencia").innerHTML = "En cristiano: si repitieras este boleto muchas veces, " + fraseFrecuencia(probTotal) + ".";
+
+    $("cfill-modelo").style.width = Math.min(probTotal * 100, 100) + "%";
+    $("cfill-cuota").style.width = Math.min(probImplicita * 100, 100) + "%";
+    $("cpct-modelo").textContent = fPct(probTotal, 1);
+    $("cpct-cuota").textContent = fPct(probImplicita, 1);
+
     $("cuota-justa").textContent = fNum(Math.min(cuotaJusta, 999), 2);
     $("prob-implicita").textContent = fPct(probImplicita, 1);
     $("valor-esperado").textContent = (ev >= 0 ? "+" : "−") + fPct(Math.abs(ev), 1);
@@ -964,12 +1139,12 @@
     $("margen-casa").textContent = "~" + fNum(margen, 1) + " %";
 
     var sello = $("sello"), frase;
-    sello.classList.remove("verde", "albero", "rojo");
+    sello.classList.remove("verde", "oro", "rojo");
     if (ev >= 0.03){
       sello.textContent = "Hay valor"; sello.classList.add("verde");
       frase = "El modelo estima más probabilidad (" + fPct(probTotal, 1) + ") de la que implica la cuota " + fNum(cuota, 2) + " de " + casa + " (" + fPct(probImplicita, 1) + "). A largo plazo, apuestas así son las rentables.";
     } else if (ev >= 0){
-      sello.textContent = "Valor justo"; sello.classList.add("albero");
+      sello.textContent = "Valor justo"; sello.classList.add("oro");
       frase = "La cuota " + fNum(cuota, 2) + " de " + casa + " está muy cerca de la probabilidad que estima el modelo. Ni regalo ni trampa: valor prácticamente neutro.";
     } else {
       sello.textContent = "Sin valor"; sello.classList.add("rojo");
@@ -977,13 +1152,20 @@
     }
     sello.style.animation = "none"; void sello.offsetWidth; sello.style.animation = "";
     $("veredicto-frase").textContent = frase;
+
+    var gananciaMedia = ev * 10;
+    $("dinero").innerHTML = "Con 10 € por boleto, a la larga " +
+      (gananciaMedia >= 0
+        ? "ganarías de media <b class='pos'>+" + fNum(gananciaMedia, 2) + " €</b> por apuesta."
+        : "perderías de media <b class='neg'>−" + fNum(Math.abs(gananciaMedia), 2) + " €</b> por apuesta.");
+
     $("nota-indep").textContent = selecciones.length > 1
       ? "El cálculo asume que las selecciones son independientes entre sí; cuando están relacionadas (por ejemplo, goles del equipo y victoria), la probabilidad real puede variar. Las casas ajustan sus combinadas justo por esto."
       : "";
 
     $("fill-1").style.width = (m.p1 * 100) + "%";
     $("fill-x").style.width = (m.px * 100) + "%";
-    $("fill-2").style.width = (m.p2 * 100) + "%";
+    $("pct-fill-2").style.width = (m.p2 * 100) + "%";
     $("pct-1").textContent = fPct(m.p1, 0);
     $("pct-x").textContent = fPct(m.px, 0);
     $("pct-2").textContent = fPct(m.p2, 0);
