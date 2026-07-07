@@ -18,10 +18,12 @@ import time
 import unicodedata
 import urllib.error
 import urllib.request
-from datetime import date
+from datetime import date, timedelta
 
 API_PARTIDOS = "https://api.football-data.org/v4/competitions/{}/matches?status=FINISHED"
 API_EQUIPOS = "https://api.football-data.org/v4/competitions/{}/teams"
+API_PROXIMOS = ("https://api.football-data.org/v4/competitions/{}/matches"
+                "?dateFrom={}&dateTo={}")
 
 COMPETICIONES = {  # codigo -> (nombre, neutral, minimo de equipos)
     "WC":  ("Mundial 2026", True, 8),
@@ -143,6 +145,23 @@ def extraer_equipos_info(respuesta_equipos):
     return plantillas, escudos
 
 
+def extraer_partidos(respuesta):
+    """De la respuesta de /matches saca los partidos aun por jugar."""
+    partidos = []
+    for p in respuesta.get("matches", []):
+        if p.get("status") not in ("SCHEDULED", "TIMED"):
+            continue
+        local = ((p.get("homeTeam") or {}).get("shortName")
+                 or (p.get("homeTeam") or {}).get("name"))
+        visitante = ((p.get("awayTeam") or {}).get("shortName")
+                     or (p.get("awayTeam") or {}).get("name"))
+        fecha = p.get("utcDate")
+        if local and visitante and fecha:
+            partidos.append([local, visitante, fecha])
+    partidos.sort(key=lambda x: x[2])
+    return partidos[:40]
+
+
 def main():
     clave = os.environ.get("FOOTBALL_DATA_KEY")
     if not clave:
@@ -162,6 +181,7 @@ def main():
 
     for codigo, (nombre, neutral, minimo) in COMPETICIONES.items():
         equipos, plantillas, escudos = {}, {}, {}
+        partidos = None
 
         try:
             respuesta = pedir(API_PARTIDOS.format(codigo), clave)
@@ -182,6 +202,20 @@ def main():
             print(f"{codigo} plantillas: error HTTP {e.code}")
         except Exception as e:  # noqa: BLE001
             print(f"{codigo} plantillas: error {e}")
+        time.sleep(7)
+
+        try:
+            hoy = date.today()
+            tope = hoy + timedelta(days=7)
+            respuesta = pedir(
+                API_PROXIMOS.format(codigo, hoy.isoformat(), tope.isoformat()),
+                clave)
+            partidos = extraer_partidos(respuesta)
+            print(f"{codigo}: {len(partidos)} partidos en los próximos 7 días")
+        except urllib.error.HTTPError as e:
+            print(f"{codigo} partidos próximos: error HTTP {e.code}")
+        except Exception as e:  # noqa: BLE001
+            print(f"{codigo} partidos próximos: error {e}")
         time.sleep(7)
 
         previo = anteriores.get(nombre, {})
@@ -208,6 +242,11 @@ def main():
             entrada["escudos"] = escudos
         elif previo.get("escudos"):
             entrada["escudos"] = previo["escudos"]
+
+        if partidos is not None:
+            entrada["partidos"] = partidos
+        elif previo.get("partidos"):
+            entrada["partidos"] = previo["partidos"]
 
         datos["competiciones"][nombre] = entrada
 
