@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-07-06",
+ "actualizado": "2026-07-07",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -24,7 +24,7 @@ window.DATOS_LIGAS = {
      2.25
     ],
     "Belgium": [
-     2.25,
+     2.6,
      1.0
     ],
     "Bosnia-H.": [
@@ -144,8 +144,8 @@ window.DATOS_LIGAS = {
      1.8
     ],
     "Portugal": [
-     2.0,
-     0.5
+     1.6,
+     0.6
     ],
     "Qatar": [
      0.67,
@@ -168,7 +168,7 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Spain": [
-     2.0,
+     1.8,
      0.3
     ],
     "Sweden": [
@@ -188,8 +188,8 @@ window.DATOS_LIGAS = {
      1.67
     ],
     "USA": [
-     2.5,
-     1.0
+     2.2,
+     1.6
     ],
     "Uruguay": [
      1.0,
@@ -6592,7 +6592,34 @@ window.DATOS_LIGAS = {
     "Norway": "https://crests.football-data.org/813.svg",
     "Scotland": "https://crests.football-data.org/814.svg",
     "Curaçao": "https://crests.football-data.org/curacao.svg"
-   }
+   },
+   "partidos": [
+    [
+     "Argentina",
+     "Egypt",
+     "2026-07-07T16:00:00Z"
+    ],
+    [
+     "Switzerland",
+     "Colombia",
+     "2026-07-07T20:00:00Z"
+    ],
+    [
+     "France",
+     "Morocco",
+     "2026-07-09T20:00:00Z"
+    ],
+    [
+     "Spain",
+     "Belgium",
+     "2026-07-10T19:00:00Z"
+    ],
+    [
+     "Norway",
+     "England",
+     "2026-07-11T21:00:00Z"
+    ]
+   ]
   },
   "LaLiga (España)": {
    "codigo": "PD",
@@ -6906,7 +6933,8 @@ window.DATOS_LIGAS = {
     "Sevilla FC": "https://crests.football-data.org/559.png",
     "Deportivo": "https://crests.football-data.org/560.png",
     "Santander": "https://crests.football-data.org/5335.png"
-   }
+   },
+   "partidos": []
   },
   "Premier League (Inglaterra)": {
    "codigo": "PL",
@@ -7055,7 +7083,8 @@ window.DATOS_LIGAS = {
     "Brentford": "https://crests.football-data.org/402.png",
     "Bournemouth": "https://crests.football-data.org/bournemouth.png",
     "Coventry City": "https://crests.football-data.org/1076.png"
-   }
+   },
+   "partidos": []
   },
   "Serie A (Italia)": {
    "codigo": "SA",
@@ -7204,7 +7233,8 @@ window.DATOS_LIGAS = {
     "Lecce": "https://crests.football-data.org/5890.png",
     "Monza": "https://crests.football-data.org/5911.png",
     "Como 1907": "https://crests.football-data.org/7397.png"
-   }
+   },
+   "partidos": []
   },
   "Bundesliga (Alemania)": {
    "codigo": "BL1",
@@ -7339,7 +7369,8 @@ window.DATOS_LIGAS = {
     "SC Paderborn": "https://crests.football-data.org/29.png",
     "Elversberg": "https://crests.football-data.org/719.png",
     "RB Leipzig": "https://crests.football-data.org/721.png"
-   }
+   },
+   "partidos": []
   },
   "Ligue 1 (Francia)": {
    "codigo": "FL1",
@@ -7474,7 +7505,8 @@ window.DATOS_LIGAS = {
     "Monaco": "https://crests.football-data.org/548.png",
     "Strasbourg": "https://crests.football-data.org/576.png",
     "Paris FC": "https://crests.football-data.org/1045.png"
-   }
+   },
+   "partidos": []
   }
  }
 };
