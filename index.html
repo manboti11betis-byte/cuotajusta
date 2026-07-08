@@ -72,7 +72,12 @@
     min-height:100vh;
     padding:0 14px 90px;
   }
-  .wrap{max-width:700px;margin:0 auto}
+  .wrap{max-width:720px;margin:0 auto}
+  @media (min-width:900px){
+    .wrap{max-width:860px}
+    body{padding-left:24px;padding-right:24px}
+    .boleto, .ia-card, .stub{padding-left:28px;padding-right:28px}
+  }
   @keyframes subir{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
   .cd, .boleto, .ia-card{animation:subir .4s ease-out both}
   .ia-card{animation-delay:.05s}
@@ -111,6 +116,12 @@
   .cd-cards{
     display:flex;gap:10px;overflow-x:auto;padding-bottom:8px;
     scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+  }
+  @media (min-width:900px){
+    .cd-cards{
+      display:grid;grid-template-columns:repeat(3, 1fr);overflow:visible;
+    }
+    .cd-card{width:auto !important}
   }
   .cd-card{
     flex:0 0 auto;width:255px;scroll-snap-align:start;cursor:pointer;
@@ -249,15 +260,18 @@
     flex:none;
   }
   .escudo img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 2px 4px rgba(0,0,0,.4))}
-  .escudo .bandera{font-size:38px;line-height:1;filter:drop-shadow(0 2px 3px rgba(0,0,0,.35))}
+  .escudo .bandera-img{
+    width:44px;height:30px;object-fit:cover;border-radius:5px;
+    box-shadow:0 2px 6px rgba(0,0,0,.45), inset 0 0 0 1px rgba(255,255,255,.15);
+  }
   .escudo .iniciales{
     width:44px;height:46px;display:flex;align-items:center;justify-content:center;
     clip-path:polygon(0 0, 100% 0, 100% 62%, 50% 100%, 0 62%);
     font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;color:#fff;
     text-shadow:0 1px 2px rgba(0,0,0,.4);
   }
-  .escudo.mini{width:24px;height:24px}
-  .escudo.mini .bandera{font-size:20px}
+  .escudo.mini{width:26px;height:26px}
+  .escudo.mini .bandera-img{width:24px;height:17px;border-radius:3px}
   .escudo.mini .iniciales{width:22px;height:24px;font-size:10px}
 
   .grupo{
@@ -1084,18 +1098,24 @@
   var FALT_REC  = { DEL: 1.7,  MED: 1.35, DEF: 0.75, POR: 0.12 };
   var POS_TXT   = { DEL: "delantero", MED: "centrocampista", DEF: "defensa", POR: "portero" };
 
-  var BANDERAS = {
-    "España":"🇪🇸","Spain":"🇪🇸","Portugal":"🇵🇹","Francia":"🇫🇷","France":"🇫🇷",
-    "Argentina":"🇦🇷","Brasil":"🇧🇷","Brazil":"🇧🇷","Inglaterra":"🏴󠁧󠁢󠁥󠁮󠁧󠁿","England":"🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-    "México":"🇲🇽","Mexico":"🇲🇽","Noruega":"🇳🇴","Norway":"🇳🇴","Países Bajos":"🇳🇱","Netherlands":"🇳🇱",
-    "Alemania":"🇩🇪","Germany":"🇩🇪","Bélgica":"🇧🇪","Belgium":"🇧🇪","Estados Unidos":"🇺🇸","USA":"🇺🇸","United States":"🇺🇸",
-    "Suiza":"🇨🇭","Switzerland":"🇨🇭","Croacia":"🇭🇷","Croatia":"🇭🇷","Marruecos":"🇲🇦","Morocco":"🇲🇦",
-    "Senegal":"🇸🇳","Egipto":"🇪🇬","Egypt":"🇪🇬","Colombia":"🇨🇴","Japón":"🇯🇵","Japan":"🇯🇵",
-    "Suecia":"🇸🇪","Sweden":"🇸🇪","Canadá":"🇨🇦","Canada":"🇨🇦","Paraguay":"🇵🇾","Austria":"🇦🇹",
-    "Argelia":"🇩🇿","Algeria":"🇩🇿","Ghana":"🇬🇭","Costa de Marfil":"🇨🇮","Ivory Coast":"🇨🇮","Côte d'Ivoire":"🇨🇮",
-    "Australia":"🇦🇺","Ecuador":"🇪🇨","Sudáfrica":"🇿🇦","South Africa":"🇿🇦",
-    "Bosnia y Herzegovina":"🇧🇦","Bosnia and Herzegovina":"🇧🇦","RD Congo":"🇨🇩","DR Congo":"🇨🇩","Cabo Verde":"🇨🇻","Cape Verde":"🇨🇻"
+  // Códigos de país (ISO) para cargar banderas como imagen. Los emojis de
+  // bandera no se ven en Windows, así que usamos imágenes reales de flagcdn.com.
+  var CODIGOS_PAIS = {
+    "España":"es","Spain":"es","Portugal":"pt","Francia":"fr","France":"fr",
+    "Argentina":"ar","Brasil":"br","Brazil":"br","Inglaterra":"gb-eng","England":"gb-eng",
+    "México":"mx","Mexico":"mx","Noruega":"no","Norway":"no","Países Bajos":"nl","Netherlands":"nl",
+    "Alemania":"de","Germany":"de","Bélgica":"be","Belgium":"be","Estados Unidos":"us","USA":"us","United States":"us",
+    "Suiza":"ch","Switzerland":"ch","Croacia":"hr","Croatia":"hr","Marruecos":"ma","Morocco":"ma",
+    "Senegal":"sn","Egipto":"eg","Egypt":"eg","Colombia":"co","Japón":"jp","Japan":"jp",
+    "Suecia":"se","Sweden":"se","Canadá":"ca","Canada":"ca","Paraguay":"py","Austria":"at",
+    "Argelia":"dz","Algeria":"dz","Ghana":"gh","Costa de Marfil":"ci","Ivory Coast":"ci","Côte d'Ivoire":"ci",
+    "Australia":"au","Ecuador":"ec","Sudáfrica":"za","South Africa":"za",
+    "Bosnia y Herzegovina":"ba","Bosnia and Herzegovina":"ba","RD Congo":"cd","DR Congo":"cd","Cabo Verde":"cv","Cape Verde":"cv"
   };
+  function urlBandera(nombre){
+    var c = CODIGOS_PAIS[nombre];
+    return c ? "https://flagcdn.com/" + c + ".svg" : null;
+  }
 
   // --- Matemáticas ---
   function fact(n){ var r = 1; for (var i = 2; i <= n; i++) r *= i; return r; }
@@ -1221,10 +1241,14 @@
   function pintarEscudo(cont, nombre, comp){
     cont.innerHTML = "";
     if (!nombre) return;
-    if (BANDERAS[nombre]){
-      var b = document.createElement("span");
-      b.className = "bandera"; b.textContent = BANDERAS[nombre];
-      cont.appendChild(b); return;
+    var bandera = urlBandera(nombre);
+    if (bandera){
+      var f = document.createElement("img");
+      f.className = "bandera-img";
+      f.alt = "Bandera de " + nombre; f.loading = "lazy";
+      f.src = bandera;
+      f.onerror = function(){ pintarIniciales(cont, nombre); };
+      cont.appendChild(f); return;
     }
     var urls = (comp && comp.escudos) || {};
     if (urls[nombre]){
