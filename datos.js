@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-07-10",
+ "actualizado": "2026-07-11",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -24,8 +24,8 @@ window.DATOS_LIGAS = {
      2.25
     ],
     "Belgium": [
-     2.6,
-     1.0
+     2.33,
+     1.17
     ],
     "Bosnia-H.": [
      1.25,
@@ -168,7 +168,7 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Spain": [
-     1.8,
+     1.83,
      0.3
     ],
     "Sweden": [
@@ -6595,11 +6595,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Spain",
-     "Belgium",
-     "2026-07-10T19:00:00Z"
-    ],
-    [
      "Norway",
      "England",
      "2026-07-11T21:00:00Z"
@@ -6608,6 +6603,11 @@ window.DATOS_LIGAS = {
      "Argentina",
      "Switzerland",
      "2026-07-12T01:00:00Z"
+    ],
+    [
+     "France",
+     "Spain",
+     "2026-07-14T19:00:00Z"
     ]
    ]
   },
