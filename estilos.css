@@ -97,9 +97,24 @@
     letter-spacing:.02em;text-transform:uppercase;line-height:1.15;
   }
   .cd-pick{font-size:14px;color:var(--texto);min-height:42px}
-  .cd-abajo{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-top:8px}
+  .cd-analisis{
+    font-size:12px;color:var(--muted);line-height:1.4;margin-top:7px;
+    padding:8px 10px;background:rgba(255,255,255,.03);border-radius:8px;
+    border-left:2px solid rgba(61,214,140,.4);
+  }
+  .cd-analisis b{color:var(--texto);font-weight:600}
+  .cd-abajo{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-top:10px;flex-wrap:wrap}
   .cd-prob{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:26px;color:var(--verde-brillo)}
-  .cd-justa{font-size:12px;color:var(--muted);text-align:right}
+  .cd-justa{font-size:12px;color:var(--muted);text-align:right;flex:1}
+  .cd-conf{
+    font-size:10.5px;color:var(--muted);letter-spacing:.02em;
+    width:100%;display:flex;align-items:center;gap:5px;
+    padding-top:7px;margin-top:3px;border-top:1px solid var(--linea);
+  }
+  .cd-conf-p{letter-spacing:1px;font-size:9px}
+  .cd-conf-3 .cd-conf-p{color:#3DD68C}
+  .cd-conf-2 .cd-conf-p{color:#F4C752}
+  .cd-conf-1 .cd-conf-p{color:#FF9D7A}
   .cd-nota{font-size:12.5px;color:var(--muted);margin-top:8px}
 
   /* Soñadoras: acento violeta */

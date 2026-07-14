@@ -578,12 +578,96 @@
 
   // Selección compartida: evalúa candidatos, filtra por banda de probabilidad,
   // ordena de más a menos probable y quita duplicados de texto.
+  // === ANÁLISIS Y CALIDAD DE CADA APUESTA ===
+  // Genera una frase de análisis honesta explicando POR QUÉ el modelo propone la apuesta.
+  // Se apoya en los goles esperados y en el reparto de probabilidades del partido.
+  function analizarApuesta(sel, m, ctx){
+    var L = ctx.L, V = ctx.V;
+    var golesL = fNum(m.lh, 1), golesV = fNum(m.la, 1);
+    var difFav = Math.abs(m.p1 - m.p2);
+    var favMarcado = difFav > 0.22; // hay un favorito claro
+    var fav = m.p1 >= m.p2 ? L : V;
+    var t = sel.t, v = sel.v;
+
+    // Frases por tipo de mercado
+    if (t === "GT"){
+      var totEsp = m.lh + m.la;
+      if (sel.dir === "O"){
+        return totEsp >= sel.linea
+          ? "El modelo espera <b>" + fNum(totEsp, 1) + " goles</b> de media, por encima de la línea de " + fNum(sel.linea, 1) + ": mercado con valor."
+          : "El modelo espera <b>" + fNum(totEsp, 1) + " goles</b> de media; aunque queda algo por debajo de " + fNum(sel.linea, 1) + ", la cuota compensa el riesgo.";
+      }
+      return totEsp <= sel.linea
+        ? "El modelo espera solo <b>" + fNum(totEsp, 1) + " goles</b> de media, por debajo de la línea de " + fNum(sel.linea, 1) + ": mercado con valor."
+        : "El modelo espera <b>" + fNum(totEsp, 1) + " goles</b> de media; algo por encima de " + fNum(sel.linea, 1) + ", pero la cuota da valor.";
+    }
+    if (t === "B") return v === "Y"
+      ? "Ambos equipos generan ocasiones (" + golesL + " y " + golesV + " goles esperados), lo que apunta a que marquen los dos."
+      : "Al menos un equipo tiene ataque flojo (" + golesL + " y " + golesV + " goles esperados), lo que favorece que alguno se quede a cero.";
+    if (t === "CS") return "El rival de " + nombreLado(ctx, sel.side) + " genera pocos goles esperados (" +
+      (sel.side === "L" ? golesV : golesL) + "), lo que hace viable la portería a cero.";
+    if (t === "R" || t === "P1"){
+      if (favMarcado) return "El modelo ve a <b>" + fav + "</b> como favorito claro (" + fPct(Math.max(m.p1, m.p2), 0) + " de ganar).";
+      return "Partido igualado (" + fPct(m.p1, 0) + " – " + fPct(m.px, 0) + " – " + fPct(m.p2, 0) + "), sin un favorito claro: apuesta de más riesgo.";
+    }
+    if (t === "MG" || t === "GE") return nombreLado(ctx, sel.side) + " tiene <b>" +
+      (sel.side === "L" ? golesL : golesV) + " goles esperados</b>, base para este mercado.";
+    if (t === "HA" || t === "HE" || t === "DF") return favMarcado
+      ? "<b>" + fav + "</b> parte como favorito, lo que da sentido al hándicap."
+      : "Partido ajustado: el hándicap añade riesgo porque no hay un dominador claro.";
+    if (t === "EX") return "Marcador coherente con los goles esperados (" + golesL + " – " + golesV + "), aunque los resultados exactos siempre son difíciles.";
+    if (t === "MM") return "Reparto de goles por mitades según el modelo; mercado de valor pero volátil.";
+    if (t === "JU"){
+      if (sel.m === "G1" || sel.m === "G1P" || sel.m === "G2") return "Delantero referencia de " + nombreLado(ctx, sel.side) + ", el equipo con más goles esperados de su lado.";
+      return "Estimación por perfil de posición y rol del jugador.";
+    }
+    if (t === "C"){
+      // Combinadas
+      return "Combinada calculada de forma exacta sobre todos los marcadores posibles (no es una multiplicación aproximada).";
+    }
+    if (t === "CO" || t === "COT") return "Basado en el ritmo ofensivo esperado y el perfil de córners de la competición.";
+    if (t === "TT" || t === "TE") return "Basado en el promedio de tarjetas de la competición y la tensión esperada del partido.";
+    if (t === "FJ" || t === "FJT") return "Basado en el promedio de fueras de juego de la competición.";
+    return "Cálculo basado en el modelo de goles esperados del partido.";
+  }
+
+  // Puntuación de "confianza del cálculo" (no de que vaya a acertar, sino de cuánto
+  // nos fiamos del propio modelo para ese mercado). Mercados de resultado y goles
+  // son más robustos; jugador, tarjetas y exactos son más inciertos.
+  function confianzaCalculo(sel){
+    var alta = { R: 1, GT: 1, B: 1, CS: 1, P1: 1, DF: 1, HE: 1, HA: 1, MG: 1, GE: 1 };
+    var media = { C: 1, MM: 1, CO: 1, COT: 1 };
+    var baja = { EX: 1, JU: 1, TT: 1, TE: 1, FE: 1, FJ: 1, FJT: 1, TI: 1, RJ: 1, PAR: 1 };
+    if (alta[sel.t]) return 3;
+    if (media[sel.t]) return 2;
+    if (baja[sel.t]) return 1;
+    return 2;
+  }
+  function textoConfianza(n){
+    return n >= 3 ? "Cálculo sólido" : (n === 2 ? "Cálculo fiable" : "Estimación aproximada");
+  }
+
+  // Puntúa la CALIDAD global de una apuesta candidata, combinando:
+  //  - Cercanía al centro de la banda objetivo (ni demasiado fácil ni demasiado difícil)
+  //  - Confianza del cálculo del mercado
+  // Devuelve un número; mayor = mejor apuesta para mostrar.
+  function puntuarCalidad(c, pMin, pMax){
+    var centro = (pMin + pMax) / 2;
+    var anchura = (pMax - pMin) / 2 || 0.01;
+    // 1.0 en el centro de la banda, baja hacia los bordes
+    var cercania = 1 - Math.min(Math.abs(c.p - centro) / anchura, 1);
+    var conf = confianzaCalculo(c.sel) / 3; // 0.33..1
+    return cercania * 0.65 + conf * 0.35;
+  }
+
   function elegirEnBanda(candidatos, ctx, m, pMin, pMax, max, estricto){
     var evaluados = candidatos.map(function(sel){
       return { sel: sel, p: calcular(sel, m, ctx) };
     }).filter(function(c){ return c.p !== null && isFinite(c.p); });
     var enBanda = evaluados.filter(function(c){ return c.p >= pMin && c.p <= pMax; });
-    enBanda.sort(function(a, b){ return b.p - a.p; });
+    // Ordenar por CALIDAD (no solo por probabilidad): las mejores apuestas primero
+    enBanda.forEach(function(c){ c.q = puntuarCalidad(c, pMin, pMax); });
+    enBanda.sort(function(a, b){ return b.q - a.q; });
     // Si la banda queda vacía y NO es estricto, se rescata lo más cercano por debajo
     // del techo. En modo estricto (seguras) no se rescata nada por encima del techo:
     // preferimos mostrar menos tarjetas antes que una apuesta sin valor (cuota < 2,00).
@@ -600,6 +684,9 @@
       var clon = resultado.some(function(r){ return Math.abs(r.p - c.p) < 0.005; });
       if (clon) return;
       vistos[txt] = 1;
+      // Enriquecer con análisis y confianza para la tarjeta
+      c.analisis = analizarApuesta(c.sel, m, ctx);
+      c.conf = confianzaCalculo(c.sel);
       if (resultado.length < max) resultado.push(c);
     });
     return resultado;
@@ -662,8 +749,7 @@
   }
 
   // Combinadas del mismo partido, calculadas de forma exacta sobre la matriz de
-  // marcadores. Ahora más elaboradas: mezclan resultado + goles + tarjetas/córners
-  // + portería, en un abanico de conservadora a valiente.
+  // marcadores. Más elaboradas y ordenadas por calidad, con análisis y confianza.
   function combosDisponibles(ctx, m){
     var fav = m.p1 >= m.p2 ? "L" : "V";
     var pre = fav === "L" ? "1" : "2";
@@ -674,19 +760,26 @@
       { t: "C", v: pre + "O25" },      // gana favorito + más de 2,5
       { t: "C", v: pre + "M2" },       // gana favorito por 2+
       { t: "C", v: pre + "BO35" },     // gana favorito + más de 3,5
-      { t: "C", v: "BTTSO25" },        // ambos marcan + más de 2,5 (no depende de quién gane)
+      { t: "C", v: "BTTSO25" },        // ambos marcan + más de 2,5
       { t: "C", v: pre + "CO" }        // gana favorito + más de 8,5 córners
     ];
+    // Banda de combinada: ni un simple "gana el favorito" disfrazado (>62%),
+    // ni una lotería (<8%). El punto dulce paga pero es posible.
     var evaluados = candidatos.map(function(sel){
       return { sel: sel, p: calcular(sel, m, ctx) };
     }).filter(function(c){ return c.p !== null && isFinite(c.p) && c.p >= 0.08 && c.p <= 0.62; });
-    evaluados.sort(function(a, b){ return b.p - a.p; });
+    // Ordenar por calidad: centro de banda ~0.30 (cuota ~3,3), premiando el equilibrio
+    evaluados.forEach(function(c){ c.q = puntuarCalidad(c, 0.16, 0.44); });
+    evaluados.sort(function(a, b){ return b.q - a.q; });
     var resultado = [];
     evaluados.forEach(function(c){
       var repetido = resultado.some(function(r){
         return describir(r.sel, ctx) === describir(c.sel, ctx) || Math.abs(r.p - c.p) < 0.015;
       });
-      if (!repetido) resultado.push(c);
+      if (repetido) return;
+      c.analisis = analizarApuesta(c.sel, m, ctx);
+      c.conf = confianzaCalculo(c.sel);
+      resultado.push(c);
     });
     return resultado;
   }

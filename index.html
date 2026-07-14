@@ -146,6 +146,14 @@
     var prefijo = tipo === "sonadora" ? "El sueño: " : (tipo === "combo" ? "La combinada: " : "La apuesta: ");
     pick.textContent = prefijo + describir(elegida.sel, ctx);
 
+    // Análisis: el "por qué" de la apuesta
+    if (elegida.analisis){
+      var analisis = document.createElement("p");
+      analisis.className = "cd-analisis";
+      analisis.innerHTML = "📊 " + elegida.analisis;
+      pick.appendChild(analisis);
+    }
+
     var abajo = document.createElement("div");
     abajo.className = "cd-abajo";
     var prob = document.createElement("span");
@@ -157,6 +165,16 @@
       ? ("Solo " + fPct(elegida.p, 0) + " de probabilidad")
       : ("Cuota justa " + fNum(1 / elegida.p, 2) + " — con más, hay valor");
     abajo.appendChild(prob); abajo.appendChild(justa);
+
+    // Sello de confianza del cálculo
+    if (elegida.conf){
+      var conf = document.createElement("span");
+      conf.className = "cd-conf cd-conf-" + elegida.conf;
+      var puntos = elegida.conf >= 3 ? "●●●" : (elegida.conf === 2 ? "●●○" : "●○○");
+      conf.innerHTML = '<span class="cd-conf-p">' + puntos + '</span> ' +
+        (elegida.conf >= 3 ? "Cálculo sólido" : (elegida.conf === 2 ? "Cálculo fiable" : "Estimación aprox."));
+      abajo.appendChild(conf);
+    }
 
     card.appendChild(fecha); card.appendChild(equipos);
     card.appendChild(pick); card.appendChild(abajo);
