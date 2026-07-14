@@ -201,8 +201,10 @@
 
   function partidosSemana(comp){
     var lista = comp.partidos || [];
-    var desde = Date.now() - 3 * 3600 * 1000;
-    var hasta = Date.now() + 7 * 24 * 3600 * 1000;
+    // Ventana amplia: desde 6h antes de ahora (para que un partido recién empezado
+    // o a punto de empezar NO desaparezca de las tarjetas) hasta 14 días por delante.
+    var desde = Date.now() - 6 * 3600 * 1000;
+    var hasta = Date.now() + 14 * 24 * 3600 * 1000;
     return lista.filter(function(p){
       var t = new Date(p[2]).getTime();
       return isFinite(t) && t >= desde && t <= hasta &&
@@ -263,6 +265,15 @@
         if (s.v === "2O15") return "Gana " + V + " y más de 1,5 goles";
         if (s.v === "1O25") return "Gana " + L + " y más de 2,5 goles";
         if (s.v === "2O25") return "Gana " + V + " y más de 2,5 goles";
+        if (s.v === "1CS") return "Gana " + L + " sin encajar (a cero)";
+        if (s.v === "2CS") return "Gana " + V + " sin encajar (a cero)";
+        if (s.v === "1M2") return "Gana " + L + " por 2 goles o más";
+        if (s.v === "2M2") return "Gana " + V + " por 2 goles o más";
+        if (s.v === "1BO35") return "Gana " + L + ", ambos marcan y más de 3,5 goles";
+        if (s.v === "2BO35") return "Gana " + V + ", ambos marcan y más de 3,5 goles";
+        if (s.v === "BTTSO25") return "Ambos marcan y más de 2,5 goles";
+        if (s.v === "1CO") return "Gana " + L + " y más de 8,5 córners";
+        if (s.v === "2CO") return "Gana " + V + " y más de 8,5 córners";
         break;
       case "B": return s.v === "Y" ? "Ambos equipos marcan" : "No marcan los dos equipos";
       case "PAR": return s.v === "P" ? "Goles totales: par" : "Goles totales: impar";
@@ -286,6 +297,7 @@
           nombre = (pl && pl[s.pi]) ? pl[s.pi][0] : "Jugador";
         }
         if (s.m === "G1") return nombre + " marca gol";
+        if (s.m === "G1P") return nombre + " marca en la 1ª parte";
         if (s.m === "G2") return nombre + " marca 2 o más";
         if (s.m === "TT1") return nombre + " · más de 0,5 tiros a puerta";
         if (s.m === "TT2") return nombre + " · más de 1,5 tiros a puerta";
@@ -417,6 +429,50 @@
           }
           return suma;
         }
+        if (s.v === "1CS" || s.v === "2CS"){
+          // Gana sin encajar: el rival se queda en 0
+          suma = 0;
+          if (s.v === "1CS"){ for (i = 1; i <= 10; i++) suma += m.mat[i][0]; }
+          else { for (j = 1; j <= 10; j++) suma += m.mat[0][j]; }
+          return suma;
+        }
+        if (s.v === "1M2" || s.v === "2M2"){
+          // Gana por 2 goles o más de diferencia
+          suma = 0;
+          for (i = 0; i <= 10; i++) for (j = 0; j <= 10; j++){
+            var dif = s.v === "1M2" ? (i - j) : (j - i);
+            if (dif >= 2) suma += m.mat[i][j];
+          }
+          return suma;
+        }
+        if (s.v === "1BO35" || s.v === "2BO35"){
+          // Gana + ambos marcan + más de 3,5 goles (ej. 3-1, 4-1, 3-2...)
+          suma = 0;
+          for (i = 1; i <= 10; i++) for (j = 1; j <= 10; j++){
+            var ganaB = s.v === "1BO35" ? (i > j) : (j > i);
+            if (ganaB && (i + j) >= 4) suma += m.mat[i][j];
+          }
+          return suma;
+        }
+        if (s.v === "BTTSO25"){
+          // Ambos marcan Y más de 2,5 goles (no depende de quién gane)
+          suma = 0;
+          for (i = 1; i <= 10; i++) for (j = 1; j <= 10; j++){
+            if ((i + j) >= 3) suma += m.mat[i][j];
+          }
+          return suma;
+        }
+        if (s.v === "1CO" || s.v === "2CO"){
+          // Gana el favorito Y más de 8,5 córners en el partido.
+          // Goles y córners se tratan como aproximadamente independientes.
+          suma = 0;
+          for (i = 0; i <= 10; i++) for (j = 0; j <= 10; j++){
+            var ganaCO = s.v === "1CO" ? (i > j) : (j > i);
+            if (ganaCO) suma += m.mat[i][j];
+          }
+          var lamCor = perfil.cor * 2 * fCor;
+          return suma * pMasDe(lamCor, 8.5);
+        }
         break;
       case "B": return s.v === "Y" ? m.bttsY : 1 - m.bttsY;
       case "PAR":
@@ -478,6 +534,12 @@
           if (s.m === "G1") return 1 - Math.exp(-lp);
           return 1 - Math.exp(-lp) * (1 + lp);
         }
+        if (s.m === "G1P"){
+          // Marca en la 1ª parte: ~45% de los goles caen antes del descanso
+          var shareP = Math.min((SHARE_GOL[pos] || 0.05) * (estrella ? 2.3 : 1), 0.5);
+          var lpP = (s.side === "L" ? m.lh : m.la) * shareP * 0.45;
+          return 1 - Math.exp(-lpP);
+        }
         if (s.m === "TT1" || s.m === "TT2"){
           var lt = (TIROS_PUERTA[pos] || 0.4) * (estrella ? 1.5 : 1);
           return pMasDe(lt, s.m === "TT1" ? 0.5 : 1.5);
@@ -514,85 +576,119 @@
     return "";
   }
 
-  function mejoresApuestas(ctx, m, max){
-    var fav = m.p1 >= m.p2 ? "L" : "V";
-    var candidatos = [
-      { t: "R", v: fav === "L" ? "1" : "2" },
-      { t: "R", v: fav === "L" ? "1X" : "X2" },
-      { t: "R", v: fav === "L" ? "DNB1" : "DNB2" },
-      { t: "GT", dir: "O", linea: 1.5, per: "F" },
-      { t: "GT", dir: "U", linea: 3.5, per: "F" },
-      { t: "B", v: m.bttsY >= 0.5 ? "Y" : "N" },
-      { t: "CS", side: fav === "L" ? "V" : "L" }
-    ];
+  // Selección compartida: evalúa candidatos, filtra por banda de probabilidad,
+  // ordena de más a menos probable y quita duplicados de texto.
+  function elegirEnBanda(candidatos, ctx, m, pMin, pMax, max, estricto){
     var evaluados = candidatos.map(function(sel){
       return { sel: sel, p: calcular(sel, m, ctx) };
-    }).filter(function(c){ return c.p !== null && isFinite(c.p) && c.p >= 0.55 && c.p <= 0.92; });
-    evaluados.sort(function(a, b){ return b.p - a.p; });
-    // Descarta duplicados por texto (ej. "1" y "1X" del mismo favorito pueden solaparse poco, se dejan pasar; solo se filtran textos idénticos)
+    }).filter(function(c){ return c.p !== null && isFinite(c.p); });
+    var enBanda = evaluados.filter(function(c){ return c.p >= pMin && c.p <= pMax; });
+    enBanda.sort(function(a, b){ return b.p - a.p; });
+    // Si la banda queda vacía y NO es estricto, se rescata lo más cercano por debajo
+    // del techo. En modo estricto (seguras) no se rescata nada por encima del techo:
+    // preferimos mostrar menos tarjetas antes que una apuesta sin valor (cuota < 2,00).
+    if (!enBanda.length && !estricto){
+      var bajoTecho = evaluados.filter(function(c){ return c.p <= pMax; });
+      bajoTecho.sort(function(a, b){ return b.p - a.p; });
+      enBanda = bajoTecho.slice(0, 1);
+    }
     var vistos = {}, resultado = [];
-    evaluados.forEach(function(c){
+    enBanda.forEach(function(c){
       var txt = describir(c.sel, ctx);
       if (vistos[txt]) return;
+      // Mismo suceso con otro nombre (ej. "gana por 2+" y "hándicap -1,5"): probabilidad clavada
+      var clon = resultado.some(function(r){ return Math.abs(r.p - c.p) < 0.005; });
+      if (clon) return;
       vistos[txt] = 1;
       if (resultado.length < max) resultado.push(c);
     });
     return resultado;
   }
 
-  // Devuelve hasta `max` apuestas "soñadoras": cuota atractiva pero con posibilidad real (20%-42%)
-  function apuestasSonadoras(ctx, m, max){
+  // "Cuota del día": apuestas con valor real. Cuota justa MÍNIMA 2,00 (probabilidad
+  // máxima 50%) y máxima ~2,9 (probabilidad mínima 34%): confianza, pero pagando de verdad.
+  // Nunca se rescata nada por encima del 50% (eso sería una apuesta sin valor).
+  function mejoresApuestas(ctx, m, max){
     var fav = m.p1 >= m.p2 ? "L" : "V";
+    var pre = fav === "L" ? "1" : "2";
     var candidatos = [
       { t: "GT", dir: "O", linea: 2.5, per: "F" },
-      { t: "GT", dir: "O", linea: 3.5, per: "F" },
-      { t: "MG", side: fav, n: 2 },
-      { t: "MG", side: fav, n: 3 },
-      { t: "EX", gl: fav === "L" ? 2 : 1, gv: fav === "L" ? 1 : 2 },
-      { t: "EX", gl: fav === "L" ? 2 : 0, gv: fav === "L" ? 0 : 2 },
-      { t: "C", v: fav === "L" ? "1O25" : "2O25" },
-      { t: "C", v: "1BTTS" },
-      { t: "HA", side: fav, h: -1.5 },
-      { t: "HE", side: fav, h: -1 },
-      { t: "P1", v: fav === "L" ? "1" : "2" }
+      { t: "GT", dir: "U", linea: 2.5, per: "F" },
+      { t: "B", v: "Y" },
+      { t: "C", v: pre + "O15" },     // gana el favorito y más de 1,5
+      { t: "C", v: pre + "CS" },      // gana el favorito y portería a cero
+      { t: "CS", side: fav },         // el favorito no encaja
+      { t: "MG", side: fav, n: 2 },   // el favorito marca 2+
+      { t: "P1", v: fav === "L" ? "1" : "2" }, // gana la 1ª parte
+      { t: "DF", side: fav },         // doble oportunidad del favorito con hándicap
+      { t: "HE", side: fav, h: -1 },  // hándicap europeo -1
+      { t: "GE", side: fav, dir: "O", linea: 1.5, per: "F" } // el favorito marca más de 1,5
     ];
-    // Añade "un crack marca gol" si hay plantilla (más alcanzable que 2+)
+    // Banda estricta: probabilidad 34%-50% = cuota justa 2,00-2,94. Sin rescate por encima.
+    return elegirEnBanda(candidatos, ctx, m, 0.34, 0.50, max, true);
+  }
+
+  // "Soñadoras": el golpe que paga fuerte pero es posible. Cuota justa ~3,3 a ~7
+  // (probabilidad 14%-30%). Más ambiciosas: resultados exactos, cracks marcando,
+  // remontadas, goleadas del favorito.
+  function apuestasSonadoras(ctx, m, max){
+    var fav = m.p1 >= m.p2 ? "L" : "V";
+    var noFav = fav === "L" ? "V" : "L";
+    var candidatos = [
+      { t: "GT", dir: "O", linea: 3.5, per: "F" },              // partido de goles
+      { t: "MG", side: fav, n: 3 },                             // el favorito mete 3+
+      { t: "C", v: (fav === "L" ? "1" : "2") + "BO35" },        // gana el favorito y más de 3,5
+      { t: "C", v: (fav === "L" ? "1" : "2") + "M2" },          // el favorito gana por 2+
+      { t: "EX", gl: fav === "L" ? 2 : 1, gv: fav === "L" ? 1 : 2 }, // resultado exacto 2-1
+      { t: "EX", gl: fav === "L" ? 3 : 0, gv: fav === "L" ? 0 : 3 }, // resultado exacto 3-0
+      { t: "EX", gl: fav === "L" ? 3 : 1, gv: fav === "L" ? 1 : 3 }, // resultado exacto 3-1
+      { t: "EX", gl: 2, gv: 2 },                                // el clásico 2-2
+      { t: "HA", side: fav, h: -2 },                            // hándicap -2 del favorito
+      { t: "R", v: noFav === "L" ? "1" : "2" },                 // gana el no favorito (sorpresa)
+      { t: "MM", v: "P1" }                                      // marca más goles en la 1ª parte
+    ];
+    // Cracks: marca gol, marca 2+, y marca en la 1ª parte (más jugosa)
     var pl = plantillaDe(ctx.comp, fav === "L" ? ctx.L : ctx.V);
     if (pl){
       for (var k = 0; k < pl.length; k++){
         if (pl[k][1] === "DEL" && pl[k][2] === 1){
-          candidatos.push({ t: "JU", side: fav, pi: k, m: "G1", jn: pl[k][0] });
+          candidatos.push({ t: "JU", side: fav, pi: k, m: "G2", jn: pl[k][0] });
+          candidatos.push({ t: "JU", side: fav, pi: k, m: "G1P", jn: pl[k][0] });
           break;
         }
       }
     }
-    var evaluados = candidatos.map(function(sel){
-      return { sel: sel, p: calcular(sel, m, ctx) };
-    }).filter(function(c){ return c.p !== null && isFinite(c.p) && c.p >= 0.20 && c.p <= 0.42; });
-    evaluados.sort(function(a, b){ return b.p - a.p; });
-    var vistos = {}, resultado = [];
-    evaluados.forEach(function(c){
-      var txt = describir(c.sel, ctx);
-      if (vistos[txt]) return;
-      vistos[txt] = 1;
-      if (resultado.length < max) resultado.push(c);
-    });
-    return resultado;
+    return elegirEnBanda(candidatos, ctx, m, 0.14, 0.30, max, false);
   }
 
-  // Combinadas del mismo partido: calculadas de forma exacta (no producto de independientes)
+  // Combinadas del mismo partido, calculadas de forma exacta sobre la matriz de
+  // marcadores. Ahora más elaboradas: mezclan resultado + goles + tarjetas/córners
+  // + portería, en un abanico de conservadora a valiente.
   function combosDisponibles(ctx, m){
     var fav = m.p1 >= m.p2 ? "L" : "V";
+    var pre = fav === "L" ? "1" : "2";
     var candidatos = [
-      { t: "C", v: fav === "L" ? "1O15" : "2O15" },
-      { t: "C", v: fav === "L" ? "1O25" : "2O25" },
-      { t: "C", v: fav === "L" ? "1BTTS" : "2BTTS" }
+      { t: "C", v: pre + "O15" },      // gana favorito + más de 1,5
+      { t: "C", v: pre + "CS" },       // gana favorito + portería a cero
+      { t: "C", v: pre + "BTTS" },     // gana favorito + ambos marcan
+      { t: "C", v: pre + "O25" },      // gana favorito + más de 2,5
+      { t: "C", v: pre + "M2" },       // gana favorito por 2+
+      { t: "C", v: pre + "BO35" },     // gana favorito + más de 3,5
+      { t: "C", v: "BTTSO25" },        // ambos marcan + más de 2,5 (no depende de quién gane)
+      { t: "C", v: pre + "CO" }        // gana favorito + más de 8,5 córners
     ];
     var evaluados = candidatos.map(function(sel){
       return { sel: sel, p: calcular(sel, m, ctx) };
-    }).filter(function(c){ return c.p !== null && isFinite(c.p); });
+    }).filter(function(c){ return c.p !== null && isFinite(c.p) && c.p >= 0.08 && c.p <= 0.62; });
     evaluados.sort(function(a, b){ return b.p - a.p; });
-    return evaluados;
+    var resultado = [];
+    evaluados.forEach(function(c){
+      var repetido = resultado.some(function(r){
+        return describir(r.sel, ctx) === describir(c.sel, ctx) || Math.abs(r.p - c.p) < 0.015;
+      });
+      if (!repetido) resultado.push(c);
+    });
+    return resultado;
   }
 
 

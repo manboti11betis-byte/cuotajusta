@@ -233,6 +233,12 @@
             <select class="mini" id="fe-per"><option value="F">Partido completo</option><option value="P">Solo 1ª parte</option></select>
             <button type="button" class="btn-add" data-add="FE">Añadir</button>
           </div>
+        </div>
+      </details>
+
+      <details class="grupo">
+        <summary>🚩 Fueras de juego</summary>
+        <div class="grupo-body">
           <div class="fila-mercado">
             <span class="fila-titulo">Fueras de juego de un equipo</span>
             <select class="mini sel-equipo" id="fj-side"></select>
@@ -296,10 +302,12 @@
       <details class="grupo">
         <summary>Jugadores</summary>
         <div class="grupo-body">
+          <div class="ju-grid" id="ju-grid"></div>
           <div class="fila-mercado" id="fila-jugadores">
-            <select class="jugador" id="ju-jugador"></select>
+            <span class="fila-titulo" id="ju-elegido">Elige un jugador de arriba</span>
             <select class="mini" id="ju-mercado">
               <option value="G1">Marca gol</option>
+              <option value="G1P">Marca en la 1ª parte</option>
               <option value="G2">Marca 2 o más</option>
               <option value="TT1">Más de 0,5 tiros a puerta</option>
               <option value="TT2">Más de 1,5 tiros a puerta</option>
@@ -581,36 +589,114 @@
     });
   }
 
+  var jugadorSel = null; // "L:3" → lado y posición en la plantilla
+
+  function tarjetaJugador(side, i, j, ctx){
+    var card = document.createElement("button");
+    card.type = "button";
+    card.className = "ju-card ju-card-" + j[1];
+    card.dataset.ju = side + ":" + i;
+
+    var av = document.createElement("span");
+    av.className = "ju-avatar ju-avatar-" + j[1];
+    var equipo = nombreLado(ctx, side);
+    av.style.background = "linear-gradient(150deg, " + colorEquipo(equipo) + " 0%, #0E1118 135%)";
+
+    // Icono grande de la posición como "rostro" del avatar
+    var icono = document.createElement("span");
+    icono.className = "ju-avatar-icono";
+    icono.textContent = { POR: "🧤", DEF: "🛡️", MED: "⚙️", DEL: "🎯" }[j[1]] || "⚽";
+    av.appendChild(icono);
+
+    // Iniciales sobre el icono
+    var ini = document.createElement("span");
+    ini.className = "ju-avatar-ini";
+    ini.textContent = iniciales(j[0]);
+    av.appendChild(ini);
+
+    // Bandera pequeña del país/equipo, si es selección
+    var urlB = urlBandera(equipo);
+    if (urlB){
+      var band = document.createElement("img");
+      band.className = "ju-avatar-band";
+      band.src = urlB; band.alt = ""; band.loading = "lazy";
+      band.onerror = function(){ band.remove(); };
+      av.appendChild(band);
+    }
+
+    if (j[2] === 1){
+      var estrella = document.createElement("span");
+      estrella.className = "ju-estrella";
+      estrella.textContent = "⭐";
+      av.appendChild(estrella);
+    }
+
+    var nom = document.createElement("span");
+    nom.className = "ju-nombre";
+    nom.textContent = j[0];
+
+    var pos = document.createElement("span");
+    pos.className = "ju-pos ju-pos-" + j[1];
+    pos.textContent = { POR: "Portero", DEF: "Defensa", MED: "Medio", DEL: "Delantero" }[j[1]] || j[1];
+
+    card.appendChild(av); card.appendChild(nom); card.appendChild(pos);
+
+    card.addEventListener("click", function(){
+      jugadorSel = side + ":" + i;
+      document.querySelectorAll(".ju-card.sel").forEach(function(c){ c.classList.remove("sel"); });
+      card.classList.add("sel");
+      $("ju-elegido").textContent = j[0];
+      var mer = $("ju-mercado");
+      if (j[1] === "POR" && mer.value.indexOf("PA") !== 0) mer.value = "PA2";
+      if (j[1] !== "POR" && mer.value.indexOf("PA") === 0) mer.value = "G1";
+    });
+    return card;
+  }
+
   function refrescarJugadores(){
-    var s = $("ju-jugador");
-    s.innerHTML = "";
+    var grid = $("ju-grid");
+    grid.innerHTML = "";
+    jugadorSel = null;
+    $("ju-elegido").textContent = "Elige un jugador de arriba";
     var alguno = false;
     var ctx = ctxActual();
     ["L", "V"].forEach(function(side){
       var nombre = nombreLado(ctx, side);
       var pl = plantillaDe(ctx.comp, nombre);
-      if (!pl) return;
-      var grupo = document.createElement("optgroup");
-      grupo.label = nombre;
-      pl.forEach(function(j, i){
-        var o = new Option(j[0] + " (" + (POS_TXT[j[1]] || j[1]) + ")", side + ":" + i);
-        grupo.appendChild(o);
-        alguno = true;
-      });
-      s.appendChild(grupo);
+      if (!pl || !pl.length) return;
+      alguno = true;
+
+      var cab = document.createElement("div");
+      cab.className = "ju-equipo-titulo";
+      var esc = document.createElement("span");
+      esc.className = "escudo mini";
+      pintarEscudo(esc, nombre, ctx.comp);
+      var txt = document.createElement("span");
+      txt.textContent = nombre;
+      cab.appendChild(esc); cab.appendChild(txt);
+      grid.appendChild(cab);
+
+      var fila = document.createElement("div");
+      fila.className = "ju-cards";
+      // Cracks primero, luego por posición de ataque a portería
+      var orden = { DEL: 0, MED: 1, DEF: 2, POR: 3 };
+      pl.map(function(j, i){ return { j: j, i: i }; })
+        .sort(function(a, b){
+          if (a.j[2] !== b.j[2]) return b.j[2] - a.j[2];
+          return (orden[a.j[1]] || 9) - (orden[b.j[1]] || 9);
+        })
+        .forEach(function(par){ fila.appendChild(tarjetaJugador(side, par.i, par.j, ctx)); });
+      grid.appendChild(fila);
     });
     var aviso = $("aviso-plantilla");
+    var filaControles = $("fila-jugadores");
     if (!alguno){
-      s.style.display = "none";
-      $("ju-mercado").style.display = "none";
-      document.querySelector('[data-add="JU"]').style.display = "none";
+      filaControles.style.display = "none";
       aviso.textContent = eqL
         ? "Estos equipos aún no tienen plantilla cargada. El robot de actualización la añadirá automáticamente en la próxima pasada diaria."
         : "Elige primero un partido de la semana.";
     } else {
-      s.style.display = "";
-      $("ju-mercado").style.display = "";
-      document.querySelector('[data-add="JU"]').style.display = "";
+      filaControles.style.display = "";
       var faltan = [];
       ["L", "V"].forEach(function(side){
         var nombre = nombreLado(ctx, side);
@@ -765,9 +851,12 @@
         case "COT": return anadir({ t: "COT", dir: $("cot-dir").value, linea: numLinea($("cot-linea").value), per: $("cot-per").value });
         case "TI": return anadir({ t: "TI", side: $("ti-side").value, dir: $("ti-dir").value, linea: numLinea($("ti-linea").value), per: $("ti-per").value });
         case "JU":
-          var v = $("ju-jugador").value; if (!v) return;
-          var partes = v.split(":");
-          return anadir({ t: "JU", side: partes[0], pi: parseInt(partes[1], 10), m: $("ju-mercado").value });
+          if (!jugadorSel){ $("aviso-plantilla").textContent = "Toca primero la tarjeta de un jugador."; return; }
+          var partes = jugadorSel.split(":");
+          var ladoJ = partes[0], idxJ = parseInt(partes[1], 10);
+          var plJ = plantillaDe(ctxActual().comp, nombreLado(ctxActual(), ladoJ));
+          var datoJ = plJ && plJ[idxJ] ? plJ[idxJ] : null;
+          return anadir({ t: "JU", side: ladoJ, pi: idxJ, m: $("ju-mercado").value, jn: datoJ ? datoJ[0] : "" });
       }
     });
   });
@@ -1017,6 +1106,39 @@
   // la URL trae el partido y la selección ya elegidos: se cargan automáticamente.
   (function precargarDesdeInicio(){
     var qs = new URLSearchParams(window.location.search);
+
+    // Combinada de varios partidos: ?m=[{c,l,v,f,s},...]
+    var multiRaw = qs.get("m");
+    if (multiRaw){
+      try {
+        var piernas = JSON.parse(multiRaw);
+        if (Array.isArray(piernas) && piernas.length){
+          var cargadas = [];
+          piernas.forEach(function(pi){
+            if (!pi || !COMPS[pi.c] || !pi.s) return;
+            var sel = pi.s;
+            sel._ctx = { comp: COMPS[pi.c], L: pi.l, V: pi.v };
+            cargadas.push(sel);
+          });
+          if (cargadas.length){
+            // Coloca el Paso 1 en el primer partido de la combinada
+            selComp.value = piernas[0].c;
+            cargarPartidos();
+            var lista0 = partidosSemana(COMPS[piernas[0].c]);
+            for (var k = 0; k < lista0.length; k++){
+              if (lista0[k][0] === piernas[0].l && lista0[k][1] === piernas[0].v){ selPartido.value = k; break; }
+            }
+            seleccionarPartido();
+            selecciones = cargadas;
+            renderSlip();
+            window.scrollTo({ top: 0, behavior: "instant" });
+            $("boleto").scrollIntoView({ behavior: "smooth" });
+          }
+        }
+      } catch (e) { /* URL manipulada a mano: se ignora */ }
+      return;
+    }
+
     var compN = qs.get("c"), L = qs.get("l"), V = qs.get("v"), fecha = qs.get("f"), selRaw = qs.get("s");
     if (!compN || !L || !V || !COMPS[compN]) return;
     selComp.value = compN;
@@ -1295,7 +1417,7 @@
       '  {"t":"COT","linea":9.5,"dir":"O","per":"F"} córners totales',
       '  {"t":"TI","side":"L","linea":3.5,"dir":"O","per":"F"} tiros a puerta de un equipo',
       '  {"t":"JU","jn":"nombre del jugador","equipo":"nombre del equipo","pos":"DEL|MED|DEF|POR","m":"G1"} mercados de jugador',
-      '    (m: G1=marca gol, G2=marca 2 o más, TT1=más de 0.5 tiros a puerta, TT2=más de 1.5 tiros a puerta, RE2=más de 1.5 remates, RE3=más de 2.5 remates, PA2=portero más de 1.5 paradas, PA3=portero más de 2.5 paradas, PA4=portero más de 3.5 paradas, TA=recibe tarjeta, F1=recibe más de 1.5 faltas, F2=más de 2.5 faltas; pos es tu mejor estimación de su posición)',
+      '    (m: G1=marca gol, G1P=marca en la 1ª parte, G2=marca 2 o más, TT1=más de 0.5 tiros a puerta, TT2=más de 1.5 tiros a puerta, RE2=más de 1.5 remates, RE3=más de 2.5 remates, PA2=portero más de 1.5 paradas, PA3=portero más de 2.5 paradas, PA4=portero más de 3.5 paradas, TA=recibe tarjeta, F1=recibe más de 1.5 faltas, F2=más de 2.5 faltas; pos es tu mejor estimación de su posición)',
       '  {"t":"NA","texto":"descripción literal"} para cualquier mercado que no encaje en los anteriores (hándicaps asiáticos, descanso/final, etc.)',
       "- Las líneas van con punto decimal (1.5, 2.5...).",
       "- Si la apuesta dice 'primera parte' o '1ª mitad', usa per:'P'; si no, per:'F'.",

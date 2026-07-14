@@ -178,7 +178,8 @@
     if (!todos.length) return;
     var hoy = new Date().toDateString();
     var deHoy = todos.filter(function(x){ return new Date(x.p[2]).toDateString() === hoy; });
-    var usar = (deHoy.length ? deHoy : todos).slice(0, 6);
+    // Los de hoy primero, pero SIN quitar el resto de la semana
+    var usar = deHoy.concat(todos.filter(function(x){ return deHoy.indexOf(x) === -1; })).slice(0, 8);
     $("cd-titulo-txt").textContent = deHoy.length ? "Cuota del día" : "Cuotas de la semana";
 
     var porPartido = tarjetasPorPartido(usar.length, 6);
@@ -198,7 +199,8 @@
     if (!todos.length) return;
     var hoy = new Date().toDateString();
     var deHoy = todos.filter(function(x){ return new Date(x.p[2]).toDateString() === hoy; });
-    var usar = (deHoy.length ? deHoy : todos).slice(0, 6);
+    // Los de hoy primero, pero SIN quitar el resto de la semana
+    var usar = deHoy.concat(todos.filter(function(x){ return deHoy.indexOf(x) === -1; })).slice(0, 8);
 
     var porPartido = tarjetasPorPartido(usar.length, 6);
     var cont = $("son-cards"); cont.innerHTML = "";
@@ -212,15 +214,77 @@
     if (cont.children.length) $("sonadoras").classList.add("visible");
   }
 
+  // Tarjeta de combinada de VARIOS partidos: cada pierna con su partido,
+  // probabilidad total = producto exacto (partidos independientes de verdad).
+  function crearTarjetaMulti(titulo, piernas){
+    var card = document.createElement("button");
+    card.type = "button";
+    card.className = "cd-card cd-card-multi";
+
+    var cab = document.createElement("span");
+    cab.className = "cd-fecha";
+    cab.textContent = titulo + " · " + piernas.length + " partidos";
+    card.appendChild(cab);
+
+    var pTotal = 1;
+    piernas.forEach(function(pi){
+      pTotal *= pi.p;
+      var linea = document.createElement("div");
+      linea.className = "cd-leg";
+      var eq = document.createElement("span");
+      eq.className = "cd-leg-partido";
+      eq.textContent = pi.x.p[0] + " – " + pi.x.p[1];
+      var ap = document.createElement("span");
+      ap.className = "cd-leg-apuesta";
+      ap.textContent = describir(pi.c.sel, { comp: pi.x.comp, L: pi.x.p[0], V: pi.x.p[1] }) + " (" + fPct(pi.c.p, 0) + ")";
+      linea.appendChild(eq); linea.appendChild(ap);
+      card.appendChild(linea);
+    });
+
+    var abajo = document.createElement("div");
+    abajo.className = "cd-abajo";
+    var prob = document.createElement("span");
+    prob.className = "cd-prob";
+    prob.textContent = fPct(pTotal, 0);
+    var justa = document.createElement("span");
+    justa.className = "cd-justa";
+    justa.textContent = "Cuota justa " + fNum(1 / pTotal, 2) + " — con más, hay valor";
+    abajo.appendChild(prob); abajo.appendChild(justa);
+    card.appendChild(abajo);
+
+    card.addEventListener("click", function(){
+      var multi = piernas.map(function(pi){
+        return { c: pi.x.compN, l: pi.x.p[0], v: pi.x.p[1], f: pi.x.p[2], s: pi.c.sel };
+      });
+      window.location.href = "analizador.html?m=" + encodeURIComponent(JSON.stringify(multi));
+    });
+    return card;
+  }
+
   function construirCombinadas(){
     var todos = partidosParaTarjetas();
     if (!todos.length) return;
     var hoy = new Date().toDateString();
     var deHoy = todos.filter(function(x){ return new Date(x.p[2]).toDateString() === hoy; });
-    var usar = (deHoy.length ? deHoy : todos).slice(0, 6);
+    // Los de hoy primero, pero SIN quitar el resto de la semana
+    var usar = deHoy.concat(todos.filter(function(x){ return deHoy.indexOf(x) === -1; })).slice(0, 8);
 
-    var porPartido = tarjetasPorPartido(usar.length, 6);
     var cont = $("comb-cards"); cont.innerHTML = "";
+
+    // 1) Combinadas de VARIOS partidos (si hay al menos 2): el plato fuerte
+    if (usar.length >= 2){
+      var piernas = usar.slice(0, 3).map(function(x){
+        var ctx = { comp: x.comp, L: x.p[0], V: x.p[1] };
+        var m = calcularPartido(ctx.comp, ctx.L, ctx.V);
+        var mejores = mejoresApuestas(ctx, m, 1);
+        return mejores.length ? { x: x, c: mejores[0], p: mejores[0].p } : null;
+      }).filter(Boolean);
+      if (piernas.length >= 2) cont.appendChild(crearTarjetaMulti("Doble del día", piernas.slice(0, 2)));
+      if (piernas.length >= 3) cont.appendChild(crearTarjetaMulti("Triple del día", piernas));
+    }
+
+    // 2) Combinadas del mismo partido (exactas sobre el marcador)
+    var porPartido = tarjetasPorPartido(usar.length, 6);
     usar.forEach(function(x){
       var ctx = { comp: x.comp, L: x.p[0], V: x.p[1] };
       var m = calcularPartido(ctx.comp, ctx.L, ctx.V);
