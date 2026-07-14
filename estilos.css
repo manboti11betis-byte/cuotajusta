@@ -62,6 +62,30 @@
     letter-spacing:.08em;color:var(--muted);
   }
 
+  /* --- Leyenda de secciones (guía rápida) --- */
+  .leyenda{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:8px;
+    margin:22px 0 30px;
+  }
+  @media (max-width:560px){ .leyenda{grid-template-columns:1fr} }
+  .ley-item{
+    display:flex;align-items:center;gap:10px;text-decoration:none;
+    padding:11px 13px;border-radius:11px;
+    background:var(--panel);border:1px solid var(--linea);
+    transition:border-color .15s,transform .15s;
+  }
+  .ley-item:hover{transform:translateY(-2px)}
+  .ley-punto{width:11px;height:11px;border-radius:50%;flex:none}
+  .ley-txt{display:flex;flex-direction:column;line-height:1.25}
+  .ley-txt b{font-size:13.5px;color:var(--texto);font-weight:700}
+  .ley-txt span{font-size:11px;color:var(--muted)}
+  .ley-seg .ley-punto{background:var(--verde-brillo);box-shadow:0 0 8px rgba(61,214,140,.5)}
+  .ley-seg:hover{border-color:var(--verde-brillo)}
+  .ley-son .ley-punto{background:#A78BFA;box-shadow:0 0 8px rgba(167,139,250,.5)}
+  .ley-son:hover{border-color:#A78BFA}
+  .ley-com .ley-punto{background:#60A5FA;box-shadow:0 0 8px rgba(96,165,250,.5)}
+  .ley-com:hover{border-color:#60A5FA}
+
   /* --- Cuota del día --- */
   .cd{margin-bottom:26px;display:none}
   .cd.visible{display:block}
@@ -653,6 +677,13 @@
     transition:filter .12s;
   }
   .cta-btn:hover{filter:brightness(1.08)}
+  .aviso-honesto{
+    font-size:12px;color:var(--muted);line-height:1.5;text-align:center;
+    max-width:620px;margin:26px auto 0;padding:14px 18px;
+    background:rgba(255,255,255,.02);border:1px solid var(--linea);border-radius:11px;
+  }
+  .aviso-honesto a{color:var(--verde-brillo);text-decoration:none}
+  .aviso-honesto a:hover{text-decoration:underline}
 
   /* --- Rejilla visual de selección de jugadores --- */
   .ju-grid{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
