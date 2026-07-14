@@ -42,12 +42,14 @@
 </head>
 <body>
 
-<nav class="tabs">
-  <a href="index.html" class="activa">🏠 Inicio</a>
+<a href="#contenido" class="saltar-contenido">Saltar al contenido</a>
+
+<nav class="tabs" aria-label="Navegación principal">
+  <a href="index.html" class="activa" aria-current="page">🏠 Inicio</a>
   <a href="analizador.html">🔍 Analizador de apuestas</a>
 </nav>
 
-<div class="wrap">
+<div class="wrap" id="contenido">
 
   <header>
     <p class="eyebrow">Mundial 2026 y grandes ligas</p>
@@ -145,6 +147,11 @@
     var card = document.createElement("button");
     card.type = "button";
     card.className = "cd-card";
+    var tipoTxt = tipo === "sonadora" ? "Apuesta soñadora" : (tipo === "combo" ? "Combinada" : "Apuesta segura");
+    card.setAttribute("aria-label",
+      tipoTxt + " para " + ctx.L + " contra " + ctx.V + ": " +
+      describir(elegida.sel, ctx) + ". Probabilidad " + fPct(elegida.p, 0) +
+      ", cuota justa " + fNum(1 / elegida.p, 2) + ". Pulsa para analizarla.");
 
     var fecha = document.createElement("span");
     fecha.className = "cd-fecha";
