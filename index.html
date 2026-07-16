@@ -15,11 +15,15 @@
 <meta property="og:title" content="CuotaJusta · Cuota del día, combinadas y apuestas soñadoras">
 <meta property="og:description" content="Cada día, la apuesta más fiable, la más arriesgada con premio y las mejores combinadas del Mundial 2026 y las grandes ligas.">
 <meta property="og:url" content="https://cuotajusta.es/">
+<meta property="og:image" content="https://cuotajusta.es/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:locale" content="es_ES">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="CuotaJusta · Cuota del día, combinadas y apuestas soñadoras">
 <meta name="twitter:description" content="La apuesta más fiable de cada partido, calculada cada día con un modelo de probabilidad.">
+<meta name="twitter:image" content="https://cuotajusta.es/og-image.jpg">
 
 <script type="application/ld+json">
 {
@@ -35,10 +39,28 @@
 }
 </script>
 
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="estilos.css">
+
+<!-- Consentimiento de anuncios (RGPD). Debe ir SIEMPRE antes del script de AdSense.
+     Por defecto DENEGADO: Google no usa cookies de publicidad hasta que el usuario
+     pulsa "Aceptar" en el banner (cookies.js hace el 'update' a granted). -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  (function(){
+    var ok = false;
+    try { ok = localStorage.getItem("cuotajusta_cookies") === "si"; } catch (e) {}
+    var v = ok ? "granted" : "denied";
+    gtag("consent", "default", {
+      ad_storage: v, ad_user_data: v, ad_personalization: v, analytics_storage: v
+    });
+  })();
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1472848221494637" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -92,6 +114,13 @@
     <p class="cd-nota">Dos apuestas del mismo partido unidas en una, con la probabilidad calculada de forma exacta sobre el marcador (no es una simple multiplicación). Toca una tarjeta para analizarla. Ningún pronóstico es seguro.</p>
   </section>
 
+  <section class="sin-partidos" id="sin-partidos">
+    <p class="sin-partidos-emoji">⚽💤</p>
+    <p class="sin-partidos-titulo">No hay partidos en las próximas dos semanas</p>
+    <p class="sin-partidos-txt">En cuanto football-data.org publique el calendario, aquí aparecerán la cuota del día, las soñadoras y las combinadas. Mientras tanto, puedes analizar cualquier apuesta tuya en el analizador.</p>
+    <a href="analizador.html" class="cta-btn">Abrir el analizador →</a>
+  </section>
+
   <section class="cd" style="display:block" id="cta-analizador">
     <div class="cta-caja">
       <div>
@@ -126,7 +155,11 @@
 <footer>
   <span class="mas18">+18</span><br>
   Juega con responsabilidad · Información en jugarbien.es<br>
-  Herramienta educativa. Ningún modelo garantiza aciertos y las casas de apuestas incluyen siempre un margen a su favor.
+  Herramienta educativa. Ningún modelo garantiza aciertos y las casas de apuestas incluyen siempre un margen a su favor.<br>
+  <span class="footer-legal">
+    <a href="privacidad.html">Privacidad y cookies</a> ·
+    <a href="aviso-legal.html">Aviso legal</a>
+  </span>
 </footer>
 
 <script src="datos_respaldo.js"></script>
@@ -149,7 +182,7 @@
     card.className = "cd-card";
     var tipoTxt = tipo === "sonadora" ? "Apuesta soñadora" : (tipo === "combo" ? "Combinada" : "Apuesta segura");
     card.setAttribute("aria-label",
-      tipoTxt + " para " + ctx.L + " contra " + ctx.V + ": " +
+      tipoTxt + " para " + nombreES(ctx.L) + " contra " + nombreES(ctx.V) + ": " +
       describir(elegida.sel, ctx) + ". Probabilidad " + fPct(elegida.p, 0) +
       ", cuota justa " + fNum(1 / elegida.p, 2) + ". Pulsa para analizarla.");
 
@@ -164,7 +197,7 @@
     pintarEscudo(e1, ctx.L, ctx.comp);
     pintarEscudo(e2, ctx.V, ctx.comp);
     var nom = document.createElement("span");
-    nom.textContent = ctx.L + " – " + ctx.V;
+    nom.textContent = nombreES(ctx.L) + " – " + nombreES(ctx.V);
     equipos.appendChild(e1); equipos.appendChild(nom); equipos.appendChild(e2);
 
     var pick = document.createElement("p");
@@ -277,7 +310,7 @@
       linea.className = "cd-leg";
       var eq = document.createElement("span");
       eq.className = "cd-leg-partido";
-      eq.textContent = pi.x.p[0] + " – " + pi.x.p[1];
+      eq.textContent = nombreES(pi.x.p[0]) + " – " + nombreES(pi.x.p[1]);
       var ap = document.createElement("span");
       ap.className = "cd-leg-apuesta";
       ap.textContent = describir(pi.c.sel, { comp: pi.x.comp, L: pi.x.p[0], V: pi.x.p[1] }) + " (" + fPct(pi.c.p, 0) + ")";
@@ -343,6 +376,20 @@
   construirCuotaDia();
   construirSonadoras();
   construirCombinadas();
+
+  // Si ninguna de las tres secciones tiene tarjetas (sin partidos en las próximas
+  // dos semanas), la leyenda quedaría apuntando a secciones vacías: se oculta y se
+  // muestra en su lugar un aviso claro en vez de dejar la portada muda.
+  (function comprobarSinPartidos(){
+    var hayAlgo = $("cd").classList.contains("visible") ||
+                  $("sonadoras").classList.contains("visible") ||
+                  $("combinadas").classList.contains("visible");
+    if (!hayAlgo){
+      var leyenda = document.querySelector(".leyenda");
+      if (leyenda) leyenda.style.display = "none";
+      $("sin-partidos").classList.add("visible");
+    }
+  })();
 })();
 </script>
 </body>

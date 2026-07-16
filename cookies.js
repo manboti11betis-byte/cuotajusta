@@ -7,34 +7,33 @@ function $(id){ return document.getElementById(id); }
     var elegido = get("cuotajusta_cookies"); // "", "si" o "no"
     var banner = $("cookies");
 
-    function activarPublicidad(){
-      // HUECO PREPARADO PARA ADSENSE.
-      // El día que Google te apruebe, aquí se carga el script de anuncios,
-      // y SOLO se ejecuta si el usuario ha aceptado (cumpliendo la ley).
-      if (window._adsenseCargado) return;
-      window._adsenseCargado = true;
-      // Ejemplo (déjalo comentado hasta tener tu ID de AdSense):
-      // var s = document.createElement("script");
-      // s.async = true;
-      // s.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-TU_ID";
-      // s.crossOrigin = "anonymous";
-      // document.head.appendChild(s);
+    // Comunica a Google si puede usar cookies de publicidad. El script de AdSense
+    // ya está cargado en el <head> (Google lo necesita para verificar el sitio),
+    // pero arranca con el consentimiento DENEGADO por defecto; hasta que no se
+    // llama aquí con "granted", no usa cookies de publicidad personalizada.
+    function actualizarConsentimiento(concedido){
+      if (typeof gtag !== "function") return;
+      var v = concedido ? "granted" : "denied";
+      gtag("consent", "update", {
+        ad_storage: v, ad_user_data: v, ad_personalization: v, analytics_storage: v
+      });
     }
 
     if (!elegido){
       banner.classList.add("visible");
-    } else if (elegido === "si"){
-      activarPublicidad();
+    } else {
+      actualizarConsentimiento(elegido === "si");
     }
 
     $("cookies-aceptar").addEventListener("click", function(){
       set("cuotajusta_cookies", "si");
       banner.classList.remove("visible");
-      activarPublicidad();
+      actualizarConsentimiento(true);
     });
     $("cookies-rechazar").addEventListener("click", function(){
       set("cuotajusta_cookies", "no");
       banner.classList.remove("visible");
+      actualizarConsentimiento(false);
     });
     $("cookies-mas").addEventListener("click", function(e){
       e.preventDefault();

@@ -33,12 +33,44 @@
     "Suecia":"se","Sweden":"se","Canadá":"ca","Canada":"ca","Paraguay":"py","Austria":"at",
     "Argelia":"dz","Algeria":"dz","Ghana":"gh","Costa de Marfil":"ci","Ivory Coast":"ci","Côte d'Ivoire":"ci",
     "Australia":"au","Ecuador":"ec","Sudáfrica":"za","South Africa":"za",
-    "Bosnia y Herzegovina":"ba","Bosnia and Herzegovina":"ba","RD Congo":"cd","DR Congo":"cd","Cabo Verde":"cv","Cape Verde":"cv"
+    "Bosnia y Herzegovina":"ba","Bosnia and Herzegovina":"ba","Bosnia-H.":"ba",
+    "RD Congo":"cd","DR Congo":"cd","Congo DR":"cd","Cabo Verde":"cv","Cape Verde":"cv",
+    // Ampliado: faltaban 18 de las 48 selecciones reales del Mundial 2026
+    // (mostraban solo iniciales en vez de bandera). Claves tal cual las
+    // devuelve football-data.org (shortName), en inglés.
+    "Curaçao":"cw","Curazao":"cw","Chequia":"cz","Czechia":"cz",
+    "Haití":"ht","Haiti":"ht","Irán":"ir","Iran":"ir","Irak":"iq","Iraq":"iq",
+    "Jordania":"jo","Jordan":"jo","Corea del Sur":"kr","Korea Republic":"kr","South Korea":"kr",
+    "Nueva Zelanda":"nz","New Zealand":"nz","Panamá":"pa","Panama":"pa",
+    "Catar":"qa","Qatar":"qa","Arabia Saudí":"sa","Saudi Arabia":"sa",
+    "Escocia":"gb-sct","Scotland":"gb-sct","Túnez":"tn","Tunisia":"tn",
+    "Turquía":"tr","Turkey":"tr","Uruguay":"uy","Uzbekistán":"uz","Uzbekistan":"uz"
   };
   function urlBandera(nombre){
     var c = CODIGOS_PAIS[nombre];
     return c ? "https://flagcdn.com/" + c + ".svg" : null;
   }
+
+  // Nombres de selección nacional en español para MOSTRAR en pantalla. Los datos
+  // llegan de football-data.org y las selecciones del Mundial vienen en inglés
+  // (los clubes de liga ya llegan traducidos: "Bayern de Múnich", "Estrasburgo"...).
+  // Esto traduce solo lo que se ve en pantalla; nunca debe usarse el resultado
+  // como clave para buscar datos, escudos o plantillas (esas siguen en el idioma
+  // original tal cual las da la API).
+  var NOMBRES_ES = {
+    "Algeria":"Argelia","Belgium":"Bélgica","Bosnia-H.":"Bosnia y Herzegovina","Brazil":"Brasil",
+    "Canada":"Canadá","Cape Verde":"Cabo Verde","Congo DR":"RD Congo","Croatia":"Croacia",
+    "Curaçao":"Curazao","Czechia":"Chequia","Egypt":"Egipto","England":"Inglaterra",
+    "France":"Francia","Germany":"Alemania","Haiti":"Haití","Iran":"Irán","Iraq":"Irak",
+    "Ivory Coast":"Costa de Marfil","Japan":"Japón","Jordan":"Jordania","Korea Republic":"Corea del Sur",
+    "Mexico":"México","Morocco":"Marruecos","Netherlands":"Países Bajos","New Zealand":"Nueva Zelanda",
+    "Norway":"Noruega","Panama":"Panamá","Qatar":"Catar","Saudi Arabia":"Arabia Saudí",
+    "Scotland":"Escocia","South Africa":"Sudáfrica","South Korea":"Corea del Sur","Spain":"España",
+    "Sweden":"Suecia","Switzerland":"Suiza","Tunisia":"Túnez","Turkey":"Turquía",
+    "USA":"Estados Unidos","United States":"Estados Unidos","Uzbekistan":"Uzbekistán"
+  };
+  // Traduce SOLO para mostrar; el valor de vuelta no debe usarse como clave de datos.
+  function nombreES(nombre){ return NOMBRES_ES[nombre] || nombre; }
 
   // --- Matemáticas ---
   function fact(n){ var r = 1; for (var i = 2; i <= n; i++) r *= i; return r; }
@@ -193,7 +225,7 @@
   }
 
 
-  function nombreLado(ctx, side){ return side === "L" ? ctx.L : ctx.V; }
+  function nombreLado(ctx, side){ return nombreES(side === "L" ? ctx.L : ctx.V); }
   function plantillaDe(comp, nombre){
     var pls = (comp && comp.plantillas) || {};
     return pls[nombre] || null;
@@ -218,7 +250,7 @@
   function txtDir(dir){ return dir === "O" ? "Más de " : "Menos de "; }
 
   function describir(s, ctx){
-    var L = ctx.L, V = ctx.V;
+    var L = nombreES(ctx.L), V = nombreES(ctx.V);
     switch (s.t){
       case "R":
         var reg = ctx.comp.neutral ? " (90 min)" : "";
@@ -293,7 +325,9 @@
       case "JU":
         var nombre = s.jn;
         if (!nombre){
-          var pl = plantillaDe(ctx.comp, nombreLado(ctx, s.side));
+          // OJO: plantillaDe necesita el nombre ORIGINAL (clave de datos), no el
+          // traducido de nombreLado(), o no encontraría la plantilla del equipo.
+          var pl = plantillaDe(ctx.comp, s.side === "L" ? ctx.L : ctx.V);
           nombre = (pl && pl[s.pi]) ? pl[s.pi][0] : "Jugador";
         }
         if (s.m === "G1") return nombre + " marca gol";
@@ -522,7 +556,8 @@
       case "JU":
         var pos = s.pos, estrella = false;
         if (!s.libre){
-          var pl = plantillaDe(comp, nombreLado(ctx, s.side));
+          // OJO: nombre ORIGINAL para la búsqueda, no el traducido de nombreLado().
+          var pl = plantillaDe(comp, s.side === "L" ? ctx.L : ctx.V);
           if (!pl || !pl[s.pi]) return null;
           pos = pl[s.pi][1];
           estrella = pl[s.pi][2] === 1;
@@ -582,7 +617,7 @@
   // Genera una frase de análisis honesta explicando POR QUÉ el modelo propone la apuesta.
   // Se apoya en los goles esperados y en el reparto de probabilidades del partido.
   function analizarApuesta(sel, m, ctx){
-    var L = ctx.L, V = ctx.V;
+    var L = nombreES(ctx.L), V = nombreES(ctx.V);
     var golesL = fNum(m.lh, 1), golesV = fNum(m.la, 1);
     var difFav = Math.abs(m.p1 - m.p2);
     var favMarcado = difFav > 0.22; // hay un favorito claro
