@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analizador de apuestas de fútbol · CuotaJusta</title>
+<meta name="description" content="Monta tu boleto de apuestas de fútbol o sube una captura, y descubre la probabilidad de acierto y si tu cuota tiene valor. Mundial 2026 y grandes ligas, gratis.">
+<meta name="keywords" content="analizador de apuestas, probabilidad apuesta futbol, valor cuota, escaner boleto apuestas, calculadora apuestas futbol">
+<meta name="author" content="CuotaJusta">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://cuotajusta.es/analizador.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CuotaJusta">
+<meta property="og:title" content="Analizador de apuestas de fútbol · CuotaJusta">
+<meta property="og:description" content="Monta tu boleto o sube una captura: probabilidad de acierto y valor de tu cuota, calculados al instante.">
+<meta property="og:url" content="https://cuotajusta.es/analizador.html">
+<meta property="og:image" content="https://cuotajusta.es/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_ES">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Analizador de apuestas de fútbol · CuotaJusta">
+<meta name="twitter:description" content="Probabilidad de acierto y valor de tu cuota, calculados al instante.">
+<meta name="twitter:image" content="https://cuotajusta.es/og-image.jpg">
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+
+<!-- Consentimiento de anuncios (RGPD). Debe ir SIEMPRE antes del script de AdSense.
+     Por defecto DENEGADO: Google no usa cookies de publicidad hasta que el usuario
+     pulsa "Aceptar" en el banner (cookies.js hace el 'update' a granted). -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  (function(){
+    var ok = false;
+    try { ok = localStorage.getItem("cuotajusta_cookies") === "si"; } catch (e) {}
+    var v = ok ? "granted" : "denied";
+    gtag("consent", "default", {
+      ad_storage: v, ad_user_data: v, ad_personalization: v, analytics_storage: v
+    });
+  })();
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1472848221494637" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<a href="#contenido" class="saltar-contenido">Saltar al contenido</a>
+
+<nav class="tabs" aria-label="Navegación principal">
+  <a href="index.html">🏠 Inicio</a>
+  <a href="analizador.html" class="activa" aria-current="page">🔍 Analizador de apuestas</a>
+</nav>
+
+<div class="wrap" id="contenido">
+
+  <header style="padding:24px 0 18px">
+    <p class="eyebrow">Analizador · Mundial 2026 y grandes ligas</p>
+    <h1 style="font-size:clamp(34px,8vw,50px)">Analizador<span class="justa"> de apuestas</span></h1>
+    <p class="lede">Elige un partido y monta tu boleto (puedes combinar varios partidos: añade de uno, cambia de partido y sigue añadiendo), o sube una captura de tu apuesta. El modelo te dirá la probabilidad de acierto y si la cuota tiene valor.</p>
+    <p class="fecha-datos" id="fecha-datos"></p>
+  </header>
+
+  <section class="boleto" id="boleto" aria-label="Boleto de apuesta">
+    <div class="boleto-head">
+      <span class="titulo">Boleto de análisis</span>
+      <span class="serie">Nº 000006</span>
+    </div>
+
+    <div class="paso">
+      <span class="paso-label">Paso 1 — El partido</span>
+      <label class="campo">
+        <span class="campo-nombre">Competición</span>
+        <select id="competicion"></select>
+      </label>
+      <label class="campo">
+        <span class="campo-nombre">Partido de la semana</span>
+        <select id="partido"></select>
+      </label>
+      <div class="banner-partido" id="banner-partido">
+        <div class="banner-equipo"><span class="escudo" id="escudo-l"></span><span class="nombre" id="banner-nombre-l"></span></div>
+        <span class="banner-vs" id="banner-vs">VS</span>
+        <div class="banner-equipo"><span class="escudo" id="escudo-v"></span><span class="nombre" id="banner-nombre-v"></span></div>
+      </div>
+      <p class="nota-comp" id="nota-comp"></p>
+      <p class="aviso-90" id="aviso-90">⏱️ Eliminatoria: las probabilidades son del resultado <b>en los 90 minutos</b>. Si tu casa paga «pase a la siguiente ronda» o «ganador incluyendo prórroga y penaltis», es un mercado distinto y su cuota no se compara directamente.</p>
+      <p class="error" id="error-equipos">No hay partidos de esta competición en los próximos 7 días.</p>
+    </div>
+
+    <div class="paso">
+      <span class="paso-label">Paso 2 — Construye tu apuesta</span>
+
+      <div class="buscador-mercados">
+        <input type="text" id="buscar-mercado" placeholder="🔎 Busca un mercado: goles, tarjetas, córners, Mbappé..." autocomplete="off">
+      </div>
+      <p class="sin-resultados" id="sin-resultados">No hay mercados que coincidan con tu búsqueda.</p>
+
+      <details class="grupo" open>
+        <summary>Resultado</summary>
+        <div class="grupo-body">
+          <div class="fila-mercado">
+            <span class="fila-titulo">Resultado final (con probabilidad del modelo)</span>
+            <div class="add-chips">
+              <button type="button" class="add-chip simbolo" data-add="R:1">1</button>
+              <button type="button" class="add-chip simbolo" data-add="R:X">X</button>
+              <button type="button" class="add-chip simbolo" data-add="R:2">2</button>
+              <button type="button" class="add-chip simbolo" data-add="R:1X">1X</button>
+              <button type="button" class="add-chip simbolo" data-add="R:12">12</button>
+              <button type="button" class="add-chip simbolo" data-add="R:X2">X2</button>
+              <button type="button" class="add-chip" data-add="R:DNB1" id="chip-dnb1">Local · empate no vale</button>
+              <button type="button" class="add-chip" data-add="R:DNB2" id="chip-dnb2">Visitante · empate no vale</button>
+            </div>
+          </div>
+          <div class="fila-mercado">
+            <span class="fila-titulo">Resultado al descanso (1ª parte)</span>
+            <div class="add-chips">
+              <button type="button" class="add-chip" data-add="P1:1">1 al descanso</button>
+              <button type="button" class="add-chip" data-add="P1:X">X al descanso</button>
+              <button type="button" class="add-chip" data-add="P1:2">2 al descanso</button>
+            </div>
+          </div>
+          <div class="fila-mercado">
+            <span class="fila-titulo">Ganador de la 2ª parte</span>
+            <div class="add-chips">
+              <button type="button" class="add-chip" data-add="P2:1">Gana la 2ª parte local</button>
+              <button type="button" class="add-chip" data-add="P2:X">Empate en la 2ª parte</button>
+              <button type="button" class="add-chip" data-add="P2:2">Gana la 2ª parte visitante</button>
+            </div>
+          </div>
+          <div class="fila-mercado">
+            <span class="fila-titulo">Combinadas rápidas (mismo partido)</span>
+            <div class="add-chips">
+              <button type="button" class="add-chip" data-add="C:1BTTS" id="chip-c1">Local + ambos marcan</button>
+              <button type="button" class="add-chip" data-add="C:1O25" id="chip-c2">Local + más de 2,5</button>
+              <button type="button" class="add-chip" data-add="C:2O25" id="chip-c3">Visitante + más de 2,5</button>
+            </div>
+          </div>
+          <div class="fila-mercado">
+            <span class="fila-titulo">Gana por diferencia de goles</span>
+            <select class="mini sel-equipo" id="mg-side"></select>
+            <select class="mini" id="mg-n"><option value="2">por 2 o más</option><option value="3">por 3 o más</option></select>
+            <button type="button" class="btn-add" data-add="MG">Añadir</button>
+          </div>
+          <div class="fila-mercado">
+            <span class="fila-titulo">Hándicap europeo (resultado con ventaja)</span>
+            <select class="mini sel-equipo" id="he-side"></select>
+            <select class="mini" id="he-h"><option value="-1">−1</option><option value="-2">−2</option><option value="1">+1</option><option value="2">+2</option></select>
+            <button type="button" class="btn-add" data-add="HE">Añadir</button>
+          </div>
+          <div class="fila-mercado">
+            <span class="fila-titulo">Hándicap asiático (empate devuelto)</span>
+            <select class="mini sel-equipo" id="ha-side"></select>
+            <select class="mini" id="ha-h"><option value="-2">−2</option><option value="-1.5">−1,5</option><option value="-1">−1</option><option value="-0.5">−0,5</option><option value="0.5">+0,5</option><option value="1">+1</option><option value="1.5">+1,5</option><option value="2">+2</option></select>
+            <button type="button" class="btn-add" data-add="HA">Añadir</button>
+          </div>
+        </div>
+      </details>
+
+      <details class="grupo">
+        <summary>Goles</summary>
+        <div class="grupo-body">
+          <div class="fila-mercado">
+            <span class="fila-titulo">Goles totales del partido</span>
+            <select class="mini" id="gt-dir"><option value="O">Más de</option><option value="U">Menos de</option></select>
+            <select class="mini" id="gt-linea"><option>1,5</option><option selected>2,5</option><option>3,5</option></select>
+            <select class="mini" id="gt-per"><option value="F">Partido completo</option><option value="P">Solo 1ª parte</option></select>
+            <button type="button" class="btn-add" data-add="GT">Añadir</button>
+          </div>
+          <div class="fila-mercado">
+            <span class="fila-titulo">Goles de un equipo</span>
+            <select class="mini sel-equipo" id="ge-side"></select>
+            <select class="mini" id="ge-dir"><option value="O">Más de</option><option value="U">Menos de</option></select>
+            <select class="mini" id="ge-linea"><option>0,5</option><option selected>1,5</option><option>2,5</option></select>
+            <select class="mini" id="ge-per"><option value="F">Partido completo</option><option value="P">Solo 1ª parte</option></select>
+            <button type="button" class="btn-add" data-add="GE">Añadir</button>
+          </div>
+          <div class="fila-mercado">
+            <span class="fila-titulo">Ambos marcan · Par o impar</span>
+            <div class="add-chips">
+              <button type="button" class="add-chip" data-add="B:Y">Ambos marcan: sí</button>
+              <button type="button" class="add-chip" data-add="B:N">Ambos marcan: no</button>
+              <button type="button" class="add-chip" data-add="PAR:P">Goles: par</button>
+              <button type="button" class="add-chip" data-add="PAR:I">Goles: impar</button>
+            </div>
+          </div>
+          <div class="fila-mercado">
+            <span class="fila-titulo">Portería a cero</span>
+            <select class="mini sel-equipo" id="cs-side"></select>
+            <button type="button" class="btn-add" data-add="CS">Añadir</button>
+          </div>
+          <div class="fila-mercado">
+            <span class="fila-titulo">Ambos marcan · en una mitad concreta</span>
+            <div class="add-chips">
+              <button type="button" class="add-chip" data-add="BM:1">Ambos marcan en la 1ª parte</button>
+              <button type="button" class="add-chip" data-add="BM:2">Ambos marcan en la 2ª parte</button>
+            </div>
+          </div>
+          <div class="fila-mercado">
+            <span class="fila-titulo">Mitad con más goles</span>
+            <div class="add-chips">
+              <button type="button" class="add-chip" data-add="MM:1">Más goles en la 1ª parte</button>
+              <button type="button" class="add-chip" data-add="MM:X">Empate de goles por mitad</button>
+              <button type="button" class="add-chip" data-add="MM:2">Más goles en la 2ª parte</button>
+            </div>
+          </div>
+          <div class="fila-mercado">
+            <span class="fila-titulo">Marcador exacto</span>
+            <select class="mini" id="ex-gl"></select>
+            <span>–</span>
+            <select class="mini" id="ex-gv"></select>
+            <button type="button" class="btn-add" data-add="EX">Añadir</button>
+          </div>
+          <div class="fila-mercado">
+            <span class="fila-titulo">Descanso / Final (1, X o 2 en cada uno)</span>
+            <select class="mini" id="df-ht"><option value="1">1 al desc.</option><option value="X" selected>X al desc.</option><option value="2">2 al desc.</option></select>
+            <select class="mini" id="df-ft"><option value="1" selected>1 al final</option><option value="X">X al final</option><option value="2">2 al final</option></select>
+            <button type="button" class="btn-add" data-add="DF">Añadir</button>
+          </div>
+        </div>
+      </details>
+
+      <details class="grupo">
+        <summary>Tarjetas y faltas</summary>
+        <div class="grupo-body">
+          <div class="fila-mercado">
+            <span class="fila-titulo">Tarjetas amarillas de un equipo</span>
+            <select class="mini sel-equipo" id="te-side"></select>
+            <select class="mini" id="te-dir"><option value="O">Más de</option><option value="U">Menos de</option></select>
+            <select class="mini" id="te-linea"><option>0,5</option><option selected>1,5</option><option>2,5</option><option>3,5</option></select>
+            <select class="mini" id="te-per"><option value="F">Partido completo</option><option value="P">Solo 1ª parte</option></select>
+            <button type="button" class="btn-add" data-add="TE">Añadir</button>
+          </div>
+          <div class="fila-mercado">
+            <span class="fila-titulo">Tarjetas amarillas totales</span>
+            <select class="mini" id="tt-dir"><option value="O">Más de</option><option value="U">Menos de</option></select>
+            <select class="mini" id="tt-linea"><option>2,5</option><option selected>3,5</option><option>4,5</option><option>5,5</option><option>6,5</option></select>
+            <select class="mini" id="tt-per"><option value="F">Partido completo</option><option value="P">Solo 1ª parte</option></select>
+            <button type="button" class="btn-add" data-add="TT">Añadir</button>
+          </div>
+          <div class="fila-mercado">
+            <span class="fila-titulo">Tarjeta roja en el partido</span>
+            <div class="add-chips">
+              <button type="button" class="add-chip" data-add="RJ:Y">Habrá roja: sí</button>
+              <button type="button" class="add-chip" data-add="RJ:N">Habrá roja: no</button>
+            </div>
+          </div>
+          <div class="fila-mercado">
+            <span class="fila-titulo">Faltas cometidas por un equipo</span>
+            <select class="mini sel-equipo" id="fe-side"></select>
+            <select class="mini" id="fe-dir"><option value="O">Más de</option><option value="U">Menos de</option></select>
+            <select class="mini" id="fe-linea"><option>7,5</option><option>8,5</option><option>9,5</option><option selected>10,5</option><option>11,5</option><option>12,5</option><option>13,5</option><option>14,5</option><option>15,5</option></select>
+            <select class="mini" id="fe-per"><option value="F">Partido completo</option><option value="P">Solo 1ª parte</option></select>
+            <button type="button" class="btn-add" data-add="FE">Añadir</button>
+          </div>
+        </div>
+      </details>
+
+      <details class="grupo">
+        <summary>🚩 Fueras de juego</summary>
+        <div class="grupo-body">
+          <div class="fila-mercado">
+            <span class="fila-titulo">Fueras de juego de un equipo</span>
+            <select class="mini sel-equipo" id="fj-side"></select>
+            <select class="mini" id="fj-dir"><option value="O">Más de</option><option value="U">Menos de</option></select>
+            <select class="mini" id="fj-linea"><option>0,5</option><option selected>1,5</option><option>2,5</option><option>3,5</option></select>
+            <select class="mini" id="fj-per"><option value="F">Partido completo</option><option value="P">Solo 1ª parte</option></select>
+            <button type="button" class="btn-add" data-add="FJ">Añadir</button>
+          </div>
+          <div class="fila-mercado">
+            <span class="fila-titulo">Fueras de juego totales del partido</span>
+            <select class="mini" id="fjt-dir"><option value="O">Más de</option><option value="U">Menos de</option></select>
+            <select class="mini" id="fjt-linea"><option>2,5</option><option selected>3,5</option><option>4,5</option><option>5,5</option><option>6,5</option></select>
+            <select class="mini" id="fjt-per"><option value="F">Partido completo</option><option value="P">Solo 1ª parte</option></select>
+            <button type="button" class="btn-add" data-add="FJT">Añadir</button>
+          </div>
+        </div>
+      </details>
+
+      <details class="grupo">
+        <summary>Córners</summary>
+        <div class="grupo-body">
+          <div class="fila-mercado">
+            <span class="fila-titulo">Córners de un equipo</span>
+            <select class="mini sel-equipo" id="co-side"></select>
+            <select class="mini" id="co-dir"><option value="O">Más de</option><option value="U">Menos de</option></select>
+            <select class="mini" id="co-linea"><option>2,5</option><option>3,5</option><option selected>4,5</option><option>5,5</option><option>6,5</option><option>7,5</option></select>
+            <select class="mini" id="co-per"><option value="F">Partido completo</option><option value="P">Solo 1ª parte</option></select>
+            <button type="button" class="btn-add" data-add="CO">Añadir</button>
+          </div>
+          <div class="fila-mercado">
+            <span class="fila-titulo">Córners totales del partido</span>
+            <select class="mini" id="cot-dir"><option value="O">Más de</option><option value="U">Menos de</option></select>
+            <select class="mini" id="cot-linea"><option>7,5</option><option>8,5</option><option selected>9,5</option><option>10,5</option><option>11,5</option><option>12,5</option></select>
+            <select class="mini" id="cot-per"><option value="F">Partido completo</option><option value="P">Solo 1ª parte</option></select>
+            <button type="button" class="btn-add" data-add="COT">Añadir</button>
+          </div>
+          <div class="fila-mercado">
+            <span class="fila-titulo">Equipo con más córners</span>
+            <div class="add-chips">
+              <button type="button" class="add-chip" data-add="CM:L" id="chip-cm1">Más córners: local</button>
+              <button type="button" class="add-chip" data-add="CM:V" id="chip-cm2">Más córners: visitante</button>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <details class="grupo">
+        <summary>Tiros a puerta</summary>
+        <div class="grupo-body">
+          <div class="fila-mercado">
+            <span class="fila-titulo">Tiros a puerta de un equipo</span>
+            <select class="mini sel-equipo" id="ti-side"></select>
+            <select class="mini" id="ti-dir"><option value="O">Más de</option><option value="U">Menos de</option></select>
+            <select class="mini" id="ti-linea"><option>1,5</option><option>2,5</option><option selected>3,5</option><option>4,5</option><option>5,5</option><option>6,5</option><option>7,5</option></select>
+            <select class="mini" id="ti-per"><option value="F">Partido completo</option><option value="P">Solo 1ª parte</option></select>
+            <button type="button" class="btn-add" data-add="TI">Añadir</button>
+          </div>
+        </div>
+      </details>
+
+      <details class="grupo">
+        <summary>Jugadores</summary>
+        <div class="grupo-body">
+          <div class="ju-grid" id="ju-grid"></div>
+          <div class="fila-mercado" id="fila-jugadores">
+            <span class="fila-titulo" id="ju-elegido">Elige un jugador de arriba</span>
+            <select class="mini" id="ju-mercado">
+              <option value="G1">Marca gol</option>
+              <option value="G1P">Marca en la 1ª parte</option>
+              <option value="G2">Marca 2 o más</option>
+              <option value="TT1">Más de 0,5 tiros a puerta</option>
+              <option value="TT2">Más de 1,5 tiros a puerta</option>
+              <option value="RE2">Más de 1,5 remates</option>
+              <option value="RE3">Más de 2,5 remates</option>
+              <option value="PA2">Portero: más de 1,5 paradas</option>
+              <option value="PA3">Portero: más de 2,5 paradas</option>
+              <option value="PA4">Portero: más de 3,5 paradas</option>
+              <option value="TA">Recibe tarjeta amarilla</option>
+              <option value="F1">Recibe más de 1,5 faltas</option>
+              <option value="F2">Recibe más de 2,5 faltas</option>
+            </select>
+            <button type="button" class="btn-add" data-add="JU">Añadir</button>
+          </div>
+          <p class="aviso-plantilla" id="aviso-plantilla"></p>
+        </div>
+      </details>
+
+      <div class="slip">
+        <div class="slip-titulo"><span>Tu boleto</span><span class="n" id="slip-n">0 selecciones</span></div>
+        <div class="slip-body" id="slip-lista"><p class="slip-vacio">Añade selecciones de los mercados de arriba. Puedes combinar varias en la misma apuesta.</p></div>
+        <p class="aviso-jugadores" id="aviso-jugadores">Al cambiar de partido se han quitado las selecciones de jugadores, que ya no estaban en juego.</p>
+      </div>
+      <p class="error" id="error-slip">Añade al menos una selección al boleto.</p>
+    </div>
+
+    <div class="paso">
+      <span class="paso-label">Paso 3 — Casa y cuota del boleto</span>
+      <div class="paso3-grid">
+        <label class="campo" style="margin:0">
+          <span class="campo-nombre">Casa de apuestas</span>
+          <select id="casa"></select>
+        </label>
+        <label class="campo" style="margin:0">
+          <span class="campo-nombre">Cuota total que te ofrecen</span>
+          <input type="text" id="cuota" inputmode="decimal" placeholder="1,85" autocomplete="off">
+        </label>
+      </div>
+      <p class="error" id="error-cuota">Escribe una cuota mayor que 1,01. Por ejemplo: 1,85.</p>
+    </div>
+
+    <button class="analizar" id="analizar">Analizar boleto</button>
+  </section>
+  <section class="ia-card" aria-label="Escáner de capturas">
+    <h2 class="ia-titulo">📸 Escanea tu boleto — gratis</h2>
+    <p class="ia-sub">Sube o arrastra un pantallazo de tu apuesta. Se escanea en tu propio navegador, sin coste y sin registrarte: se lee el partido, las selecciones y la cuota, y el modelo calcula la probabilidad de acierto.</p>
+
+    <label class="drop" id="drop">
+      <input type="file" id="fichero" accept="image/*">
+      <span class="icono">🎫</span>
+      <span class="txt" id="drop-txt">Toca para elegir una imagen o arrástrala aquí</span>
+    </label>
+    <div class="preview" id="preview">
+      <img id="preview-img" alt="Captura del boleto">
+      <br><button type="button" class="quitar" id="quitar-img">Quitar imagen</button>
+    </div>
+
+    <button type="button" class="btn-ia" id="btn-scan">Escanear gratis</button>
+    <p class="estado-ia" id="estado-ia"></p>
+
+    <details class="avanzado">
+      <summary>Modo avanzado con IA (opcional, más preciso)</summary>
+      <div class="avanzado-body">
+        <p class="clave-nota">El escaneo gratis funciona en tu navegador y acierta bien con boletos claros. Si quieres máxima precisión con boletos complejos, puedes usar la IA de Anthropic con tu propia clave. La clave se guarda solo en este navegador y las imágenes se envían a Anthropic; cada análisis cuesta céntimos que se cargan a tu clave. Consíguela en console.anthropic.com.</p>
+        <div class="clave-fila">
+          <input type="password" id="clave-ia" placeholder="Tu clave de API (sk-ant-...)" autocomplete="off">
+          <button type="button" class="btn-sec" id="guardar-clave">Guardar</button>
+        </div>
+        <button type="button" class="btn-sec btn-ia-adv" id="btn-ia">Analizar con IA</button>
+      </div>
+    </details>
+  </section>
+  <section class="stub" id="stub" aria-live="polite">
+    <span class="stub-label">Resguardo · Resultado del análisis</span>
+    <p class="stub-fuente" id="stub-fuente">🎫 Boleto leído de tu captura por IA. Revisa que las selecciones coincidan con tu apuesta.</p>
+    <div class="stub-partido">
+      <span class="escudo mini" id="stub-escudo-l"></span>
+      <span id="stub-titulo"></span>
+      <span class="escudo mini" id="stub-escudo-v"></span>
+    </div>
+
+    <div class="sel-lineas" id="sel-lineas"></div>
+
+    <div class="prob-grande">
+      <span class="prob-num" id="prob-num">—</span>
+      <span class="prob-desc" id="prob-desc">probabilidad estimada de que tu apuesta acierte, según el modelo</span>
+    </div>
+
+    <div class="termo">
+      <span class="termo-segs" id="termo-segs"><i></i><i></i><i></i><i></i><i></i></span>
+      <span class="termo-label" id="termo-label"></span>
+    </div>
+
+    <p class="frecuencia" id="frecuencia"></p>
+
+    <div class="compara">
+      <span class="compara-titulo">El modelo frente a tu cuota</span>
+      <div class="cbarra modelo">
+        <span class="etiqueta">Lo que dice el modelo</span>
+        <span class="track"><span class="fill" id="cfill-modelo"></span></span>
+        <span class="pct" id="cpct-modelo">—</span>
+      </div>
+      <div class="cbarra cuota" id="cbarra-cuota">
+        <span class="etiqueta">Lo que implica tu cuota</span>
+        <span class="track"><span class="fill" id="cfill-cuota"></span></span>
+        <span class="pct" id="cpct-cuota">—</span>
+      </div>
+      <p class="compara-leyenda" id="compara-leyenda">Si la barra verde supera a la dorada, la casa te está pagando de más: hay valor. Si queda por debajo, te paga de menos.</p>
+    </div>
+
+    <div><span class="sello" id="sello">—</span></div>
+    <p class="veredicto-frase" id="veredicto-frase"></p>
+    <p class="dinero" id="dinero"></p>
+    <p class="nota-indep" id="nota-indep"></p>
+
+    <div class="datos">
+      <div class="dato"><span class="k">Cuota justa según el modelo</span><span class="v" id="cuota-justa">—</span></div>
+      <div class="dato"><span class="k">Probabilidad implícita de tu cuota</span><span class="v" id="prob-implicita">—</span></div>
+      <div class="dato"><span class="k">Valor esperado por euro apostado</span><span class="v" id="valor-esperado">—</span></div>
+      <div class="dato"><span class="k" id="margen-casa-k">Margen típico de la casa</span><span class="v" id="margen-casa">—</span></div>
+    </div>
+
+    <div class="modelo">
+      <span class="modelo-titulo">Lo que ve el modelo en este partido</span>
+      <div class="barras">
+        <div class="barra"><span class="sig">1</span><span class="track"><span class="fill" id="fill-1"></span></span><span class="pct" id="pct-1">—</span></div>
+        <div class="barra"><span class="sig">X</span><span class="track"><span class="fill" id="fill-x"></span></span><span class="pct" id="pct-x">—</span></div>
+        <div class="barra"><span class="sig">2</span><span class="track"><span class="fill" id="fill-2"></span></span><span class="pct" id="pct-2">—</span></div>
+      </div>
+      <p class="marcadores" id="marcadores"></p>
+    </div>
+
+    <p class="nota-demo" id="nota-stub"></p>
+  </section>
+  <section class="como">
+    <details>
+      <summary>Cómo funciona el análisis</summary>
+      <div class="como-body">
+        <p><b>1. Partidos reales.</b> Solo se analizan partidos programados de los próximos 7 días, que el robot de datos actualiza cada mañana junto con las medias de goles, plantillas y escudos. La «Cuota del día» es la selección con mejor probabilidad de cada partido según el modelo.</p>
+        <p><b>2. Distribución de Poisson.</b> Cada mercado (goles, tarjetas, faltas, córners, tiros, jugadores) se modela con su propia media esperada y de ahí sale la probabilidad de cada selección. Tarjetas, faltas y córners usan perfiles medios de cada competición; los mercados de jugador se estiman por posición y rol.</p>
+        <p><b>3. El boleto combinado.</b> Si añades varias selecciones, la probabilidad total es el producto de todas, asumiendo que son independientes. Con la cuota total de tu casa se calcula el valor esperado y el veredicto.</p>
+        <p><b>4. El analizador de capturas.</b> La imagen se envía a la IA de Anthropic con tu propia clave, que extrae el partido, las selecciones y la cuota; después las probabilidades las calcula siempre el modelo de esta web, no la IA.</p>
+      </div>
+    </details>
+  </section>
+
+
+</div>
+
+<div class="cookies" id="cookies" role="dialog" aria-label="Aviso de cookies">
+  <div class="cookies-txt">
+    <b>🍪 Cookies</b> — Esta web usa cookies técnicas necesarias para funcionar. Si aceptas, también usaremos cookies para mostrar publicidad y medir visitas, lo que ayuda a mantener la web gratis. Puedes rechazarlas y seguir usándola igual.
+    <a href="#" id="cookies-mas">Más información</a>
+  </div>
+  <div class="cookies-btns">
+    <button type="button" class="cookies-rechazar" id="cookies-rechazar">Rechazar</button>
+    <button type="button" class="cookies-aceptar" id="cookies-aceptar">Aceptar</button>
+  </div>
+  <div class="cookies-detalle" id="cookies-detalle">
+    <b>Cookies técnicas (siempre activas):</b> necesarias para que la web funcione y para recordar tu elección sobre cookies. No requieren consentimiento.<br>
+    <b>Cookies de publicidad y medición (opcionales):</b> solo se activan si pulsas «Aceptar». Sirven para mostrar anuncios y contar visitas de forma anónima. Puedes cambiar de opinión borrando los datos del navegador. Esta web es una herramienta educativa (+18); juega con responsabilidad (jugarbien.es).
+  </div>
+</div>
+
+<footer>
+  <span class="mas18">+18</span><br>
+  Juega con responsabilidad · Información en jugarbien.es<br>
+  Herramienta educativa. Ningún modelo garantiza aciertos y las casas de apuestas incluyen siempre un margen a su favor.<br>
+  <span class="footer-legal">
+    <a href="privacidad.html">Privacidad y cookies</a> ·
+    <a href="aviso-legal.html">Aviso legal</a>
+  </span>
+</footer>
+
+<div class="flotante" id="flotante">
+  <span class="txt" id="flotante-txt">🎫 0 selecciones</span>
+  <button type="button" id="flotante-btn">Analizar</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+<script src="datos_respaldo.js"></script>
+<script src="datos.js"></script>
+<script src="motor.js"></script>
+<script src="cookies.js"></script>
+<script>
+(function(){
+  "use strict";
+
+  var MODELO_IA = "claude-sonnet-4-6";
+  var CASAS = [
+    ["Bet365", 5.0], ["Marathonbet", 4.5], ["Winamax", 4.6], ["Betfair", 4.8],
+    ["Bwin", 5.4], ["William Hill", 5.6], ["Betway", 5.7], ["888sport", 5.8],
+    ["LeoVegas", 6.0], ["PokerStars Sports", 6.2], ["Casumo", 6.3], ["Codere", 6.4],
+    ["Paf", 6.5], ["Sportium", 6.6], ["Versus", 6.8], ["Zebet", 6.9],
+    ["Luckia", 6.9], ["Kirolbet", 7.0], ["Retabet", 7.1], ["Jokerbet", 7.2]
+  ];
+
+  // --- Estado y DOM ---
+  var selecciones = [];
+  var eqL = "", eqV = "";
+  function $(id){ return document.getElementById(id); }
+  var selComp = $("competicion"), selPartido = $("partido"), selCasa = $("casa");
+
+  for (var nombreComp in COMPS) selComp.add(new Option(nombreComp, nombreComp));
+  CASAS.forEach(function(c){ selCasa.add(new Option(c[0], c[0])); });
+  for (var g = 0; g <= 6; g++){
+    $("ex-gl").add(new Option(g, g));
+    $("ex-gv").add(new Option(g, g));
+  }
+  $("ex-gl").value = 2; $("ex-gv").value = 1;
+  $("fecha-datos").textContent = "Datos actualizados: " + fFecha(DATOS.actualizado);
+
+  function compActual(){ return COMPS[selComp.value]; }
+  function ctxActual(){ return { comp: compActual(), L: eqL, V: eqV }; }
+
+  function refrescarBanner(){
+    var hay = !!eqL;
+    $("banner-partido").style.display = hay ? "" : "none";
+    $("aviso-90").classList.toggle("visible", hay && !!compActual().neutral);
+    if (!hay) return;
+    pintarEscudo($("escudo-l"), eqL, compActual());
+    pintarEscudo($("escudo-v"), eqV, compActual());
+    $("banner-nombre-l").textContent = eqL;
+    $("banner-nombre-v").textContent = eqV;
+  }
+
+  function refrescarSelectoresEquipo(){
+    document.querySelectorAll(".sel-equipo").forEach(function(s){
+      var previo = s.value || "L";
+      s.innerHTML = "";
+      s.add(new Option(eqL ? nombreES(eqL) : "Local", "L"));
+      s.add(new Option(eqV ? nombreES(eqV) : "Visitante", "V"));
+      s.value = previo;
+    });
+    var etL = eqL || "Local", etV = eqV || "Visitante";
+    var etiquetas = {
+      "chip-dnb1": etL + " · empate no vale",
+      "chip-dnb2": etV + " · empate no vale",
+      "chip-cm1": "Más córners: " + etL,
+      "chip-cm2": "Más córners: " + etV,
+      "chip-c1": etL + " + ambos marcan",
+      "chip-c2": etL + " + más de 2,5",
+      "chip-c3": etV + " + más de 2,5"
+    };
+    Object.keys(etiquetas).forEach(function(id){
+      var el = $(id);
+      if (el){ el.dataset.base = etiquetas[id]; el.textContent = etiquetas[id]; }
+    });
+    refrescarBanner();
+  }
+
+  // Probabilidades en vivo en los botones rápidos
+  function selDesdeCodigo(codigo){
+    if (codigo.indexOf("R:") === 0) return { t: "R", v: codigo.slice(2) };
+    if (codigo.indexOf("B:") === 0) return { t: "B", v: codigo.slice(2) };
+    if (codigo.indexOf("P1:") === 0) return { t: "P1", v: codigo.slice(3) };
+    if (codigo.indexOf("P2:") === 0) return { t: "P2", v: codigo.slice(3) };
+    if (codigo.indexOf("PAR:") === 0) return { t: "PAR", v: codigo.slice(4) };
+    if (codigo.indexOf("RJ:") === 0) return { t: "RJ", v: codigo.slice(3) };
+    if (codigo.indexOf("BM:") === 0) return { t: "BM", v: codigo.slice(3) };
+    if (codigo.indexOf("MM:") === 0) return { t: "MM", v: codigo.slice(3) };
+    if (codigo.indexOf("CM:") === 0) return { t: "CM", side: codigo.slice(3) };
+    if (codigo.indexOf("C:") === 0) return { t: "C", v: codigo.slice(2) };
+    return null;
+  }
+
+  function refrescarProbChips(){
+    var m = null, ctx = null;
+    if (eqL){ ctx = ctxActual(); m = calcularPartido(ctx.comp, ctx.L, ctx.V); }
+    document.querySelectorAll(".add-chip[data-add]").forEach(function(chip){
+      var sel = selDesdeCodigo(chip.getAttribute("data-add"));
+      if (!sel) return;
+      if (!chip.dataset.base) chip.dataset.base = chip.textContent;
+      if (!m){ chip.textContent = chip.dataset.base; return; }
+      var p = calcular(sel, m, ctx);
+      chip.innerHTML = "";
+      chip.appendChild(document.createTextNode(chip.dataset.base));
+      if (p !== null && isFinite(p)){
+        var b = document.createElement("b");
+        b.textContent = Math.round(Math.max(Math.min(p, 0.999), 0.001) * 100) + " %";
+        chip.appendChild(b);
+      }
+    });
+  }
+
+  var jugadorSel = null; // "L:3" → lado y posición en la plantilla
+
+  function tarjetaJugador(side, i, j, ctx){
+    var card = document.createElement("button");
+    card.type = "button";
+    card.className = "ju-card ju-card-" + j[1];
+    card.dataset.ju = side + ":" + i;
+
+    var av = document.createElement("span");
+    av.className = "ju-avatar ju-avatar-" + j[1];
+    var equipo = nombreLado(ctx, side);
+    av.style.background = "linear-gradient(150deg, " + colorEquipo(equipo) + " 0%, #0E1118 135%)";
+
+    // Icono grande de la posición como "rostro" del avatar
+    var icono = document.createElement("span");
+    icono.className = "ju-avatar-icono";
+    icono.textContent = { POR: "🧤", DEF: "🛡️", MED: "⚙️", DEL: "🎯" }[j[1]] || "⚽";
+    av.appendChild(icono);
+
+    // Iniciales sobre el icono
+    var ini = document.createElement("span");
+    ini.className = "ju-avatar-ini";
+    ini.textContent = iniciales(j[0]);
+    av.appendChild(ini);
+
+    // Bandera pequeña del país/equipo, si es selección
+    var urlB = urlBandera(equipo);
+    if (urlB){
+      var band = document.createElement("img");
+      band.className = "ju-avatar-band";
+      band.src = urlB; band.alt = ""; band.loading = "lazy";
+      band.onerror = function(){ band.remove(); };
+      av.appendChild(band);
+    }
+
+    if (j[2] === 1){
+      var estrella = document.createElement("span");
+      estrella.className = "ju-estrella";
+      estrella.textContent = "⭐";
+      av.appendChild(estrella);
+    }
+
+    var nom = document.createElement("span");
+    nom.className = "ju-nombre";
+    nom.textContent = j[0];
+
+    var pos = document.createElement("span");
+    pos.className = "ju-pos ju-pos-" + j[1];
+    pos.textContent = { POR: "Portero", DEF: "Defensa", MED: "Medio", DEL: "Delantero" }[j[1]] || j[1];
+
+    card.appendChild(av); card.appendChild(nom); card.appendChild(pos);
+
+    card.addEventListener("click", function(){
+      jugadorSel = side + ":" + i;
+      document.querySelectorAll(".ju-card.sel").forEach(function(c){ c.classList.remove("sel"); });
+      card.classList.add("sel");
+      $("ju-elegido").textContent = j[0];
+      var mer = $("ju-mercado");
+      if (j[1] === "POR" && mer.value.indexOf("PA") !== 0) mer.value = "PA2";
+      if (j[1] !== "POR" && mer.value.indexOf("PA") === 0) mer.value = "G1";
+    });
+    return card;
+  }
+
+  function refrescarJugadores(){
+    var grid = $("ju-grid");
+    grid.innerHTML = "";
+    jugadorSel = null;
+    $("ju-elegido").textContent = "Elige un jugador de arriba";
+    var alguno = false;
+    var ctx = ctxActual();
+    ["L", "V"].forEach(function(side){
+      // Clave de datos (original, como lo da la API) vs texto visible (traducido).
+      var clave = side === "L" ? ctx.L : ctx.V;
+      var visible = nombreES(clave);
+      var pl = plantillaDe(ctx.comp, clave);
+      if (!pl || !pl.length) return;
+      alguno = true;
+
+      var cab = document.createElement("div");
+      cab.className = "ju-equipo-titulo";
+      var esc = document.createElement("span");
+      esc.className = "escudo mini";
+      pintarEscudo(esc, clave, ctx.comp);
+      var txt = document.createElement("span");
+      txt.textContent = visible;
+      cab.appendChild(esc); cab.appendChild(txt);
+      grid.appendChild(cab);
+
+      var fila = document.createElement("div");
+      fila.className = "ju-cards";
+      // Cracks primero, luego por posición de ataque a portería
+      var orden = { DEL: 0, MED: 1, DEF: 2, POR: 3 };
+      pl.map(function(j, i){ return { j: j, i: i }; })
+        .sort(function(a, b){
+          if (a.j[2] !== b.j[2]) return b.j[2] - a.j[2];
+          return (orden[a.j[1]] || 9) - (orden[b.j[1]] || 9);
+        })
+        .forEach(function(par){ fila.appendChild(tarjetaJugador(side, par.i, par.j, ctx)); });
+      grid.appendChild(fila);
+    });
+    var aviso = $("aviso-plantilla");
+    var filaControles = $("fila-jugadores");
+    if (!alguno){
+      filaControles.style.display = "none";
+      aviso.textContent = eqL
+        ? "Estos equipos aún no tienen plantilla cargada. El robot de actualización la añadirá automáticamente en la próxima pasada diaria."
+        : "Elige primero un partido de la semana.";
+    } else {
+      filaControles.style.display = "";
+      var faltan = [];
+      ["L", "V"].forEach(function(side){
+        // Se busca por la clave original, pero se muestra el nombre traducido.
+        var clave = side === "L" ? ctx.L : ctx.V;
+        if (!plantillaDe(ctx.comp, clave)) faltan.push(nombreES(clave));
+      });
+      aviso.textContent = faltan.length
+        ? "La plantilla de " + faltan.join(" y ") + " aún no está cargada; llegará con la próxima actualización automática."
+        : "";
+    }
+  }
+
+  function limpiarSeleccionesDeJugador(avisar){
+    var antes = selecciones.length;
+    selecciones = selecciones.filter(function(s){ return s.t !== "JU"; });
+    if (avisar && selecciones.length < antes) $("aviso-jugadores").classList.add("visible");
+    renderSlip();
+  }
+
+
+  function seleccionarPartido(){
+    var comp = compActual();
+    var lista = partidosSemana(comp);
+    var p = lista[parseInt(selPartido.value, 10)] || null;
+    eqL = p ? p[0] : "";
+    eqV = p ? p[1] : "";
+    $("banner-vs").textContent = p ? fFechaHora(p[2]) : "VS";
+    refrescarSelectoresEquipo();
+    refrescarJugadores();
+    refrescarProbChips();
+  }
+
+  function cargarPartidos(){
+    var comp = compActual();
+    selPartido.innerHTML = "";
+    var lista = partidosSemana(comp);
+    if (!lista.length){
+      selPartido.add(new Option("No hay partidos esta semana", ""));
+      selPartido.disabled = true;
+      eqL = ""; eqV = "";
+      $("nota-comp").textContent = "Esta competición no tiene partidos programados en los próximos 7 días. " + (comp.nota || "");
+      refrescarSelectoresEquipo();
+      refrescarJugadores();
+      refrescarProbChips();
+      return;
+    }
+    selPartido.disabled = false;
+    lista.forEach(function(p, i){
+      selPartido.add(new Option(fFechaHora(p[2]) + " · " + nombreES(p[0]) + " – " + nombreES(p[1]), i));
+    });
+    selPartido.value = 0;
+    $("nota-comp").textContent = comp.nota || "";
+    seleccionarPartido();
+  }
+
+
+  function renderSlip(){
+    var cont = $("slip-lista");
+    var n = selecciones.length;
+    $("slip-n").textContent = n + (n === 1 ? " selección" : " selecciones");
+    $("flotante").classList.toggle("visible", n > 0);
+    $("flotante-txt").textContent = "🎫 " + n + (n === 1 ? " selección" : " selecciones");
+    if (!n){
+      cont.innerHTML = '<p class="slip-vacio">Añade selecciones de los mercados de arriba. Puedes combinar varias, incluso de partidos distintos: cambia de partido en el Paso 1 y sigue añadiendo.</p>';
+      return;
+    }
+    cont.innerHTML = "";
+
+    // Agrupar por partido, respetando el orden de aparición
+    var grupos = [], indicePorClave = {};
+    selecciones.forEach(function(s, i){
+      var ctx = s._ctx || ctxActual();
+      var clave = nombreCompDe(ctx.comp) + "|" + ctx.L + "|" + ctx.V;
+      if (indicePorClave[clave] === undefined){
+        indicePorClave[clave] = grupos.length;
+        grupos.push({ ctx: ctx, items: [] });
+      }
+      grupos[indicePorClave[clave]].items.push({ s: s, i: i });
+    });
+
+    var multiPartido = grupos.length > 1;
+    grupos.forEach(function(g){
+      if (multiPartido){
+        var cab = document.createElement("div");
+        cab.className = "slip-partido";
+        var em = document.createElement("span"); em.className = "escudo mini";
+        var ev = document.createElement("span"); ev.className = "escudo mini";
+        pintarEscudo(em, g.ctx.L, g.ctx.comp);
+        pintarEscudo(ev, g.ctx.V, g.ctx.comp);
+        var nom = document.createElement("span");
+        nom.textContent = nombreES(g.ctx.L) + " – " + nombreES(g.ctx.V);
+        cab.appendChild(em); cab.appendChild(nom); cab.appendChild(ev);
+        cont.appendChild(cab);
+      }
+      g.items.forEach(function(it){
+        var fila = document.createElement("div");
+        fila.className = "slip-item";
+        var num = document.createElement("span"); num.className = "num"; num.textContent = (it.i + 1) + ".";
+        var txt = document.createElement("span"); txt.textContent = describir(it.s, g.ctx);
+        var x = document.createElement("button"); x.className = "slip-x"; x.type = "button";
+        x.setAttribute("aria-label", "Quitar selección"); x.textContent = "×";
+        x.addEventListener("click", function(){ selecciones.splice(it.i, 1); renderSlip(); });
+        fila.appendChild(num); fila.appendChild(txt); fila.appendChild(x);
+        cont.appendChild(fila);
+      });
+    });
+  }
+
+  // Clave ligera de una selección: sus datos + los equipos del partido (sin el objeto comp entero)
+  function claveSel(s){
+    var copia = {};
+    for (var k in s){ if (k !== "_ctx") copia[k] = s[k]; }
+    var ctx = s._ctx || ctxActual();
+    return JSON.stringify(copia) + "@" + (ctx.L || "") + "|" + (ctx.V || "");
+  }
+
+
+  function anadir(s){
+    if (!eqL){ $("error-equipos").classList.add("visible"); return; }
+    // Estampa el partido actual en la selección para poder combinar varios partidos
+    s._ctx = ctxActual();
+    var clave = claveSel(s);
+    var repetida = selecciones.some(function(o){ return claveSel(o) === clave; });
+    if (repetida) return;
+    if (selecciones.length >= 12) return;
+    selecciones.push(s);
+    $("aviso-jugadores").classList.remove("visible");
+    $("error-slip").classList.remove("visible");
+    $("error-equipos").classList.remove("visible");
+    renderSlip();
+  }
+
+  document.querySelectorAll("[data-add]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var codigo = btn.getAttribute("data-add");
+      var rapido = selDesdeCodigo(codigo);
+      if (rapido) return anadir(rapido);
+      switch (codigo){
+        case "MG": return anadir({ t: "MG", side: $("mg-side").value, n: parseInt($("mg-n").value, 10) });
+        case "HE": return anadir({ t: "HE", side: $("he-side").value, h: parseInt($("he-h").value, 10) });
+        case "HA": return anadir({ t: "HA", side: $("ha-side").value, h: parseFloat($("ha-h").value) });
+        case "DF": return anadir({ t: "DF", ht: $("df-ht").value, ft: $("df-ft").value });
+        case "GT": return anadir({ t: "GT", dir: $("gt-dir").value, linea: numLinea($("gt-linea").value), per: $("gt-per").value });
+        case "GE": return anadir({ t: "GE", side: $("ge-side").value, dir: $("ge-dir").value, linea: numLinea($("ge-linea").value), per: $("ge-per").value });
+        case "CS": return anadir({ t: "CS", side: $("cs-side").value });
+        case "EX": return anadir({ t: "EX", gl: parseInt($("ex-gl").value, 10), gv: parseInt($("ex-gv").value, 10) });
+        case "TE": return anadir({ t: "TE", side: $("te-side").value, dir: $("te-dir").value, linea: numLinea($("te-linea").value), per: $("te-per").value });
+        case "TT": return anadir({ t: "TT", dir: $("tt-dir").value, linea: numLinea($("tt-linea").value), per: $("tt-per").value });
+        case "FE": return anadir({ t: "FE", side: $("fe-side").value, dir: $("fe-dir").value, linea: numLinea($("fe-linea").value), per: $("fe-per").value });
+        case "FJ": return anadir({ t: "FJ", side: $("fj-side").value, dir: $("fj-dir").value, linea: numLinea($("fj-linea").value), per: $("fj-per").value });
+        case "FJT": return anadir({ t: "FJT", dir: $("fjt-dir").value, linea: numLinea($("fjt-linea").value), per: $("fjt-per").value });
+        case "CO": return anadir({ t: "CO", side: $("co-side").value, dir: $("co-dir").value, linea: numLinea($("co-linea").value), per: $("co-per").value });
+        case "COT": return anadir({ t: "COT", dir: $("cot-dir").value, linea: numLinea($("cot-linea").value), per: $("cot-per").value });
+        case "TI": return anadir({ t: "TI", side: $("ti-side").value, dir: $("ti-dir").value, linea: numLinea($("ti-linea").value), per: $("ti-per").value });
+        case "JU":
+          if (!jugadorSel){ $("aviso-plantilla").textContent = "Toca primero la tarjeta de un jugador."; return; }
+          var partes = jugadorSel.split(":");
+          var ladoJ = partes[0], idxJ = parseInt(partes[1], 10);
+          // OJO: nombre ORIGINAL para la búsqueda, no el traducido de nombreLado().
+          var ctxJ = ctxActual();
+          var plJ = plantillaDe(ctxJ.comp, ladoJ === "L" ? ctxJ.L : ctxJ.V);
+          var datoJ = plJ && plJ[idxJ] ? plJ[idxJ] : null;
+          return anadir({ t: "JU", side: ladoJ, pi: idxJ, m: $("ju-mercado").value, jn: datoJ ? datoJ[0] : "" });
+      }
+    });
+  });
+
+
+  // --- Pintar el resguardo (compartido) ---
+  function pintarResguardo(o){
+    var ctx = o.ctx, m = o.m;
+
+    $("stub-fuente").classList.toggle("visible", !!o.fuenteIA);
+    if (o.multiPartido){
+      $("stub-escudo-l").innerHTML = "🎟️";
+      $("stub-escudo-l").className = "escudo mini";
+      $("stub-escudo-v").innerHTML = "";
+      $("stub-titulo").textContent = "Combinada · " + o.nPartidos + " partidos";
+    } else {
+      $("stub-escudo-l").className = "escudo mini";
+      pintarEscudo($("stub-escudo-l"), ctx.L, ctx.comp);
+      pintarEscudo($("stub-escudo-v"), ctx.V, ctx.comp);
+      $("stub-titulo").textContent = nombreES(ctx.L) + " – " + nombreES(ctx.V);
+    }
+
+    var cont = $("sel-lineas"); cont.innerHTML = "";
+    var partidoAnterior = null;
+    o.lineas.forEach(function(l, i){
+      // En multi-partido, cabecera del partido antes de sus selecciones
+      if (o.multiPartido && l[2] && l[2] !== partidoAnterior){
+        partidoAnterior = l[2];
+        var cab = document.createElement("div");
+        cab.className = "sel-linea-partido";
+        cab.textContent = l[2];
+        cont.appendChild(cab);
+      }
+      var fila = document.createElement("div");
+      fila.className = "sel-linea" + (l[1] === null ? " na" : "");
+      var num = document.createElement("span"); num.className = "num"; num.textContent = (i + 1) + ".";
+      var txt = document.createElement("span"); txt.textContent = l[0] + (l[1] === null ? " (fuera del modelo)" : "");
+      var pct = document.createElement("span"); pct.className = "pct";
+      pct.textContent = l[1] === null ? "—" : fPct(l[1], 1);
+      fila.appendChild(num); fila.appendChild(txt); fila.appendChild(pct);
+      cont.appendChild(fila);
+    });
+
+    var nSel = o.lineas.length - o.nNA;
+    $("prob-num").textContent = fPct(o.probTotal, 1);
+    $("prob-desc").textContent = nSel > 1
+      ? "probabilidad estimada de que acierten las " + nSel + " selecciones a la vez"
+      : "probabilidad estimada de que tu apuesta acierte, según el modelo";
+
+    var nivel = nivelProb(o.probTotal);
+    var label = $("termo-label");
+    label.textContent = nivel.txt;
+    label.className = "termo-label " + nivel.clase;
+    var segs = $("termo-segs").children;
+    for (var k = 0; k < segs.length; k++){
+      segs[k].className = k < nivel.n ? "on " + nivel.clase : "";
+    }
+
+    $("frecuencia").innerHTML = "En cristiano: si repitieras este boleto muchas veces, " + fraseFrecuencia(o.probTotal) + ".";
+
+    $("cfill-modelo").style.width = Math.min(o.probTotal * 100, 100) + "%";
+    $("cpct-modelo").textContent = fPct(o.probTotal, 1);
+
+    var conCuota = isFinite(o.cuota) && o.cuota > 1.01;
+    var probImplicita = conCuota ? 1 / o.cuota : null;
+    $("cbarra-cuota").style.display = conCuota ? "" : "none";
+    $("compara-leyenda").textContent = conCuota
+      ? "Si la barra verde supera a la dorada, la casa te está pagando de más: hay valor. Si queda por debajo, te paga de menos."
+      : "No se ha detectado la cuota total, así que solo se muestra la probabilidad del modelo.";
+    if (conCuota){
+      $("cfill-cuota").style.width = Math.min(probImplicita * 100, 100) + "%";
+      $("cpct-cuota").textContent = fPct(probImplicita, 1);
+    }
+
+    var cuotaJusta = 1 / Math.max(o.probTotal, 0.0001);
+    $("cuota-justa").textContent = fNum(Math.min(cuotaJusta, 999), 2);
+    $("prob-implicita").textContent = conCuota ? fPct(probImplicita, 1) : "—";
+
+    var margen = 0;
+    CASAS.forEach(function(c){ if (c[0] === o.casa) margen = c[1]; });
+    $("margen-casa-k").textContent = o.casa ? "Margen típico de " + o.casa + " (orientativo)" : "Margen típico de la casa";
+    $("margen-casa").textContent = margen ? "~" + fNum(margen, 1) + " %" : "—";
+
+    var sello = $("sello"), frase = "", dinero = "";
+    sello.classList.remove("verde", "oro", "rojo");
+    if (!conCuota || o.nNA > 0){
+      sello.style.display = "none";
+      $("valor-esperado").textContent = "—";
+      frase = o.nNA > 0
+        ? "Hay " + o.nNA + " selección(es) que el modelo aún no sabe analizar, así que el veredicto de valor frente a la cuota total no sería fiable. La probabilidad de arriba corresponde solo a las selecciones analizadas."
+        : "Escribe o detecta la cuota total para obtener el veredicto de valor.";
+    } else {
+      sello.style.display = "";
+      var ev = o.probTotal * o.cuota - 1;
+      $("valor-esperado").textContent = (ev >= 0 ? "+" : "−") + fPct(Math.abs(ev), 1);
+      var nombreCasa = o.casa || "tu casa";
+      if (ev >= 0.03){
+        sello.textContent = "Hay valor"; sello.classList.add("verde");
+        frase = "El modelo estima más probabilidad (" + fPct(o.probTotal, 1) + ") de la que implica la cuota " + fNum(o.cuota, 2) + " de " + nombreCasa + " (" + fPct(probImplicita, 1) + "). A largo plazo, apuestas así son las rentables.";
+      } else if (ev >= 0){
+        sello.textContent = "Valor justo"; sello.classList.add("oro");
+        frase = "La cuota " + fNum(o.cuota, 2) + " de " + nombreCasa + " está muy cerca de la probabilidad que estima el modelo. Ni regalo ni trampa: valor prácticamente neutro.";
+      } else {
+        sello.textContent = "Sin valor"; sello.classList.add("rojo");
+        frase = "La cuota " + fNum(o.cuota, 2) + " de " + nombreCasa + " paga menos de lo que sugiere la probabilidad del modelo. Necesitarías al menos una cuota de " + fNum(Math.min(cuotaJusta, 999), 2) + " para que saliera a cuenta.";
+      }
+      sello.style.animation = "none"; void sello.offsetWidth; sello.style.animation = "";
+      var gananciaMedia = ev * 10;
+      dinero = "Con 10 € por boleto, a la larga " +
+        (gananciaMedia >= 0
+          ? "ganarías de media <b class='pos'>+" + fNum(gananciaMedia, 2) + " €</b> por apuesta."
+          : "perderías de media <b class='neg'>−" + fNum(Math.abs(gananciaMedia), 2) + " €</b> por apuesta.");
+    }
+    $("veredicto-frase").textContent = frase;
+    $("dinero").innerHTML = dinero;
+    $("nota-indep").textContent = o.multiPartido
+      ? "Combinada de " + o.nPartidos + " partidos: la probabilidad total es el producto de todas las selecciones. Al ser partidos independientes, esta multiplicación es correcta (a diferencia de combinar mercados del mismo partido, que sí pueden estar relacionados)."
+      : (nSel > 1
+        ? "El cálculo asume que las selecciones son independientes entre sí; cuando están relacionadas (por ejemplo, goles del equipo y victoria), la probabilidad real puede variar. Las casas ajustan sus combinadas justo por esto."
+        : "");
+
+    // Panel "lo que ve el modelo": solo tiene sentido con un único partido
+    var panelModelo = $("fill-1").closest(".modelo");
+    if (o.multiPartido){
+      if (panelModelo) panelModelo.style.display = "none";
+    } else {
+      if (panelModelo) panelModelo.style.display = "";
+      $("fill-1").style.width = (m.p1 * 100) + "%";
+      $("fill-x").style.width = (m.px * 100) + "%";
+      $("fill-2").style.width = (m.p2 * 100) + "%";
+      $("pct-1").textContent = fPct(m.p1, 0);
+      $("pct-x").textContent = fPct(m.px, 0);
+      $("pct-2").textContent = fPct(m.p2, 0);
+
+      var marcadores = m.top.map(function(t){
+        return "<b>" + t[0] + "–" + t[1] + "</b> (" + fPct(t[2], 0) + ")";
+      }).join(" · ");
+      $("marcadores").innerHTML =
+        "Goles esperados: <b>" + fNum(m.lh, 1) + " – " + fNum(m.la, 1) +
+        "</b> · Marcadores más probables: " + marcadores;
+    }
+
+    $("nota-stub").textContent = (o.multiPartido ? "" : (ctx.comp.nota ? ctx.comp.nota + ". " : "")) +
+      "Tarjetas, faltas, córners y tiros usan perfiles medios de la competición; los mercados de jugador son estimaciones por posición y rol. Datos del " + fFecha(DATOS.actualizado) + ".";
+
+    var stub = $("stub");
+    stub.classList.add("visible");
+    stub.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+
+  // --- Analizar boleto manual ---
+  $("analizar").addEventListener("click", function(){
+    ["error-equipos", "error-cuota", "error-slip"].forEach(function(id){ $(id).classList.remove("visible"); });
+
+    if (!selecciones.length){ $("error-slip").classList.add("visible"); return; }
+
+    var cuota = parseFloat(($("cuota").value || "").replace(",", "."));
+    if (!isFinite(cuota) || cuota <= 1.01 || cuota > 100000){ $("error-cuota").classList.add("visible"); $("cuota").focus(); return; }
+
+    // Modelo cacheado por partido (para combinadas de varios partidos)
+    var modelos = {};
+    function modeloDe(ctx){
+      var clave = nombreCompDe(ctx.comp) + "|" + ctx.L + "|" + ctx.V;
+      if (!modelos[clave]) modelos[clave] = calcularPartido(ctx.comp, ctx.L, ctx.V);
+      return modelos[clave];
+    }
+
+    var probTotal = 1, lineas = [];
+    var partidosUsados = {};
+    for (var i = 0; i < selecciones.length; i++){
+      var sel = selecciones[i];
+      var ctxSel = sel._ctx || ctxActual();
+      var mSel = modeloDe(ctxSel);
+      var p = calcular(sel, mSel, ctxSel);
+      if (p === null || !isFinite(p)){ $("error-slip").classList.add("visible"); return; }
+      p = Math.max(Math.min(p, 0.999), 0.001);
+      probTotal *= p;
+      var etiqueta = describir(sel, ctxSel);
+      var claveP = nombreES(ctxSel.L) + " – " + nombreES(ctxSel.V);
+      partidosUsados[claveP] = ctxSel;
+      lineas.push([etiqueta, p, claveP]);
+    }
+
+    var nPartidos = Object.keys(partidosUsados).length;
+    // El resguardo se ancla al primer partido para el panel "lo que ve el modelo"
+    var ctxBase = selecciones[0]._ctx || ctxActual();
+    var mBase = modeloDe(ctxBase);
+
+    pintarResguardo({
+      ctx: ctxBase, m: mBase, lineas: lineas, probTotal: probTotal,
+      cuota: cuota, casa: selCasa.value, fuenteIA: false, nNA: 0,
+      multiPartido: nPartidos > 1, nPartidos: nPartidos
+    });
+  });
+
+  $("flotante-btn").addEventListener("click", function(){
+    $("analizar").click();
+    if (!$("stub").classList.contains("visible")) $("boleto").scrollIntoView({ behavior: "smooth" });
+  });
+
+  // --- Buscador de mercados ---
+  var buscador = $("buscar-mercado");
+  var gruposMercado = Array.prototype.slice.call(document.querySelectorAll(".paso .grupo"));
+  buscador.addEventListener("input", function(){
+    var q = normalizar(buscador.value);
+    if (!q){
+      gruposMercado.forEach(function(g, idx){
+        g.classList.remove("oculto");
+        g.open = (idx === 0);
+        g.querySelectorAll(".fila-mercado").forEach(function(f){ f.classList.remove("oculto"); });
+      });
+      $("sin-resultados").classList.remove("visible");
+      return;
+    }
+    var algunoVisible = false;
+    gruposMercado.forEach(function(g){
+      var tituloGrupo = normalizar(g.querySelector("summary") ? g.querySelector("summary").textContent : "");
+      var filas = g.querySelectorAll(".fila-mercado");
+      var hayFila = false;
+      if (filas.length){
+        filas.forEach(function(f){
+          var txt = normalizar(f.textContent);
+          var coincide = tituloGrupo.indexOf(q) >= 0 || txt.indexOf(q) >= 0;
+          f.classList.toggle("oculto", !coincide);
+          if (coincide) hayFila = true;
+        });
+      } else {
+        hayFila = tituloGrupo.indexOf(q) >= 0;
+      }
+      g.classList.toggle("oculto", !hayFila);
+      g.open = hayFila;
+      if (hayFila) algunoVisible = true;
+    });
+    $("sin-resultados").classList.toggle("visible", !algunoVisible);
+  });
+
+
+  // --- Arranque ---
+  selComp.value = "Mundial 2026";
+  cargarPartidos();
+  selComp.addEventListener("change", function(){ cargarPartidos(); });
+  selPartido.addEventListener("change", function(){ seleccionarPartido(); renderSlip(); });
+  renderSlip();
+
+  // Si se llega desde una tarjeta de Inicio (Cuota del día / Soñadoras / Combinadas),
+  // la URL trae el partido y la selección ya elegidos: se cargan automáticamente.
+  (function precargarDesdeInicio(){
+    var qs = new URLSearchParams(window.location.search);
+
+    // Combinada de varios partidos: ?m=[{c,l,v,f,s},...]
+    var multiRaw = qs.get("m");
+    if (multiRaw){
+      try {
+        var piernas = JSON.parse(multiRaw);
+        if (Array.isArray(piernas) && piernas.length){
+          var cargadas = [];
+          piernas.forEach(function(pi){
+            if (!pi || !COMPS[pi.c] || !pi.s) return;
+            var sel = pi.s;
+            sel._ctx = { comp: COMPS[pi.c], L: pi.l, V: pi.v };
+            cargadas.push(sel);
+          });
+          if (cargadas.length){
+            // Coloca el Paso 1 en el primer partido de la combinada
+            selComp.value = piernas[0].c;
+            cargarPartidos();
+            var lista0 = partidosSemana(COMPS[piernas[0].c]);
+            for (var k = 0; k < lista0.length; k++){
+              if (lista0[k][0] === piernas[0].l && lista0[k][1] === piernas[0].v){ selPartido.value = k; break; }
+            }
+            seleccionarPartido();
+            selecciones = cargadas;
+            renderSlip();
+            window.scrollTo({ top: 0, behavior: "instant" });
+            $("boleto").scrollIntoView({ behavior: "smooth" });
+          }
+        }
+      } catch (e) { /* URL manipulada a mano: se ignora */ }
+      return;
+    }
+
+    var compN = qs.get("c"), L = qs.get("l"), V = qs.get("v"), fecha = qs.get("f"), selRaw = qs.get("s");
+    if (!compN || !L || !V || !COMPS[compN]) return;
+    selComp.value = compN;
+    cargarPartidos();
+    var lista = partidosSemana(COMPS[compN]);
+    for (var i = 0; i < lista.length; i++){
+      if (lista[i][0] === L && lista[i][1] === V && (!fecha || lista[i][2] === fecha)){ selPartido.value = i; break; }
+    }
+    seleccionarPartido();
+    if (selRaw){
+      try {
+        var sel = JSON.parse(selRaw);
+        sel._ctx = { comp: COMPS[compN], L: L, V: V };
+        selecciones = [sel];
+        renderSlip();
+      } catch (e) { /* URL manipulada a mano: se ignora */ }
+    }
+    window.scrollTo({ top: 0, behavior: "instant" });
+    $("boleto").scrollIntoView({ behavior: "smooth" });
+  })();
+
+  /* =========================================================
+     ANALIZADOR DE CAPTURAS CON IA
+     ========================================================= */
+  var imagenB64 = null;
+  var ficheroImg = null;
+
+  function guardarLocal(k, v){ try { localStorage.setItem(k, v); } catch (e) {} }
+  function leerLocal(k){ try { return localStorage.getItem(k) || ""; } catch (e) { return ""; } }
+
+  $("clave-ia").value = leerLocal("cuotajusta_clave_ia");
+  $("guardar-clave").addEventListener("click", function(){
+    guardarLocal("cuotajusta_clave_ia", $("clave-ia").value.trim());
+    estadoIA("Clave guardada en este navegador.", false);
+  });
+
+  function estadoIA(msg, mal){
+    var e = $("estado-ia");
+    e.textContent = msg || "";
+    e.classList.toggle("visible", !!msg);
+    e.classList.toggle("mal", !!mal);
+  }
+
+  function prepararImagen(fichero){
+    return new Promise(function(resolver, rechazar){
+      var lector = new FileReader();
+      lector.onerror = function(){ rechazar(new Error("No se pudo leer la imagen.")); };
+      lector.onload = function(){
+        var img = new Image();
+        img.onerror = function(){ rechazar(new Error("Formato de imagen no compatible. Prueba con JPG o PNG.")); };
+        img.onload = function(){
+          var maxLado = 1600;
+          var escala = Math.min(1, maxLado / Math.max(img.width, img.height));
+          var c = document.createElement("canvas");
+          c.width = Math.round(img.width * escala);
+          c.height = Math.round(img.height * escala);
+          c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+          var datos = c.toDataURL("image/jpeg", 0.85);
+          resolver(datos.split(",")[1]);
+        };
+        img.src = lector.result;
+      };
+      lector.readAsDataURL(fichero);
+    });
+  }
+
+  function cargarFichero(f){
+    if (!f) return;
+    ficheroImg = f;
+    estadoIA("", false);
+    prepararImagen(f).then(function(b64){
+      imagenB64 = b64;
+      $("preview-img").src = "data:image/jpeg;base64," + b64;
+      $("preview").classList.add("visible");
+      $("drop-txt").textContent = "Imagen cargada. Puedes cambiarla tocando aquí.";
+    }).catch(function(e){
+      imagenB64 = null;
+      estadoIA(e.message, true);
+    });
+  }
+
+  $("fichero").addEventListener("change", function(){ cargarFichero(this.files[0]); });
+  var drop = $("drop");
+  ["dragover", "dragenter"].forEach(function(ev){
+    drop.addEventListener(ev, function(e){ e.preventDefault(); drop.classList.add("arrastrando"); });
+  });
+  ["dragleave", "drop"].forEach(function(ev){
+    drop.addEventListener(ev, function(e){ e.preventDefault(); drop.classList.remove("arrastrando"); });
+  });
+  drop.addEventListener("drop", function(e){
+    if (e.dataTransfer.files && e.dataTransfer.files[0]) cargarFichero(e.dataTransfer.files[0]);
+  });
+  $("quitar-img").addEventListener("click", function(){
+    imagenB64 = null;
+    ficheroImg = null;
+    $("preview").classList.remove("visible");
+    $("drop-txt").textContent = "Toca para elegir una imagen o arrástrala aquí";
+    $("fichero").value = "";
+  });
+
+  /* =========================================================
+     ESCÁNER GRATIS (OCR en el navegador con Tesseract.js)
+     ========================================================= */
+  function parsearBoleto(texto){
+    var plano = normalizar(texto);
+
+    // 1) Equipos: busca dos equipos conocidos de la misma competición.
+    // Se prueba con el nombre original de la API ("Spain") y con el traducido
+    // ("España"), porque un boleto de una casa española escribirá el segundo.
+    var mejor = null;
+    for (var nombreComp in COMPS){
+      var comp = COMPS[nombreComp];
+      var hallados = [];
+      for (var eq in comp.equipos){
+        var variantes = [normalizar(eq), normalizar(nombreES(eq))];
+        var pos = -1;
+        for (var vi = 0; vi < variantes.length; vi++){
+          var ne = variantes[vi];
+          if (ne.length < 4) continue;
+          var p = plano.indexOf(ne);
+          if (p >= 0 && (pos < 0 || p < pos)) pos = p;
+        }
+        if (pos >= 0) hallados.push({ eq: eq, pos: pos });
+      }
+      if (hallados.length >= 2){
+        hallados.sort(function(a, b){ return a.pos - b.pos; });
+        if (!mejor || hallados.length > mejor.hallados.length){
+          mejor = { comp: comp, nombreComp: nombreComp, hallados: hallados };
+        }
+      }
+    }
+    if (!mejor) return { error: "No he reconocido los dos equipos del boleto. Prueba con una captura más nítida o usa el modo avanzado con IA." };
+    var L = mejor.hallados[0].eq, V = mejor.hallados[1].eq;
+    var ctx = { comp: mejor.comp, L: L, V: V };
+    var nL = normalizar(L), nV = normalizar(V);
+
+    // 2) Cuota total: prioriza números cerca de "cuota/total/combinada/ganancia"
+    var cuota = null;
+    var decimales = plano.match(/\d{1,3}[.,]\d{1,2}/g) || [];
+    var candidatas = decimales.map(function(s){ return parseFloat(s.replace(",", ".")); })
+      .filter(function(n){ return n > 1.05 && n < 500; });
+    var marca = plano.search(/cuota|total|combinada|ganancia|multiplicador/);
+    if (marca >= 0){
+      var trozo = plano.slice(marca, marca + 40).match(/\d{1,3}[.,]\d{1,2}/);
+      if (trozo) cuota = parseFloat(trozo[0].replace(",", "."));
+    }
+    if (!cuota && candidatas.length) cuota = Math.max.apply(null, candidatas);
+
+    // 3) Selecciones: heurísticas sobre el texto
+    var sels = [];
+    function tiene(re){ return re.test(plano); }
+
+    if (tiene(/empate/) && !tiene(/doble|no vale/)) sels.push({ t: "R", v: "X" });
+    // Victoria: el nombre del equipo pegado a "gana/ganador/victoria" (máx 8 caracteres de separación)
+    if (tiene(new RegExp("gana\\s+" + nL + "\\b")) || tiene(new RegExp("\\b" + nL + "\\s+gana")) || tiene(new RegExp("(victoria|ganador)\\s+(de\\s+)?" + nL + "\\b"))) sels.push({ t: "R", v: "1" });
+    if (tiene(new RegExp("gana\\s+" + nV + "\\b")) || tiene(new RegExp("\\b" + nV + "\\s+gana")) || tiene(new RegExp("(victoria|ganador)\\s+(de\\s+)?" + nV + "\\b"))) sels.push({ t: "R", v: "2" });
+
+    if (tiene(/ambos.{0,12}marcan|ambos equipos marcan|btts/)){
+      var no = tiene(/ambos.{0,20}no|marcan.{0,6}no|btts.{0,4}no/);
+      sels.push({ t: "B", v: no ? "N" : "Y" });
+    }
+
+    var goles = plano.match(/(mas|menos|over|under)\s*(de)?\s*(\d)[.,](\d)\s*goles?/g) || [];
+    goles.forEach(function(g){
+      var dir = /mas|over/.test(g) ? "O" : "U";
+      var num = g.match(/(\d)[.,](\d)/);
+      if (num) sels.push({ t: "GT", dir: dir, linea: parseFloat(num[1] + "." + num[2]), per: "F" });
+    });
+
+    if (tiene(/doble oportunidad/) || tiene(/\b1x\b/)) sels.push({ t: "R", v: "1X" });
+    if (tiene(/\bx2\b/)) sels.push({ t: "R", v: "X2" });
+
+    var vistas = {}, limpio = [];
+    sels.forEach(function(s){
+      var k = JSON.stringify(s);
+      if (!vistas[k]){ vistas[k] = 1; limpio.push(s); }
+    });
+
+    return { ctx: ctx, selecciones: limpio, cuota: cuota };
+  }
+
+  function cargarPartidoEnBoleto(ctx, sels, cuota){
+    for (var nombreComp in COMPS){
+      if (COMPS[nombreComp] === ctx.comp){ selComp.value = nombreComp; break; }
+    }
+    cargarPartidos();
+    var lista = partidosSemana(ctx.comp);
+    for (var i = 0; i < lista.length; i++){
+      if (lista[i][0] === ctx.L && lista[i][1] === ctx.V){ selPartido.value = i; break; }
+    }
+    seleccionarPartido();
+    if (sels && sels.length){
+      selecciones = sels.map(function(s){ s._ctx = { comp: ctx.comp, L: ctx.L, V: ctx.V }; return s; });
+      renderSlip();
+    }
+    if (cuota) $("cuota").value = fNum(cuota, 2);
+    $("boleto").scrollIntoView({ behavior: "smooth" });
+  }
+
+  function escanearGratis(){
+    if (!ficheroImg){ estadoIA("Primero sube una captura de tu boleto.", true); return; }
+    if (typeof Tesseract === "undefined"){
+      estadoIA("El motor de escaneo no se ha podido cargar (revisa tu conexión). Puedes usar el modo avanzado con IA.", true);
+      return;
+    }
+    var boton = $("btn-scan");
+    boton.disabled = true;
+    estadoIA("Escaneando el boleto en tu navegador… la primera vez tarda un poco más.", false);
+
+    Tesseract.recognize(ficheroImg, "spa", {
+      logger: function(info){
+        if (info.status === "recognizing text"){
+          estadoIA("Leyendo el texto… " + Math.round(info.progress * 100) + "%", false);
+        }
+      }
+    }).then(function(res){
+      var texto = (res && res.data && res.data.text) || "";
+      var r = parsearBoleto(texto);
+      if (r.error){ estadoIA(r.error, true); return; }
+      if (!r.selecciones.length){
+        estadoIA("He leído el partido (" + nombreES(r.ctx.L) + " – " + nombreES(r.ctx.V) + ") pero no he identificado las apuestas. Añádelas a mano en el boleto o usa el modo avanzado con IA.", true);
+        cargarPartidoEnBoleto(r.ctx, [], r.cuota);
+        return;
+      }
+      var m = calcularPartido(r.ctx.comp, r.ctx.L, r.ctx.V);
+      var probTotal = 1, lineas = [];
+      r.selecciones.forEach(function(sel){
+        var p = calcular(sel, m, r.ctx);
+        if (p === null || !isFinite(p)) return;
+        p = Math.max(Math.min(p, 0.999), 0.001);
+        probTotal *= p;
+        lineas.push([describir(sel, r.ctx), p]);
+      });
+      if (!lineas.length){ estadoIA("No he podido calcular las apuestas leídas. Añádelas a mano.", true); return; }
+      estadoIA("Boleto escaneado: " + nombreES(r.ctx.L) + " – " + nombreES(r.ctx.V) + " · " + lineas.length + " selección(es). Revisa que coincidan con tu apuesta.", false);
+      pintarResguardo({
+        ctx: r.ctx, m: m, lineas: lineas, probTotal: probTotal,
+        cuota: r.cuota, casa: null, fuenteIA: true, nNA: 0
+      });
+    }).catch(function(){
+      estadoIA("No se ha podido escanear la imagen. Prueba con otra captura más nítida o el modo avanzado con IA.", true);
+    }).then(function(){ boton.disabled = false; });
+  }
+
+  $("btn-scan").addEventListener("click", escanearGratis);
+
+  function listaEquiposParaIA(){
+    var partes = [];
+    for (var nombre in COMPS){
+      partes.push(nombre + ": " + Object.keys(COMPS[nombre].equipos).join(", "));
+    }
+    return partes.join("\n");
+  }
+
+  function promptIA(){
+    return [
+      "Eres un extractor de boletos de apuestas de fútbol. Analiza la captura de pantalla y devuelve SOLO un objeto JSON válido, sin explicaciones ni marcado, con esta forma exacta:",
+      '{"local":"...","visitante":"...","casa":"..." o null,"cuota_total":numero o null,"selecciones":[...]}',
+      "",
+      "REGLAS:",
+      "- 'local' es el primer equipo del partido tal y como aparece en el boleto; 'visitante' el segundo.",
+      "- Usa EXACTAMENTE los nombres de esta lista si el equipo aparece en ella (elige el más parecido):",
+      listaEquiposParaIA(),
+      "- 'cuota_total' es la cuota combinada final del boleto, con punto decimal (ej. 4.35). Si no se ve, null.",
+      "- Cada selección del boleto se convierte en UNO de estos objetos JSON:",
+      '  {"t":"R","v":"1"} gana el local · {"t":"R","v":"X"} empate · {"t":"R","v":"2"} gana el visitante',
+      '  {"t":"R","v":"1X"} · {"t":"R","v":"12"} · {"t":"R","v":"X2"} doble oportunidad',
+      '  {"t":"R","v":"DNB1"} local empate-no-vale · {"t":"R","v":"DNB2"} visitante empate-no-vale',
+      '  {"t":"P1","v":"1"} resultado al descanso (v: 1, X o 2)',
+      '  {"t":"MG","side":"L","n":2} gana por n o más goles (n: 2 o 3; side L=local, V=visitante)',
+      '  {"t":"B","v":"Y"} ambos marcan sí · {"t":"B","v":"N"} ambos marcan no',
+      '  {"t":"PAR","v":"P"} goles totales par · {"t":"PAR","v":"I"} impar',
+      '  {"t":"CS","side":"L"} un equipo deja la portería a cero',
+      '  {"t":"EX","gl":2,"gv":1} marcador exacto',
+      '  {"t":"GT","dir":"O","linea":2.5,"per":"F"} goles totales (dir O=más de, U=menos de; per F=partido, P=1ª parte)',
+      '  {"t":"GE","side":"L","linea":1.5,"dir":"O","per":"F"} goles de un equipo',
+      '  {"t":"TE","side":"L","linea":1.5,"dir":"O","per":"F"} tarjetas amarillas de un equipo',
+      '  {"t":"TT","linea":3.5,"dir":"O","per":"F"} tarjetas amarillas totales',
+      '  {"t":"RJ","v":"Y"} habrá tarjeta roja · {"t":"RJ","v":"N"} no habrá',
+      '  {"t":"FE","side":"L","linea":10.5,"dir":"O","per":"F"} faltas de un equipo',
+      '  {"t":"FJ","side":"L","linea":1.5,"dir":"O","per":"F"} fueras de juego de un equipo',
+      '  {"t":"FJT","linea":3.5,"dir":"O","per":"F"} fueras de juego totales',
+      '  {"t":"CO","side":"L","linea":4.5,"dir":"O","per":"F"} córners de un equipo',
+      '  {"t":"COT","linea":9.5,"dir":"O","per":"F"} córners totales',
+      '  {"t":"TI","side":"L","linea":3.5,"dir":"O","per":"F"} tiros a puerta de un equipo',
+      '  {"t":"JU","jn":"nombre del jugador","equipo":"nombre del equipo","pos":"DEL|MED|DEF|POR","m":"G1"} mercados de jugador',
+      '    (m: G1=marca gol, G1P=marca en la 1ª parte, G2=marca 2 o más, TT1=más de 0.5 tiros a puerta, TT2=más de 1.5 tiros a puerta, RE2=más de 1.5 remates, RE3=más de 2.5 remates, PA2=portero más de 1.5 paradas, PA3=portero más de 2.5 paradas, PA4=portero más de 3.5 paradas, TA=recibe tarjeta, F1=recibe más de 1.5 faltas, F2=más de 2.5 faltas; pos es tu mejor estimación de su posición)',
+      '  {"t":"NA","texto":"descripción literal"} para cualquier mercado que no encaje en los anteriores (hándicaps asiáticos, descanso/final, etc.)',
+      "- Las líneas van con punto decimal (1.5, 2.5...).",
+      "- Si la apuesta dice 'primera parte' o '1ª mitad', usa per:'P'; si no, per:'F'.",
+      "- No inventes selecciones: extrae solo lo que se ve."
+    ].join("\n");
+  }
+
+  function extraerJSON(texto){
+    var limpio = String(texto).replace(/```json|```/g, "").trim();
+    var ini = limpio.indexOf("{"), fin = limpio.lastIndexOf("}");
+    if (ini < 0 || fin < 0) throw new Error("La IA no devolvió un resultado legible.");
+    return JSON.parse(limpio.slice(ini, fin + 1));
+  }
+
+  function buscarEnDatos(nombreL, nombreV){
+    var nL = normalizar(nombreL), nV = normalizar(nombreV);
+    // Compara con el nombre original de la API y con el traducido al español,
+    // porque la IA leerá del boleto lo que ponga la casa ("España", no "Spain").
+    function coincide(eq, buscado){
+      if (!buscado) return false;
+      var variantes = [normalizar(eq), normalizar(nombreES(eq))];
+      for (var i = 0; i < variantes.length; i++){
+        var ne = variantes[i];
+        if (!ne) continue;
+        if (ne === buscado || ne.indexOf(buscado) >= 0 || buscado.indexOf(ne) >= 0) return true;
+      }
+      return false;
+    }
+    for (var nombreComp in COMPS){
+      var comp = COMPS[nombreComp];
+      var encontradoL = null, encontradoV = null;
+      for (var eq in comp.equipos){
+        if (!encontradoL && coincide(eq, nL)) encontradoL = eq;
+        if (!encontradoV && coincide(eq, nV)) encontradoV = eq;
+      }
+      if (encontradoL && encontradoV && encontradoL !== encontradoV){
+        return { comp: comp, nombreComp: nombreComp, L: encontradoL, V: encontradoV };
+      }
+    }
+    return null;
+  }
+
+  // ¿El texto leído del boleto se refiere a este equipo? Compara tanto con el
+  // nombre original de la API ("Spain") como con el traducido ("España"), porque
+  // un boleto de una casa española dirá "España" y uno internacional "Spain".
+  function textoEsEquipo(nEquipo, nombreEquipo){
+    if (!nEquipo) return false;
+    var a = normalizar(nombreEquipo);
+    var b = normalizar(nombreES(nombreEquipo));
+    return (a && nEquipo.indexOf(a) >= 0) || (b && nEquipo.indexOf(b) >= 0);
+  }
+
+  function resolverJugador(sel, ctx){
+    var lados;
+    var nEquipo = normalizar(sel.equipo);
+    if (textoEsEquipo(nEquipo, ctx.V)) lados = ["V", "L"];
+    else lados = ["L", "V"];
+    var nJug = normalizar(sel.jn);
+    for (var k = 0; k < lados.length; k++){
+      var side = lados[k];
+      // OJO: nombre ORIGINAL para la búsqueda, no el traducido de nombreLado().
+      var pl = plantillaDe(ctx.comp, side === "L" ? ctx.L : ctx.V);
+      if (!pl) continue;
+      for (var i = 0; i < pl.length; i++){
+        var np = normalizar(pl[i][0]);
+        if (np === nJug || np.indexOf(nJug) >= 0 || nJug.indexOf(np) >= 0){
+          return { t: "JU", side: side, pi: i, m: sel.m, jn: pl[i][0] };
+        }
+      }
+    }
+    var sideLibre = textoEsEquipo(nEquipo, ctx.V) ? "V" : "L";
+    if (!sel.pos) return { t: "NA", texto: (sel.jn || "Jugador") + " (jugador no identificado)" };
+    return { t: "JU", libre: true, side: sideLibre, pos: sel.pos, m: sel.m, jn: sel.jn };
+  }
+
+  $("btn-ia").addEventListener("click", function(){
+    var clave = $("clave-ia").value.trim();
+    if (!imagenB64){ estadoIA("Primero sube una captura de tu boleto.", true); return; }
+    if (!clave){ estadoIA("Escribe tu clave de API de Anthropic (empieza por sk-ant-...).", true); return; }
+    guardarLocal("cuotajusta_clave_ia", clave);
+
+    var boton = $("btn-ia");
+    boton.disabled = true;
+    estadoIA("Leyendo el boleto con IA... (unos segundos)", false);
+
+    fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        "x-api-key": clave,
+        "anthropic-version": "2023-06-01",
+        "anthropic-dangerous-direct-browser-access": "true"
+      },
+      body: JSON.stringify({
+        model: MODELO_IA,
+        max_tokens: 1500,
+        messages: [{
+          role: "user",
+          content: [
+            { type: "image", source: { type: "base64", media_type: "image/jpeg", data: imagenB64 } },
+            { type: "text", text: promptIA() }
+          ]
+        }]
+      })
+    })
+    .then(function(r){
+      if (r.status === 401) throw new Error("Clave de API no válida. Revísala en console.anthropic.com.");
+      if (r.status === 429) throw new Error("Demasiadas peticiones seguidas; espera un momento y reintenta.");
+      if (!r.ok) throw new Error("Error de la API de IA (código " + r.status + ").");
+      return r.json();
+    })
+    .then(function(data){
+      var texto = (data.content || [])
+        .filter(function(b){ return b.type === "text"; })
+        .map(function(b){ return b.text; })
+        .join("\n");
+      var leido = extraerJSON(texto);
+      if (!leido.local || !leido.visitante) throw new Error("La IA no identificó los dos equipos del boleto.");
+
+      var sitio = buscarEnDatos(leido.local, leido.visitante);
+      if (!sitio) throw new Error("No tengo datos de ese partido (" + leido.local + " – " + leido.visitante + "). Solo cubro el Mundial 2026 y las 5 grandes ligas.");
+
+      var ctx = { comp: sitio.comp, L: sitio.L, V: sitio.V };
+      var m = calcularPartido(ctx.comp, ctx.L, ctx.V);
+
+      var brutas = Array.isArray(leido.selecciones) ? leido.selecciones.slice(0, 10) : [];
+      if (!brutas.length) throw new Error("La IA no encontró selecciones en el boleto.");
+
+      var probTotal = 1, lineas = [], nNA = 0;
+      brutas.forEach(function(sel){
+        if (sel && sel.t === "JU") sel = resolverJugador(sel, ctx);
+        var p = sel ? calcular(sel, m, ctx) : null;
+        if (p === null || !isFinite(p)){
+          nNA++;
+          lineas.push([describir(sel || { t: "NA" }, ctx), null]);
+        } else {
+          p = Math.max(Math.min(p, 0.999), 0.001);
+          probTotal *= p;
+          lineas.push([describir(sel, ctx), p]);
+        }
+      });
+      if (nNA === lineas.length) throw new Error("Ninguna selección del boleto encaja con los mercados del modelo todavía.");
+
+      var cuota = (typeof leido.cuota_total === "number" && leido.cuota_total > 1.01) ? leido.cuota_total : null;
+
+      estadoIA("Boleto leído: " + nombreES(ctx.L) + " – " + nombreES(ctx.V) + " · " + lineas.length + " selecciones.", false);
+      pintarResguardo({
+        ctx: ctx, m: m, lineas: lineas, probTotal: probTotal,
+        cuota: cuota, casa: leido.casa || null, fuenteIA: true, nNA: nNA
+      });
+    })
+    .catch(function(e){
+      var msg = e && e.message ? e.message : "No se pudo completar el análisis.";
+      if (msg.indexOf("Failed to fetch") >= 0) msg = "No se pudo conectar con la API. Comprueba tu conexión (y que no haya un bloqueador de anuncios cortando la petición).";
+      estadoIA(msg, true);
+    })
+    .then(function(){ boton.disabled = false; });
+  });
+})();
+</script>
+</body>
+</html>
