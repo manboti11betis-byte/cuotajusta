@@ -121,6 +121,18 @@
     <a href="analizador.html" class="cta-btn">Abrir el analizador →</a>
   </section>
 
+  <!-- Anuncio. Se oculta solo si la portada se queda sin partidos: las políticas de
+       AdSense no permiten anuncios en páginas sin contenido propio. -->
+  <div class="anuncio" id="anuncio-portada">
+    <span class="anuncio-etiqueta">Publicidad</span>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-1472848221494637"
+         data-ad-slot="1144121895"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+  </div>
+
   <section class="cd" style="display:block" id="cta-analizador">
     <div class="cta-caja">
       <div>
@@ -388,7 +400,14 @@
       var leyenda = document.querySelector(".leyenda");
       if (leyenda) leyenda.style.display = "none";
       $("sin-partidos").classList.add("visible");
+      // Sin partidos no hay contenido propio: se quita el anuncio para no
+      // incumplir las políticas de AdSense (nada de anuncios en páginas vacías).
+      var anuncio = $("anuncio-portada");
+      if (anuncio) anuncio.remove();
+      return;
     }
+    // Hay contenido: se pide el anuncio a Google.
+    try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
   })();
 })();
 </script>

@@ -470,7 +470,7 @@
     <details>
       <summary>Cómo funciona el análisis</summary>
       <div class="como-body">
-        <p><b>1. Partidos reales.</b> Solo se analizan partidos programados de los próximos 7 días, que el robot de datos actualiza cada mañana junto con las medias de goles, plantillas y escudos. La «Cuota del día» es la selección con mejor probabilidad de cada partido según el modelo.</p>
+        <p><b>1. Partidos reales.</b> Solo se analizan partidos programados de las próximas dos semanas, que el robot de datos actualiza cada mañana junto con las medias de goles, plantillas y escudos. La «Cuota del día» es la selección con mejor probabilidad de cada partido según el modelo.</p>
         <p><b>2. Distribución de Poisson.</b> Cada mercado (goles, tarjetas, faltas, córners, tiros, jugadores) se modela con su propia media esperada y de ahí sale la probabilidad de cada selección. Tarjetas, faltas y córners usan perfiles medios de cada competición; los mercados de jugador se estiman por posición y rol.</p>
         <p><b>3. El boleto combinado.</b> Si añades varias selecciones, la probabilidad total es el producto de todas, asumiendo que son independientes. Con la cuota total de tu casa se calcula el valor esperado y el veredicto.</p>
         <p><b>4. El analizador de capturas.</b> La imagen se envía a la IA de Anthropic con tu propia clave, que extrae el partido, las selecciones y la cuota; después las probabilidades las calcula siempre el modelo de esta web, no la IA.</p>
@@ -478,6 +478,15 @@
     </details>
   </section>
 
+  <div class="anuncio" id="anuncio-analizador">
+    <span class="anuncio-etiqueta">Publicidad</span>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-1472848221494637"
+         data-ad-slot="1144121895"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+  </div>
 
 </div>
 
@@ -1617,6 +1626,9 @@
     })
     .then(function(){ boton.disabled = false; });
   });
+
+  // Pide el anuncio a Google. Va al final, cuando la página ya está montada.
+  try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
 })();
 </script>
 </body>
