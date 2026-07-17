@@ -77,7 +77,7 @@
     <p class="eyebrow">Mundial 2026 y grandes ligas</p>
     <h1>Cuota<span class="justa">Justa</span></h1>
     <span class="demo-badge">Beta</span>
-    <p class="lede">Cada día analizamos los partidos con un modelo de probabilidad y elegimos las apuestas con más valor. Toca cualquiera para verla a fondo en el analizador.</p>
+    <p class="lede">Elige un partido y te enseñamos sus mejores apuestas según nuestro modelo de probabilidad: la más fiable, la que más paga y las combinadas. Toca cualquiera para verla a fondo en el analizador.</p>
     <p class="fecha-datos" id="fecha-datos"></p>
   </header>
 
@@ -96,10 +96,16 @@
     </a>
   </div>
 
+  <section class="selector-partido" id="selector-partido">
+    <h2 class="cd-titulo"><span class="estrella-p">⚽</span> <span id="sp-titulo-txt">Elige un partido</span></h2>
+    <div class="sp-lista" id="sp-lista"></div>
+    <p class="cd-nota" id="sp-nota">Toca un partido para ver sus mejores apuestas según el modelo.</p>
+  </section>
+
   <section class="cd" id="cd">
-    <h2 class="cd-titulo"><span class="estrella">⭐</span> <span id="cd-titulo-txt">Cuota del día</span></h2>
+    <h2 class="cd-titulo"><span class="estrella">⭐</span> <span id="cd-titulo-txt">Segura</span></h2>
     <div class="cd-cards" id="cd-cards"></div>
-    <p class="cd-nota">La selección más fiable de cada partido según el modelo. La «cuota justa» es tu listón: si tu casa paga más, la apuesta tiene valor. Toca una tarjeta para analizarla en el analizador de apuestas. Ningún pronóstico es seguro.</p>
+    <p class="cd-nota">La selección más fiable de este partido según el modelo. La «cuota justa» es tu listón: si tu casa paga más, la apuesta tiene valor. Toca una tarjeta para analizarla en el analizador de apuestas. Ningún pronóstico es seguro.</p>
   </section>
 
   <section class="cd sonadoras" id="sonadoras">
@@ -112,6 +118,12 @@
     <h2 class="cd-titulo"><span class="estrella-c">🎟️</span> Combinadas</h2>
     <div class="cd-cards" id="comb-cards"></div>
     <p class="cd-nota">Dos apuestas del mismo partido unidas en una, con la probabilidad calculada de forma exacta sobre el marcador (no es una simple multiplicación). Toca una tarjeta para analizarla. Ningún pronóstico es seguro.</p>
+  </section>
+
+  <section class="cd multi" id="multi">
+    <h2 class="cd-titulo"><span class="estrella-m">🔥</span> Combinadas del día</h2>
+    <div class="cd-cards" id="multi-cards"></div>
+    <p class="cd-nota">Estas juntan las mejores apuestas de <b>varios partidos distintos</b>. Al ser partidos independientes entre sí, multiplicar sus probabilidades es matemáticamente exacto. Pagan mucho más, pero tienen que acertar todas.</p>
   </section>
 
   <section class="sin-partidos" id="sin-partidos">
@@ -262,45 +274,94 @@
     return card;
   }
 
-  function construirCuotaDia(){
-    var todos = partidosParaTarjetas();
-    if (!todos.length) return;
-    var hoy = new Date().toDateString();
-    var deHoy = todos.filter(function(x){ return new Date(x.p[2]).toDateString() === hoy; });
-    // Los de hoy primero, pero SIN quitar el resto de la semana
-    var usar = deHoy.concat(todos.filter(function(x){ return deHoy.indexOf(x) === -1; })).slice(0, 8);
-    $("cd-titulo-txt").textContent = deHoy.length ? "Cuota del día" : "Cuotas de la semana";
+  // ===== SELECTOR DE PARTIDO =====
+  // La portada ya no vuelca todas las apuestas de todos los partidos de golpe:
+  // se elige un partido y solo se muestran SUS mejores apuestas.
+  var PARTIDOS = partidosParaTarjetas();
+  var idxActivo = -1;
 
-    var porPartido = tarjetasPorPartido(usar.length, 6);
-    var cont = $("cd-cards"); cont.innerHTML = "";
-    usar.forEach(function(x){
-      var ctx = { comp: x.comp, L: x.p[0], V: x.p[1] };
-      var m = calcularPartido(ctx.comp, ctx.L, ctx.V);
-      mejoresApuestas(ctx, m, porPartido).forEach(function(mejor){
-        cont.appendChild(crearTarjeta(x, mejor, "segura"));
-      });
-    });
-    if (cont.children.length) $("cd").classList.add("visible");
+  function crearTarjetaPartido(x, i){
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "sp-card";
+    btn.setAttribute("data-idx", i);
+    btn.setAttribute("aria-label",
+      "Ver apuestas de " + nombreES(x.p[0]) + " contra " + nombreES(x.p[1]) +
+      ", " + fFechaHora(x.p[2]) + ", " + x.compN);
+
+    var fecha = document.createElement("span");
+    fecha.className = "sp-fecha";
+    fecha.textContent = fFechaHora(x.p[2]) + " · " + x.compN;
+
+    var equipos = document.createElement("span");
+    equipos.className = "sp-equipos";
+    var e1 = document.createElement("span"); e1.className = "escudo mini";
+    var e2 = document.createElement("span"); e2.className = "escudo mini";
+    pintarEscudo(e1, x.p[0], x.comp);
+    pintarEscudo(e2, x.p[1], x.comp);
+    var nom = document.createElement("span");
+    nom.className = "sp-nombres";
+    nom.textContent = nombreES(x.p[0]) + " – " + nombreES(x.p[1]);
+    equipos.appendChild(e1); equipos.appendChild(nom); equipos.appendChild(e2);
+
+    btn.appendChild(fecha);
+    btn.appendChild(equipos);
+    btn.addEventListener("click", function(){ elegirPartido(i); });
+    return btn;
   }
 
-  function construirSonadoras(){
-    var todos = partidosParaTarjetas();
-    if (!todos.length) return;
-    var hoy = new Date().toDateString();
-    var deHoy = todos.filter(function(x){ return new Date(x.p[2]).toDateString() === hoy; });
-    // Los de hoy primero, pero SIN quitar el resto de la semana
-    var usar = deHoy.concat(todos.filter(function(x){ return deHoy.indexOf(x) === -1; })).slice(0, 8);
+  function construirSelector(){
+    var cont = $("sp-lista");
+    cont.innerHTML = "";
+    PARTIDOS.forEach(function(x, i){ cont.appendChild(crearTarjetaPartido(x, i)); });
 
-    var porPartido = tarjetasPorPartido(usar.length, 6);
-    var cont = $("son-cards"); cont.innerHTML = "";
-    usar.forEach(function(x){
-      var ctx = { comp: x.comp, L: x.p[0], V: x.p[1] };
-      var m = calcularPartido(ctx.comp, ctx.L, ctx.V);
-      apuestasSonadoras(ctx, m, porPartido).forEach(function(sueno){
-        cont.appendChild(crearTarjeta(x, sueno, "sonadora"));
-      });
+    var hoy = new Date().toDateString();
+    var nHoy = PARTIDOS.filter(function(x){ return new Date(x.p[2]).toDateString() === hoy; }).length;
+    $("sp-titulo-txt").textContent = nHoy
+      ? "Elige un partido · " + nHoy + (nHoy === 1 ? " hoy" : " hoy")
+      : "Elige un partido";
+  }
+
+  // Pinta las apuestas del partido elegido en las tres secciones.
+  function elegirPartido(i){
+    idxActivo = i;
+    var x = PARTIDOS[i];
+
+    // Marcar visualmente la tarjeta activa
+    var tarjetas = $("sp-lista").querySelectorAll(".sp-card");
+    for (var k = 0; k < tarjetas.length; k++){
+      var activa = parseInt(tarjetas[k].getAttribute("data-idx"), 10) === i;
+      tarjetas[k].classList.toggle("activa", activa);
+      tarjetas[k].setAttribute("aria-pressed", activa ? "true" : "false");
+    }
+
+    var ctx = { comp: x.comp, L: x.p[0], V: x.p[1] };
+    var m = calcularPartido(ctx.comp, ctx.L, ctx.V);
+    var POR_SECCION = 2; // pocas y buenas: la portada no debe saturar
+
+    // 1) Seguras
+    var cont = $("cd-cards"); cont.innerHTML = "";
+    mejoresApuestas(ctx, m, POR_SECCION).forEach(function(c){
+      cont.appendChild(crearTarjeta(x, c, "segura"));
     });
-    if (cont.children.length) $("sonadoras").classList.add("visible");
+    $("cd").classList.toggle("visible", cont.children.length > 0);
+
+    // 2) Soñadoras
+    var cont2 = $("son-cards"); cont2.innerHTML = "";
+    apuestasSonadoras(ctx, m, POR_SECCION).forEach(function(c){
+      cont2.appendChild(crearTarjeta(x, c, "sonadora"));
+    });
+    $("sonadoras").classList.toggle("visible", cont2.children.length > 0);
+
+    // 3) Combinadas del mismo partido
+    var cont3 = $("comb-cards"); cont3.innerHTML = "";
+    combosDisponibles(ctx, m).slice(0, POR_SECCION).forEach(function(c){
+      cont3.appendChild(crearTarjeta(x, c, "combo"));
+    });
+    $("combinadas").classList.toggle("visible", cont3.children.length > 0);
+
+    $("sp-nota").textContent = "Mostrando las mejores apuestas de " +
+      nombreES(x.p[0]) + " – " + nombreES(x.p[1]) + ". Toca otro partido para cambiar.";
   }
 
   // Tarjeta de combinada de VARIOS partidos: cada pierna con su partido,
@@ -350,65 +411,38 @@
     return card;
   }
 
-  function construirCombinadas(){
-    var todos = partidosParaTarjetas();
-    if (!todos.length) return;
-    var hoy = new Date().toDateString();
-    var deHoy = todos.filter(function(x){ return new Date(x.p[2]).toDateString() === hoy; });
-    // Los de hoy primero, pero SIN quitar el resto de la semana
-    var usar = deHoy.concat(todos.filter(function(x){ return deHoy.indexOf(x) === -1; })).slice(0, 8);
-
-    var cont = $("comb-cards"); cont.innerHTML = "";
-
-    // 1) Combinadas de VARIOS partidos (si hay al menos 2): el plato fuerte
-    if (usar.length >= 2){
-      var piernas = usar.slice(0, 3).map(function(x){
-        var ctx = { comp: x.comp, L: x.p[0], V: x.p[1] };
-        var m = calcularPartido(ctx.comp, ctx.L, ctx.V);
-        var mejores = mejoresApuestas(ctx, m, 1);
-        return mejores.length ? { x: x, c: mejores[0], p: mejores[0].p } : null;
-      }).filter(Boolean);
-      if (piernas.length >= 2) cont.appendChild(crearTarjetaMulti("Doble del día", piernas.slice(0, 2)));
-      if (piernas.length >= 3) cont.appendChild(crearTarjetaMulti("Triple del día", piernas));
-    }
-
-    // 2) Combinadas del mismo partido (exactas sobre el marcador)
-    var porPartido = tarjetasPorPartido(usar.length, 6);
-    usar.forEach(function(x){
+  // Combinadas de varios partidos: no dependen del partido elegido, se calculan
+  // una sola vez con los partidos más próximos.
+  function construirMulti(){
+    var cont = $("multi-cards"); cont.innerHTML = "";
+    if (PARTIDOS.length < 2) return;
+    var piernas = PARTIDOS.slice(0, 3).map(function(x){
       var ctx = { comp: x.comp, L: x.p[0], V: x.p[1] };
       var m = calcularPartido(ctx.comp, ctx.L, ctx.V);
-      combosDisponibles(ctx, m).slice(0, porPartido).forEach(function(combo){
-        cont.appendChild(crearTarjeta(x, combo, "combo"));
-      });
-    });
-    if (cont.children.length) $("combinadas").classList.add("visible");
+      var mejores = mejoresApuestas(ctx, m, 1);
+      return mejores.length ? { x: x, c: mejores[0], p: mejores[0].p } : null;
+    }).filter(Boolean);
+    if (piernas.length >= 2) cont.appendChild(crearTarjetaMulti("Doble del día", piernas.slice(0, 2)));
+    if (piernas.length >= 3) cont.appendChild(crearTarjetaMulti("Triple del día", piernas));
+    if (cont.children.length) $("multi").classList.add("visible");
   }
 
-
-  construirCuotaDia();
-  construirSonadoras();
-  construirCombinadas();
-
-  // Si ninguna de las tres secciones tiene tarjetas (sin partidos en las próximas
-  // dos semanas), la leyenda quedaría apuntando a secciones vacías: se oculta y se
-  // muestra en su lugar un aviso claro en vez de dejar la portada muda.
-  (function comprobarSinPartidos(){
-    var hayAlgo = $("cd").classList.contains("visible") ||
-                  $("sonadoras").classList.contains("visible") ||
-                  $("combinadas").classList.contains("visible");
-    if (!hayAlgo){
-      var leyenda = document.querySelector(".leyenda");
-      if (leyenda) leyenda.style.display = "none";
-      $("sin-partidos").classList.add("visible");
-      // Sin partidos no hay contenido propio: se quita el anuncio para no
-      // incumplir las políticas de AdSense (nada de anuncios en páginas vacías).
-      var anuncio = $("anuncio-portada");
-      if (anuncio) anuncio.remove();
-      return;
-    }
-    // Hay contenido: se pide el anuncio a Google.
+  // --- Arranque ---
+  if (!PARTIDOS.length){
+    // Sin partidos en las próximas dos semanas: nada que elegir ni que apostar.
+    var leyenda = document.querySelector(".leyenda");
+    if (leyenda) leyenda.style.display = "none";
+    $("selector-partido").style.display = "none";
+    $("sin-partidos").classList.add("visible");
+    // Sin contenido propio no puede haber anuncio (políticas de AdSense).
+    var anuncio = $("anuncio-portada");
+    if (anuncio) anuncio.remove();
+  } else {
+    construirSelector();
+    elegirPartido(0);   // arranca con el partido más próximo
+    construirMulti();
     try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
-  })();
+  }
 })();
 </script>
 </body>

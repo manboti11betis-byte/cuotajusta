@@ -727,6 +727,47 @@
   }
   .cta-btn:hover{filter:brightness(1.08)}
 
+  /* --- Selector de partido (portada) --- */
+  .selector-partido{margin-bottom:26px}
+  .cd-titulo .estrella-p{filter:drop-shadow(0 0 6px rgba(61,214,140,.45))}
+  .sp-lista{
+    display:flex;gap:9px;overflow-x:auto;padding-bottom:8px;
+    scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+  }
+  @media (min-width:900px){
+    .sp-lista{display:grid;grid-template-columns:repeat(2,1fr);overflow:visible}
+  }
+  .sp-card{
+    flex:0 0 auto;width:230px;scroll-snap-align:start;cursor:pointer;
+    background:var(--panel);border:1.5px solid var(--linea);border-radius:11px;
+    padding:12px 13px;text-align:left;color:var(--texto);font-family:inherit;
+    display:flex;flex-direction:column;gap:8px;
+    transition:border-color .16s, transform .14s, background .16s;
+  }
+  @media (min-width:900px){ .sp-card{width:auto} }
+  .sp-card:hover{border-color:var(--verde-brillo);transform:translateY(-2px)}
+  .sp-card.activa{
+    border-color:var(--verde-brillo);
+    background:linear-gradient(180deg, rgba(61,214,140,.10), rgba(61,214,140,.02));
+    box-shadow:0 6px 22px rgba(61,214,140,.13);
+  }
+  .sp-card.activa .sp-nombres{color:var(--verde-brillo)}
+  .sp-fecha{
+    font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--muted);
+    letter-spacing:.06em;text-transform:uppercase;
+  }
+  .sp-equipos{display:flex;align-items:center;gap:7px}
+  .sp-nombres{
+    font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;
+    letter-spacing:.02em;text-transform:uppercase;line-height:1.15;flex:1;
+  }
+
+  /* --- Combinadas de varios partidos --- */
+  .multi .estrella-m{filter:drop-shadow(0 0 6px rgba(244,199,82,.5))}
+  .multi .cd-card{border-color:rgba(244,199,82,.28)}
+  .multi .cd-card:hover{border-color:#F4C752;box-shadow:0 8px 30px rgba(244,199,82,.16)}
+  .multi .cd-prob{color:#F4C752}
+
   /* --- Bloque de publicidad (AdSense) --- */
   .anuncio{
     margin:30px 0;
