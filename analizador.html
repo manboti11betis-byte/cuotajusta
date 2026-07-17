@@ -377,19 +377,20 @@
   </section>
   <section class="ia-card" aria-label="Escáner de capturas">
     <h2 class="ia-titulo">📸 Escanea tu boleto — gratis</h2>
-    <p class="ia-sub">Sube o arrastra un pantallazo de tu apuesta. Se escanea en tu propio navegador, sin coste y sin registrarte: se lee el partido, las selecciones y la cuota, y el modelo calcula la probabilidad de acierto.</p>
+    <p class="ia-sub">Sube o arrastra un pantallazo de tu apuesta y <b>se analiza sola</b>: se lee el partido, las selecciones y la cuota, y el modelo calcula la probabilidad de acierto. Todo en tu propio navegador, sin coste y sin registrarte.</p>
 
     <label class="drop" id="drop">
       <input type="file" id="fichero" accept="image/*">
       <span class="icono">🎫</span>
-      <span class="txt" id="drop-txt">Toca para elegir una imagen o arrástrala aquí</span>
+      <span class="txt" id="drop-txt">Toca para elegir la captura de tu apuesta o arrástrala aquí</span>
     </label>
     <div class="preview" id="preview">
       <img id="preview-img" alt="Captura del boleto">
       <br><button type="button" class="quitar" id="quitar-img">Quitar imagen</button>
     </div>
 
-    <button type="button" class="btn-ia" id="btn-scan">Escanear gratis</button>
+    <button type="button" class="btn-ia" id="btn-scan">Volver a escanear</button>
+    <p class="ia-consejo">💡 Para que se lea mejor: recorta la captura dejando solo el boleto (partido, selecciones y cuota) y evita que salga media pantalla de la app.</p>
     <p class="estado-ia" id="estado-ia"></p>
 
     <details class="avanzado">
@@ -1247,6 +1248,70 @@
     });
   }
 
+  // Prepara la imagen PARA EL OCR. Es lo que más influye en que Tesseract acierte:
+  //  - Tesseract está entrenado con texto OSCURO sobre fondo CLARO, pero las apps
+  //    de apuestas usan tema oscuro (texto claro sobre negro): hay que invertir.
+  //  - El texto de una captura de móvil es pequeño (12-16 px); Tesseract acierta
+  //    mucho más con texto grande, así que se escala.
+  //  - Un contraste alto separa el texto del fondo y quita degradados.
+  function prepararParaOCR(fichero){
+    return new Promise(function(resolver, rechazar){
+      var lector = new FileReader();
+      lector.onerror = function(){ rechazar(new Error("No se pudo leer la imagen.")); };
+      lector.onload = function(){
+        var img = new Image();
+        img.onerror = function(){ rechazar(new Error("Formato de imagen no compatible. Prueba con JPG o PNG.")); };
+        img.onload = function(){
+          // Escalar x2 (o menos si la imagen ya es enorme, para no agotar memoria)
+          var escala = 2, maxLado = 2600;
+          var w = img.width * escala, h = img.height * escala;
+          if (Math.max(w, h) > maxLado){
+            var f = maxLado / Math.max(w, h);
+            w = Math.round(w * f); h = Math.round(h * f);
+          }
+          var c = document.createElement("canvas");
+          c.width = w; c.height = h;
+          var ctx = c.getContext("2d", { willReadFrequently: true });
+          ctx.imageSmoothingEnabled = true;
+          ctx.imageSmoothingQuality = "high";
+          ctx.drawImage(img, 0, 0, w, h);
+
+          var d, px;
+          try {
+            d = ctx.getImageData(0, 0, w, h);
+            px = d.data;
+          } catch (e){
+            // Si el navegador bloquea leer el canvas, se devuelve la imagen tal cual
+            resolver(c); return;
+          }
+
+          // 1) Escala de grises y brillo medio
+          var suma = 0, i;
+          for (i = 0; i < px.length; i += 4){
+            var g = 0.299 * px[i] + 0.587 * px[i+1] + 0.114 * px[i+2];
+            px[i] = px[i+1] = px[i+2] = g;
+            suma += g;
+          }
+          var medio = suma / (px.length / 4);
+          var invertir = medio < 125; // fondo oscuro → invertir
+
+          // 2) Inversión (si toca) y contraste fuerte
+          var contraste = 1.7;
+          for (i = 0; i < px.length; i += 4){
+            var v = px[i];
+            if (invertir) v = 255 - v;
+            v = (v - 128) * contraste + 128;
+            px[i] = px[i+1] = px[i+2] = v < 0 ? 0 : (v > 255 ? 255 : v);
+          }
+          ctx.putImageData(d, 0, 0);
+          resolver(c);
+        };
+        img.src = lector.result;
+      };
+      lector.readAsDataURL(fichero);
+    });
+  }
+
   function cargarFichero(f){
     if (!f) return;
     ficheroImg = f;
@@ -1256,6 +1321,9 @@
       $("preview-img").src = "data:image/jpeg;base64," + b64;
       $("preview").classList.add("visible");
       $("drop-txt").textContent = "Imagen cargada. Puedes cambiarla tocando aquí.";
+      // Analiza sola en cuanto se sube la captura: el usuario no tiene que buscar
+      // ningún botón. Si falla, el propio escáner explica qué hacer.
+      escanearGratis();
     }).catch(function(e){
       imagenB64 = null;
       estadoIA(e.message, true);
@@ -1332,26 +1400,98 @@
     // 3) Selecciones: heurísticas sobre el texto
     var sels = [];
     function tiene(re){ return re.test(plano); }
+    // Un nombre de equipo puede traer puntos, guiones o paréntesis ("Bosnia-H.").
+    // Sin escapar, el punto haría de comodín y unos paréntesis romperían la regex
+    // entera, tirando el escáner. Se escapa siempre antes de meterlo en un patrón.
+    function esc(t){ return String(t).replace(/[.*+?^${}()|[\]\\-]/g, "\\$&"); }
+    var eL = esc(nL), eV = esc(nV);
+    // También el nombre traducido: el boleto dirá "España", no "Spain".
+    var eLes = esc(normalizar(nombreES(L))), eVes = esc(normalizar(nombreES(V)));
+    function reEquipo(a, b){
+      // Une las dos variantes (original y español) en una alternativa de regex
+      return a === b ? a : "(?:" + a + "|" + b + ")";
+    }
+    var pL = reEquipo(eL, eLes), pV = reEquipo(eV, eVes);
 
-    if (tiene(/empate/) && !tiene(/doble|no vale/)) sels.push({ t: "R", v: "X" });
-    // Victoria: el nombre del equipo pegado a "gana/ganador/victoria" (máx 8 caracteres de separación)
-    if (tiene(new RegExp("gana\\s+" + nL + "\\b")) || tiene(new RegExp("\\b" + nL + "\\s+gana")) || tiene(new RegExp("(victoria|ganador)\\s+(de\\s+)?" + nL + "\\b"))) sels.push({ t: "R", v: "1" });
-    if (tiene(new RegExp("gana\\s+" + nV + "\\b")) || tiene(new RegExp("\\b" + nV + "\\s+gana")) || tiene(new RegExp("(victoria|ganador)\\s+(de\\s+)?" + nV + "\\b"))) sels.push({ t: "R", v: "2" });
+    // Un boleto es una LISTA de líneas ("España vs Bélgica" / "Gana España").
+    // Analizar el texto entero de corrido provoca falsos positivos: pegando esas
+    // dos líneas sale "...belgium gana españa", y se leía como victoria del
+    // Belgium. Por eso las victorias se buscan dentro de cada línea por separado.
+    var lineas = plano.split(/[\n\r]+/).map(function(t){ return t.trim(); }).filter(Boolean);
+    function ganaDe(p){
+      var reA = new RegExp("gana(?:dor)?\\s*:?\\s+(?:el\\s+|la\\s+|de\\s+|del\\s+)?" + p + "\\b");
+      var reB = new RegExp("^" + p + "\\s+gana\\b");
+      var reC = new RegExp("(?:victoria|ganador)\\s*:?\\s*(?:de\\s+|del\\s+)?" + p + "\\b");
+      for (var i = 0; i < lineas.length; i++){
+        var t = lineas[i];
+        if (reA.test(t) || reB.test(t) || reC.test(t)) return true;
+      }
+      return false;
+    }
 
-    if (tiene(/ambos.{0,12}marcan|ambos equipos marcan|btts/)){
-      var no = tiene(/ambos.{0,20}no|marcan.{0,6}no|btts.{0,4}no/);
+    // --- Resultado ---
+    if (tiene(/\bempate\b/) && !tiene(/doble|no vale|empate no/)) sels.push({ t: "R", v: "X" });
+    if (ganaDe(pL)) sels.push({ t: "R", v: "1" });
+    if (ganaDe(pV)) sels.push({ t: "R", v: "2" });
+    if (tiene(/doble oportunidad/) || tiene(/\b1x\b/)) sels.push({ t: "R", v: "1X" });
+    if (tiene(/\bx2\b/)) sels.push({ t: "R", v: "X2" });
+    if (tiene(/\b12\b/) && tiene(/doble|oportunidad/)) sels.push({ t: "R", v: "12" });
+    // Empate no vale / Draw no bet
+    if (tiene(/empate no vale|draw no bet|\bdnb\b/)){
+      if (ganaDe(pL)) sels.push({ t: "R", v: "DNB1" });
+      if (ganaDe(pV)) sels.push({ t: "R", v: "DNB2" });
+    }
+
+    // --- Ambos marcan ---
+    if (tiene(/ambos.{0,15}marcan|los dos.{0,10}marcan|\bbtts\b|gol.{0,3}gol/)){
+      var no = tiene(/ambos.{0,25}\bno\b|marcan.{0,8}\bno\b|btts.{0,5}\bno\b/);
       sels.push({ t: "B", v: no ? "N" : "Y" });
     }
 
-    var goles = plano.match(/(mas|menos|over|under)\s*(de)?\s*(\d)[.,](\d)\s*goles?/g) || [];
-    goles.forEach(function(g){
-      var dir = /mas|over/.test(g) ? "O" : "U";
-      var num = g.match(/(\d)[.,](\d)/);
-      if (num) sels.push({ t: "GT", dir: dir, linea: parseFloat(num[1] + "." + num[2]), per: "F" });
-    });
+    // --- Goles totales. Acepta: "más de 2,5 goles", "mas 2.5", "over 2.5",
+    //     "+2.5 goles", "-1.5 goles", "más de 2.5" con o sin la palabra goles.
+    //     Se captura la palabra que sigue para NO confundir "+4.5 tarjetas"
+    //     o "+9.5 córners" con goles. ---
+    var reGoles = /(\+|-|mas|menos|over|under)\s*(?:de\s*)?(\d)\s*[.,]\s*(\d)\s*(goles?|corners?|saques|tarjetas?|amarillas?|faltas?|tiros?|fueras?)?/g;
+    var g;
+    while ((g = reGoles.exec(plano)) !== null){
+      var palabra = g[4] || "";
+      // Si detrás hay otro mercado (tarjetas, córners…), esto NO son goles
+      if (palabra && !/^goles?$/.test(palabra)) continue;
+      var linea = parseFloat(g[2] + "." + g[3]);
+      if (linea < 0.5 || linea > 7.5) continue;
+      // Sin la palabra "goles" solo se acepta si la línea es típica de goles
+      if (!palabra && [0.5,1.5,2.5,3.5,4.5].indexOf(linea) < 0) continue;
+      var marca = g[1];
+      var dir = (marca === "+" || marca === "mas" || marca === "over") ? "O" : "U";
+      sels.push({ t: "GT", dir: dir, linea: linea, per: "F" });
+    }
 
-    if (tiene(/doble oportunidad/) || tiene(/\b1x\b/)) sels.push({ t: "R", v: "1X" });
-    if (tiene(/\bx2\b/)) sels.push({ t: "R", v: "X2" });
+    // --- Portería a cero / no encaja ---
+    if (tiene(/porteria a cero|imbatid|no encaja|clean sheet|sin encajar/)){
+      if (tiene(new RegExp(pL + ".{0,30}(porteria a cero|no encaja|imbatid)"))) sels.push({ t: "CS", side: "L" });
+      else if (tiene(new RegExp(pV + ".{0,30}(porteria a cero|no encaja|imbatid)"))) sels.push({ t: "CS", side: "V" });
+    }
+
+    // --- Córners ---
+    var reCor = /(\+|mas|menos|over|under)\s*(?:de\s*)?(\d{1,2})\s*[.,]\s*(\d)\s*(?:corners?|saques de esquina)/g;
+    var c2;
+    while ((c2 = reCor.exec(plano)) !== null){
+      var dirC = /mas|over|\+/.test(c2[1]) ? "O" : "U";
+      sels.push({ t: "COT", dir: dirC, linea: parseFloat(c2[2] + "." + c2[3]), per: "F" });
+    }
+
+    // --- Tarjetas ---
+    var reTar = /(\+|mas|menos|over|under)\s*(?:de\s*)?(\d)\s*[.,]\s*(\d)\s*(?:tarjetas?|amarillas?)/g;
+    var t2;
+    while ((t2 = reTar.exec(plano)) !== null){
+      var dirT = /mas|over|\+/.test(t2[1]) ? "O" : "U";
+      sels.push({ t: "TT", dir: dirT, linea: parseFloat(t2[2] + "." + t2[3]), per: "F" });
+    }
+
+    // --- Resultado exacto: "2-1", "resultado exacto 2 1" ---
+    var ex = plano.match(/resultado exacto\D{0,10}(\d)\s*[-:x]\s*(\d)/);
+    if (ex) sels.push({ t: "EX", gl: parseInt(ex[1], 10), gv: parseInt(ex[2], 10) });
 
     var vistas = {}, limpio = [];
     sels.forEach(function(s){
@@ -1388,14 +1528,19 @@
     }
     var boton = $("btn-scan");
     boton.disabled = true;
-    estadoIA("Escaneando el boleto en tu navegador… la primera vez tarda un poco más.", false);
+    estadoIA("Preparando la imagen…", false);
 
-    Tesseract.recognize(ficheroImg, "spa", {
-      logger: function(info){
-        if (info.status === "recognizing text"){
-          estadoIA("Leyendo el texto… " + Math.round(info.progress * 100) + "%", false);
+    // Se pasa a Tesseract la imagen YA tratada (invertida si hacía falta, con más
+    // contraste y más grande): es la diferencia entre que lea el boleto o no.
+    prepararParaOCR(ficheroImg).then(function(canvas){
+      estadoIA("Escaneando el boleto en tu navegador… la primera vez tarda un poco más.", false);
+      return Tesseract.recognize(canvas, "spa", {
+        logger: function(info){
+          if (info.status === "recognizing text"){
+            estadoIA("Leyendo el texto… " + Math.round(info.progress * 100) + "%", false);
+          }
         }
-      }
+      });
     }).then(function(res){
       var texto = (res && res.data && res.data.text) || "";
       var r = parsearBoleto(texto);
@@ -1420,8 +1565,10 @@
         ctx: r.ctx, m: m, lineas: lineas, probTotal: probTotal,
         cuota: r.cuota, casa: null, fuenteIA: true, nNA: 0
       });
-    }).catch(function(){
-      estadoIA("No se ha podido escanear la imagen. Prueba con otra captura más nítida o el modo avanzado con IA.", true);
+      $("stub").scrollIntoView({ behavior: "smooth", block: "start" });
+    }).catch(function(e){
+      var msg = (e && e.message) ? e.message : "No se ha podido escanear la imagen.";
+      estadoIA(msg + " Prueba con una captura más nítida, recortada al boleto, o usa el modo avanzado con IA.", true);
     }).then(function(){ boton.disabled = false; });
   }
 
