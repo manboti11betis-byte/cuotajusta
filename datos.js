@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-07-18",
+ "actualizado": "2026-07-19",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -72,12 +72,12 @@ window.DATOS_LIGAS = {
      1.8
     ],
     "England": [
-     2.0,
-     1.14
+     2.5,
+     1.5
     ],
     "France": [
-     2.29,
-     0.57
+     2.5,
+     1.25
     ],
     "Germany": [
      3.5,
@@ -6594,11 +6594,6 @@ window.DATOS_LIGAS = {
     "Curaçao": "https://crests.football-data.org/curacao.svg"
    },
    "partidos": [
-    [
-     "France",
-     "England",
-     "2026-07-18T21:00:00Z"
-    ],
     [
      "Spain",
      "Argentina",
