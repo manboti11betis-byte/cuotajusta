@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-07-19",
+ "actualizado": "2026-07-20",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -12,7 +12,7 @@ window.DATOS_LIGAS = {
      2.25
     ],
     "Argentina": [
-     2.71,
+     2.38,
      1.0
     ],
     "Australia": [
@@ -168,7 +168,7 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Spain": [
-     1.86,
+     1.75,
      0.3
     ],
     "Sweden": [
@@ -6593,13 +6593,7 @@ window.DATOS_LIGAS = {
     "Scotland": "https://crests.football-data.org/814.svg",
     "Curaçao": "https://crests.football-data.org/curacao.svg"
    },
-   "partidos": [
-    [
-     "Spain",
-     "Argentina",
-     "2026-07-19T19:00:00Z"
-    ]
-   ]
+   "partidos": []
   },
   "LaLiga (España)": {
    "codigo": "PD",
@@ -7255,7 +7249,17 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Johan Manzambi",
+      "MED",
+      0
+     ],
+     [
       "John McGinn",
+      "MED",
+      0
+     ],
+     [
+      "João Gomes",
       "MED",
       0
      ],
@@ -8491,6 +8495,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Thomas Meunier",
+      "DEF",
+      0
+     ],
+     [
       "Timothee Pembele",
       "DEF",
       0
@@ -8559,6 +8568,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Richarlison",
+      "DEL",
+      0
+     ],
+     [
+      "William Lankshear",
       "DEL",
       0
      ],
@@ -8967,6 +8981,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Tarik Muharemović",
+      "DEF",
+      0
+     ],
+     [
       "Alex Cairns",
       "POR",
       0
@@ -9146,6 +9165,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Omari Hutchinson",
+      "DEL",
+      0
+     ],
+     [
       "Taiwo Awoniyi",
       "DEL",
       0
@@ -9167,11 +9191,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Nicolás Domínguez",
-      "MED",
-      0
-     ],
-     [
-      "Omari Hutchinson",
       "MED",
       0
      ],
@@ -9988,6 +10007,11 @@ window.DATOS_LIGAS = {
      [
       "Victor Torp",
       "MED",
+      0
+     ],
+     [
+      "Aurele Amenda",
+      "DEF",
       0
      ],
      [

@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-07-19",
+ "actualizado": "2026-07-20",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -11,7 +11,7 @@
      2.25
     ],
     "Argentina": [
-     2.71,
+     2.38,
      1.0
     ],
     "Australia": [
@@ -167,7 +167,7 @@
      1.0
     ],
     "Spain": [
-     1.86,
+     1.75,
      0.3
     ],
     "Sweden": [
@@ -6592,13 +6592,7 @@
     "Scotland": "https://crests.football-data.org/814.svg",
     "Curaçao": "https://crests.football-data.org/curacao.svg"
    },
-   "partidos": [
-    [
-     "Spain",
-     "Argentina",
-     "2026-07-19T19:00:00Z"
-    ]
-   ]
+   "partidos": []
   },
   "LaLiga (España)": {
    "codigo": "PD",
@@ -7254,7 +7248,17 @@
       0
      ],
      [
+      "Johan Manzambi",
+      "MED",
+      0
+     ],
+     [
       "John McGinn",
+      "MED",
+      0
+     ],
+     [
+      "João Gomes",
       "MED",
       0
      ],
@@ -8490,6 +8494,11 @@
       0
      ],
      [
+      "Thomas Meunier",
+      "DEF",
+      0
+     ],
+     [
       "Timothee Pembele",
       "DEF",
       0
@@ -8558,6 +8567,11 @@
      ],
      [
       "Richarlison",
+      "DEL",
+      0
+     ],
+     [
+      "William Lankshear",
       "DEL",
       0
      ],
@@ -8966,6 +8980,11 @@
       0
      ],
      [
+      "Tarik Muharemović",
+      "DEF",
+      0
+     ],
+     [
       "Alex Cairns",
       "POR",
       0
@@ -9145,6 +9164,11 @@
       0
      ],
      [
+      "Omari Hutchinson",
+      "DEL",
+      0
+     ],
+     [
       "Taiwo Awoniyi",
       "DEL",
       0
@@ -9166,11 +9190,6 @@
      ],
      [
       "Nicolás Domínguez",
-      "MED",
-      0
-     ],
-     [
-      "Omari Hutchinson",
       "MED",
       0
      ],
@@ -9987,6 +10006,11 @@
      [
       "Victor Torp",
       "MED",
+      0
+     ],
+     [
+      "Aurele Amenda",
+      "DEF",
       0
      ],
      [
