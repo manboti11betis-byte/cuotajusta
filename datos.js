@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-07-21",
+ "actualizado": "2026-07-22",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -3371,6 +3371,11 @@ window.DATOS_LIGAS = {
     ],
     "Tunisia": [
      [
+      "Elias Achouri",
+      "DEL",
+      0
+     ],
+     [
       "Elias Saad",
       "DEL",
       0
@@ -3382,6 +3387,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Hazem Mastouri",
+      "DEL",
+      0
+     ],
+     [
+      "Ismaël Gharbi",
       "DEL",
       0
      ],
@@ -3406,11 +3416,6 @@ window.DATOS_LIGAS = {
       1
      ],
      [
-      "Elias Achouri",
-      "MED",
-      0
-     ],
-     [
       "Ellyes Skhiri",
       "MED",
       0
@@ -3422,11 +3427,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Hannibal Mejbri",
-      "MED",
-      0
-     ],
-     [
-      "Ismaël Gharbi",
       "MED",
       0
      ],
@@ -4178,6 +4178,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Jaminton Campaz",
+      "DEL",
+      0
+     ],
+     [
       "Jhon Córdoba",
       "DEL",
       0
@@ -4199,11 +4204,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "James Rodríguez",
-      "MED",
-      0
-     ],
-     [
-      "Jaminton Campaz",
       "MED",
       0
      ],
@@ -4965,6 +4965,16 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Cecilio Waterman",
+      "DEL",
+      0
+     ],
+     [
+      "César Yanis",
+      "DEL",
+      0
+     ],
+     [
       "Ismael Díaz",
       "DEL",
       0
@@ -5005,17 +5015,7 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Cecilio Waterman",
-      "MED",
-      0
-     ],
-     [
       "Christian Martinez",
-      "MED",
-      0
-     ],
-     [
-      "César Yanis",
       "MED",
       0
      ],
@@ -5122,6 +5122,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Telmo Arcanjo",
+      "DEL",
+      0
+     ],
+     [
       "Willy Semedo",
       "DEL",
       0
@@ -5153,11 +5158,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Laros Duarte",
-      "MED",
-      0
-     ],
-     [
-      "Telmo Arcanjo",
       "MED",
       0
      ],
