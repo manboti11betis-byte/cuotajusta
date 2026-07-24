@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-07-23",
+ "actualizado": "2026-07-24",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -7066,6 +7066,11 @@
       1
      ],
      [
+      "Christos Tzolis",
+      "DEL",
+      0
+     ],
+     [
       "Gabriel Jesus",
       "DEL",
       0
@@ -7202,6 +7207,11 @@
      ]
     ],
     "Aston Villa": [
+     [
+      "Alejandro Garnacho",
+      "DEL",
+      0
+     ],
      [
       "Alysson",
       "DEL",
@@ -7421,6 +7431,11 @@
      ],
      [
       "Moisés Caicedo",
+      "MED",
+      0
+     ],
+     [
+      "Morgan Rogers",
       "MED",
       0
      ],
@@ -8115,6 +8130,11 @@
       0
      ],
      [
+      "Shea Lacey",
+      "DEL",
+      0
+     ],
+     [
       "Andrey Santos",
       "MED",
       0
@@ -8131,6 +8151,11 @@
      ],
      [
       "Jack Fletcher",
+      "MED",
+      0
+     ],
+     [
+      "Jacob Devaney",
       "MED",
       0
      ],
@@ -8231,6 +8256,11 @@
      ],
      [
       "Karl Darlow",
+      "POR",
+      0
+     ],
+     [
+      "Radek Vitek",
       "POR",
       0
      ],
@@ -8783,6 +8813,11 @@
       0
      ],
      [
+      "Óscar Zambrano",
+      "MED",
+      0
+     ],
+     [
       "Charlie Hughes",
       "DEF",
       0
@@ -8799,6 +8834,11 @@
      ],
      [
       "Lewie Coyle",
+      "DEF",
+      0
+     ],
+     [
+      "Matt Targett",
       "DEF",
       0
      ],
@@ -8997,6 +9037,11 @@
     ],
     "Ipswich Town": [
      [
+      "Abdul Issahaku",
+      "DEL",
+      0
+     ],
+     [
       "Ali Al-Hamadi",
       "DEL",
       0
@@ -9107,6 +9152,11 @@
       0
      ],
      [
+      "Issa Diop",
+      "DEF",
+      0
+     ],
+     [
       "Jacob Greaves",
       "DEF",
       0
@@ -9128,6 +9178,11 @@
      ],
      [
       "David Button",
+      "POR",
+      0
+     ],
+     [
+      "Kayne van Oevelen",
       "POR",
       0
      ]
@@ -9195,6 +9250,11 @@
      ],
      [
       "Ryan Yates",
+      "MED",
+      0
+     ],
+     [
+      "Xaver Schlager",
       "MED",
       0
      ],

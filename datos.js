@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-07-23",
+ "actualizado": "2026-07-24",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -7067,6 +7067,11 @@ window.DATOS_LIGAS = {
       1
      ],
      [
+      "Christos Tzolis",
+      "DEL",
+      0
+     ],
+     [
       "Gabriel Jesus",
       "DEL",
       0
@@ -7203,6 +7208,11 @@ window.DATOS_LIGAS = {
      ]
     ],
     "Aston Villa": [
+     [
+      "Alejandro Garnacho",
+      "DEL",
+      0
+     ],
      [
       "Alysson",
       "DEL",
@@ -7422,6 +7432,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Moisés Caicedo",
+      "MED",
+      0
+     ],
+     [
+      "Morgan Rogers",
       "MED",
       0
      ],
@@ -8116,6 +8131,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Shea Lacey",
+      "DEL",
+      0
+     ],
+     [
       "Andrey Santos",
       "MED",
       0
@@ -8132,6 +8152,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Jack Fletcher",
+      "MED",
+      0
+     ],
+     [
+      "Jacob Devaney",
       "MED",
       0
      ],
@@ -8232,6 +8257,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Karl Darlow",
+      "POR",
+      0
+     ],
+     [
+      "Radek Vitek",
       "POR",
       0
      ],
@@ -8784,6 +8814,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Óscar Zambrano",
+      "MED",
+      0
+     ],
+     [
       "Charlie Hughes",
       "DEF",
       0
@@ -8800,6 +8835,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Lewie Coyle",
+      "DEF",
+      0
+     ],
+     [
+      "Matt Targett",
       "DEF",
       0
      ],
@@ -8998,6 +9038,11 @@ window.DATOS_LIGAS = {
     ],
     "Ipswich Town": [
      [
+      "Abdul Issahaku",
+      "DEL",
+      0
+     ],
+     [
       "Ali Al-Hamadi",
       "DEL",
       0
@@ -9108,6 +9153,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Issa Diop",
+      "DEF",
+      0
+     ],
+     [
       "Jacob Greaves",
       "DEF",
       0
@@ -9129,6 +9179,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "David Button",
+      "POR",
+      0
+     ],
+     [
+      "Kayne van Oevelen",
       "POR",
       0
      ]
@@ -9196,6 +9251,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Ryan Yates",
+      "MED",
+      0
+     ],
+     [
+      "Xaver Schlager",
       "MED",
       0
      ],
