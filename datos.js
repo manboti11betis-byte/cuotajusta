@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-07-28",
+ "actualizado": "2026-07-29",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -10500,6 +10500,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Paul Okon-Engstler",
+      "MED",
+      0
+     ],
+     [
       "Tom Krauß",
       "MED",
       0
@@ -10557,6 +10562,11 @@ window.DATOS_LIGAS = {
      [
       "Timo Hübers",
       "DEF",
+      0
+     ],
+     [
+      "Martin James",
+      "POR",
       0
      ],
      [
@@ -11330,6 +11340,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Maximilian Wöber",
+      "DEF",
+      0
+     ],
+     [
       "Mertcan Ayhan",
       "DEF",
       0
@@ -11417,6 +11432,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Patson Daka",
+      "DEL",
+      0
+     ],
+     [
       "Rayan Philippe",
       "DEL",
       0
@@ -11433,6 +11453,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Albert Sambi Lokonga",
+      "MED",
+      0
+     ],
+     [
+      "Bilal Nadir",
       "MED",
       0
      ],
@@ -12566,6 +12591,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Otávio",
+      "DEF",
+      0
+     ],
+     [
       "Robin Koch",
       "DEF",
       0
@@ -12998,6 +13028,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Look Sa Nicholas Mickelson",
+      "DEF",
+      0
+     ],
+     [
+      "Luca Sirch",
       "DEF",
       0
      ],
