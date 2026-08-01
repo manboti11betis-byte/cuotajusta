@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-07-31",
+ "actualizado": "2026-08-01",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6908,7 +6908,18 @@ window.DATOS_LIGAS = {
     "Deportivo": "https://crests.football-data.org/560.png",
     "Santander": "https://crests.football-data.org/5335.png"
    },
-   "partidos": []
+   "partidos": [
+    [
+     "Alavés",
+     "Getafe",
+     "2026-08-15T17:30:00Z"
+    ],
+    [
+     "Sevilla FC",
+     "Rayo Vallecano",
+     "2026-08-15T19:30:00Z"
+    ]
+   ]
   },
   "Premier League (Inglaterra)": {
    "codigo": "PL",
