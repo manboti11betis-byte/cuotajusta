@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-05",
+ "actualizado": "2026-08-06",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6942,6 +6942,11 @@
      "Atleti",
      "Málaga",
      "2026-08-19T19:00:00Z"
+    ],
+    [
+     "Rayo Vallecano",
+     "Alavés",
+     "2026-08-20T19:00:00Z"
     ]
    ]
   },
