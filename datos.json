@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-06",
+ "actualizado": "2026-08-07",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6947,6 +6947,11 @@
      "Rayo Vallecano",
      "Alavés",
      "2026-08-20T19:00:00Z"
+    ],
+    [
+     "Real Betis",
+     "Real Sociedad",
+     "2026-08-21T19:00:00Z"
     ]
    ]
   },
@@ -7098,7 +7103,13 @@
     "Bournemouth": "https://crests.football-data.org/bournemouth.png",
     "Coventry City": "https://crests.football-data.org/1076.png"
    },
-   "partidos": [],
+   "partidos": [
+    [
+     "Arsenal",
+     "Coventry City",
+     "2026-08-21T19:00:00Z"
+    ]
+   ],
    "plantillas": {
     "Arsenal": [
      [
@@ -10340,7 +10351,3419 @@
     "Monza": "https://crests.football-data.org/5911.png",
     "Como 1907": "https://crests.football-data.org/7397.png"
    },
-   "partidos": []
+   "partidos": [],
+   "plantillas": {
+    "Milan": [
+     [
+      "Alex Castiello",
+      "DEL",
+      0
+     ],
+     [
+      "Christian Pulisic",
+      "DEL",
+      1
+     ],
+     [
+      "Christopher Nkunku",
+      "DEL",
+      0
+     ],
+     [
+      "Francesco Camarda",
+      "DEL",
+      0
+     ],
+     [
+      "Gonçalo Ramos",
+      "DEL",
+      0
+     ],
+     [
+      "Lorenzo Colombo",
+      "DEL",
+      0
+     ],
+     [
+      "Rafael Leão",
+      "DEL",
+      1
+     ],
+     [
+      "Samuel Chukwueze",
+      "DEL",
+      0
+     ],
+     [
+      "Santiago Giménez",
+      "DEL",
+      0
+     ],
+     [
+      "Álvaro Morata",
+      "DEL",
+      0
+     ],
+     [
+      "Adrien Rabiot",
+      "MED",
+      0
+     ],
+     [
+      "Alexis Saelemaekers",
+      "MED",
+      0
+     ],
+     [
+      "Alphadjo Cisse",
+      "MED",
+      0
+     ],
+     [
+      "Ardon Jasari",
+      "MED",
+      0
+     ],
+     [
+      "Christian Comotto",
+      "MED",
+      0
+     ],
+     [
+      "Kevin Zeroli",
+      "MED",
+      0
+     ],
+     [
+      "Luka Modrić",
+      "MED",
+      1
+     ],
+     [
+      "Ruben Loftus-Cheek",
+      "MED",
+      0
+     ],
+     [
+      "Tommaso Pobega",
+      "MED",
+      0
+     ],
+     [
+      "Warren Bondo",
+      "MED",
+      0
+     ],
+     [
+      "Yunus Musah",
+      "MED",
+      0
+     ],
+     [
+      "David Odogu",
+      "DEF",
+      0
+     ],
+     [
+      "Davide Bartesaghi",
+      "DEF",
+      0
+     ],
+     [
+      "Fikayo Tomori",
+      "DEF",
+      0
+     ],
+     [
+      "Filippo Terracciano",
+      "DEF",
+      0
+     ],
+     [
+      "Gila",
+      "DEF",
+      0
+     ],
+     [
+      "Ismael Bennacer",
+      "DEF",
+      0
+     ],
+     [
+      "Koni De Winter",
+      "DEF",
+      0
+     ],
+     [
+      "Matteo Gabbia",
+      "DEF",
+      0
+     ],
+     [
+      "Pervis Estupiñán",
+      "DEF",
+      0
+     ],
+     [
+      "Samuele Ricci",
+      "DEF",
+      0
+     ],
+     [
+      "Sankhoun Diawara",
+      "DEF",
+      0
+     ],
+     [
+      "Strahinja Pavlović",
+      "DEF",
+      0
+     ],
+     [
+      "Youssouf Fofana",
+      "DEF",
+      0
+     ],
+     [
+      "Zachary Athekame",
+      "DEF",
+      0
+     ],
+     [
+      "Lorenzo Torriani",
+      "POR",
+      0
+     ],
+     [
+      "Matteo Pittarella",
+      "POR",
+      0
+     ],
+     [
+      "Mike Maignan",
+      "POR",
+      0
+     ]
+    ],
+    "Fiorentina": [
+     [
+      "Albert Guðmundsson",
+      "DEL",
+      0
+     ],
+     [
+      "Giorgio Puzzoli",
+      "DEL",
+      0
+     ],
+     [
+      "Jacopo Tarantino",
+      "DEL",
+      0
+     ],
+     [
+      "M'Bala Nzola",
+      "DEL",
+      0
+     ],
+     [
+      "Moise Kean",
+      "DEL",
+      0
+     ],
+     [
+      "Riccardo Braschi",
+      "DEL",
+      0
+     ],
+     [
+      "Riccardo Sottil",
+      "DEL",
+      0
+     ],
+     [
+      "Riccardo Spaggiari",
+      "DEL",
+      0
+     ],
+     [
+      "Roberto Piccoli",
+      "DEL",
+      0
+     ],
+     [
+      "Alessandro Bianco",
+      "MED",
+      0
+     ],
+     [
+      "Antonín Barák",
+      "MED",
+      0
+     ],
+     [
+      "Cher Ndour",
+      "MED",
+      0
+     ],
+     [
+      "Christ Ravynel Inao Oulaï",
+      "MED",
+      0
+     ],
+     [
+      "Giulio Scuderi",
+      "MED",
+      0
+     ],
+     [
+      "Nicolò Fagioli",
+      "MED",
+      0
+     ],
+     [
+      "Salvatore Cianciulli",
+      "MED",
+      0
+     ],
+     [
+      "Simon Sohm",
+      "MED",
+      0
+     ],
+     [
+      "Arthur Atta",
+      "DEF",
+      0
+     ],
+     [
+      "Dodô",
+      "DEF",
+      0
+     ],
+     [
+      "Eman Košpo",
+      "DEF",
+      0
+     ],
+     [
+      "Fabiano Parisi",
+      "DEF",
+      0
+     ],
+     [
+      "Lorenzo Lucchesi",
+      "DEF",
+      0
+     ],
+     [
+      "Luca Ranieri",
+      "DEF",
+      0
+     ],
+     [
+      "Marin Pongračić",
+      "DEF",
+      0
+     ],
+     [
+      "Niccolò Fortini",
+      "DEF",
+      0
+     ],
+     [
+      "Nicolas Valentini",
+      "DEF",
+      0
+     ],
+     [
+      "Radu Drăgușin",
+      "DEF",
+      0
+     ],
+     [
+      "Rolando Mandragora",
+      "DEF",
+      0
+     ],
+     [
+      "Viery",
+      "DEF",
+      0
+     ],
+     [
+      "Víctor Valdepeñas",
+      "DEF",
+      0
+     ],
+     [
+      "Álex Jiménez",
+      "DEF",
+      0
+     ],
+     [
+      "David De Gea",
+      "POR",
+      0
+     ],
+     [
+      "Luca Lezzerini",
+      "POR",
+      0
+     ],
+     [
+      "Oliver Christensen",
+      "POR",
+      0
+     ],
+     [
+      "Tommaso Vannucchi",
+      "POR",
+      0
+     ]
+    ],
+    "Roma": [
+     [
+      "Edoardo Morucci",
+      "DEL",
+      0
+     ],
+     [
+      "Luigi Cherubini",
+      "DEL",
+      0
+     ],
+     [
+      "Matias Soule",
+      "DEL",
+      0
+     ],
+     [
+      "Paulo Dybala",
+      "DEL",
+      0
+     ],
+     [
+      "Robinio Vaz",
+      "DEL",
+      0
+     ],
+     [
+      "Santiago Castro",
+      "DEL",
+      0
+     ],
+     [
+      "Valerio Cinti",
+      "DEL",
+      0
+     ],
+     [
+      "Donyell Malen",
+      "MED",
+      0
+     ],
+     [
+      "Filippo Reale",
+      "MED",
+      0
+     ],
+     [
+      "Francesco Ferrara",
+      "MED",
+      0
+     ],
+     [
+      "Manu Koné",
+      "MED",
+      0
+     ],
+     [
+      "Neil El Aynaoui",
+      "MED",
+      0
+     ],
+     [
+      "Niccolo Pisilli",
+      "MED",
+      0
+     ],
+     [
+      "Tommaso Baldanzi",
+      "MED",
+      0
+     ],
+     [
+      "Anass Salah-Eddine",
+      "DEF",
+      1
+     ],
+     [
+      "Angeliño",
+      "DEF",
+      0
+     ],
+     [
+      "Bryan Cristante",
+      "DEF",
+      0
+     ],
+     [
+      "Devyne Rensch",
+      "DEF",
+      0
+     ],
+     [
+      "Emanuele Lulli",
+      "DEF",
+      0
+     ],
+     [
+      "Evan N'Dicka",
+      "DEF",
+      0
+     ],
+     [
+      "Gianluca Mancini",
+      "DEF",
+      0
+     ],
+     [
+      "Jan Ziółkowski",
+      "DEF",
+      0
+     ],
+     [
+      "Konstantinos Koulierakis",
+      "DEF",
+      0
+     ],
+     [
+      "Marash Kumbulla",
+      "DEF",
+      0
+     ],
+     [
+      "Mattia Mannini",
+      "DEF",
+      0
+     ],
+     [
+      "Wesley",
+      "DEF",
+      0
+     ],
+     [
+      "Devis Vásquez",
+      "POR",
+      0
+     ],
+     [
+      "Giorgio De Marzi",
+      "POR",
+      0
+     ],
+     [
+      "Mile Svilar",
+      "POR",
+      0
+     ],
+     [
+      "Pierluigi Gollini",
+      "POR",
+      0
+     ],
+     [
+      "Radosław Żelezny",
+      "POR",
+      0
+     ]
+    ],
+    "Atalanta": [
+     [
+      "Charles De Ketelaere",
+      "DEL",
+      0
+     ],
+     [
+      "El Bilal Touré",
+      "DEL",
+      0
+     ],
+     [
+      "Giacomo Raspadori",
+      "DEL",
+      0
+     ],
+     [
+      "Gianluca Scamacca",
+      "DEL",
+      0
+     ],
+     [
+      "Kamal Deen Sulemana",
+      "DEL",
+      0
+     ],
+     [
+      "Nikola Krstović",
+      "DEL",
+      0
+     ],
+     [
+      "Daniel Maldini",
+      "MED",
+      0
+     ],
+     [
+      "Davide Zappacosta",
+      "MED",
+      0
+     ],
+     [
+      "Gianluca Gaetano",
+      "MED",
+      0
+     ],
+     [
+      "Ibrahim Sulemana",
+      "MED",
+      0
+     ],
+     [
+      "Lazar Samardzic",
+      "MED",
+      0
+     ],
+     [
+      "Marco Brescianini",
+      "MED",
+      0
+     ],
+     [
+      "Mario Pašalić",
+      "MED",
+      0
+     ],
+     [
+      "Nicola Zalewski",
+      "MED",
+      0
+     ],
+     [
+      "Raoul Bellanova",
+      "MED",
+      0
+     ],
+     [
+      "Éderson",
+      "MED",
+      0
+     ],
+     [
+      "Giorgio Scalvini",
+      "DEF",
+      0
+     ],
+     [
+      "Giovanni Bonfanti",
+      "DEF",
+      0
+     ],
+     [
+      "Honest Ahanor",
+      "DEF",
+      0
+     ],
+     [
+      "Isak Hien",
+      "DEF",
+      1
+     ],
+     [
+      "Lorenzo Bernasconi",
+      "DEF",
+      0
+     ],
+     [
+      "Mitchel Bakker",
+      "DEF",
+      0
+     ],
+     [
+      "Odilon Kossounou",
+      "DEF",
+      0
+     ],
+     [
+      "Relja Obrić",
+      "DEF",
+      0
+     ],
+     [
+      "Sead Kolašinac",
+      "DEF",
+      0
+     ],
+     [
+      "Francesco Rossi",
+      "POR",
+      0
+     ],
+     [
+      "Marco Carnesecchi",
+      "POR",
+      0
+     ],
+     [
+      "Marco Sportiello",
+      "POR",
+      0
+     ],
+     [
+      "Piotr Pardel",
+      "POR",
+      0
+     ]
+    ],
+    "Bologna": [
+     [
+      "Antonio Raimondo",
+      "DEL",
+      0
+     ],
+     [
+      "Artem Dovbyk",
+      "DEL",
+      0
+     ],
+     [
+      "Benjamín Domínguez",
+      "DEL",
+      0
+     ],
+     [
+      "Jesper Karlsson",
+      "DEL",
+      0
+     ],
+     [
+      "Jonathan Rowe",
+      "DEL",
+      0
+     ],
+     [
+      "Nicolò Cambiaghi",
+      "DEL",
+      0
+     ],
+     [
+      "Orji Okwonkwo",
+      "DEL",
+      0
+     ],
+     [
+      "Riccardo Orsolini",
+      "DEL",
+      0
+     ],
+     [
+      "Thijs Dallinga",
+      "DEL",
+      0
+     ],
+     [
+      "Federico Bernardeschi",
+      "MED",
+      0
+     ],
+     [
+      "Gennaro Anatriello",
+      "MED",
+      0
+     ],
+     [
+      "Giovanni Fabbian",
+      "MED",
+      0
+     ],
+     [
+      "Jens Odgaard",
+      "MED",
+      0
+     ],
+     [
+      "Lewis Ferguson",
+      "MED",
+      0
+     ],
+     [
+      "Michel Aebischer",
+      "MED",
+      0
+     ],
+     [
+      "Mikel Amondarain",
+      "MED",
+      0
+     ],
+     [
+      "Nadir Zortea",
+      "MED",
+      0
+     ],
+     [
+      "Nikola Moro",
+      "MED",
+      0
+     ],
+     [
+      "Tommaso Pobega",
+      "MED",
+      0
+     ],
+     [
+      "Dimitar Papazov",
+      "DEF",
+      0
+     ],
+     [
+      "Eivind Helland",
+      "DEF",
+      0
+     ],
+     [
+      "Emil Holm",
+      "DEF",
+      0
+     ],
+     [
+      "Jhon Lucumí",
+      "DEF",
+      0
+     ],
+     [
+      "Juan Miranda",
+      "DEF",
+      0
+     ],
+     [
+      "Martin Vitík",
+      "DEF",
+      0
+     ],
+     [
+      "Mihajlo Ilic",
+      "DEF",
+      0
+     ],
+     [
+      "Nicolò Casale",
+      "DEF",
+      0
+     ],
+     [
+      "Oussama El Azzouzi",
+      "DEF",
+      0
+     ],
+     [
+      "Torbjørn Heggem",
+      "DEF",
+      0
+     ],
+     [
+      "Davide Franzini",
+      "POR",
+      0
+     ],
+     [
+      "Francesco Raffaelli",
+      "POR",
+      0
+     ],
+     [
+      "Massimo Pessina",
+      "POR",
+      0
+     ],
+     [
+      "Nicola Bagnolini",
+      "POR",
+      0
+     ],
+     [
+      "Łukasz Skorupski",
+      "POR",
+      0
+     ]
+    ],
+    "Cagliari": [
+     [
+      "Agustín Albarracín",
+      "DEL",
+      0
+     ],
+     [
+      "Gennaro Borrelli",
+      "DEL",
+      0
+     ],
+     [
+      "Kingstone Mutandwa",
+      "DEL",
+      0
+     ],
+     [
+      "Mattia Felici",
+      "DEL",
+      0
+     ],
+     [
+      "Riyad Idrissi",
+      "DEL",
+      0
+     ],
+     [
+      "Sebastiano Di Paolo",
+      "DEL",
+      0
+     ],
+     [
+      "Yael Trepy",
+      "DEL",
+      0
+     ],
+     [
+      "Zito Luvumbo",
+      "DEL",
+      0
+     ],
+     [
+      "Alessandro Deiola",
+      "MED",
+      0
+     ],
+     [
+      "Alessandro Romano",
+      "MED",
+      0
+     ],
+     [
+      "Harry Winks",
+      "MED",
+      0
+     ],
+     [
+      "Ivan Sulev",
+      "MED",
+      0
+     ],
+     [
+      "Jacopo Fazzini",
+      "MED",
+      0
+     ],
+     [
+      "Joseph Liteta",
+      "MED",
+      0
+     ],
+     [
+      "Michel Adopo",
+      "MED",
+      0
+     ],
+     [
+      "Nicolo Cavuoti",
+      "MED",
+      0
+     ],
+     [
+      "Othniel Raterink",
+      "MED",
+      0
+     ],
+     [
+      "Adam Obert",
+      "DEF",
+      0
+     ],
+     [
+      "Francesco Gallea",
+      "DEF",
+      0
+     ],
+     [
+      "Gabriele Zappa",
+      "DEF",
+      0
+     ],
+     [
+      "Juan Martín Rodriguez",
+      "DEF",
+      0
+     ],
+     [
+      "Matteo Prati",
+      "DEF",
+      0
+     ],
+     [
+      "Nicola Pintus",
+      "DEF",
+      0
+     ],
+     [
+      "Raphael Kofler",
+      "DEF",
+      0
+     ],
+     [
+      "Yerry Mina",
+      "DEF",
+      0
+     ],
+     [
+      "Zé Pedro Figueiredo",
+      "DEF",
+      0
+     ],
+     [
+      "Alen Sherri",
+      "POR",
+      0
+     ],
+     [
+      "Boris Radunović",
+      "POR",
+      0
+     ],
+     [
+      "Elia Caprile",
+      "POR",
+      0
+     ],
+     [
+      "Giuseppe Ciocci",
+      "POR",
+      0
+     ]
+    ],
+    "Genoa": [
+     [
+      "Alessandro De Benedetti",
+      "DEL",
+      0
+     ],
+     [
+      "Alexsandro Amorim",
+      "DEL",
+      0
+     ],
+     [
+      "Daniel Fossati",
+      "DEL",
+      0
+     ],
+     [
+      "Elias Havel",
+      "DEL",
+      0
+     ],
+     [
+      "Junior Messias",
+      "DEL",
+      1
+     ],
+     [
+      "Lorenzo Venturino",
+      "DEL",
+      0
+     ],
+     [
+      "Vitinha",
+      "DEL",
+      0
+     ],
+     [
+      "Chec Doumbia",
+      "MED",
+      0
+     ],
+     [
+      "Ethan Meichtry",
+      "MED",
+      0
+     ],
+     [
+      "Hamed Traoré",
+      "MED",
+      0
+     ],
+     [
+      "Hugo Cuenca",
+      "MED",
+      0
+     ],
+     [
+      "Mikael Egill Ellertsson",
+      "MED",
+      0
+     ],
+     [
+      "Morten Frendrup",
+      "MED",
+      0
+     ],
+     [
+      "Patrizio Masini",
+      "MED",
+      0
+     ],
+     [
+      "Samuel Wiafe",
+      "MED",
+      0
+     ],
+     [
+      "Alan Matturro",
+      "DEF",
+      0
+     ],
+     [
+      "Alessandro Marcandalli",
+      "DEF",
+      0
+     ],
+     [
+      "Alessandro Vogliacco",
+      "DEF",
+      0
+     ],
+     [
+      "Brooke Norton-Cuffy",
+      "DEF",
+      0
+     ],
+     [
+      "David Puczka",
+      "DEF",
+      0
+     ],
+     [
+      "Edoardo Meconi",
+      "DEF",
+      0
+     ],
+     [
+      "Johan Vásquez",
+      "DEF",
+      0
+     ],
+     [
+      "Leo Østigård",
+      "DEF",
+      0
+     ],
+     [
+      "Marcelo Vaz",
+      "DEF",
+      0
+     ],
+     [
+      "Mario Mitaj",
+      "DEF",
+      0
+     ],
+     [
+      "Matteo Barbini",
+      "DEF",
+      0
+     ],
+     [
+      "Sebastian Otoa",
+      "DEF",
+      0
+     ],
+     [
+      "Stefano Sabelli",
+      "DEF",
+      0
+     ],
+     [
+      "Ernestas Lysionok",
+      "POR",
+      0
+     ],
+     [
+      "Franz Stolz",
+      "POR",
+      0
+     ],
+     [
+      "Justin Bijlow",
+      "POR",
+      0
+     ],
+     [
+      "Simone Calvani",
+      "POR",
+      0
+     ]
+    ],
+    "Inter": [
+     [
+      "Ange-Yoan Bonny",
+      "DEL",
+      0
+     ],
+     [
+      "Francesco Esposito",
+      "DEL",
+      0
+     ],
+     [
+      "Issiaka Kamate",
+      "DEL",
+      0
+     ],
+     [
+      "Lautaro Martínez",
+      "DEL",
+      1
+     ],
+     [
+      "Luis Henrique",
+      "DEL",
+      0
+     ],
+     [
+      "Marcus Thuram-Ulien",
+      "DEL",
+      0
+     ],
+     [
+      "Matteo Lavelli",
+      "DEL",
+      0
+     ],
+     [
+      "Sebastiano Esposito",
+      "DEL",
+      0
+     ],
+     [
+      "Andy Diouf",
+      "MED",
+      0
+     ],
+     [
+      "Daniele Quieto",
+      "MED",
+      0
+     ],
+     [
+      "Davide Frattesi",
+      "MED",
+      0
+     ],
+     [
+      "Ebenezer Akinsanmiro",
+      "MED",
+      0
+     ],
+     [
+      "Hakan Çalhanoğlu",
+      "MED",
+      0
+     ],
+     [
+      "Henrikh Mkhitaryan",
+      "MED",
+      0
+     ],
+     [
+      "Nicolò Barella",
+      "MED",
+      0
+     ],
+     [
+      "Petar Sucic",
+      "MED",
+      0
+     ],
+     [
+      "Piotr Zieliński",
+      "MED",
+      0
+     ],
+     [
+      "Thomas Berenbruch",
+      "MED",
+      0
+     ],
+     [
+      "Yanis Massolin",
+      "MED",
+      0
+     ],
+     [
+      "Aleksandar Stankovic",
+      "DEF",
+      0
+     ],
+     [
+      "Alessandro Bastoni",
+      "DEF",
+      0
+     ],
+     [
+      "Benjamin Pavard",
+      "DEF",
+      0
+     ],
+     [
+      "Carlos Augusto Lobaton",
+      "DEF",
+      0
+     ],
+     [
+      "Federico Dimarco",
+      "DEF",
+      0
+     ],
+     [
+      "Gabriele Re Cecconi",
+      "DEF",
+      0
+     ],
+     [
+      "John Stones",
+      "DEF",
+      0
+     ],
+     [
+      "Kristjan Asllani",
+      "DEF",
+      0
+     ],
+     [
+      "Matteo Motta",
+      "DEF",
+      0
+     ],
+     [
+      "Mike Aidoo",
+      "DEF",
+      0
+     ],
+     [
+      "Yann Aurel Bisseck",
+      "DEF",
+      0
+     ],
+     [
+      "Alain Taho",
+      "POR",
+      0
+     ],
+     [
+      "Ivan Provedel",
+      "POR",
+      0
+     ],
+     [
+      "Josep Martinez",
+      "POR",
+      0
+     ]
+    ],
+    "Juventus": [
+     [
+      "Arkadiusz Milik",
+      "DEL",
+      0
+     ],
+     [
+      "Edon Zhegrova",
+      "DEL",
+      0
+     ],
+     [
+      "Francisco Conceição",
+      "DEL",
+      0
+     ],
+     [
+      "Jeff Ekhator",
+      "DEL",
+      0
+     ],
+     [
+      "Jonathan David",
+      "DEL",
+      1
+     ],
+     [
+      "Kenan Yıldız",
+      "DEL",
+      0
+     ],
+     [
+      "Kerim Alajbegović",
+      "DEL",
+      0
+     ],
+     [
+      "Lorenzo Anghelè",
+      "DEL",
+      0
+     ],
+     [
+      "Nicolás González",
+      "DEL",
+      0
+     ],
+     [
+      "Randal Kolo Muani",
+      "DEL",
+      0
+     ],
+     [
+      "Douglas Luiz",
+      "MED",
+      0
+     ],
+     [
+      "Fabio Miretti",
+      "MED",
+      0
+     ],
+     [
+      "Khéphren Thuram-Ulie",
+      "MED",
+      0
+     ],
+     [
+      "Teun Koopmeiners",
+      "MED",
+      0
+     ],
+     [
+      "Vasilije Adzic",
+      "MED",
+      0
+     ],
+     [
+      "Weston McKennie",
+      "MED",
+      0
+     ],
+     [
+      "Andrea Cambiaso",
+      "DEF",
+      0
+     ],
+     [
+      "Arthur",
+      "DEF",
+      0
+     ],
+     [
+      "Bremer",
+      "DEF",
+      0
+     ],
+     [
+      "Daniele Rugani",
+      "DEF",
+      0
+     ],
+     [
+      "Facundo González",
+      "DEF",
+      0
+     ],
+     [
+      "Federico Gatti",
+      "DEF",
+      0
+     ],
+     [
+      "Jonas Rouhi",
+      "DEF",
+      0
+     ],
+     [
+      "João Mário Lopes",
+      "DEF",
+      0
+     ],
+     [
+      "Juan Cabal",
+      "DEF",
+      0
+     ],
+     [
+      "Lloyd Kelly",
+      "DEF",
+      0
+     ],
+     [
+      "Manuel Locatelli",
+      "DEF",
+      0
+     ],
+     [
+      "Pierre Kalulu",
+      "DEF",
+      0
+     ],
+     [
+      "Zeki Çelik",
+      "DEF",
+      0
+     ],
+     [
+      "Carlo Pinsoglio",
+      "POR",
+      0
+     ],
+     [
+      "Giovanni Daffara",
+      "POR",
+      0
+     ],
+     [
+      "Mattia Perin",
+      "POR",
+      0
+     ],
+     [
+      "Michele Di Gregorio",
+      "POR",
+      0
+     ]
+    ],
+    "Lazio": [
+     [
+      "Gabriele Artistico",
+      "DEL",
+      0
+     ],
+     [
+      "Gustav Isaksen",
+      "DEL",
+      1
+     ],
+     [
+      "Matteo Cancellieri",
+      "DEL",
+      0
+     ],
+     [
+      "Mattia Zaccagni",
+      "DEL",
+      0
+     ],
+     [
+      "Petar Ratkov",
+      "DEL",
+      0
+     ],
+     [
+      "Saná Fernandes",
+      "DEL",
+      0
+     ],
+     [
+      "Tijjani Noslin",
+      "DEL",
+      0
+     ],
+     [
+      "Adrian Przyborek",
+      "MED",
+      0
+     ],
+     [
+      "Bruno Galassi",
+      "MED",
+      0
+     ],
+     [
+      "Fisayo Dele-Bashiru",
+      "MED",
+      0
+     ],
+     [
+      "Kenneth Taylor",
+      "MED",
+      0
+     ],
+     [
+      "Leonardo Di Tommaso",
+      "MED",
+      0
+     ],
+     [
+      "Manuel Lazzari",
+      "MED",
+      0
+     ],
+     [
+      "Mohamed Fares",
+      "MED",
+      0
+     ],
+     [
+      "Adam Marušić",
+      "DEF",
+      0
+     ],
+     [
+      "Alessandro Milani",
+      "DEF",
+      0
+     ],
+     [
+      "Alessio Romagnoli",
+      "DEF",
+      0
+     ],
+     [
+      "Alfonso Pedraza",
+      "DEF",
+      0
+     ],
+     [
+      "Danilho Doekhi",
+      "DEF",
+      0
+     ],
+     [
+      "Danilo Cataldi",
+      "DEF",
+      0
+     ],
+     [
+      "Filipe",
+      "DEF",
+      0
+     ],
+     [
+      "Luca Pellegrini",
+      "DEF",
+      0
+     ],
+     [
+      "Nicolò Rovella",
+      "DEF",
+      0
+     ],
+     [
+      "Nuno Tavares",
+      "DEF",
+      0
+     ],
+     [
+      "Oliver Nielsen",
+      "DEF",
+      0
+     ],
+     [
+      "Patric",
+      "DEF",
+      0
+     ],
+     [
+      "Reda Belahyane",
+      "DEF",
+      0
+     ],
+     [
+      "Romano Floriani",
+      "DEF",
+      0
+     ],
+     [
+      "Samuel Gigot",
+      "DEF",
+      0
+     ],
+     [
+      "Alessio Furlanetto",
+      "POR",
+      0
+     ],
+     [
+      "Christos Mandas",
+      "POR",
+      0
+     ],
+     [
+      "Davide Renzetti",
+      "POR",
+      0
+     ],
+     [
+      "Edoardo Motta",
+      "POR",
+      0
+     ]
+    ],
+    "Parma": [
+     [
+      "Antoine Joujou",
+      "DEL",
+      0
+     ],
+     [
+      "Daniel Mikołajewski",
+      "DEL",
+      0
+     ],
+     [
+      "Jacob Ondrejka",
+      "DEL",
+      0
+     ],
+     [
+      "Mateo Pellegrino",
+      "DEL",
+      0
+     ],
+     [
+      "Matija Frigan",
+      "DEL",
+      0
+     ],
+     [
+      "Nesta Elphege",
+      "DEL",
+      0
+     ],
+     [
+      "Pontus Almqvist",
+      "DEL",
+      0
+     ],
+     [
+      "Tjaš Begić",
+      "DEL",
+      0
+     ],
+     [
+      "Adrián Bernabé",
+      "MED",
+      0
+     ],
+     [
+      "Christian Ordonez",
+      "MED",
+      0
+     ],
+     [
+      "Oliver Sørensen",
+      "MED",
+      0
+     ],
+     [
+      "Rachid Kouda",
+      "MED",
+      0
+     ],
+     [
+      "Abdoulaye N'Diaye",
+      "DEF",
+      0
+     ],
+     [
+      "Alessandro Circati",
+      "DEF",
+      0
+     ],
+     [
+      "Botond Balogh",
+      "DEF",
+      0
+     ],
+     [
+      "Emanuele Valeri",
+      "DEF",
+      0
+     ],
+     [
+      "Enrico Del Prato",
+      "DEF",
+      0
+     ],
+     [
+      "Franco Carboni",
+      "DEF",
+      0
+     ],
+     [
+      "Lautaro Valenti",
+      "DEF",
+      1
+     ],
+     [
+      "Mandela Keita",
+      "DEF",
+      0
+     ],
+     [
+      "Mariano Troilo",
+      "DEF",
+      0
+     ],
+     [
+      "Nicolas Trabucchi",
+      "DEF",
+      0
+     ],
+     [
+      "Ousmane Diallo",
+      "DEF",
+      1
+     ],
+     [
+      "Peter Amoran",
+      "DEF",
+      0
+     ],
+     [
+      "Sascha Britschgi",
+      "DEF",
+      0
+     ],
+     [
+      "Edoardo Corvi",
+      "POR",
+      0
+     ],
+     [
+      "Zion Suzuki",
+      "POR",
+      0
+     ]
+    ],
+    "Napoli": [
+     [
+      "Alessio Zerbin",
+      "DEL",
+      0
+     ],
+     [
+      "Antonio Cioffi",
+      "DEL",
+      0
+     ],
+     [
+      "Cyril Ngonge",
+      "DEL",
+      0
+     ],
+     [
+      "David Neres",
+      "DEL",
+      0
+     ],
+     [
+      "Gianluca Vigliotti",
+      "DEL",
+      0
+     ],
+     [
+      "Giovane Nascimento",
+      "DEL",
+      0
+     ],
+     [
+      "Giovanni Simeone",
+      "DEL",
+      0
+     ],
+     [
+      "Giuseppe Ambrosino",
+      "DEL",
+      0
+     ],
+     [
+      "Jesper Lindstrøm",
+      "DEL",
+      0
+     ],
+     [
+      "Lorenzo Lucca",
+      "DEL",
+      0
+     ],
+     [
+      "Matteo Politano",
+      "DEL",
+      0
+     ],
+     [
+      "Rasmus Højlund",
+      "DEL",
+      0
+     ],
+     [
+      "Romelu Lukaku",
+      "DEL",
+      0
+     ],
+     [
+      "Walid Cheddira",
+      "DEL",
+      0
+     ],
+     [
+      "Alisson Santos",
+      "MED",
+      0
+     ],
+     [
+      "André Zambo Anguissa",
+      "MED",
+      0
+     ],
+     [
+      "Antonio Vergara",
+      "MED",
+      0
+     ],
+     [
+      "Billy Gilmour",
+      "MED",
+      0
+     ],
+     [
+      "Francisco Baridó",
+      "MED",
+      0
+     ],
+     [
+      "Kevin De Bruyne",
+      "MED",
+      1
+     ],
+     [
+      "Lorenzo Russo",
+      "MED",
+      0
+     ],
+     [
+      "Lorenzo Sgarbi",
+      "MED",
+      0
+     ],
+     [
+      "Luis Hasa",
+      "MED",
+      0
+     ],
+     [
+      "Michael Folorunsho",
+      "MED",
+      0
+     ],
+     [
+      "Noa Lang",
+      "MED",
+      0
+     ],
+     [
+      "Scott McTominay",
+      "MED",
+      0
+     ],
+     [
+      "Alessandro Buongiorno",
+      "DEF",
+      0
+     ],
+     [
+      "Alessandro Zanoli",
+      "DEF",
+      0
+     ],
+     [
+      "Amir Rrahmani",
+      "DEF",
+      0
+     ],
+     [
+      "Gennaro Iaccarino",
+      "DEF",
+      0
+     ],
+     [
+      "Giovanni Di Lorenzo",
+      "DEF",
+      0
+     ],
+     [
+      "Jens Cajuste",
+      "DEF",
+      0
+     ],
+     [
+      "Leonardo Spinazzola",
+      "DEF",
+      0
+     ],
+     [
+      "Luca Marianucci",
+      "DEF",
+      0
+     ],
+     [
+      "Luigi D'Avino",
+      "DEF",
+      0
+     ],
+     [
+      "Mathías Olivera",
+      "DEF",
+      0
+     ],
+     [
+      "Nosa Obaretin",
+      "DEF",
+      0
+     ],
+     [
+      "Pasquale Mazzocchi",
+      "DEF",
+      0
+     ],
+     [
+      "Rafa Marin",
+      "DEF",
+      0
+     ],
+     [
+      "Sam Beukema",
+      "DEF",
+      0
+     ],
+     [
+      "Stanislav Lobotka",
+      "DEF",
+      0
+     ],
+     [
+      "Alex Meret",
+      "POR",
+      0
+     ],
+     [
+      "Claudio Turi",
+      "POR",
+      0
+     ],
+     [
+      "Nikita Contini Baranovsky",
+      "POR",
+      0
+     ]
+    ],
+    "Udinese": [
+     [
+      "Adam Buksa",
+      "DEL",
+      0
+     ],
+     [
+      "Keinan Davis",
+      "DEL",
+      0
+     ],
+     [
+      "Vakoun Issouf Bayo",
+      "DEL",
+      0
+     ],
+     [
+      "Abdoulaye Camara",
+      "MED",
+      0
+     ],
+     [
+      "David Pejičić",
+      "MED",
+      0
+     ],
+     [
+      "Giorgi Chakvetadze",
+      "MED",
+      0
+     ],
+     [
+      "Jakub Piotrowski",
+      "MED",
+      0
+     ],
+     [
+      "Jesper Karlström",
+      "MED",
+      0
+     ],
+     [
+      "Juan Arizala",
+      "MED",
+      0
+     ],
+     [
+      "Jurgen Ekkelenkamp",
+      "MED",
+      0
+     ],
+     [
+      "Lennon Miller",
+      "MED",
+      0
+     ],
+     [
+      "Marco Ballarini",
+      "MED",
+      0
+     ],
+     [
+      "Martín Payero",
+      "MED",
+      0
+     ],
+     [
+      "Oier Zarraga",
+      "MED",
+      0
+     ],
+     [
+      "Rui Modesto",
+      "MED",
+      0
+     ],
+     [
+      "Sandi Lovric",
+      "MED",
+      0
+     ],
+     [
+      "Unai Gomez",
+      "MED",
+      0
+     ],
+     [
+      "Branimir Mlacic",
+      "DEF",
+      0
+     ],
+     [
+      "Christian Kabasele",
+      "DEF",
+      0
+     ],
+     [
+      "Enzo Ebosse",
+      "DEF",
+      0
+     ],
+     [
+      "Hassane Kamara",
+      "DEF",
+      0
+     ],
+     [
+      "James Abankwah",
+      "DEF",
+      0
+     ],
+     [
+      "Jordan Zemura",
+      "DEF",
+      0
+     ],
+     [
+      "Leonardo Buta",
+      "DEF",
+      0
+     ],
+     [
+      "Matteo Palma",
+      "DEF",
+      0
+     ],
+     [
+      "Mërgim Vojvoda",
+      "DEF",
+      0
+     ],
+     [
+      "Nicolo Bertola",
+      "DEF",
+      0
+     ],
+     [
+      "Oumar Solet",
+      "DEF",
+      0
+     ],
+     [
+      "Saba Goglichidze",
+      "DEF",
+      0
+     ],
+     [
+      "Thomas Kristensen",
+      "DEF",
+      0
+     ],
+     [
+      "Daniele Padelli",
+      "POR",
+      0
+     ],
+     [
+      "Maduka Okoye",
+      "POR",
+      0
+     ]
+    ],
+    "Venezia FC": [
+     [
+      "Akor Adams",
+      "DEL",
+      0
+     ],
+     [
+      "Albion Rrahmani",
+      "DEL",
+      0
+     ],
+     [
+      "Alvin Obinna Okoro",
+      "DEL",
+      0
+     ],
+     [
+      "Andrea Adorante",
+      "DEL",
+      0
+     ],
+     [
+      "Antonio Casas",
+      "DEL",
+      0
+     ],
+     [
+      "Calixte Ligue",
+      "DEL",
+      0
+     ],
+     [
+      "John Yeboah",
+      "DEL",
+      0
+     ],
+     [
+      "Marko Farji",
+      "DEL",
+      0
+     ],
+     [
+      "Simone Ascione",
+      "DEL",
+      0
+     ],
+     [
+      "Ahmed Sidibé",
+      "MED",
+      0
+     ],
+     [
+      "Alfred Duncan",
+      "MED",
+      0
+     ],
+     [
+      "Bartol Franjić",
+      "MED",
+      0
+     ],
+     [
+      "Bjarki Bjarkason",
+      "MED",
+      0
+     ],
+     [
+      "Edoardo Mariani",
+      "MED",
+      0
+     ],
+     [
+      "Federico Tavernaro",
+      "MED",
+      0
+     ],
+     [
+      "Gianluca Busio",
+      "MED",
+      0
+     ],
+     [
+      "Hans Nicolussi Caviglia",
+      "MED",
+      0
+     ],
+     [
+      "Kike Pérez",
+      "MED",
+      0
+     ],
+     [
+      "Kornel Lisman",
+      "MED",
+      0
+     ],
+     [
+      "Lamine Dabo",
+      "MED",
+      0
+     ],
+     [
+      "Lion Lauberbach",
+      "MED",
+      0
+     ],
+     [
+      "Lorenzo Berardi",
+      "MED",
+      0
+     ],
+     [
+      "Matteo Dagasso",
+      "MED",
+      0
+     ],
+     [
+      "Nicolò Berengo",
+      "MED",
+      0
+     ],
+     [
+      "Nunzio Lella",
+      "MED",
+      0
+     ],
+     [
+      "Saad El Haddad",
+      "MED",
+      0
+     ],
+     [
+      "Simone Panada",
+      "MED",
+      0
+     ],
+     [
+      "Toma Bašić",
+      "MED",
+      0
+     ],
+     [
+      "Þórir Jóhann Helgason",
+      "MED",
+      0
+     ],
+     [
+      "Ale Gomes",
+      "DEF",
+      0
+     ],
+     [
+      "Antoine Hainaut",
+      "DEF",
+      0
+     ],
+     [
+      "Antonio Candela",
+      "DEF",
+      0
+     ],
+     [
+      "Armel Bella Kotchap",
+      "DEF",
+      0
+     ],
+     [
+      "Emil Bohinen",
+      "DEF",
+      0
+     ],
+     [
+      "Giorgio Altare",
+      "DEF",
+      0
+     ],
+     [
+      "Joel Schingtienne",
+      "DEF",
+      0
+     ],
+     [
+      "Lorenzo Busato",
+      "DEF",
+      0
+     ],
+     [
+      "Marin Šverko",
+      "DEF",
+      0
+     ],
+     [
+      "Matias Moreno",
+      "DEF",
+      0
+     ],
+     [
+      "Michael Venturi",
+      "DEF",
+      0
+     ],
+     [
+      "Redouane Halhal",
+      "DEF",
+      0
+     ],
+     [
+      "Richie Sagrado",
+      "DEF",
+      0
+     ],
+     [
+      "Ridgeciano Haps",
+      "DEF",
+      0
+     ],
+     [
+      "Thierry Correia",
+      "DEF",
+      0
+     ],
+     [
+      "Alessio Pozzi",
+      "POR",
+      0
+     ],
+     [
+      "Filip Stankovic",
+      "POR",
+      0
+     ],
+     [
+      "Filippo Neri",
+      "POR",
+      0
+     ],
+     [
+      "Matteo Grandi",
+      "POR",
+      0
+     ]
+    ],
+    "Frosinone": [
+     [
+      "Alessandro Selvini",
+      "DEL",
+      0
+     ],
+     [
+      "Farés Ghedjemis",
+      "DEL",
+      0
+     ],
+     [
+      "Giorgi Kvernadze",
+      "DEL",
+      0
+     ],
+     [
+      "Kevin Barcella",
+      "DEL",
+      0
+     ],
+     [
+      "Seydou Fini",
+      "DEL",
+      0
+     ],
+     [
+      "Ben Lhassine Kone",
+      "MED",
+      0
+     ],
+     [
+      "Filippo Grosso",
+      "MED",
+      0
+     ],
+     [
+      "Francesco Gelli",
+      "MED",
+      0
+     ],
+     [
+      "Giacomo Calò",
+      "MED",
+      0
+     ],
+     [
+      "Ilias Koutsoupias",
+      "MED",
+      0
+     ],
+     [
+      "Matteo Cichella",
+      "MED",
+      0
+     ],
+     [
+      "Anouar El Azzouzi",
+      "DEF",
+      0
+     ],
+     [
+      "Anthony Oyono",
+      "DEF",
+      0
+     ],
+     [
+      "Gabriele Bracaglia",
+      "DEF",
+      0
+     ],
+     [
+      "Gabriele Calvani",
+      "DEF",
+      0
+     ],
+     [
+      "Giorgio Cittadini",
+      "DEF",
+      0
+     ],
+     [
+      "Ilario Monterisi",
+      "DEF",
+      0
+     ],
+     [
+      "Jacopo Gelli",
+      "DEF",
+      0
+     ],
+     [
+      "Jèrèmy Oyono",
+      "DEF",
+      0
+     ],
+     [
+      "Niccolò Corrado",
+      "DEF",
+      0
+     ],
+     [
+      "Wisdom Amey",
+      "DEF",
+      0
+     ],
+     [
+      "Eldin Lolic",
+      "POR",
+      0
+     ],
+     [
+      "Lorenzo Palmisani",
+      "POR",
+      0
+     ],
+     [
+      "Sebastiano Desplanches",
+      "POR",
+      0
+     ]
+    ],
+    "Sassuolo": [
+     [
+      "Agustín Álvarez Martínez",
+      "DEL",
+      0
+     ],
+     [
+      "Amoako Minta",
+      "DEL",
+      0
+     ],
+     [
+      "Andrea Pinamonti",
+      "DEL",
+      0
+     ],
+     [
+      "Armand Lauriente",
+      "DEL",
+      0
+     ],
+     [
+      "Cristian Volpato",
+      "DEL",
+      0
+     ],
+     [
+      "Domenico Berardi",
+      "DEL",
+      0
+     ],
+     [
+      "Flavio Russo",
+      "DEL",
+      0
+     ],
+     [
+      "Kieron Bowie",
+      "DEL",
+      0
+     ],
+     [
+      "Laurs Skjellerup",
+      "DEL",
+      0
+     ],
+     [
+      "Luca Moro",
+      "DEL",
+      0
+     ],
+     [
+      "Nicholas Pierini",
+      "DEL",
+      0
+     ],
+     [
+      "Riccardo Ciervo",
+      "DEL",
+      0
+     ],
+     [
+      "Andrea Ghion",
+      "MED",
+      0
+     ],
+     [
+      "Daniel Boloca",
+      "MED",
+      0
+     ],
+     [
+      "Darryl Bakola",
+      "MED",
+      0
+     ],
+     [
+      "Edoardo Iannoni",
+      "MED",
+      0
+     ],
+     [
+      "Fabrizio Caligara",
+      "MED",
+      0
+     ],
+     [
+      "Ismael Kone",
+      "MED",
+      0
+     ],
+     [
+      "Justin Kumi",
+      "MED",
+      0
+     ],
+     [
+      "Kevin Leone",
+      "MED",
+      0
+     ],
+     [
+      "Kristian Thorstvedt",
+      "MED",
+      0
+     ],
+     [
+      "Luca D'Andrea",
+      "MED",
+      0
+     ],
+     [
+      "Patrick Nuamah",
+      "MED",
+      0
+     ],
+     [
+      "Alessandro Di Bitonto",
+      "DEF",
+      0
+     ],
+     [
+      "Cas Odenthal",
+      "DEF",
+      0
+     ],
+     [
+      "Edoardo Pieragnolo",
+      "DEF",
+      0
+     ],
+     [
+      "Fali Candé",
+      "DEF",
+      0
+     ],
+     [
+      "Filippo Missori",
+      "DEF",
+      0
+     ],
+     [
+      "Francesco Corradini",
+      "DEF",
+      0
+     ],
+     [
+      "Jay Idzes",
+      "DEF",
+      0
+     ],
+     [
+      "Josh Doig",
+      "DEF",
+      0
+     ],
+     [
+      "Luca Lipani",
+      "DEF",
+      0
+     ],
+     [
+      "Yeferson Paz",
+      "DEF",
+      0
+     ],
+     [
+      "Alessandro Russo",
+      "POR",
+      0
+     ],
+     [
+      "Gioele Zacchi",
+      "POR",
+      0
+     ],
+     [
+      "Stefano Turati",
+      "POR",
+      0
+     ]
+    ],
+    "Torino": [
+     [
+      "Alessio Cacciamani",
+      "DEL",
+      0
+     ],
+     [
+      "Alieu Njie",
+      "DEL",
+      0
+     ],
+     [
+      "Che Adams",
+      "DEL",
+      0
+     ],
+     [
+      "Cristian Padula",
+      "DEL",
+      0
+     ],
+     [
+      "Duván Zapata",
+      "DEL",
+      0
+     ],
+     [
+      "Giovanni Simeone",
+      "DEL",
+      0
+     ],
+     [
+      "Pietro Pellegri",
+      "DEL",
+      0
+     ],
+     [
+      "Tommaso Gabellini",
+      "DEL",
+      0
+     ],
+     [
+      "Zakaria Aboukhlal",
+      "DEL",
+      0
+     ],
+     [
+      "Zalán Kugyela",
+      "DEL",
+      0
+     ],
+     [
+      "Aaron Ciammaglichella",
+      "MED",
+      0
+     ],
+     [
+      "Ali Dembele",
+      "MED",
+      1
+     ],
+     [
+      "Cesare Casadei",
+      "MED",
+      0
+     ],
+     [
+      "Comè Bianay Balcot",
+      "MED",
+      0
+     ],
+     [
+      "Emirhan Ilkhan",
+      "MED",
+      0
+     ],
+     [
+      "Francesco Dell'Aquila",
+      "MED",
+      0
+     ],
+     [
+      "Gaetano Oristanio",
+      "MED",
+      0
+     ],
+     [
+      "Gvidas Gineitis",
+      "MED",
+      0
+     ],
+     [
+      "Ivan Ilić",
+      "MED",
+      0
+     ],
+     [
+      "Kian Fitz-Jim",
+      "MED",
+      0
+     ],
+     [
+      "Marco Dalla Vecchia",
+      "MED",
+      0
+     ],
+     [
+      "Nikola Vlašić",
+      "MED",
+      0
+     ],
+     [
+      "Tommaso Di Marco",
+      "MED",
+      0
+     ],
+     [
+      "Wisdom Acquah",
+      "MED",
+      0
+     ],
+     [
+      "Ardian Ismajli",
+      "DEF",
+      0
+     ],
+     [
+      "Cristiano Biraghi",
+      "DEF",
+      0
+     ],
+     [
+      "Eray Cömert",
+      "DEF",
+      0
+     ],
+     [
+      "Fabio Desole",
+      "DEF",
+      0
+     ],
+     [
+      "Marcus Pedersen",
+      "DEF",
+      0
+     ],
+     [
+      "Pietro Comuzzo",
+      "DEF",
+      0
+     ],
+     [
+      "Saúl Coco",
+      "DEF",
+      0
+     ],
+     [
+      "Sebastian Walukiewicz",
+      "DEF",
+      0
+     ],
+     [
+      "Alberto Paleari",
+      "POR",
+      0
+     ],
+     [
+      "Diego Mascardi",
+      "POR",
+      0
+     ],
+     [
+      "Franco Israel",
+      "POR",
+      0
+     ],
+     [
+      "Lapo Siviero",
+      "POR",
+      0
+     ]
+    ],
+    "Lecce": [
+     [
+      "Konan N'Dri",
+      "DEL",
+      0
+     ],
+     [
+      "Lameck Banda",
+      "DEL",
+      0
+     ],
+     [
+      "Marco Delle Monache",
+      "DEL",
+      0
+     ],
+     [
+      "Miloš Jović",
+      "DEL",
+      0
+     ],
+     [
+      "Nikola Štulić",
+      "DEL",
+      0
+     ],
+     [
+      "Santiago Pierotti",
+      "DEL",
+      0
+     ],
+     [
+      "Willem Geubbels",
+      "DEL",
+      0
+     ],
+     [
+      "Lassana Coulibaly",
+      "MED",
+      0
+     ],
+     [
+      "Medon Berisha",
+      "MED",
+      0
+     ],
+     [
+      "Mohamed Kaba",
+      "MED",
+      0
+     ],
+     [
+      "Niko Kovač",
+      "MED",
+      0
+     ],
+     [
+      "Omri Gandelman",
+      "MED",
+      0
+     ],
+     [
+      "Oumar Ngom",
+      "MED",
+      0
+     ],
+     [
+      "Youssef Maleh",
+      "MED",
+      0
+     ],
+     [
+      "Antonino Gallo",
+      "DEF",
+      0
+     ],
+     [
+      "Christ-Owen Kouassi Bathele",
+      "DEF",
+      0
+     ],
+     [
+      "Corrie Ndaba",
+      "DEF",
+      0
+     ],
+     [
+      "Cristian Pehlivanov",
+      "DEF",
+      0
+     ],
+     [
+      "Danilo Veiga",
+      "DEF",
+      0
+     ],
+     [
+      "Elijah Scott",
+      "DEF",
+      0
+     ],
+     [
+      "Gaby Jean",
+      "DEF",
+      0
+     ],
+     [
+      "Jamil Siebert",
+      "DEF",
+      0
+     ],
+     [
+      "Kialonda Gaspar",
+      "DEF",
+      0
+     ],
+     [
+      "Marlon Ubani",
+      "DEF",
+      0
+     ],
+     [
+      "Matías Pérez",
+      "DEF",
+      0
+     ],
+     [
+      "Sadik Fofana",
+      "DEF",
+      0
+     ],
+     [
+      "Sebastian Esposito",
+      "DEF",
+      0
+     ],
+     [
+      "Tiago Gabriel",
+      "DEF",
+      0
+     ],
+     [
+      "Vernon Addo",
+      "DEF",
+      0
+     ],
+     [
+      "Alexandru Borbei",
+      "POR",
+      0
+     ],
+     [
+      "Christian Früchtl",
+      "POR",
+      0
+     ],
+     [
+      "Jasper Samooja",
+      "POR",
+      0
+     ],
+     [
+      "Wladimiro Falcone",
+      "POR",
+      0
+     ]
+    ],
+    "Monza": [
+     [
+      "Andrea Petagna",
+      "DEL",
+      0
+     ],
+     [
+      "Dany Mota Carvalho",
+      "DEL",
+      0
+     ],
+     [
+      "Kevin Martins",
+      "DEL",
+      0
+     ],
+     [
+      "Keïta Baldé",
+      "DEL",
+      0
+     ],
+     [
+      "Nicolas Galazzi",
+      "DEL",
+      0
+     ],
+     [
+      "Omari Forson",
+      "DEL",
+      0
+     ],
+     [
+      "Solomon Loubao",
+      "DEL",
+      0
+     ],
+     [
+      "Alessandro Berretta",
+      "MED",
+      0
+     ],
+     [
+      "Andrea Colpani",
+      "MED",
+      0
+     ],
+     [
+      "Hernani",
+      "MED",
+      0
+     ],
+     [
+      "Manga Foe Ondoa",
+      "MED",
+      0
+     ],
+     [
+      "Matteo Pessina",
+      "MED",
+      0
+     ],
+     [
+      "Patrick Ciurria",
+      "MED",
+      0
+     ],
+     [
+      "Pedro Obiang",
+      "MED",
+      0
+     ],
+     [
+      "Samuele Capolupo",
+      "MED",
+      0
+     ],
+     [
+      "Adam Bakoune",
+      "DEF",
+      0
+     ],
+     [
+      "Andrea Carboni",
+      "DEF",
+      0
+     ],
+     [
+      "Arvid Brorsson",
+      "DEF",
+      0
+     ],
+     [
+      "Eddy Kouadio",
+      "DEF",
+      0
+     ],
+     [
+      "Filippo Delli Carri",
+      "DEF",
+      0
+     ],
+     [
+      "Leonardo Colombo",
+      "DEF",
+      0
+     ],
+     [
+      "Ricardo Mangas",
+      "DEF",
+      0
+     ],
+     [
+      "Samuele Birindelli",
+      "DEF",
+      0
+     ],
+     [
+      "Valentin Antov",
+      "DEF",
+      0
+     ],
+     [
+      "Alessandro Sorrentino",
+      "POR",
+      0
+     ],
+     [
+      "Aljaž Strajnar",
+      "POR",
+      0
+     ],
+     [
+      "Demba Thiam",
+      "POR",
+      0
+     ],
+     [
+      "Semuel Pizzignacco",
+      "POR",
+      0
+     ]
+    ],
+    "Como 1907": [
+     [
+      "Alessandro Gabrielloni",
+      "DEL",
+      0
+     ],
+     [
+      "Ali Jassim El-Aibi",
+      "DEL",
+      0
+     ],
+     [
+      "Alieu Fadera",
+      "DEL",
+      0
+     ],
+     [
+      "Anastasios Douvikas",
+      "DEL",
+      0
+     ],
+     [
+      "Assane Diao",
+      "DEL",
+      0
+     ],
+     [
+      "Ivan Azón",
+      "DEL",
+      0
+     ],
+     [
+      "Jayden Addai",
+      "DEL",
+      0
+     ],
+     [
+      "Jesús Rodríguez",
+      "DEL",
+      0
+     ],
+     [
+      "Mattia Liberali",
+      "DEL",
+      0
+     ],
+     [
+      "Nicolas Kühn",
+      "DEL",
+      0
+     ],
+     [
+      "Patrick Cutrone",
+      "DEL",
+      0
+     ],
+     [
+      "Suliman Mustapha",
+      "DEL",
+      0
+     ],
+     [
+      "Tommaso Fumagalli",
+      "DEL",
+      0
+     ],
+     [
+      "Adrian Lahdo",
+      "MED",
+      0
+     ],
+     [
+      "Andréa Le Borgne",
+      "MED",
+      0
+     ],
+     [
+      "Fabio Rispoli",
+      "MED",
+      0
+     ],
+     [
+      "Jacopo Simonetta",
+      "MED",
+      0
+     ],
+     [
+      "Luca Mazzitelli",
+      "MED",
+      0
+     ],
+     [
+      "Lucas Da Cunha",
+      "MED",
+      0
+     ],
+     [
+      "Luis Milla",
+      "MED",
+      0
+     ],
+     [
+      "Martin Baturina",
+      "MED",
+      0
+     ],
+     [
+      "Matthias Braunöder",
+      "MED",
+      0
+     ],
+     [
+      "Maxence Caqueret",
+      "MED",
+      0
+     ],
+     [
+      "Nico Paz",
+      "MED",
+      0
+     ],
+     [
+      "Alberto Dossena",
+      "DEF",
+      0
+     ],
+     [
+      "Alex Valle",
+      "DEF",
+      0
+     ],
+     [
+      "Andrés Cuenca",
+      "DEF",
+      0
+     ],
+     [
+      "Edoardo Goldaniga",
+      "DEF",
+      0
+     ],
+     [
+      "Ignace Van Der Brempt",
+      "DEF",
+      0
+     ],
+     [
+      "Ivan Smolčić",
+      "DEF",
+      0
+     ],
+     [
+      "Jacobo Ramón",
+      "DEF",
+      0
+     ],
+     [
+      "Kaiki Bruno",
+      "DEF",
+      0
+     ],
+     [
+      "Marc-Oliver Kempf",
+      "DEF",
+      0
+     ],
+     [
+      "Maximo Perrone",
+      "DEF",
+      0
+     ],
+     [
+      "Stefan Posch",
+      "DEF",
+      0
+     ],
+     [
+      "Yan Couto",
+      "DEF",
+      0
+     ],
+     [
+      "Emil Audero",
+      "POR",
+      0
+     ],
+     [
+      "Jean Butez",
+      "POR",
+      0
+     ]
+    ]
+   }
   },
   "Bundesliga (Alemania)": {
    "codigo": "BL1",
@@ -13425,7 +16848,13 @@
     "Strasbourg": "https://crests.football-data.org/576.png",
     "Paris FC": "https://crests.football-data.org/1045.png"
    },
-   "partidos": [],
+   "partidos": [
+    [
+     "Marseille",
+     "Strasbourg",
+     "2026-08-21T18:45:00Z"
+    ]
+   ],
    "plantillas": {
     "Toulouse": [
      [
