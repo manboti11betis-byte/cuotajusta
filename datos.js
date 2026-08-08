@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-08-07",
+ "actualizado": "2026-08-08",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6953,6 +6953,21 @@ window.DATOS_LIGAS = {
      "Real Betis",
      "Real Sociedad",
      "2026-08-21T19:00:00Z"
+    ],
+    [
+     "Athletic",
+     "Sevilla FC",
+     "2026-08-22T15:00:00Z"
+    ],
+    [
+     "Valencia",
+     "Celta",
+     "2026-08-22T17:30:00Z"
+    ],
+    [
+     "Espanyol",
+     "Real Madrid",
+     "2026-08-22T19:30:00Z"
     ]
    ]
   },
@@ -7109,6 +7124,31 @@ window.DATOS_LIGAS = {
      "Arsenal",
      "Coventry City",
      "2026-08-21T19:00:00Z"
+    ],
+    [
+     "Hull City",
+     "Man United",
+     "2026-08-22T11:30:00Z"
+    ],
+    [
+     "Ipswich Town",
+     "Sunderland",
+     "2026-08-22T14:00:00Z"
+    ],
+    [
+     "Nottingham",
+     "Leeds United",
+     "2026-08-22T14:00:00Z"
+    ],
+    [
+     "Everton",
+     "Crystal Palace",
+     "2026-08-22T14:00:00Z"
+    ],
+    [
+     "Brentford",
+     "Tottenham",
+     "2026-08-22T16:30:00Z"
     ]
    ],
    "plantillas": {
@@ -10352,7 +10392,28 @@ window.DATOS_LIGAS = {
     "Monza": "https://crests.football-data.org/5911.png",
     "Como 1907": "https://crests.football-data.org/7397.png"
    },
-   "partidos": [],
+   "partidos": [
+    [
+     "Udinese",
+     "Como 1907",
+     "2026-08-22T16:30:00Z"
+    ],
+    [
+     "Inter",
+     "Monza",
+     "2026-08-22T16:30:00Z"
+    ],
+    [
+     "Genoa",
+     "Napoli",
+     "2026-08-22T18:45:00Z"
+    ],
+    [
+     "Parma",
+     "Cagliari",
+     "2026-08-22T18:45:00Z"
+    ]
+   ],
    "plantillas": {
     "Milan": [
      [
@@ -16854,6 +16915,31 @@ window.DATOS_LIGAS = {
      "Marseille",
      "Strasbourg",
      "2026-08-21T18:45:00Z"
+    ],
+    [
+     "RC Lens",
+     "Auxerre",
+     "2026-08-22T15:15:00Z"
+    ],
+    [
+     "Le Mans",
+     "Brest",
+     "2026-08-22T18:45:00Z"
+    ],
+    [
+     "Troyes",
+     "Paris FC",
+     "2026-08-22T18:45:00Z"
+    ],
+    [
+     "Nice",
+     "Lorient",
+     "2026-08-22T18:45:00Z"
+    ],
+    [
+     "Toulouse",
+     "Olympique Lyon",
+     "2026-08-22T18:45:00Z"
     ]
    ],
    "plantillas": {
