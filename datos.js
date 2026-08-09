@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-08-08",
+ "actualizado": "2026-08-09",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6968,6 +6968,21 @@ window.DATOS_LIGAS = {
      "Espanyol",
      "Real Madrid",
      "2026-08-22T19:30:00Z"
+    ],
+    [
+     "Atleti",
+     "Villarreal",
+     "2026-08-23T15:00:00Z"
+    ],
+    [
+     "Getafe",
+     "Santander",
+     "2026-08-23T17:30:00Z"
+    ],
+    [
+     "Elche",
+     "Barça",
+     "2026-08-23T19:30:00Z"
     ]
    ]
   },
@@ -7149,6 +7164,21 @@ window.DATOS_LIGAS = {
      "Brentford",
      "Tottenham",
      "2026-08-22T16:30:00Z"
+    ],
+    [
+     "Man City",
+     "Bournemouth",
+     "2026-08-23T13:00:00Z"
+    ],
+    [
+     "Brighton Hove",
+     "Aston Villa",
+     "2026-08-23T13:00:00Z"
+    ],
+    [
+     "Newcastle",
+     "Liverpool",
+     "2026-08-23T15:30:00Z"
     ]
    ],
    "plantillas": {
@@ -10412,6 +10442,26 @@ window.DATOS_LIGAS = {
      "Parma",
      "Cagliari",
      "2026-08-22T18:45:00Z"
+    ],
+    [
+     "Frosinone",
+     "Juventus",
+     "2026-08-23T16:30:00Z"
+    ],
+    [
+     "Venezia FC",
+     "Lecce",
+     "2026-08-23T16:30:00Z"
+    ],
+    [
+     "Atalanta",
+     "Sassuolo",
+     "2026-08-23T18:45:00Z"
+    ],
+    [
+     "Torino",
+     "Milan",
+     "2026-08-23T18:45:00Z"
     ]
    ],
    "plantillas": {
@@ -16940,6 +16990,21 @@ window.DATOS_LIGAS = {
      "Toulouse",
      "Olympique Lyon",
      "2026-08-22T18:45:00Z"
+    ],
+    [
+     "Angers SCO",
+     "Lille",
+     "2026-08-23T13:00:00Z"
+    ],
+    [
+     "Le Havre",
+     "Monaco",
+     "2026-08-23T15:15:00Z"
+    ],
+    [
+     "PSG",
+     "Stade Rennais",
+     "2026-08-23T18:45:00Z"
     ]
    ],
    "plantillas": {
