@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-08-09",
+ "actualizado": "2026-08-10",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -218,6 +218,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Facundo Pellistri",
+      "DEL",
+      0
+     ],
+     [
       "Federico Viñas",
       "DEL",
       0
@@ -229,11 +234,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Emiliano Martínez",
-      "MED",
-      0
-     ],
-     [
-      "Facundo Pellistri",
       "MED",
       0
      ],
@@ -472,9 +472,19 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Ferrán Torres",
+      "DEL",
+      0
+     ],
+     [
       "Lamine Yamal",
       "DEL",
       1
+     ],
+     [
+      "Mikel Oyarzabal",
+      "DEL",
+      0
      ],
      [
       "Nico Williams",
@@ -502,27 +512,12 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Ferrán Torres",
-      "MED",
-      0
-     ],
-     [
-      "Marcos Llorente",
-      "MED",
-      0
-     ],
-     [
       "Martín Zubimendi",
       "MED",
       0
      ],
      [
       "Mikel Merino",
-      "MED",
-      0
-     ],
-     [
-      "Mikel Oyarzabal",
       "MED",
       0
      ],
@@ -568,6 +563,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Marc Pubill",
+      "DEF",
+      0
+     ],
+     [
+      "Marcos Llorente",
       "DEF",
       0
      ],
@@ -1137,6 +1137,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Gonçalo Guedes",
+      "DEL",
+      0
+     ],
+     [
       "Gonçalo Ramos",
       "DEL",
       0
@@ -1170,11 +1175,6 @@ window.DATOS_LIGAS = {
       "Bruno Fernandes",
       "MED",
       1
-     ],
-     [
-      "Gonçalo Guedes",
-      "MED",
-      0
      ],
      [
       "Joao Neves",
@@ -1304,6 +1304,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Takefusa Kubo",
+      "DEL",
+      0
+     ],
+     [
       "Yuito Suzuki",
       "DEL",
       0
@@ -1320,11 +1325,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Kaishu Sano",
-      "MED",
-      0
-     ],
-     [
-      "Takefusa Kubo",
       "MED",
       0
      ],
@@ -1523,6 +1523,11 @@ window.DATOS_LIGAS = {
     ],
     "England": [
      [
+      "Anthony Gordon",
+      "DEL",
+      0
+     ],
+     [
       "Bukayo Saka",
       "DEL",
       1
@@ -1550,11 +1555,6 @@ window.DATOS_LIGAS = {
      [
       "Ollie Watkins",
       "DEL",
-      0
-     ],
-     [
-      "Anthony Gordon",
-      "MED",
       0
      ],
      [
@@ -2599,6 +2599,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Ruben Vargas",
+      "DEL",
+      0
+     ],
+     [
       "Zeki Amdouni",
       "DEL",
       0
@@ -2645,11 +2650,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Remo Freuler",
-      "MED",
-      0
-     ],
-     [
-      "Ruben Vargas",
       "MED",
       0
      ],
@@ -2863,6 +2863,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Taha Ali",
+      "DEL",
+      0
+     ],
+     [
       "Viktor Gyökeres",
       "DEL",
       1
@@ -2894,11 +2899,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Mattias Svanberg",
-      "MED",
-      0
-     ],
-     [
-      "Taha Ali",
       "MED",
       0
      ],
@@ -3919,6 +3919,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Brahim Diaz",
+      "DEL",
+      0
+     ],
+     [
       "Chemsdine Talbi",
       "DEL",
       0
@@ -3945,11 +3950,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Bilal El Khannouss",
-      "MED",
-      0
-     ],
-     [
-      "Brahim Diaz",
       "MED",
       0
      ],
@@ -4462,6 +4462,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Tajon Buchanan",
+      "DEL",
+      0
+     ],
+     [
       "Tani Oluwaseyi",
       "DEL",
       0
@@ -4498,11 +4503,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Stephen Eustáquio",
-      "MED",
-      0
-     ],
-     [
-      "Tajon Buchanan",
       "MED",
       0
      ],
@@ -6722,135 +6722,437 @@ window.DATOS_LIGAS = {
     ]
    },
    "plantillas": {
-    "Betis": [
+    "Athletic": [
      [
-      "Cucho Hernández",
+      "Gorka Guruzeta",
       "DEL",
       0
      ],
      [
-      "Antony",
+      "Iñaki Williams",
+      "DEL",
+      0
+     ],
+     [
+      "Nico Serrano",
+      "DEL",
+      0
+     ],
+     [
+      "Nico Williams",
       "DEL",
       1
      ],
      [
-      "Abde Ezzalzouli",
+      "Roberto Navarro",
       "DEL",
       0
      ],
      [
-      "Isco",
-      "MED",
-      1
+      "Sannadi",
+      "DEL",
+      0
      ],
      [
-      "Giovani Lo Celso",
+      "Álex Berenguer",
+      "DEL",
+      0
+     ],
+     [
+      "Álvaro Djaló",
+      "DEL",
+      0
+     ],
+     [
+      "Alejandro Rego",
       "MED",
       0
      ],
      [
-      "Pablo Fornals",
+      "Benat Prados",
       "MED",
       0
      ],
      [
-      "Marc Bartra",
+      "Beñat Gerenabarrena",
+      "MED",
+      0
+     ],
+     [
+      "Mikel Jauregizar",
+      "MED",
+      0
+     ],
+     [
+      "Oihan Sancet",
+      "MED",
+      0
+     ],
+     [
+      "Peio Canales",
+      "MED",
+      0
+     ],
+     [
+      "Ruiz de Galarreta",
+      "MED",
+      0
+     ],
+     [
+      "Selton Sánchez",
+      "MED",
+      0
+     ],
+     [
+      "Unai Vencedor Paris",
+      "MED",
+      0
+     ],
+     [
+      "Adama Boiro",
       "DEF",
       0
      ],
      [
-      "Álvaro Valles",
-      "POR",
-      0
-     ]
-    ],
-    "Sevilla": [
-     [
-      "Isaac Romero",
-      "DEL",
-      0
-     ],
-     [
-      "Dodi Lukébakio",
-      "DEL",
-      0
-     ],
-     [
-      "Chidera Ejuke",
-      "DEL",
-      0
-     ],
-     [
-      "Djibril Sow",
-      "MED",
-      0
-     ],
-     [
-      "Lucien Agoumé",
-      "MED",
-      0
-     ],
-     [
-      "Nemanja Gudelj",
+      "Aitor Paredes Casamichana",
       "DEF",
       0
      ],
      [
-      "Orjan Nyland",
-      "POR",
-      0
-     ]
-    ],
-    "Real Madrid": [
-     [
-      "Kylian Mbappé",
-      "DEL",
-      1
-     ],
-     [
-      "Vinicius Júnior",
-      "DEL",
-      1
-     ],
-     [
-      "Rodrygo",
-      "DEL",
-      0
-     ],
-     [
-      "Jude Bellingham",
-      "MED",
-      1
-     ],
-     [
-      "Federico Valverde",
-      "MED",
-      0
-     ],
-     [
-      "Aurélien Tchouaméni",
-      "MED",
-      0
-     ],
-     [
-      "Éder Militão",
+      "Andoni Gorosabel",
       "DEF",
       0
      ],
      [
-      "Thibaut Courtois",
+      "Aymeric Laporte",
+      "DEF",
+      0
+     ],
+     [
+      "Daniel Vivian",
+      "DEF",
+      0
+     ],
+     [
+      "Hugo Rincón",
+      "DEF",
+      0
+     ],
+     [
+      "Jesús Areso",
+      "DEF",
+      0
+     ],
+     [
+      "Unai Egiluz",
+      "DEF",
+      0
+     ],
+     [
+      "Yeray Álvarez",
+      "DEF",
+      0
+     ],
+     [
+      "Yuri Berchiche",
+      "DEF",
+      0
+     ],
+     [
+      "Julen Agirrezabala",
       "POR",
-      1
+      0
+     ],
+     [
+      "Unai Simón",
+      "POR",
+      0
+     ],
+     [
+      "Álex Padilla",
+      "POR",
+      0
      ]
     ],
-    "Barcelona": [
+    "Atleti": [
+     [
+      "Ademola Lookman",
+      "DEL",
+      0
+     ],
+     [
+      "Alejandro Grimaldo",
+      "DEF",
+      0
+     ],
+     [
+      "Marcos Llorente",
+      "DEF",
+      0
+     ],
+     [
+      "Nahuel Molina",
+      "DEF",
+      0
+     ],
+     [
+      "Robin Le Normand",
+      "DEF",
+      0
+     ]
+    ],
+    "Osasuna": [
+     [
+      "Ante Budimir",
+      "DEL",
+      0
+     ],
+     [
+      "Iker Benito",
+      "DEL",
+      0
+     ],
+     [
+      "Jonathan Dubasin",
+      "DEL",
+      0
+     ],
+     [
+      "Kike Barja",
+      "DEL",
+      0
+     ],
+     [
+      "Raúl",
+      "DEL",
+      0
+     ],
+     [
+      "Raúl Moro",
+      "DEL",
+      0
+     ],
+     [
+      "Rubén García",
+      "DEL",
+      0
+     ],
+     [
+      "Aimar Oroz",
+      "MED",
+      0
+     ],
+     [
+      "Asier Osambela",
+      "MED",
+      0
+     ],
+     [
+      "Iker Munoz",
+      "MED",
+      0
+     ],
+     [
+      "Jon Moncayola",
+      "MED",
+      0
+     ],
+     [
+      "Lucas Torró",
+      "MED",
+      0
+     ],
+     [
+      "Moi Gómez",
+      "MED",
+      0
+     ],
+     [
+      "Abel Bretones",
+      "DEF",
+      0
+     ],
+     [
+      "Catena",
+      "DEF",
+      0
+     ],
+     [
+      "Flavien Boyomo",
+      "DEF",
+      0
+     ],
+     [
+      "Iñigo Arguibide",
+      "DEF",
+      0
+     ],
+     [
+      "Jorge Herrando",
+      "DEF",
+      0
+     ],
+     [
+      "Valentin Rosier",
+      "DEF",
+      0
+     ],
+     [
+      "Aitor Fernández",
+      "POR",
+      0
+     ],
+     [
+      "Sergio Herrera",
+      "POR",
+      0
+     ]
+    ],
+    "Espanyol": [
+     [
+      "Javi Puado",
+      "DEL",
+      0
+     ],
+     [
+      "Jofre Carreras Pagès",
+      "DEL",
+      0
+     ],
+     [
+      "Kike García",
+      "DEL",
+      0
+     ],
+     [
+      "Marcos Fernández",
+      "DEL",
+      0
+     ],
+     [
+      "Pere Milla",
+      "DEL",
+      0
+     ],
+     [
+      "Roberto Fernández",
+      "DEL",
+      0
+     ],
+     [
+      "Tyrhys Dolan",
+      "DEL",
+      0
+     ],
+     [
+      "Edu Expósito",
+      "MED",
+      0
+     ],
+     [
+      "Javier Hernández",
+      "MED",
+      0
+     ],
+     [
+      "Moscardo",
+      "MED",
+      0
+     ],
+     [
+      "Pol Lozano",
+      "MED",
+      0
+     ],
+     [
+      "Rafel Bauzà",
+      "MED",
+      0
+     ],
+     [
+      "Urko González",
+      "MED",
+      0
+     ],
+     [
+      "Álex Calatrava",
+      "MED",
+      0
+     ],
+     [
+      "Clemens Riedel",
+      "DEF",
+      0
+     ],
+     [
+      "Leandro Cabrera",
+      "DEF",
+      0
+     ],
+     [
+      "Miguel Rubio",
+      "DEF",
+      0
+     ],
+     [
+      "Omar El Hilali",
+      "DEF",
+      0
+     ],
+     [
+      "Quilindschy Hartman",
+      "DEF",
+      0
+     ],
+     [
+      "Roger Hinojo",
+      "DEF",
+      0
+     ],
+     [
+      "Rubén Sánchez",
+      "DEF",
+      0
+     ],
+     [
+      "Unai Núñez",
+      "DEF",
+      0
+     ],
+     [
+      "Marko Dmitrović",
+      "POR",
+      0
+     ],
+     [
+      "Ángel Fortuño Viñas",
+      "POR",
+      0
+     ]
+    ],
+    "Barça": [
+     [
+      "Anthony Gordon",
+      "DEL",
+      0
+     ],
+     [
+      "Ferrán Torres",
+      "DEL",
+      0
+     ],
+     [
+      "Jesse Bisiwu",
+      "DEL",
+      0
+     ],
+     [
+      "Karim Adeyemi",
+      "DEL",
+      0
+     ],
      [
       "Lamine Yamal",
-      "DEL",
-      1
-     ],
-     [
-      "Robert Lewandowski",
       "DEL",
       1
      ],
@@ -6860,8 +7162,43 @@ window.DATOS_LIGAS = {
       1
      ],
      [
-      "Ferran Torres",
+      "Roony Bardghji",
       "DEL",
+      0
+     ],
+     [
+      "Brian Fariñas",
+      "MED",
+      0
+     ],
+     [
+      "Dani Olmo",
+      "MED",
+      0
+     ],
+     [
+      "Fermín López",
+      "MED",
+      0
+     ],
+     [
+      "Frenkie de Jong",
+      "MED",
+      0
+     ],
+     [
+      "Marc Bernal",
+      "MED",
+      0
+     ],
+     [
+      "Marc Casado",
+      "MED",
+      0
+     ],
+     [
+      "Pablo Gavira",
+      "MED",
       0
      ],
      [
@@ -6870,8 +7207,43 @@ window.DATOS_LIGAS = {
       1
      ],
      [
-      "Gavi",
+      "Tomy Marqués",
       "MED",
+      0
+     ],
+     [
+      "Toni Fernández",
+      "MED",
+      0
+     ],
+     [
+      "Andreas Christensen",
+      "DEF",
+      0
+     ],
+     [
+      "Eric García",
+      "DEF",
+      0
+     ],
+     [
+      "Gerard Martín",
+      "DEF",
+      0
+     ],
+     [
+      "Héctor Fort",
+      "DEF",
+      0
+     ],
+     [
+      "Jofre Torrents",
+      "DEF",
+      0
+     ],
+     [
+      "Jules Koundé",
+      "DEF",
       0
      ],
      [
@@ -6880,7 +7252,1967 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Ronald Araújo",
+      "DEF",
+      0
+     ],
+     [
+      "Xavi Espart",
+      "DEF",
+      0
+     ],
+     [
+      "Álex Balde",
+      "DEF",
+      0
+     ],
+     [
+      "Álvaro Cortés",
+      "DEF",
+      0
+     ],
+     [
       "Joan García",
+      "POR",
+      0
+     ],
+     [
+      "Wojciech Szczęsny",
+      "POR",
+      0
+     ],
+     [
+      "Áron Yaakobishvili",
+      "POR",
+      0
+     ]
+    ],
+    "Getafe": [
+     [
+      "Alejandro Sancris",
+      "DEL",
+      0
+     ],
+     [
+      "Borja Mayoral",
+      "DEL",
+      0
+     ],
+     [
+      "Chrisantus",
+      "DEL",
+      0
+     ],
+     [
+      "Juanmi",
+      "DEL",
+      0
+     ],
+     [
+      "Martin Satriano",
+      "DEL",
+      0
+     ],
+     [
+      "Javi Muñoz",
+      "MED",
+      0
+     ],
+     [
+      "Mario Martin",
+      "MED",
+      0
+     ],
+     [
+      "Orel Mangala",
+      "MED",
+      0
+     ],
+     [
+      "RamónTerrats Espacio",
+      "MED",
+      0
+     ],
+     [
+      "Yvan Neyou",
+      "MED",
+      0
+     ],
+     [
+      "Abdelkabir Abqar",
+      "DEF",
+      0
+     ],
+     [
+      "Andrés Garcia",
+      "DEF",
+      0
+     ],
+     [
+      "Dakonam Djené",
+      "DEF",
+      0
+     ],
+     [
+      "Davinchi",
+      "DEF",
+      0
+     ],
+     [
+      "Femenía Far",
+      "DEF",
+      0
+     ],
+     [
+      "Ismael Bekhoucha",
+      "DEF",
+      0
+     ],
+     [
+      "Juan Berrocal",
+      "DEF",
+      0
+     ],
+     [
+      "Saba Sazonov",
+      "DEF",
+      0
+     ],
+     [
+      "Sebastián Boselli",
+      "DEF",
+      0
+     ],
+     [
+      "Valou",
+      "DEF",
+      0
+     ],
+     [
+      "Zaid Romero",
+      "DEF",
+      0
+     ],
+     [
+      "David Soria",
+      "POR",
+      0
+     ],
+     [
+      "Jiří Letáček",
+      "POR",
+      0
+     ]
+    ],
+    "Málaga": [
+     [
+      "Adrián Niño",
+      "DEL",
+      0
+     ],
+     [
+      "Chupete",
+      "DEL",
+      0
+     ],
+     [
+      "David Larrubia",
+      "DEL",
+      0
+     ],
+     [
+      "Eneko Jauregi Escobar",
+      "DEL",
+      0
+     ],
+     [
+      "Haitam Abaida",
+      "DEL",
+      0
+     ],
+     [
+      "Joaquín Muñoz",
+      "DEL",
+      0
+     ],
+     [
+      "Juan Cruz",
+      "DEL",
+      0
+     ],
+     [
+      "Julen Lobete",
+      "DEL",
+      0
+     ],
+     [
+      "Aarón Ochoa",
+      "MED",
+      0
+     ],
+     [
+      "Carlos Dotor",
+      "MED",
+      0
+     ],
+     [
+      "Dani Lorenzo",
+      "MED",
+      0
+     ],
+     [
+      "Izan Merino",
+      "MED",
+      0
+     ],
+     [
+      "Juan Melero",
+      "MED",
+      0
+     ],
+     [
+      "Pablo Arriaza",
+      "MED",
+      0
+     ],
+     [
+      "Rafa Rodriguez",
+      "MED",
+      0
+     ],
+     [
+      "Ramón Enríquez Rodríguez",
+      "MED",
+      0
+     ],
+     [
+      "Alex Pastor Carayol",
+      "DEF",
+      0
+     ],
+     [
+      "Angel Recio",
+      "DEF",
+      0
+     ],
+     [
+      "Daniel Sánchez",
+      "DEF",
+      0
+     ],
+     [
+      "Diego Murillo",
+      "DEF",
+      0
+     ],
+     [
+      "Einar Galilea",
+      "DEF",
+      0
+     ],
+     [
+      "Fernando Calero",
+      "DEF",
+      0
+     ],
+     [
+      "José Salinas",
+      "DEF",
+      0
+     ],
+     [
+      "Moussa Diarra",
+      "DEF",
+      0
+     ],
+     [
+      "Puga",
+      "DEF",
+      0
+     ],
+     [
+      "Rafa Garrido",
+      "DEF",
+      0
+     ],
+     [
+      "Alfonso Herrero",
+      "POR",
+      0
+     ],
+     [
+      "Lopez Nogueras",
+      "POR",
+      0
+     ]
+    ],
+    "Real Madrid": [
+     [
+      "Brahim Diaz",
+      "DEL",
+      0
+     ],
+     [
+      "Carlos Espí",
+      "DEL",
+      0
+     ],
+     [
+      "Endrick",
+      "DEL",
+      0
+     ],
+     [
+      "Kylian Mbappé",
+      "DEL",
+      1
+     ],
+     [
+      "Rodrygo",
+      "DEL",
+      1
+     ],
+     [
+      "Vinicius Junior",
+      "DEL",
+      1
+     ],
+     [
+      "Yan Diomandé",
+      "DEL",
+      0
+     ],
+     [
+      "Arda Guler",
+      "MED",
+      0
+     ],
+     [
+      "Aurélien Tchouameni",
+      "MED",
+      0
+     ],
+     [
+      "Bernardo Silva",
+      "MED",
+      0
+     ],
+     [
+      "Eduardo Camavinga",
+      "MED",
+      0
+     ],
+     [
+      "Federico Valverde",
+      "MED",
+      0
+     ],
+     [
+      "Jude Bellingham",
+      "MED",
+      1
+     ],
+     [
+      "Manuel Angel",
+      "MED",
+      0
+     ],
+     [
+      "Thiago Pitarch",
+      "MED",
+      0
+     ],
+     [
+      "Antonio Rüdiger",
+      "DEF",
+      0
+     ],
+     [
+      "Cucurella",
+      "DEF",
+      0
+     ],
+     [
+      "David Jiménez",
+      "DEF",
+      0
+     ],
+     [
+      "Dean Huijsen",
+      "DEF",
+      0
+     ],
+     [
+      "Denzel Dumfries",
+      "DEF",
+      0
+     ],
+     [
+      "Ferland Mendy",
+      "DEF",
+      0
+     ],
+     [
+      "Ibrahima Konaté",
+      "DEF",
+      0
+     ],
+     [
+      "Raúl",
+      "DEF",
+      0
+     ],
+     [
+      "Trent Alexander-Arnold",
+      "DEF",
+      0
+     ],
+     [
+      "Álvaro Carreras",
+      "DEF",
+      0
+     ],
+     [
+      "Éder Militão",
+      "DEF",
+      0
+     ],
+     [
+      "Andriy Lunin",
+      "POR",
+      0
+     ],
+     [
+      "Thibaut Courtois",
+      "POR",
+      0
+     ]
+    ],
+    "Rayo Vallecano": [
+     [
+      "Alexandre Alemão",
+      "DEL",
+      0
+     ],
+     [
+      "Etienne",
+      "DEL",
+      0
+     ],
+     [
+      "Fran Perez",
+      "DEL",
+      0
+     ],
+     [
+      "Isi Palazón",
+      "DEL",
+      0
+     ],
+     [
+      "Jorge de Frutos",
+      "DEL",
+      0
+     ],
+     [
+      "Raúl de Tomás",
+      "DEL",
+      0
+     ],
+     [
+      "Sergio Camello",
+      "DEL",
+      0
+     ],
+     [
+      "Álvaro García",
+      "DEL",
+      0
+     ],
+     [
+      "Pathé Ciss",
+      "MED",
+      0
+     ],
+     [
+      "Pedro Díaz",
+      "MED",
+      0
+     ],
+     [
+      "Randy Ntekja",
+      "MED",
+      0
+     ],
+     [
+      "Samu Becerra",
+      "MED",
+      0
+     ],
+     [
+      "Unai López",
+      "MED",
+      0
+     ],
+     [
+      "Óscar Valentín",
+      "MED",
+      0
+     ],
+     [
+      "Andrei Rațiu",
+      "DEF",
+      0
+     ],
+     [
+      "Florian Lejeune",
+      "DEF",
+      0
+     ],
+     [
+      "Iván Balliu",
+      "DEF",
+      0
+     ],
+     [
+      "Jozhua Vertrouwd",
+      "DEF",
+      0
+     ],
+     [
+      "Luiz Felipe",
+      "DEF",
+      0
+     ],
+     [
+      "Marash Kumbulla",
+      "DEF",
+      0
+     ],
+     [
+      "Nobel Mendy",
+      "DEF",
+      0
+     ],
+     [
+      "Pelayo Fernández",
+      "DEF",
+      0
+     ],
+     [
+      "Pep Chavarría",
+      "DEF",
+      0
+     ],
+     [
+      "Augusto Batalla",
+      "POR",
+      0
+     ],
+     [
+      "Dani Cárdenas",
+      "POR",
+      0
+     ]
+    ],
+    "Levante": [
+     [
+      "Iván Romero",
+      "DEL",
+      0
+     ],
+     [
+      "Kareem Tunde",
+      "DEL",
+      0
+     ],
+     [
+      "Karl Etta Eyong",
+      "DEL",
+      0
+     ],
+     [
+      "Paco Cortés",
+      "DEL",
+      0
+     ],
+     [
+      "Roger Brugué",
+      "DEL",
+      0
+     ],
+     [
+      "Tai Abed",
+      "DEL",
+      0
+     ],
+     [
+      "Víctor García",
+      "DEL",
+      0
+     ],
+     [
+      "Yanis Musuayi",
+      "DEL",
+      0
+     ],
+     [
+      "Carlos Álvarez",
+      "MED",
+      0
+     ],
+     [
+      "Dani Requena",
+      "MED",
+      0
+     ],
+     [
+      "Enzo Bardeli",
+      "MED",
+      0
+     ],
+     [
+      "Hugo Sotelo",
+      "MED",
+      0
+     ],
+     [
+      "Jon Olasagasti",
+      "MED",
+      0
+     ],
+     [
+      "Kervin Arriaga",
+      "MED",
+      0
+     ],
+     [
+      "Oriol Rey",
+      "MED",
+      0
+     ],
+     [
+      "Adrián de la Fuente",
+      "DEF",
+      0
+     ],
+     [
+      "Aïssa Mandi",
+      "DEF",
+      0
+     ],
+     [
+      "Jeremy Toljan",
+      "DEF",
+      0
+     ],
+     [
+      "Jorge Cabello",
+      "DEF",
+      0
+     ],
+     [
+      "Manuel Sánchez",
+      "DEF",
+      0
+     ],
+     [
+      "Nacho Pérez",
+      "DEF",
+      0
+     ],
+     [
+      "Xavi Grande",
+      "DEF",
+      0
+     ],
+     [
+      "Daniel Martín",
+      "POR",
+      0
+     ],
+     [
+      "Maty Ryan",
+      "POR",
+      0
+     ],
+     [
+      "Pablo Cuñat",
+      "POR",
+      0
+     ],
+     [
+      "Álex Primo",
+      "POR",
+      0
+     ]
+    ],
+    "Real Betis": [
+     [
+      "Abdessamad Ezzalzouli",
+      "DEL",
+      0
+     ],
+     [
+      "Aitor Ruibal",
+      "DEL",
+      0
+     ],
+     [
+      "Antony",
+      "DEL",
+      0
+     ],
+     [
+      "Cucho Hernández",
+      "DEL",
+      0
+     ],
+     [
+      "Gonzalo Petit",
+      "DEL",
+      0
+     ],
+     [
+      "Iker Losada",
+      "DEL",
+      0
+     ],
+     [
+      "Pablo García",
+      "DEL",
+      0
+     ],
+     [
+      "Rodrigo Riquelme",
+      "DEL",
+      0
+     ],
+     [
+      "Facundo Bernal",
+      "MED",
+      0
+     ],
+     [
+      "Giovani Lo Celso",
+      "MED",
+      0
+     ],
+     [
+      "Isco",
+      "MED",
+      0
+     ],
+     [
+      "Marc Roca",
+      "MED",
+      0
+     ],
+     [
+      "Nelson Deossa",
+      "MED",
+      0
+     ],
+     [
+      "Pablo Fornals",
+      "MED",
+      0
+     ],
+     [
+      "Álvaro Fidalgo",
+      "MED",
+      0
+     ],
+     [
+      "Bartra",
+      "DEF",
+      0
+     ],
+     [
+      "Diego Llorente",
+      "DEF",
+      0
+     ],
+     [
+      "Francisco Garcia",
+      "DEF",
+      0
+     ],
+     [
+      "Héctor Bellerín",
+      "DEF",
+      0
+     ],
+     [
+      "Júnior Firpo",
+      "DEF",
+      0
+     ],
+     [
+      "Natan",
+      "DEF",
+      0
+     ],
+     [
+      "Valentín Gómez",
+      "DEF",
+      0
+     ],
+     [
+      "Ángel Ortiz",
+      "DEF",
+      0
+     ],
+     [
+      "Diego Conde",
+      "POR",
+      0
+     ],
+     [
+      "Álvaro Vallés Rosa",
+      "POR",
+      0
+     ]
+    ],
+    "Real Sociedad": [
+     [
+      "Ander Barrenetxea",
+      "DEL",
+      0
+     ],
+     [
+      "Gonçalo Guedes",
+      "DEL",
+      0
+     ],
+     [
+      "Jon Karrikaburu",
+      "DEL",
+      0
+     ],
+     [
+      "Mikel Oyarzabal",
+      "DEL",
+      0
+     ],
+     [
+      "Orri Steinn Óskarsson",
+      "DEL",
+      0
+     ],
+     [
+      "Takefusa Kubo",
+      "DEL",
+      0
+     ],
+     [
+      "Arsen Zakharyan",
+      "MED",
+      0
+     ],
+     [
+      "Beñat Turrientes",
+      "MED",
+      0
+     ],
+     [
+      "Carlos Soler",
+      "MED",
+      0
+     ],
+     [
+      "Jon Gorrotxategi",
+      "MED",
+      0
+     ],
+     [
+      "Luka Sučić",
+      "MED",
+      0
+     ],
+     [
+      "Mikel Goti",
+      "MED",
+      0
+     ],
+     [
+      "Pablo Marin",
+      "MED",
+      0
+     ],
+     [
+      "Yangel Herrera",
+      "MED",
+      0
+     ],
+     [
+      "Aihen Muñoz",
+      "DEF",
+      0
+     ],
+     [
+      "Igor Zubeldía",
+      "DEF",
+      0
+     ],
+     [
+      "Iñaki Rupérez",
+      "DEF",
+      0
+     ],
+     [
+      "Javi López",
+      "DEF",
+      0
+     ],
+     [
+      "Jon Aramburu",
+      "DEF",
+      0
+     ],
+     [
+      "Jon Martín",
+      "DEF",
+      0
+     ],
+     [
+      "Jon Pacheco",
+      "DEF",
+      0
+     ],
+     [
+      "Kazunari Kita",
+      "DEF",
+      0
+     ],
+     [
+      "Sergio Gómez",
+      "DEF",
+      0
+     ],
+     [
+      "Álvaro Odriozola",
+      "DEF",
+      0
+     ],
+     [
+      "Unai Marrero",
+      "POR",
+      0
+     ],
+     [
+      "Álex Remiro",
+      "POR",
+      0
+     ]
+    ],
+    "Villarreal": [
+     [
+      "Alberto Moleiro",
+      "DEL",
+      0
+     ],
+     [
+      "Ayoze Pérez",
+      "DEL",
+      0
+     ],
+     [
+      "Georges Mikautadze",
+      "DEL",
+      0
+     ],
+     [
+      "Gerard Moreno",
+      "DEL",
+      0
+     ],
+     [
+      "Ilias Akhomach",
+      "DEL",
+      0
+     ],
+     [
+      "Nicolas Pépé",
+      "DEL",
+      0
+     ],
+     [
+      "Tajon Buchanan",
+      "DEL",
+      0
+     ],
+     [
+      "Tani Oluwaseyi",
+      "DEL",
+      0
+     ],
+     [
+      "Thiago Fernandez",
+      "DEL",
+      0
+     ],
+     [
+      "Alassane Diatta",
+      "MED",
+      0
+     ],
+     [
+      "Carlos Macià",
+      "MED",
+      0
+     ],
+     [
+      "Pape Gueye",
+      "MED",
+      0
+     ],
+     [
+      "Santiago Comesaña",
+      "MED",
+      0
+     ],
+     [
+      "Alex Freeman",
+      "DEF",
+      0
+     ],
+     [
+      "Carlos Romero",
+      "DEF",
+      0
+     ],
+     [
+      "Juan Foyth",
+      "DEF",
+      0
+     ],
+     [
+      "Logan Costa",
+      "DEF",
+      0
+     ],
+     [
+      "Pau Navarro",
+      "DEF",
+      0
+     ],
+     [
+      "Renato Veiga",
+      "DEF",
+      0
+     ],
+     [
+      "Santiago Mouriño",
+      "DEF",
+      0
+     ],
+     [
+      "Sergi Cardona",
+      "DEF",
+      0
+     ],
+     [
+      "Willy Kambwala",
+      "DEF",
+      0
+     ],
+     [
+      "Luiz Lúcio Reis Júnior",
+      "POR",
+      0
+     ],
+     [
+      "Péter Gulácsi",
+      "POR",
+      0
+     ]
+    ],
+    "Valencia": [
+     [
+      "Alberto Mari",
+      "DEL",
+      0
+     ],
+     [
+      "Arnaut Danjuma",
+      "DEL",
+      0
+     ],
+     [
+      "Dani Raba",
+      "DEL",
+      0
+     ],
+     [
+      "Diego López",
+      "DEL",
+      0
+     ],
+     [
+      "Hugo Duro",
+      "DEL",
+      0
+     ],
+     [
+      "Luis Rioja",
+      "DEL",
+      0
+     ],
+     [
+      "Ryunosuke Sato",
+      "DEL",
+      0
+     ],
+     [
+      "Sergi Canós",
+      "DEL",
+      0
+     ],
+     [
+      "Umar Sadiq",
+      "DEL",
+      0
+     ],
+     [
+      "Aliou Dieng",
+      "MED",
+      0
+     ],
+     [
+      "André Almeida",
+      "MED",
+      0
+     ],
+     [
+      "Filip Ugrinic",
+      "MED",
+      0
+     ],
+     [
+      "Guido Rodríguez",
+      "MED",
+      0
+     ],
+     [
+      "Javier Guerra",
+      "MED",
+      0
+     ],
+     [
+      "Pepelu",
+      "MED",
+      0
+     ],
+     [
+      "Cesar Tarrega",
+      "DEF",
+      0
+     ],
+     [
+      "Copete",
+      "DEF",
+      0
+     ],
+     [
+      "Dimitri Foulquier",
+      "DEF",
+      0
+     ],
+     [
+      "Gaya",
+      "DEF",
+      0
+     ],
+     [
+      "Iker Córdoba",
+      "DEF",
+      0
+     ],
+     [
+      "Jesus Vazquez Alcalde",
+      "DEF",
+      0
+     ],
+     [
+      "Justin de Haas",
+      "DEF",
+      0
+     ],
+     [
+      "Mouctar Diakhaby",
+      "DEF",
+      0
+     ],
+     [
+      "Cristian",
+      "POR",
+      0
+     ],
+     [
+      "Stole Dimitrievski",
+      "POR",
+      0
+     ]
+    ],
+    "Alavés": [
+     [
+      "Abde Rebbach",
+      "DEL",
+      0
+     ],
+     [
+      "Aitor Mañas",
+      "DEL",
+      0
+     ],
+     [
+      "Lucas Boyé",
+      "DEL",
+      0
+     ],
+     [
+      "Mariano Díaz",
+      "DEL",
+      0
+     ],
+     [
+      "Miguel Rodríguez",
+      "DEL",
+      0
+     ],
+     [
+      "Toni Martínez",
+      "DEL",
+      0
+     ],
+     [
+      "Ángel Pérez",
+      "DEL",
+      0
+     ],
+     [
+      "Aleñà",
+      "MED",
+      0
+     ],
+     [
+      "Ander Guevara",
+      "MED",
+      0
+     ],
+     [
+      "Antonio Blanco",
+      "MED",
+      0
+     ],
+     [
+      "Carlos Benavidez",
+      "MED",
+      0
+     ],
+     [
+      "Denís Suárez",
+      "MED",
+      0
+     ],
+     [
+      "Mikel Rodríguez",
+      "MED",
+      0
+     ],
+     [
+      "Pablo Ibáñez Tébar",
+      "MED",
+      0
+     ],
+     [
+      "Selu Diallo",
+      "MED",
+      0
+     ],
+     [
+      "Tomas Mendes",
+      "MED",
+      0
+     ],
+     [
+      "Facundo Garcés",
+      "DEF",
+      0
+     ],
+     [
+      "Hugo Novoa",
+      "DEF",
+      0
+     ],
+     [
+      "Jonny Otto",
+      "DEF",
+      0
+     ],
+     [
+      "Moussa Diarra",
+      "DEF",
+      0
+     ],
+     [
+      "Nahuel Tenaglia",
+      "DEF",
+      0
+     ],
+     [
+      "Nicolas Valentini",
+      "DEF",
+      0
+     ],
+     [
+      "Nikola Maraš",
+      "DEF",
+      0
+     ],
+     [
+      "Ville Koski",
+      "DEF",
+      0
+     ],
+     [
+      "Yusi",
+      "DEF",
+      0
+     ],
+     [
+      "Adrian Rodriguez",
+      "POR",
+      0
+     ],
+     [
+      "Jesús Owono",
+      "POR",
+      0
+     ],
+     [
+      "Sivera",
+      "POR",
+      0
+     ]
+    ],
+    "Elche": [
+     [
+      "Abiel Osorio",
+      "DEL",
+      0
+     ],
+     [
+      "Adam",
+      "DEL",
+      0
+     ],
+     [
+      "Ali Houary",
+      "DEL",
+      0
+     ],
+     [
+      "Fernando Niño",
+      "DEL",
+      0
+     ],
+     [
+      "Germán Valera",
+      "DEL",
+      0
+     ],
+     [
+      "Grady Diangana",
+      "DEL",
+      0
+     ],
+     [
+      "Josán Fernández",
+      "DEL",
+      0
+     ],
+     [
+      "Lucas Cepeda",
+      "DEL",
+      0
+     ],
+     [
+      "Rafa Núñez",
+      "DEL",
+      0
+     ],
+     [
+      "Tete Morente",
+      "DEL",
+      0
+     ],
+     [
+      "Yago Santiago",
+      "DEL",
+      0
+     ],
+     [
+      "Facundo Buonanotte",
+      "MED",
+      0
+     ],
+     [
+      "Federico Redondo",
+      "MED",
+      0
+     ],
+     [
+      "Gonzalo Villar",
+      "MED",
+      0
+     ],
+     [
+      "Javi Morcillo",
+      "MED",
+      0
+     ],
+     [
+      "Marc Aguado",
+      "MED",
+      0
+     ],
+     [
+      "Martim Neto",
+      "MED",
+      0
+     ],
+     [
+      "Bambo Diaby",
+      "DEF",
+      0
+     ],
+     [
+      "Buba",
+      "DEF",
+      0
+     ],
+     [
+      "David Affengruber",
+      "DEF",
+      0
+     ],
+     [
+      "Matia Barzic",
+      "DEF",
+      0
+     ],
+     [
+      "Pedro Bigas",
+      "DEF",
+      0
+     ],
+     [
+      "Víctor Chust",
+      "DEF",
+      0
+     ],
+     [
+      "Alejandro Iturbe",
+      "POR",
+      0
+     ],
+     [
+      "Matías Dituro",
+      "POR",
+      0
+     ]
+    ],
+    "Celta": [
+     [
+      "Borja Iglesias",
+      "DEL",
+      0
+     ],
+     [
+      "Carles Pérez",
+      "DEL",
+      0
+     ],
+     [
+      "Ferran Jutglà",
+      "DEL",
+      0
+     ],
+     [
+      "Hugo Alvarez",
+      "DEL",
+      0
+     ],
+     [
+      "Hugo Gonzalez",
+      "DEL",
+      0
+     ],
+     [
+      "Iago Aspas",
+      "DEL",
+      0
+     ],
+     [
+      "Jones El-Abdellaoui",
+      "DEL",
+      0
+     ],
+     [
+      "Pablo Duran",
+      "DEL",
+      0
+     ],
+     [
+      "Williot Swedberg",
+      "DEL",
+      0
+     ],
+     [
+      "Aleix Febas",
+      "MED",
+      0
+     ],
+     [
+      "Ilaix Moriba",
+      "MED",
+      0
+     ],
+     [
+      "Matías Vecino",
+      "MED",
+      0
+     ],
+     [
+      "Miguel Román",
+      "MED",
+      0
+     ],
+     [
+      "Abdoulaye Fayé",
+      "DEF",
+      0
+     ],
+     [
+      "Carl Starfelt",
+      "DEF",
+      0
+     ],
+     [
+      "Carlos Dominguez",
+      "DEF",
+      0
+     ],
+     [
+      "Javi Rodríguez",
+      "DEF",
+      0
+     ],
+     [
+      "Javi Rueda",
+      "DEF",
+      0
+     ],
+     [
+      "Javier Galán",
+      "DEF",
+      0
+     ],
+     [
+      "Manuel Fernández",
+      "DEF",
+      0
+     ],
+     [
+      "Marcos Alonso",
+      "DEF",
+      0
+     ],
+     [
+      "Sergio Carreira",
+      "DEF",
+      0
+     ],
+     [
+      "Yoel Lago",
+      "DEF",
+      0
+     ],
+     [
+      "Álvaro Núñez",
+      "DEF",
+      0
+     ],
+     [
+      "Altay Bayındır",
+      "POR",
+      0
+     ],
+     [
+      "Ionuț Radu",
+      "POR",
+      0
+     ],
+     [
+      "Iván Villar",
+      "POR",
+      0
+     ]
+    ],
+    "Sevilla FC": [
+     [
+      "Alfonso González",
+      "DEL",
+      0
+     ],
+     [
+      "Chidera Ejuke",
+      "DEL",
+      0
+     ],
+     [
+      "Isaac",
+      "DEL",
+      0
+     ],
+     [
+      "Peque",
+      "DEL",
+      0
+     ],
+     [
+      "Ruben Vargas",
+      "DEL",
+      0
+     ],
+     [
+      "Jon Guridi",
+      "MED",
+      0
+     ],
+     [
+      "Jordán",
+      "MED",
+      0
+     ],
+     [
+      "Lucien Agoume",
+      "MED",
+      0
+     ],
+     [
+      "Manu Bueno",
+      "MED",
+      0
+     ],
+     [
+      "Arouna Sangante",
+      "DEF",
+      0
+     ],
+     [
+      "Castrin",
+      "DEF",
+      0
+     ],
+     [
+      "Federico Gattoni",
+      "DEF",
+      0
+     ],
+     [
+      "Fábio Cardoso",
+      "DEF",
+      0
+     ],
+     [
+      "Gabriel Suazo",
+      "DEF",
+      0
+     ],
+     [
+      "Jose Angel Carmona",
+      "DEF",
+      0
+     ],
+     [
+      "Juan Iglesias",
+      "DEF",
+      0
+     ],
+     [
+      "Julio Díaz",
+      "DEF",
+      0
+     ],
+     [
+      "Kike Salas",
+      "DEF",
+      0
+     ],
+     [
+      "Marcão",
+      "DEF",
+      0
+     ],
+     [
+      "Oso",
+      "DEF",
+      0
+     ],
+     [
+      "Pedrosa",
+      "DEF",
+      0
+     ],
+     [
+      "Fran Gonzalez",
+      "POR",
+      0
+     ],
+     [
+      "Odisseas Vlachodimos",
+      "POR",
+      0
+     ]
+    ],
+    "Deportivo": [
+     [
+      "David Mella",
+      "DEL",
+      0
+     ],
+     [
+      "Kevin Sánchez",
+      "DEL",
+      0
+     ],
+     [
+      "Luismi Cruz",
+      "DEL",
+      0
+     ],
+     [
+      "Nsongo Tonfack",
+      "DEL",
+      0
+     ],
+     [
+      "Peke",
+      "DEL",
+      0
+     ],
+     [
+      "Pierre-Emerick Aubameyang",
+      "DEL",
+      0
+     ],
+     [
+      "Zakaria Eddahchouri",
+      "DEL",
+      0
+     ],
+     [
+      "Charlie Patino",
+      "MED",
+      0
+     ],
+     [
+      "Diego Villares",
+      "MED",
+      0
+     ],
+     [
+      "Jonathan Asp-Jensen",
+      "MED",
+      0
+     ],
+     [
+      "José Jurado",
+      "MED",
+      0
+     ],
+     [
+      "Lorenzo Amatucci",
+      "MED",
+      0
+     ],
+     [
+      "Mario Soriano",
+      "MED",
+      0
+     ],
+     [
+      "Noé Carrillo",
+      "MED",
+      0
+     ],
+     [
+      "Riki Rodríguez",
+      "MED",
+      0
+     ],
+     [
+      "Teun Gijselhart",
+      "MED",
+      0
+     ],
+     [
+      "Adrià Altimira",
+      "DEF",
+      0
+     ],
+     [
+      "Angeliño",
+      "DEF",
+      0
+     ],
+     [
+      "Arnau Comas",
+      "DEF",
+      0
+     ],
+     [
+      "Bright Ede",
+      "DEF",
+      0
+     ],
+     [
+      "Dani Barcia",
+      "DEF",
+      0
+     ],
+     [
+      "Giacomo Quagliata",
+      "DEF",
+      0
+     ],
+     [
+      "Lucas Noubi",
+      "DEF",
+      0
+     ],
+     [
+      "Miguel Loureiro",
+      "DEF",
+      0
+     ],
+     [
+      "Ximo Navarro",
+      "DEF",
+      0
+     ],
+     [
+      "Eric Puerto",
+      "POR",
+      0
+     ],
+     [
+      "German Parreno",
+      "POR",
+      0
+     ],
+     [
+      "Leo Román",
+      "POR",
+      0
+     ],
+     [
+      "Álvaro Fernández",
+      "POR",
+      0
+     ]
+    ],
+    "Santander": [
+     [
+      "Andrés Martín",
+      "DEL",
+      0
+     ],
+     [
+      "Arana",
+      "DEL",
+      0
+     ],
+     [
+      "Asier Villalibre",
+      "DEL",
+      0
+     ],
+     [
+      "Giorgi Guliashvili",
+      "DEL",
+      0
+     ],
+     [
+      "Iñigo Vicente",
+      "DEL",
+      0
+     ],
+     [
+      "Yassir Zabiri",
+      "DEL",
+      0
+     ],
+     [
+      "Canales",
+      "MED",
+      0
+     ],
+     [
+      "Gustavo Puerta",
+      "MED",
+      0
+     ],
+     [
+      "Maguette Gueye",
+      "MED",
+      0
+     ],
+     [
+      "Sergio Martínez",
+      "MED",
+      0
+     ],
+     [
+      "Íñigo Sainz Maza",
+      "MED",
+      0
+     ],
+     [
+      "Facundo González",
+      "DEF",
+      0
+     ],
+     [
+      "José Manuel",
+      "DEF",
+      0
+     ],
+     [
+      "Pablo Ramon",
+      "DEF",
+      0
+     ],
+     [
+      "Pedro Felipe",
+      "DEF",
+      0
+     ],
+     [
+      "Salinas",
+      "DEF",
+      0
+     ],
+     [
+      "Álvaro Mantilla",
+      "DEF",
+      0
+     ],
+     [
+      "Simon Eriksson",
       "POR",
       0
      ]
@@ -6983,6 +9315,16 @@ window.DATOS_LIGAS = {
      "Elche",
      "Barça",
      "2026-08-23T19:30:00Z"
+    ],
+    [
+     "Osasuna",
+     "Levante",
+     "2026-08-24T17:30:00Z"
+    ],
+    [
+     "Málaga",
+     "Deportivo",
+     "2026-08-24T19:30:00Z"
     ]
    ]
   },
@@ -7179,6 +9521,11 @@ window.DATOS_LIGAS = {
      "Newcastle",
      "Liverpool",
      "2026-08-23T15:30:00Z"
+    ],
+    [
+     "Fulham",
+     "Chelsea",
+     "2026-08-24T19:00:00Z"
     ]
    ],
    "plantillas": {
@@ -7227,6 +9574,11 @@ window.DATOS_LIGAS = {
       "Viktor Gyökeres",
       "DEL",
       1
+     ],
+     [
+      "Bruno Guimarães",
+      "MED",
+      0
      ],
      [
       "Christian Nørgaard",
@@ -7337,6 +9689,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Alysson",
+      "DEL",
+      0
+     ],
+     [
+      "Brian Madjo",
       "DEL",
       0
      ],
@@ -7488,6 +9845,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Danny Welbeck",
+      "DEL",
+      0
+     ],
+     [
       "Emanuel Emegha",
       "DEL",
       0
@@ -7553,6 +9915,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Jordan Henderson",
+      "MED",
+      0
+     ],
+     [
       "Moisés Caicedo",
       "MED",
       0
@@ -7564,6 +9931,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Romeo Lavia",
+      "MED",
+      0
+     ],
+     [
+      "Valentin Barco",
       "MED",
       0
      ],
@@ -7619,6 +9991,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Marco Palestra",
+      "DEF",
+      0
+     ],
+     [
+      "Maxence Lacroix",
       "DEF",
       0
      ],
@@ -7701,6 +10078,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Carlos Alcaraz",
+      "MED",
+      0
+     ],
+     [
+      "Christian Nørgaard",
       "MED",
       0
      ],
@@ -7792,6 +10174,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Gonzalo García",
+      "DEL",
+      0
+     ],
+     [
       "Jonah Kusi-Asare",
       "DEL",
       0
@@ -7809,6 +10196,11 @@ window.DATOS_LIGAS = {
      [
       "Rodrigo Muniz",
       "DEL",
+      0
+     ],
+     [
+      "César Palacios",
+      "MED",
       0
      ],
      [
@@ -8490,6 +10882,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Leo Shahar",
+      "DEF",
+      0
+     ],
+     [
       "Lewis Hall",
       "DEF",
       0
@@ -8516,6 +10913,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Ewen Jaouen",
+      "POR",
+      0
+     ],
+     [
+      "Lukáš Horníček",
       "POR",
       0
      ],
@@ -8936,6 +11338,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Jens Hjertö-Dahl",
+      "MED",
+      0
+     ],
+     [
       "Kieran Dowell",
       "MED",
       0
@@ -9012,6 +11419,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Jack Butland",
+      "POR",
+      0
+     ],
+     [
+      "Konstantinos Tzolakis",
       "POR",
       0
      ],
@@ -9168,6 +11580,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "James Trafford",
+      "POR",
+      0
+     ],
+     [
       "Lucas Perri",
       "POR",
       0
@@ -9240,6 +11657,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Florentino",
+      "MED",
+      0
+     ],
+     [
       "Jack Taylor",
       "MED",
       0
@@ -9256,6 +11678,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Samuel Szmodics",
+      "MED",
+      0
+     ],
+     [
+      "Saša Lukić",
       "MED",
       0
      ],
@@ -9326,6 +11753,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Kayne van Oevelen",
+      "POR",
+      0
+     ],
+     [
+      "Kjell Scherpen",
       "POR",
       0
      ]
@@ -9595,6 +12027,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Rio Cardines",
+      "DEF",
+      0
+     ],
+     [
+      "Takehiro Tomiyasu",
       "DEF",
       0
      ],
@@ -9878,6 +12315,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Mamadou Sangare",
+      "MED",
+      0
+     ],
+     [
       "Mathias Jensen",
       "MED",
       0
@@ -10085,12 +12527,22 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Antonio Silva",
+      "DEF",
+      0
+     ],
+     [
       "Bafodé Diakité",
       "DEF",
       0
      ],
      [
       "James Hill",
+      "DEF",
+      0
+     ],
+     [
+      "Juanlu",
       "DEF",
       0
      ],
@@ -10263,6 +12715,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Ben Wilson",
+      "POR",
+      0
+     ],
+     [
+      "Carl Rushworth",
       "POR",
       0
      ],
@@ -10462,6 +12919,16 @@ window.DATOS_LIGAS = {
      "Torino",
      "Milan",
      "2026-08-23T18:45:00Z"
+    ],
+    [
+     "Bologna",
+     "Lazio",
+     "2026-08-24T16:30:00Z"
+    ],
+    [
+     "Roma",
+     "Fiorentina",
+     "2026-08-24T18:45:00Z"
     ]
    ],
    "plantillas": {
