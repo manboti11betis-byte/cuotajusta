@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-08-13",
+ "actualizado": "2026-08-14",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -9340,6 +9340,16 @@ window.DATOS_LIGAS = {
      "Barça",
      "Athletic",
      "2026-08-27T19:00:00Z"
+    ],
+    [
+     "Santander",
+     "Elche",
+     "2026-08-28T17:00:00Z"
+    ],
+    [
+     "Alavés",
+     "Villarreal",
+     "2026-08-28T19:30:00Z"
     ]
    ]
   },
@@ -9541,6 +9551,11 @@ window.DATOS_LIGAS = {
      "Fulham",
      "Chelsea",
      "2026-08-24T19:00:00Z"
+    ],
+    [
+     "Crystal Palace",
+     "Man City",
+     "2026-08-28T19:00:00Z"
     ]
    ],
    "plantillas": {
@@ -12944,6 +12959,11 @@ window.DATOS_LIGAS = {
      "Roma",
      "Fiorentina",
      "2026-08-24T18:45:00Z"
+    ],
+    [
+     "Milan",
+     "Venezia FC",
+     "2026-08-28T18:45:00Z"
     ]
    ],
    "plantillas": {
@@ -16493,7 +16513,13 @@ window.DATOS_LIGAS = {
     "Elversberg": "https://crests.football-data.org/719.png",
     "RB Leipzig": "https://crests.football-data.org/721.png"
    },
-   "partidos": [],
+   "partidos": [
+    [
+     "Bayern",
+     "Stuttgart",
+     "2026-08-28T18:30:00Z"
+    ]
+   ],
    "plantillas": {
     "1. FC Köln": [
      [
@@ -19487,6 +19513,11 @@ window.DATOS_LIGAS = {
      "PSG",
      "Stade Rennais",
      "2026-08-23T18:45:00Z"
+    ],
+    [
+     "Lille",
+     "PSG",
+     "2026-08-28T18:45:00Z"
     ]
    ],
    "plantillas": {
