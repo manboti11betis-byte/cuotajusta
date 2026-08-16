@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-08-15",
+ "actualizado": "2026-08-16",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -9242,16 +9242,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Alavés",
-     "Getafe",
-     "2026-08-15T17:30:00Z"
-    ],
-    [
-     "Sevilla FC",
-     "Rayo Vallecano",
-     "2026-08-15T19:30:00Z"
-    ],
-    [
      "Santander",
      "Villarreal",
      "2026-08-16T15:00:00Z"
@@ -9332,6 +9322,11 @@ window.DATOS_LIGAS = {
      "2026-08-26T19:00:00Z"
     ],
     [
+     "Celta",
+     "Osasuna",
+     "2026-08-27T18:30:00Z"
+    ],
+    [
      "Barça",
      "Athletic",
      "2026-08-27T19:00:00Z"
@@ -9360,6 +9355,21 @@ window.DATOS_LIGAS = {
      "Sevilla FC",
      "Atleti",
      "2026-08-29T19:30:00Z"
+    ],
+    [
+     "Real Madrid",
+     "Málaga",
+     "2026-08-30T15:00:00Z"
+    ],
+    [
+     "Deportivo",
+     "Valencia",
+     "2026-08-30T17:30:00Z"
+    ],
+    [
+     "Celta",
+     "Athletic",
+     "2026-08-30T19:30:00Z"
     ]
    ]
   },
@@ -9586,6 +9596,26 @@ window.DATOS_LIGAS = {
      "Tottenham",
      "Newcastle",
      "2026-08-29T16:30:00Z"
+    ],
+    [
+     "Sunderland",
+     "Fulham",
+     "2026-08-30T13:00:00Z"
+    ],
+    [
+     "Chelsea",
+     "Brighton Hove",
+     "2026-08-30T13:00:00Z"
+    ],
+    [
+     "Leeds United",
+     "Brentford",
+     "2026-08-30T13:00:00Z"
+    ],
+    [
+     "Man United",
+     "Ipswich Town",
+     "2026-08-30T15:30:00Z"
     ]
    ],
    "plantillas": {
@@ -13014,6 +13044,21 @@ window.DATOS_LIGAS = {
      "Juventus",
      "Parma",
      "2026-08-29T18:45:00Z"
+    ],
+    [
+     "Napoli",
+     "Como 1907",
+     "2026-08-30T16:30:00Z"
+    ],
+    [
+     "Lazio",
+     "Genoa",
+     "2026-08-30T18:45:00Z"
+    ],
+    [
+     "Cagliari",
+     "Inter",
+     "2026-08-30T18:45:00Z"
     ]
    ],
    "plantillas": {
@@ -16598,6 +16643,16 @@ window.DATOS_LIGAS = {
      "Dortmund",
      "HSV",
      "2026-08-29T16:30:00Z"
+    ],
+    [
+     "Freiburg",
+     "Bremen",
+     "2026-08-30T13:30:00Z"
+    ],
+    [
+     "Augsburg",
+     "Schalke",
+     "2026-08-30T15:30:00Z"
     ]
    ],
    "plantillas": {
@@ -19623,6 +19678,21 @@ window.DATOS_LIGAS = {
      "Brest",
      "Toulouse",
      "2026-08-29T18:45:00Z"
+    ],
+    [
+     "Paris FC",
+     "Nice",
+     "2026-08-30T13:00:00Z"
+    ],
+    [
+     "Stade Rennais",
+     "Le Mans",
+     "2026-08-30T15:15:00Z"
+    ],
+    [
+     "Monaco",
+     "Marseille",
+     "2026-08-30T18:45:00Z"
     ]
    ],
    "plantillas": {
