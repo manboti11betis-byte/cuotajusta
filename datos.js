@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-08-16",
+ "actualizado": "2026-08-17",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -7817,6 +7817,16 @@ window.DATOS_LIGAS = {
     ],
     "Levante": [
      [
+      "Alberto Calatrava",
+      "DEL",
+      0
+     ],
+     [
+      "Igor Galdin",
+      "DEL",
+      0
+     ],
+     [
       "Iván Romero",
       "DEL",
       0
@@ -7828,6 +7838,16 @@ window.DATOS_LIGAS = {
      ],
      [
       "Karl Etta Eyong",
+      "DEL",
+      0
+     ],
+     [
+      "Manel Usedo",
+      "DEL",
+      1
+     ],
+     [
+      "Marc Santos",
       "DEL",
       0
      ],
@@ -9152,6 +9172,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Jorge Castellanos",
+      "DEL",
+      0
+     ],
+     [
       "Yassir Zabiri",
       "DEL",
       0
@@ -9241,16 +9266,6 @@ window.DATOS_LIGAS = {
     "Santander": "https://crests.football-data.org/5335.png"
    },
    "partidos": [
-    [
-     "Santander",
-     "Villarreal",
-     "2026-08-16T15:00:00Z"
-    ],
-    [
-     "Espanyol",
-     "Levante",
-     "2026-08-16T17:00:00Z"
-    ],
     [
      "Deportivo",
      "Elche",
@@ -9370,6 +9385,16 @@ window.DATOS_LIGAS = {
      "Celta",
      "Athletic",
      "2026-08-30T19:30:00Z"
+    ],
+    [
+     "Osasuna",
+     "Getafe",
+     "2026-08-31T17:30:00Z"
+    ],
+    [
+     "Barça",
+     "Rayo Vallecano",
+     "2026-08-31T19:30:00Z"
     ]
    ]
   },
@@ -9616,6 +9641,11 @@ window.DATOS_LIGAS = {
      "Man United",
      "Ipswich Town",
      "2026-08-30T15:30:00Z"
+    ],
+    [
+     "Aston Villa",
+     "Arsenal",
+     "2026-08-31T19:00:00Z"
     ]
    ],
    "plantillas": {
@@ -13059,6 +13089,16 @@ window.DATOS_LIGAS = {
      "Cagliari",
      "Inter",
      "2026-08-30T18:45:00Z"
+    ],
+    [
+     "Lecce",
+     "Roma",
+     "2026-08-31T16:30:00Z"
+    ],
+    [
+     "Atalanta",
+     "Bologna",
+     "2026-08-31T18:45:00Z"
     ]
    ],
    "plantillas": {
