@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-08-17",
+ "actualizado": "2026-08-18",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -8669,7 +8669,17 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Umaru Konare",
+      "DEL",
+      0
+     ],
+     [
       "Yago Santiago",
+      "DEL",
+      0
+     ],
+     [
+      "Álvaro Padilla",
       "DEL",
       0
      ],
@@ -9266,11 +9276,6 @@ window.DATOS_LIGAS = {
     "Santander": "https://crests.football-data.org/5335.png"
    },
    "partidos": [
-    [
-     "Deportivo",
-     "Elche",
-     "2026-08-17T19:00:00Z"
-    ],
     [
      "Atleti",
      "Málaga",
