@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-08-19",
+ "actualizado": "2026-08-20",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -7481,6 +7481,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Juani",
+      "DEL",
+      0
+     ],
+     [
       "Julen Lobete",
       "DEL",
       0
@@ -9332,11 +9337,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Atleti",
-     "Málaga",
-     "2026-08-19T19:00:00Z"
-    ],
-    [
      "Rayo Vallecano",
      "Alavés",
      "2026-08-20T19:00:00Z"
@@ -9455,6 +9455,11 @@ window.DATOS_LIGAS = {
      "Barça",
      "Rayo Vallecano",
      "2026-08-31T19:30:00Z"
+    ],
+    [
+     "Real Sociedad",
+     "Celta",
+     "2026-09-03T19:00:00Z"
     ]
    ]
   },
@@ -19643,6 +19648,11 @@ window.DATOS_LIGAS = {
      "Monaco",
      "Marseille",
      "2026-08-30T18:45:00Z"
+    ],
+    [
+     "Toulouse",
+     "Lille",
+     "2026-09-03T18:45:00Z"
     ]
    ],
    "plantillas": {
