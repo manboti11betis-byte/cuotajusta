@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-08-20",
+ "actualizado": "2026-08-21",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -9337,11 +9337,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Rayo Vallecano",
-     "Alavés",
-     "2026-08-20T19:00:00Z"
-    ],
-    [
      "Real Betis",
      "Real Sociedad",
      "2026-08-21T19:00:00Z"
@@ -9460,6 +9455,11 @@ window.DATOS_LIGAS = {
      "Real Sociedad",
      "Celta",
      "2026-09-03T19:00:00Z"
+    ],
+    [
+     "Real Betis",
+     "Real Madrid",
+     "2026-09-04T19:00:00Z"
     ]
    ]
   },
@@ -9711,6 +9711,11 @@ window.DATOS_LIGAS = {
      "Aston Villa",
      "Arsenal",
      "2026-08-31T19:00:00Z"
+    ],
+    [
+     "Ipswich Town",
+     "Liverpool",
+     "2026-09-04T19:00:00Z"
     ]
    ],
    "plantillas": {
@@ -13179,108 +13184,7 @@ window.DATOS_LIGAS = {
     "Monza": "https://crests.football-data.org/5911.png",
     "Como 1907": "https://crests.football-data.org/7397.png"
    },
-   "partidos": [
-    [
-     "Udinese",
-     "Como 1907",
-     "2026-08-22T16:30:00Z"
-    ],
-    [
-     "Inter",
-     "Monza",
-     "2026-08-22T16:30:00Z"
-    ],
-    [
-     "Genoa",
-     "Napoli",
-     "2026-08-22T18:45:00Z"
-    ],
-    [
-     "Parma",
-     "Cagliari",
-     "2026-08-22T18:45:00Z"
-    ],
-    [
-     "Frosinone",
-     "Juventus",
-     "2026-08-23T16:30:00Z"
-    ],
-    [
-     "Venezia FC",
-     "Lecce",
-     "2026-08-23T16:30:00Z"
-    ],
-    [
-     "Atalanta",
-     "Sassuolo",
-     "2026-08-23T18:45:00Z"
-    ],
-    [
-     "Torino",
-     "Milan",
-     "2026-08-23T18:45:00Z"
-    ],
-    [
-     "Bologna",
-     "Lazio",
-     "2026-08-24T16:30:00Z"
-    ],
-    [
-     "Roma",
-     "Fiorentina",
-     "2026-08-24T18:45:00Z"
-    ],
-    [
-     "Milan",
-     "Venezia FC",
-     "2026-08-28T18:45:00Z"
-    ],
-    [
-     "Sassuolo",
-     "Torino",
-     "2026-08-29T16:30:00Z"
-    ],
-    [
-     "Monza",
-     "Udinese",
-     "2026-08-29T16:30:00Z"
-    ],
-    [
-     "Fiorentina",
-     "Frosinone",
-     "2026-08-29T16:30:00Z"
-    ],
-    [
-     "Juventus",
-     "Parma",
-     "2026-08-29T18:45:00Z"
-    ],
-    [
-     "Napoli",
-     "Como 1907",
-     "2026-08-30T16:30:00Z"
-    ],
-    [
-     "Lazio",
-     "Genoa",
-     "2026-08-30T18:45:00Z"
-    ],
-    [
-     "Cagliari",
-     "Inter",
-     "2026-08-30T18:45:00Z"
-    ],
-    [
-     "Lecce",
-     "Roma",
-     "2026-08-31T16:30:00Z"
-    ],
-    [
-     "Atalanta",
-     "Bologna",
-     "2026-08-31T18:45:00Z"
-    ]
-   ],
+   "partidos": [],
    "plantillas": {
     "Milan": [
      [
@@ -16608,6 +16512,11 @@ window.DATOS_LIGAS = {
      "Augsburg",
      "Schalke",
      "2026-08-30T15:30:00Z"
+    ],
+    [
+     "Stuttgart",
+     "1. FC Köln",
+     "2026-09-04T18:30:00Z"
     ]
    ],
    "plantillas": {
@@ -19558,103 +19467,7 @@ window.DATOS_LIGAS = {
     "Strasbourg": "https://crests.football-data.org/576.png",
     "Paris FC": "https://crests.football-data.org/1045.png"
    },
-   "partidos": [
-    [
-     "Marseille",
-     "Strasbourg",
-     "2026-08-21T18:45:00Z"
-    ],
-    [
-     "RC Lens",
-     "Auxerre",
-     "2026-08-22T15:15:00Z"
-    ],
-    [
-     "Le Mans",
-     "Brest",
-     "2026-08-22T18:45:00Z"
-    ],
-    [
-     "Troyes",
-     "Paris FC",
-     "2026-08-22T18:45:00Z"
-    ],
-    [
-     "Nice",
-     "Lorient",
-     "2026-08-22T18:45:00Z"
-    ],
-    [
-     "Toulouse",
-     "Olympique Lyon",
-     "2026-08-22T18:45:00Z"
-    ],
-    [
-     "Angers SCO",
-     "Lille",
-     "2026-08-23T13:00:00Z"
-    ],
-    [
-     "Le Havre",
-     "Monaco",
-     "2026-08-23T15:15:00Z"
-    ],
-    [
-     "PSG",
-     "Stade Rennais",
-     "2026-08-23T18:45:00Z"
-    ],
-    [
-     "Lille",
-     "PSG",
-     "2026-08-28T18:45:00Z"
-    ],
-    [
-     "Strasbourg",
-     "RC Lens",
-     "2026-08-29T15:15:00Z"
-    ],
-    [
-     "Lorient",
-     "Troyes",
-     "2026-08-29T18:45:00Z"
-    ],
-    [
-     "Olympique Lyon",
-     "Le Havre",
-     "2026-08-29T18:45:00Z"
-    ],
-    [
-     "Auxerre",
-     "Angers SCO",
-     "2026-08-29T18:45:00Z"
-    ],
-    [
-     "Brest",
-     "Toulouse",
-     "2026-08-29T18:45:00Z"
-    ],
-    [
-     "Paris FC",
-     "Nice",
-     "2026-08-30T13:00:00Z"
-    ],
-    [
-     "Stade Rennais",
-     "Le Mans",
-     "2026-08-30T15:15:00Z"
-    ],
-    [
-     "Monaco",
-     "Marseille",
-     "2026-08-30T18:45:00Z"
-    ],
-    [
-     "Toulouse",
-     "Lille",
-     "2026-09-03T18:45:00Z"
-    ]
-   ],
+   "partidos": [],
    "plantillas": {
     "Toulouse": [
      [
