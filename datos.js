@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-08-21",
+ "actualizado": "2026-08-22",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -3401,6 +3401,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Mortadha Ben Ouanes",
+      "DEL",
+      0
+     ],
+     [
       "Rayan Elloumi",
       "DEL",
       0
@@ -3461,11 +3466,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Mortadha Ben Ouanes",
-      "DEF",
-      0
-     ],
-     [
       "Moutaz Neffati",
       "DEF",
       0
@@ -3503,6 +3503,11 @@ window.DATOS_LIGAS = {
     ],
     "Turkey": [
      [
+      "Baris Yilmaz",
+      "DEL",
+      0
+     ],
+     [
       "Deniz Gul",
       "DEL",
       0
@@ -3534,11 +3539,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Arda Guler",
-      "MED",
-      0
-     ],
-     [
-      "Baris Yilmaz",
       "MED",
       0
      ],
@@ -5884,6 +5884,11 @@ window.DATOS_LIGAS = {
     ],
     "Uzbekistan": [
      [
+      "Abbosbek Fayzullaev",
+      "DEL",
+      0
+     ],
+     [
       "Azizbek Amonov",
       "DEL",
       0
@@ -5901,11 +5906,6 @@ window.DATOS_LIGAS = {
      [
       "Ruslanbek Jiyanov",
       "DEL",
-      0
-     ],
-     [
-      "Abbosbek Fayzullaev",
-      "MED",
       0
      ],
      [
@@ -7267,6 +7267,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "João Cancelo",
+      "DEF",
+      0
+     ],
+     [
       "Jules Koundé",
       "DEF",
       0
@@ -7477,11 +7482,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Juan Cruz",
-      "DEL",
-      0
-     ],
-     [
-      "Juani",
       "DEL",
       0
      ],
@@ -7972,6 +7972,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Marc Santos",
+      "DEF",
+      0
+     ],
+     [
       "Nacho Pérez",
       "DEF",
       0
@@ -8035,6 +8040,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Rodrigo Riquelme",
+      "DEL",
+      0
+     ],
+     [
+      "Troy Parrott",
       "DEL",
       0
      ],
@@ -8515,6 +8525,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Pablo Maffeo",
+      "DEF",
+      0
+     ],
+     [
       "Cristian",
       "POR",
       0
@@ -8710,6 +8725,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Lucas Cepeda",
+      "DEL",
+      0
+     ],
+     [
+      "Nordin Al Lal",
       "DEL",
       0
      ],
@@ -9257,6 +9277,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Iván Martín",
+      "MED",
+      0
+     ],
+     [
       "Maguette Gueye",
       "MED",
       0
@@ -9336,11 +9361,6 @@ window.DATOS_LIGAS = {
     "Santander": "https://crests.football-data.org/5335.png"
    },
    "partidos": [
-    [
-     "Real Betis",
-     "Real Sociedad",
-     "2026-08-21T19:00:00Z"
-    ],
     [
      "Athletic",
      "Sevilla FC",
@@ -9460,6 +9480,21 @@ window.DATOS_LIGAS = {
      "Real Betis",
      "Real Madrid",
      "2026-09-04T19:00:00Z"
+    ],
+    [
+     "Athletic",
+     "Atleti",
+     "2026-09-05T14:15:00Z"
+    ],
+    [
+     "Rayo Vallecano",
+     "Santander",
+     "2026-09-05T16:30:00Z"
+    ],
+    [
+     "Villarreal",
+     "Deportivo",
+     "2026-09-05T19:00:00Z"
     ]
    ]
   },
@@ -9613,11 +9648,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Arsenal",
-     "Coventry City",
-     "2026-08-21T19:00:00Z"
-    ],
-    [
      "Hull City",
      "Man United",
      "2026-08-22T11:30:00Z"
@@ -9716,6 +9746,41 @@ window.DATOS_LIGAS = {
      "Ipswich Town",
      "Liverpool",
      "2026-09-04T19:00:00Z"
+    ],
+    [
+     "Newcastle",
+     "Bournemouth",
+     "2026-09-05T11:30:00Z"
+    ],
+    [
+     "Nottingham",
+     "Tottenham",
+     "2026-09-05T14:00:00Z"
+    ],
+    [
+     "Man City",
+     "Coventry City",
+     "2026-09-05T14:00:00Z"
+    ],
+    [
+     "Brighton Hove",
+     "Leeds United",
+     "2026-09-05T14:00:00Z"
+    ],
+    [
+     "Brentford",
+     "Sunderland",
+     "2026-09-05T14:00:00Z"
+    ],
+    [
+     "Fulham",
+     "Crystal Palace",
+     "2026-09-05T14:00:00Z"
+    ],
+    [
+     "Hull City",
+     "Aston Villa",
+     "2026-09-05T16:30:00Z"
     ]
    ],
    "plantillas": {
@@ -9988,6 +10053,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Matteo Ruggeri",
+      "DEF",
+      0
+     ],
+     [
       "Matty Cash",
       "DEF",
       0
@@ -10029,6 +10099,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Oliwier Zych",
+      "POR",
+      0
+     ],
+     [
+      "Zion Suzuki",
       "POR",
       0
      ]
@@ -10475,6 +10550,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Kenny Tete",
+      "DEF",
+      0
+     ],
+     [
+      "Luc De Fougerolles",
       "DEF",
       0
      ],
@@ -11815,6 +11895,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Nico Elvedi",
+      "DEF",
+      0
+     ],
+     [
       "Sam Byram",
       "DEF",
       0
@@ -12221,6 +12306,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Matheus Franca",
+      "DEL",
+      0
+     ],
+     [
       "Romain Esse",
       "DEL",
       0
@@ -12231,12 +12321,12 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Adam Wharton",
-      "MED",
+      "Zavier Gozo",
+      "DEL",
       0
      ],
      [
-      "Anan Khalaili",
+      "Adam Wharton",
       "MED",
       0
      ],
@@ -12266,13 +12356,13 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Matheus Franca",
+      "Will Hughes",
       "MED",
       0
      ],
      [
-      "Will Hughes",
-      "MED",
+      "Anan Khalaili",
+      "DEF",
       0
      ],
      [
@@ -12389,6 +12479,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Kaoru Mitoma",
+      "DEL",
+      0
+     ],
+     [
+      "Promise Akinpelu",
       "DEL",
       0
      ],
@@ -12914,6 +13009,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Sidiki Cherif",
+      "DEL",
+      0
+     ],
+     [
       "Taiwo Awoniyi",
       "DEL",
       0
@@ -13184,7 +13284,128 @@ window.DATOS_LIGAS = {
     "Monza": "https://crests.football-data.org/5911.png",
     "Como 1907": "https://crests.football-data.org/7397.png"
    },
-   "partidos": [],
+   "partidos": [
+    [
+     "Udinese",
+     "Como 1907",
+     "2026-08-22T16:30:00Z"
+    ],
+    [
+     "Inter",
+     "Monza",
+     "2026-08-22T16:30:00Z"
+    ],
+    [
+     "Genoa",
+     "Napoli",
+     "2026-08-22T18:45:00Z"
+    ],
+    [
+     "Parma",
+     "Cagliari",
+     "2026-08-22T18:45:00Z"
+    ],
+    [
+     "Frosinone",
+     "Juventus",
+     "2026-08-23T16:30:00Z"
+    ],
+    [
+     "Venezia FC",
+     "Lecce",
+     "2026-08-23T16:30:00Z"
+    ],
+    [
+     "Atalanta",
+     "Sassuolo",
+     "2026-08-23T18:45:00Z"
+    ],
+    [
+     "Torino",
+     "Milan",
+     "2026-08-23T18:45:00Z"
+    ],
+    [
+     "Bologna",
+     "Lazio",
+     "2026-08-24T16:30:00Z"
+    ],
+    [
+     "Roma",
+     "Fiorentina",
+     "2026-08-24T18:45:00Z"
+    ],
+    [
+     "Milan",
+     "Venezia FC",
+     "2026-08-28T18:45:00Z"
+    ],
+    [
+     "Sassuolo",
+     "Torino",
+     "2026-08-29T16:30:00Z"
+    ],
+    [
+     "Monza",
+     "Udinese",
+     "2026-08-29T16:30:00Z"
+    ],
+    [
+     "Fiorentina",
+     "Frosinone",
+     "2026-08-29T16:30:00Z"
+    ],
+    [
+     "Juventus",
+     "Parma",
+     "2026-08-29T18:45:00Z"
+    ],
+    [
+     "Napoli",
+     "Como 1907",
+     "2026-08-30T16:30:00Z"
+    ],
+    [
+     "Lazio",
+     "Genoa",
+     "2026-08-30T18:45:00Z"
+    ],
+    [
+     "Cagliari",
+     "Inter",
+     "2026-08-30T18:45:00Z"
+    ],
+    [
+     "Lecce",
+     "Roma",
+     "2026-08-31T16:30:00Z"
+    ],
+    [
+     "Atalanta",
+     "Bologna",
+     "2026-08-31T18:45:00Z"
+    ],
+    [
+     "Genoa",
+     "Como 1907",
+     "2026-09-04T18:45:00Z"
+    ],
+    [
+     "Fiorentina",
+     "Torino",
+     "2026-09-05T13:00:00Z"
+    ],
+    [
+     "Inter",
+     "Napoli",
+     "2026-09-05T16:00:00Z"
+    ],
+    [
+     "Roma",
+     "Atalanta",
+     "2026-09-05T18:45:00Z"
+    ]
+   ],
    "plantillas": {
     "Milan": [
      [
@@ -13249,6 +13470,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Christian Comotto",
+      "MED",
+      0
+     ],
+     [
+      "Diego Moreira",
       "MED",
       0
      ],
@@ -13538,6 +13764,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Niccolo Pisilli",
+      "MED",
+      0
+     ],
+     [
+      "Rodrigo Mora",
       "MED",
       0
      ],
@@ -14870,6 +15101,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Costantino Favasuli",
+      "MED",
+      0
+     ],
+     [
       "Jens Cajuste",
       "MED",
       0
@@ -15314,6 +15550,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Lorenzo Montipò",
+      "POR",
+      0
+     ],
+     [
       "Matteo Grandi",
       "POR",
       0
@@ -15462,6 +15703,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Niccolò Corrado",
+      "DEF",
+      0
+     ],
+     [
+      "Omar Fayed",
       "DEF",
       0
      ],
@@ -15820,6 +16066,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Niccolò Fortini",
+      "DEF",
+      0
+     ],
+     [
       "Pietro Comuzzo",
       "DEF",
       0
@@ -15997,6 +16248,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Marco Bleve",
+      "POR",
+      0
+     ],
+     [
       "Plamen Penev",
       "POR",
       0
@@ -16065,6 +16321,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Ebenezer Akinsanmiro",
+      "MED",
+      0
+     ],
+     [
+      "Idrissa Touré",
       "MED",
       0
      ],
@@ -16517,6 +16778,36 @@ window.DATOS_LIGAS = {
      "Stuttgart",
      "1. FC Köln",
      "2026-09-04T18:30:00Z"
+    ],
+    [
+     "Bremen",
+     "RB Leipzig",
+     "2026-09-05T13:30:00Z"
+    ],
+    [
+     "Hoffenheim",
+     "Dortmund",
+     "2026-09-05T13:30:00Z"
+    ],
+    [
+     "Leverkusen",
+     "Union Berlin",
+     "2026-09-05T13:30:00Z"
+    ],
+    [
+     "M'gladbach",
+     "Elversberg",
+     "2026-09-05T13:30:00Z"
+    ],
+    [
+     "SC Paderborn",
+     "Freiburg",
+     "2026-09-05T13:30:00Z"
+    ],
+    [
+     "Schalke",
+     "Bayern",
+     "2026-09-05T16:30:00Z"
     ]
    ],
    "plantillas": {
@@ -16572,12 +16863,17 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Thijs Dallinga",
+      "DEL",
+      0
+     ],
+     [
       "Youssoupha Niang",
       "DEL",
       0
      ],
      [
-      "Alessio Castro-Montes",
+      "Gil Neves",
       "MED",
       0
      ],
@@ -16595,6 +16891,11 @@ window.DATOS_LIGAS = {
       "Ísak Bergmann Jóhannesson",
       "MED",
       1
+     ],
+     [
+      "Alessio Castro-Montes",
+      "DEF",
+      0
      ],
      [
       "Elias Bakatukanda",
@@ -16668,6 +16969,11 @@ window.DATOS_LIGAS = {
      ]
     ],
     "Hoffenheim": [
+     [
+      "Adam Daghim",
+      "DEL",
+      0
+     ],
      [
       "Adam Hložek",
       "DEL",
@@ -16976,6 +17282,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Facundo Medina",
+      "DEF",
+      0
+     ],
+     [
       "Jarell Quansah",
       "DEF",
       0
@@ -16992,6 +17303,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Lucas Vázquez",
+      "DEF",
+      0
+     ],
+     [
+      "Miguel Gutiérrez",
       "DEF",
       0
      ],
@@ -17058,12 +17374,27 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Giannis Konstantelias",
+      "MED",
+      0
+     ],
+     [
       "Jobe Bellingham",
       "MED",
       1
      ],
      [
+      "Joey Veerman",
+      "MED",
+      0
+     ],
+     [
       "Justin Lerma",
+      "MED",
+      0
+     ],
+     [
+      "Konstantinos Karetsas",
       "MED",
       0
      ],
@@ -17099,6 +17430,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Julian Ryerson",
+      "DEF",
+      0
+     ],
+     [
+      "Kaua Prates",
       "DEF",
       0
      ],
@@ -17160,6 +17496,11 @@ window.DATOS_LIGAS = {
     ],
     "Bayern": [
      [
+      "Arijon Ibrahimovic",
+      "DEL",
+      0
+     ],
+     [
       "Armindo Sieb",
       "DEL",
       0
@@ -17195,12 +17536,17 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Arijon Ibrahimovic",
+      "Bara Ndiaye",
       "MED",
       0
      ],
      [
       "David Daiber",
+      "MED",
+      0
+     ],
+     [
+      "Felipe Chavez",
       "MED",
       0
      ],
@@ -17322,12 +17668,12 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Emil Højlund",
+      "Edin Džeko",
       "DEL",
       0
      ],
      [
-      "Mika Wallentowitz",
+      "Emil Højlund",
       "DEL",
       0
      ],
@@ -17348,6 +17694,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Dejan Ljubicic",
+      "MED",
+      0
+     ],
+     [
+      "Dina Ebimbe",
       "MED",
       0
      ],
@@ -17378,6 +17729,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Max Grüger",
+      "MED",
+      0
+     ],
+     [
+      "Mika Wallentowitz",
       "MED",
       0
      ],
@@ -17594,6 +17950,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Sebastiaan Bornauw",
+      "DEF",
+      0
+     ],
+     [
       "Shafiq Nandja",
       "DEF",
       0
@@ -17605,6 +17966,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Daniel Fernandes",
+      "POR",
+      0
+     ],
+     [
+      "Elias Lahti",
       "POR",
       0
      ],
@@ -17636,17 +18002,17 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Dzenan Pejcinovic",
+      "DEL",
+      0
+     ],
+     [
       "Ermedin Demirovic",
       "DEL",
       0
      ],
      [
       "Jamie Leweling",
-      "DEL",
-      0
-     ],
-     [
-      "Jarzinho Malanga",
       "DEL",
       0
      ],
@@ -17667,6 +18033,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Lazar Jovanovic",
+      "DEL",
+      0
+     ],
+     [
+      "Leo Sauer",
       "DEL",
       0
      ],
@@ -17707,6 +18078,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Grischa Prömel",
+      "MED",
+      0
+     ],
+     [
+      "Jarzinho Malanga",
       "MED",
       0
      ],
@@ -17813,6 +18189,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Eren Dinkci",
+      "DEL",
+      0
+     ],
+     [
       "Justin Njinmah",
       "DEL",
       0
@@ -17829,6 +18210,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Marco Grüll",
+      "DEL",
+      0
+     ],
+     [
+      "Niclas Füllkrug",
       "DEL",
       0
      ],
@@ -17859,6 +18245,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Jens Stage",
+      "MED",
+      0
+     ],
+     [
+      "Ludovit Reis",
       "MED",
       0
      ],
@@ -18085,6 +18476,16 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Stefan Posch",
+      "DEF",
+      0
+     ],
+     [
+      "Alexander Schwolow",
+      "POR",
+      0
+     ],
+     [
       "Maximilian Kinzig",
       "POR",
       0
@@ -18183,6 +18584,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Tim Breithaupt",
+      "MED",
+      0
+     ],
+     [
+      "Tim Schnitzer",
       "MED",
       0
      ],
@@ -18416,6 +18822,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Iaia Danfa",
+      "DEL",
+      0
+     ],
+     [
       "Isac Lidberg",
       "DEL",
       0
@@ -18456,6 +18867,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Fritz Fleck",
+      "MED",
+      0
+     ],
+     [
       "Gio Reyna",
       "MED",
       0
@@ -18467,6 +18883,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Kevin Stöger",
+      "MED",
+      0
+     ],
+     [
+      "Mathieu Nguefack",
       "MED",
       0
      ],
@@ -18483,6 +18904,11 @@ window.DATOS_LIGAS = {
      [
       "Zento Uno",
       "MED",
+      0
+     ],
+     [
+      "Daiki Hashioka",
+      "DEF",
       0
      ],
      [
@@ -18507,6 +18933,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Kevin Diks",
+      "DEF",
+      0
+     ],
+     [
+      "Ko Itakura",
       "DEF",
       0
      ],
@@ -18648,6 +19079,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Raphael Onyedika",
+      "MED",
+      0
+     ],
+     [
       "Arthur Theate",
       "DEF",
       0
@@ -18725,6 +19161,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Emmanuel Latte Lath",
+      "DEL",
+      0
+     ],
+     [
       "Ilyas Ansah",
       "DEL",
       0
@@ -18776,6 +19217,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Jeong Wooyeong",
+      "MED",
+      0
+     ],
+     [
+      "Michel Aebischer",
       "MED",
       0
      ],
@@ -18862,17 +19308,22 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Deniz Zeitler",
+      "DEL",
+      0
+     ],
+     [
+      "Gabriel Vidovic",
+      "DEL",
+      0
+     ],
+     [
       "Kennedy Okpala",
       "DEL",
       0
      ],
      [
       "Lasse Eickel",
-      "DEL",
-      0
-     ],
-     [
-      "Nick Bätzner",
       "DEL",
       0
      ],
@@ -18917,12 +19368,22 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Laurin Ulrich",
+      "MED",
+      0
+     ],
+     [
       "Luka Đurić",
       "MED",
       0
      ],
      [
       "Mika Baur",
+      "MED",
+      0
+     ],
+     [
+      "Nick Bätzner",
       "MED",
       0
      ],
@@ -19045,6 +19506,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Maurice Krattenmacher",
+      "DEL",
+      0
+     ],
+     [
+      "Noel Futkeu",
       "DEL",
       0
      ],
@@ -19329,6 +19795,11 @@ window.DATOS_LIGAS = {
       "Péter Gulácsi",
       "POR",
       0
+     ],
+     [
+      "Ørjan Nyland",
+      "POR",
+      0
      ]
     ]
    }
@@ -19467,7 +19938,123 @@ window.DATOS_LIGAS = {
     "Strasbourg": "https://crests.football-data.org/576.png",
     "Paris FC": "https://crests.football-data.org/1045.png"
    },
-   "partidos": [],
+   "partidos": [
+    [
+     "RC Lens",
+     "Auxerre",
+     "2026-08-22T15:15:00Z"
+    ],
+    [
+     "Le Mans",
+     "Brest",
+     "2026-08-22T18:45:00Z"
+    ],
+    [
+     "Troyes",
+     "Paris FC",
+     "2026-08-22T18:45:00Z"
+    ],
+    [
+     "Nice",
+     "Lorient",
+     "2026-08-22T18:45:00Z"
+    ],
+    [
+     "Toulouse",
+     "Olympique Lyon",
+     "2026-08-22T18:45:00Z"
+    ],
+    [
+     "Angers SCO",
+     "Lille",
+     "2026-08-23T13:00:00Z"
+    ],
+    [
+     "Le Havre",
+     "Monaco",
+     "2026-08-23T15:15:00Z"
+    ],
+    [
+     "PSG",
+     "Stade Rennais",
+     "2026-08-23T18:45:00Z"
+    ],
+    [
+     "Lille",
+     "PSG",
+     "2026-08-28T18:45:00Z"
+    ],
+    [
+     "Strasbourg",
+     "RC Lens",
+     "2026-08-29T15:15:00Z"
+    ],
+    [
+     "Lorient",
+     "Troyes",
+     "2026-08-29T18:45:00Z"
+    ],
+    [
+     "Olympique Lyon",
+     "Le Havre",
+     "2026-08-29T18:45:00Z"
+    ],
+    [
+     "Auxerre",
+     "Angers SCO",
+     "2026-08-29T18:45:00Z"
+    ],
+    [
+     "Brest",
+     "Toulouse",
+     "2026-08-29T18:45:00Z"
+    ],
+    [
+     "Paris FC",
+     "Nice",
+     "2026-08-30T13:00:00Z"
+    ],
+    [
+     "Stade Rennais",
+     "Le Mans",
+     "2026-08-30T15:15:00Z"
+    ],
+    [
+     "Monaco",
+     "Marseille",
+     "2026-08-30T18:45:00Z"
+    ],
+    [
+     "Toulouse",
+     "Lille",
+     "2026-09-03T18:45:00Z"
+    ],
+    [
+     "Olympique Lyon",
+     "Auxerre",
+     "2026-09-04T17:00:00Z"
+    ],
+    [
+     "PSG",
+     "Monaco",
+     "2026-09-04T19:05:00Z"
+    ],
+    [
+     "RC Lens",
+     "Lorient",
+     "2026-09-05T15:15:00Z"
+    ],
+    [
+     "Le Havre",
+     "Brest",
+     "2026-09-05T18:45:00Z"
+    ],
+    [
+     "Nice",
+     "Le Mans",
+     "2026-09-05T18:45:00Z"
+    ]
+   ],
    "plantillas": {
     "Toulouse": [
      [
@@ -19487,6 +20074,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Santiago Hidalgo",
+      "DEL",
+      0
+     ],
+     [
+      "Sion Oppong",
       "DEL",
       0
      ],
@@ -19531,7 +20123,17 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Thomas Jørgensen",
+      "MED",
+      0
+     ],
+     [
       "Charlie Cresswell",
+      "DEF",
+      0
+     ],
+     [
+      "David Odogu",
       "DEF",
       0
      ],
@@ -19618,6 +20220,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Joseph Nonge",
+      "MED",
+      0
+     ],
+     [
       "Kamory Doumbia",
       "MED",
       0
@@ -19628,12 +20235,22 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Mamady Diambou",
+      "MED",
+      0
+     ],
+     [
       "Bradley Locko",
       "DEF",
       0
      ],
      [
       "Brendan Chardonnet",
+      "DEF",
+      0
+     ],
+     [
+      "Gautier Lloris",
       "DEF",
       0
      ],
@@ -19658,12 +20275,22 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Egil Selvik",
+      "POR",
+      0
+     ],
+     [
       "Grégoire Coudert",
       "POR",
       0
      ],
      [
       "Noah Jauny",
+      "POR",
+      0
+     ],
+     [
+      "Romain Cagnon",
       "POR",
       0
      ]
@@ -19690,7 +20317,17 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Keyliane Abdallah",
+      "DEL",
+      0
+     ],
+     [
       "Neal Maupay",
+      "DEL",
+      0
+     ],
+     [
+      "Tadjidine M'Madi",
       "DEL",
       0
      ],
@@ -19783,6 +20420,11 @@ window.DATOS_LIGAS = {
       "Jelle Van Neck",
       "POR",
       0
+     ],
+     [
+      "Théo Vermot",
+      "POR",
+      0
      ]
     ],
     "Auxerre": [
@@ -19812,7 +20454,17 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Rayan Mandengue",
+      "DEL",
+      0
+     ],
+     [
       "Ryan Rodin",
+      "DEL",
+      0
+     ],
+     [
+      "Rémy Labeau Lascary",
       "DEL",
       0
      ],
@@ -20014,6 +20666,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Nabil Bentaleb",
+      "MED",
+      0
+     ],
+     [
       "Ngal'ayel Mukau",
       "MED",
       0
@@ -20081,6 +20738,11 @@ window.DATOS_LIGAS = {
     ],
     "Nice": [
      [
+      "Gauthier Hein",
+      "DEL",
+      0
+     ],
+     [
       "Isak Jansson",
       "DEL",
       1
@@ -20092,6 +20754,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Mohamed Ali Cho",
+      "DEL",
+      0
+     ],
+     [
+      "Nathan N'Goumou",
       "DEL",
       0
      ],
@@ -20108,6 +20775,16 @@ window.DATOS_LIGAS = {
      [
       "Victor Orakpo",
       "DEL",
+      0
+     ],
+     [
+      "Zoumana Diallo",
+      "DEL",
+      0
+     ],
+     [
+      "Axel Witsel",
+      "MED",
       0
      ],
      [
@@ -20243,6 +20920,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Loïs Openda",
+      "DEL",
+      1
+     ],
+     [
       "Malick Fofana",
       "DEL",
       0
@@ -20328,6 +21010,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Felix Bacher",
+      "DEF",
+      0
+     ],
+     [
       "Mohamed Ouédraogo",
       "DEF",
       0
@@ -20349,6 +21036,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Ruben Kluivert",
+      "DEF",
+      0
+     ],
+     [
+      "Zachary Athekame",
       "DEF",
       0
      ],
@@ -20385,6 +21077,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Ferrán Torres",
+      "DEL",
+      0
+     ],
+     [
       "Ibrahim M'Baye",
       "DEL",
       0
@@ -20393,6 +21090,16 @@ window.DATOS_LIGAS = {
       "Khvicha Kvaratskhelia",
       "DEL",
       1
+     ],
+     [
+      "Maghnes Akliouche",
+      "DEL",
+      0
+     ],
+     [
+      "Mika Godts",
+      "DEL",
+      0
      ],
      [
       "Ousmane Dembélé",
@@ -20460,6 +21167,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Lucas Digne",
+      "DEF",
+      0
+     ],
+     [
       "Lucas Hernández",
       "DEF",
       0
@@ -20517,6 +21229,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Souleymane Faye",
+      "DEL",
+      1
+     ],
+     [
       "Arthur Ebong",
       "MED",
       0
@@ -20543,6 +21260,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Noah Cadiou",
+      "MED",
+      0
+     ],
+     [
+      "Noah Mbamba",
       "MED",
       0
      ],
@@ -20729,6 +21451,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Charlie Cresswell",
+      "DEF",
+      0
+     ],
+     [
       "Gonçalo Oliveira",
       "DEF",
       0
@@ -20817,6 +21544,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Antoine Mille",
+      "MED",
+      0
+     ],
+     [
+      "Hugo Picard",
       "MED",
       0
      ],
@@ -20988,6 +21720,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Joseph Kalulu",
+      "DEF",
+      0
+     ],
+     [
       "Lilian Rao-Lisoa",
       "DEF",
       0
@@ -21035,6 +21772,16 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Joan Tincres",
+      "DEL",
+      0
+     ],
+     [
+      "Josh Maja",
+      "DEL",
+      0
+     ],
+     [
       "Mbwana Samatta",
       "DEL",
       0
@@ -21066,6 +21813,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Ismail Bouneb",
+      "MED",
+      0
+     ],
+     [
+      "Junior Mwanga",
       "MED",
       0
      ],
@@ -21157,6 +21909,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Enzo Vagner",
+      "DEL",
+      0
+     ],
+     [
       "Erwan Colas",
       "DEL",
       0
@@ -21207,6 +21964,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Djibril Sidibé",
+      "DEF",
+      0
+     ],
+     [
       "Harold Voyer",
       "DEF",
       0
@@ -21223,6 +21985,16 @@ window.DATOS_LIGAS = {
      ],
      [
       "Noa Boisse",
+      "DEF",
+      0
+     ],
+     [
+      "Rayan Bamba",
+      "DEF",
+      0
+     ],
+     [
+      "Raúl Torrente",
       "DEF",
       0
      ],
@@ -21279,6 +22051,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Franjo Ivanovic",
+      "DEL",
+      0
+     ],
+     [
       "Gabin Capuano",
       "DEL",
       0
@@ -21324,12 +22101,22 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Mezian Soares",
+      "MED",
+      0
+     ],
+     [
       "Mickaël Cuisance",
       "MED",
       0
      ],
      [
       "Thorgan Hazard",
+      "MED",
+      0
+     ],
+     [
+      "Yacine Titraoui",
       "MED",
       0
      ],
@@ -21441,6 +22228,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Matthis Abline",
+      "DEL",
+      0
+     ],
+     [
       "Mika Biereth",
       "DEL",
       0
@@ -21477,6 +22269,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Mamadou Coulibaly",
+      "MED",
+      0
+     ],
+     [
+      "Pape Cabral",
       "MED",
       0
      ],
@@ -21521,6 +22318,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Samuel Nibombe",
+      "DEF",
+      0
+     ],
+     [
       "Thilo Kehrer",
       "DEF",
       0
@@ -21548,7 +22350,17 @@ window.DATOS_LIGAS = {
     ],
     "Strasbourg": [
      [
+      "Fabio Baldé",
+      "DEL",
+      0
+     ],
+     [
       "Gessime Yassine",
+      "DEL",
+      0
+     ],
+     [
+      "Jacobo Ortega",
       "DEL",
       0
      ],
@@ -21609,6 +22421,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Diogo Lobão",
+      "MED",
+      0
+     ],
+     [
+      "Gio Reyna",
       "MED",
       0
      ],
@@ -21678,12 +22495,27 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Genesis Antwi",
+      "DEF",
+      0
+     ],
+     [
       "Guéla Doué",
       "DEF",
       0
      ],
      [
       "Ismaël Doukouré",
+      "DEF",
+      0
+     ],
+     [
+      "Jeyland Mitchell",
+      "DEF",
+      0
+     ],
+     [
+      "Karim Coulibaly",
       "DEF",
       0
      ],
@@ -21710,6 +22542,11 @@ window.DATOS_LIGAS = {
      [
       "Yoni Gomis",
       "DEF",
+      0
+     ],
+     [
+      "Filip Jörgensen",
+      "POR",
       0
      ],
      [
@@ -21746,6 +22583,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Lassine Sinayoko",
+      "DEL",
+      0
+     ],
+     [
+      "Luca Koleosho",
       "DEL",
       0
      ],
