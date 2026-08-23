@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-08-22",
+ "actualizado": "2026-08-23",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6881,7 +6881,132 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Alexander Sørloth",
+      "DEL",
+      0
+     ],
+     [
+      "Carlos Martin",
+      "DEL",
+      0
+     ],
+     [
+      "Giuliano Simeone",
+      "DEL",
+      0
+     ],
+     [
+      "Julián Álvarez",
+      "DEL",
+      1
+     ],
+     [
+      "Miguel Cubo",
+      "DEL",
+      0
+     ],
+     [
+      "Rayane Belaid",
+      "DEL",
+      0
+     ],
+     [
+      "Arnau Ortiz",
+      "MED",
+      0
+     ],
+     [
+      "Johnny",
+      "MED",
+      0
+     ],
+     [
+      "Jorge Castillo",
+      "MED",
+      0
+     ],
+     [
+      "Kang-in Lee",
+      "MED",
+      0
+     ],
+     [
+      "Koke",
+      "MED",
+      0
+     ],
+     [
+      "Obed Vargas",
+      "MED",
+      0
+     ],
+     [
+      "Pablo Barrios",
+      "MED",
+      0
+     ],
+     [
+      "Rodrigo Mendoza",
+      "MED",
+      0
+     ],
+     [
+      "Taufik",
+      "MED",
+      0
+     ],
+     [
+      "Thomas Lemar",
+      "MED",
+      0
+     ],
+     [
+      "Álex Baena",
+      "MED",
+      0
+     ],
+     [
       "Alejandro Grimaldo",
+      "DEF",
+      0
+     ],
+     [
+      "Aleksa Puric",
+      "DEF",
+      0
+     ],
+     [
+      "Christian Romero",
+      "DEF",
+      0
+     ],
+     [
+      "Daniel Martínez",
+      "DEF",
+      0
+     ],
+     [
+      "Dávid Hancko",
+      "DEF",
+      0
+     ],
+     [
+      "Javier Boñar",
+      "DEF",
+      0
+     ],
+     [
+      "Jorge Domínguez",
+      "DEF",
+      0
+     ],
+     [
+      "José Giménez",
+      "DEF",
+      0
+     ],
+     [
+      "Marc Pubill",
       "DEF",
       0
      ],
@@ -6891,13 +7016,28 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Nahuel Molina",
+      "Morten Hjulmand",
       "DEF",
       0
      ],
      [
       "Robin Le Normand",
       "DEF",
+      0
+     ],
+     [
+      "Jan Oblak",
+      "POR",
+      0
+     ],
+     [
+      "Juan Musso",
+      "POR",
+      0
+     ],
+     [
+      "Mario de Luis",
+      "POR",
       0
      ]
     ],
@@ -8039,6 +8179,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Pablo García",
+      "DEL",
+      0
+     ],
+     [
       "Rodrigo Riquelme",
       "DEL",
       0
@@ -8110,11 +8255,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Natan",
-      "DEF",
-      0
-     ],
-     [
-      "Pablo García",
       "DEF",
       0
      ],
@@ -9362,21 +9502,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Athletic",
-     "Sevilla FC",
-     "2026-08-22T15:00:00Z"
-    ],
-    [
-     "Valencia",
-     "Celta",
-     "2026-08-22T17:30:00Z"
-    ],
-    [
-     "Espanyol",
-     "Real Madrid",
-     "2026-08-22T19:30:00Z"
-    ],
-    [
      "Atleti",
      "Villarreal",
      "2026-08-23T15:00:00Z"
@@ -9495,6 +9620,26 @@ window.DATOS_LIGAS = {
      "Villarreal",
      "Deportivo",
      "2026-09-05T19:00:00Z"
+    ],
+    [
+     "Valencia",
+     "Barça",
+     "2026-09-06T14:15:00Z"
+    ],
+    [
+     "Alavés",
+     "Osasuna",
+     "2026-09-06T16:30:00Z"
+    ],
+    [
+     "Málaga",
+     "Levante",
+     "2026-09-06T16:30:00Z"
+    ],
+    [
+     "Espanyol",
+     "Sevilla FC",
+     "2026-09-06T19:00:00Z"
     ]
    ]
   },
@@ -9648,31 +9793,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Hull City",
-     "Man United",
-     "2026-08-22T11:30:00Z"
-    ],
-    [
-     "Ipswich Town",
-     "Sunderland",
-     "2026-08-22T14:00:00Z"
-    ],
-    [
-     "Nottingham",
-     "Leeds United",
-     "2026-08-22T14:00:00Z"
-    ],
-    [
-     "Everton",
-     "Crystal Palace",
-     "2026-08-22T14:00:00Z"
-    ],
-    [
-     "Brentford",
-     "Tottenham",
-     "2026-08-22T16:30:00Z"
-    ],
-    [
      "Man City",
      "Bournemouth",
      "2026-08-23T13:00:00Z"
@@ -9781,6 +9901,16 @@ window.DATOS_LIGAS = {
      "Hull City",
      "Aston Villa",
      "2026-09-05T16:30:00Z"
+    ],
+    [
+     "Everton",
+     "Man United",
+     "2026-09-06T13:00:00Z"
+    ],
+    [
+     "Arsenal",
+     "Chelsea",
+     "2026-09-06T15:30:00Z"
     ]
    ],
    "plantillas": {
@@ -13286,26 +13416,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Udinese",
-     "Como 1907",
-     "2026-08-22T16:30:00Z"
-    ],
-    [
-     "Inter",
-     "Monza",
-     "2026-08-22T16:30:00Z"
-    ],
-    [
-     "Genoa",
-     "Napoli",
-     "2026-08-22T18:45:00Z"
-    ],
-    [
-     "Parma",
-     "Cagliari",
-     "2026-08-22T18:45:00Z"
-    ],
-    [
      "Frosinone",
      "Juventus",
      "2026-08-23T16:30:00Z"
@@ -13404,6 +13514,26 @@ window.DATOS_LIGAS = {
      "Roma",
      "Atalanta",
      "2026-09-05T18:45:00Z"
+    ],
+    [
+     "Parma",
+     "Monza",
+     "2026-09-06T13:00:00Z"
+    ],
+    [
+     "Frosinone",
+     "Venezia FC",
+     "2026-09-06T13:00:00Z"
+    ],
+    [
+     "Bologna",
+     "Sassuolo",
+     "2026-09-06T16:00:00Z"
+    ],
+    [
+     "Juventus",
+     "Milan",
+     "2026-09-06T18:45:00Z"
     ]
    ],
    "plantillas": {
@@ -14275,6 +14405,11 @@ window.DATOS_LIGAS = {
      ]
     ],
     "Genoa": [
+     [
+      "Adam Žulevič",
+      "DEL",
+      0
+     ],
      [
       "Elias Havel",
       "DEL",
@@ -16808,6 +16943,16 @@ window.DATOS_LIGAS = {
      "Schalke",
      "Bayern",
      "2026-09-05T16:30:00Z"
+    ],
+    [
+     "HSV",
+     "Mainz",
+     "2026-09-06T13:30:00Z"
+    ],
+    [
+     "Frankfurt",
+     "Augsburg",
+     "2026-09-06T15:30:00Z"
     ]
    ],
    "plantillas": {
@@ -19940,31 +20085,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "RC Lens",
-     "Auxerre",
-     "2026-08-22T15:15:00Z"
-    ],
-    [
-     "Le Mans",
-     "Brest",
-     "2026-08-22T18:45:00Z"
-    ],
-    [
-     "Troyes",
-     "Paris FC",
-     "2026-08-22T18:45:00Z"
-    ],
-    [
-     "Nice",
-     "Lorient",
-     "2026-08-22T18:45:00Z"
-    ],
-    [
-     "Toulouse",
-     "Olympique Lyon",
-     "2026-08-22T18:45:00Z"
-    ],
-    [
      "Angers SCO",
      "Lille",
      "2026-08-23T13:00:00Z"
@@ -20053,12 +20173,37 @@ window.DATOS_LIGAS = {
      "Nice",
      "Le Mans",
      "2026-09-05T18:45:00Z"
+    ],
+    [
+     "Troyes",
+     "Strasbourg",
+     "2026-09-06T13:00:00Z"
+    ],
+    [
+     "Angers SCO",
+     "Stade Rennais",
+     "2026-09-06T15:15:00Z"
+    ],
+    [
+     "Marseille",
+     "Paris FC",
+     "2026-09-06T18:45:00Z"
     ]
    ],
    "plantillas": {
     "Toulouse": [
      [
+      "Christ Tapé",
+      "DEL",
+      0
+     ],
+     [
       "Enzo Faty",
+      "DEL",
+      0
+     ],
+     [
+      "Ismail Diallo",
       "DEL",
       0
      ],
@@ -20181,6 +20326,11 @@ window.DATOS_LIGAS = {
     "Brest": [
      [
       "Axel Camblan",
+      "DEL",
+      0
+     ],
+     [
+      "Evan Mailly",
       "DEL",
       0
      ],
@@ -20469,6 +20619,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Salimou Danfakha",
+      "DEL",
+      0
+     ],
+     [
       "Theo Bair",
       "DEL",
       0
@@ -20738,6 +20893,11 @@ window.DATOS_LIGAS = {
     ],
     "Nice": [
      [
+      "Aboulaye Camara",
+      "DEL",
+      0
+     ],
+     [
       "Gauthier Hein",
       "DEL",
       0
@@ -20746,6 +20906,11 @@ window.DATOS_LIGAS = {
       "Isak Jansson",
       "DEL",
       1
+     ],
+     [
+      "Junior Mandza",
+      "DEL",
+      0
      ],
      [
       "Kevin Carlos",
@@ -21523,6 +21688,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Idrissa Soukouna",
+      "DEL",
+      0
+     ],
+     [
       "Kandet Diawara",
       "DEL",
       0
@@ -21534,6 +21704,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Renaud Ripart",
+      "DEL",
+      0
+     ],
+     [
+      "Yacouba Koné",
       "DEL",
       0
      ],
@@ -22563,6 +22738,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Ciro Immobile",
+      "DEL",
+      0
+     ],
+     [
+      "Emmanuel Mbemba",
       "DEL",
       0
      ],
