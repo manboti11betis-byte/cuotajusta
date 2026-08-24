@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-08-23",
+ "actualizado": "2026-08-24",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -7302,6 +7302,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Jordi Pesquer",
+      "DEL",
+      0
+     ],
+     [
       "Karim Adeyemi",
       "DEL",
       0
@@ -9397,6 +9402,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Hugo Pérez",
+      "DEL",
+      0
+     ],
+     [
       "Iñigo Vicente",
       "DEL",
       0
@@ -9501,21 +9511,6 @@ window.DATOS_LIGAS = {
     "Santander": "https://crests.football-data.org/5335.png"
    },
    "partidos": [
-    [
-     "Atleti",
-     "Villarreal",
-     "2026-08-23T15:00:00Z"
-    ],
-    [
-     "Getafe",
-     "Santander",
-     "2026-08-23T17:30:00Z"
-    ],
-    [
-     "Elche",
-     "Barça",
-     "2026-08-23T19:30:00Z"
-    ],
     [
      "Osasuna",
      "Levante",
@@ -9640,6 +9635,16 @@ window.DATOS_LIGAS = {
      "Espanyol",
      "Sevilla FC",
      "2026-09-06T19:00:00Z"
+    ],
+    [
+     "Getafe",
+     "Celta",
+     "2026-09-07T17:00:00Z"
+    ],
+    [
+     "Elche",
+     "Real Sociedad",
+     "2026-09-07T19:30:00Z"
     ]
    ]
   },
@@ -9792,21 +9797,6 @@ window.DATOS_LIGAS = {
     "Coventry City": "https://crests.football-data.org/1076.png"
    },
    "partidos": [
-    [
-     "Man City",
-     "Bournemouth",
-     "2026-08-23T13:00:00Z"
-    ],
-    [
-     "Brighton Hove",
-     "Aston Villa",
-     "2026-08-23T13:00:00Z"
-    ],
-    [
-     "Newcastle",
-     "Liverpool",
-     "2026-08-23T15:30:00Z"
-    ],
     [
      "Fulham",
      "Chelsea",
@@ -13416,26 +13406,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Frosinone",
-     "Juventus",
-     "2026-08-23T16:30:00Z"
-    ],
-    [
-     "Venezia FC",
-     "Lecce",
-     "2026-08-23T16:30:00Z"
-    ],
-    [
-     "Atalanta",
-     "Sassuolo",
-     "2026-08-23T18:45:00Z"
-    ],
-    [
-     "Torino",
-     "Milan",
-     "2026-08-23T18:45:00Z"
-    ],
-    [
      "Bologna",
      "Lazio",
      "2026-08-24T16:30:00Z"
@@ -13534,6 +13504,16 @@ window.DATOS_LIGAS = {
      "Juventus",
      "Milan",
      "2026-09-06T18:45:00Z"
+    ],
+    [
+     "Cagliari",
+     "Lecce",
+     "2026-09-07T16:00:00Z"
+    ],
+    [
+     "Udinese",
+     "Lazio",
+     "2026-09-07T18:45:00Z"
     ]
    ],
    "plantillas": {
@@ -16239,6 +16219,11 @@ window.DATOS_LIGAS = {
     "Lecce": [
      [
       "Hjalte Laerke",
+      "DEL",
+      0
+     ],
+     [
+      "Hjalte Lærke",
       "DEL",
       0
      ],
@@ -20085,21 +20070,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Angers SCO",
-     "Lille",
-     "2026-08-23T13:00:00Z"
-    ],
-    [
-     "Le Havre",
-     "Monaco",
-     "2026-08-23T15:15:00Z"
-    ],
-    [
-     "PSG",
-     "Stade Rennais",
-     "2026-08-23T18:45:00Z"
-    ],
-    [
      "Lille",
      "PSG",
      "2026-08-28T18:45:00Z"
@@ -21937,6 +21907,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Djibril Ouziad",
+      "DEL",
+      0
+     ],
+     [
       "Felix Mambimbi",
       "DEL",
       0
@@ -22378,6 +22353,11 @@ window.DATOS_LIGAS = {
     ],
     "Monaco": [
      [
+      "Anis Soubeir",
+      "DEL",
+      0
+     ],
+     [
       "Ansu Fati",
       "DEL",
       0
@@ -22413,7 +22393,17 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Oumar Konaté",
+      "DEL",
+      0
+     ],
+     [
       "Paris Brunner",
+      "DEL",
+      0
+     ],
+     [
+      "Safouane Benzahra",
       "DEL",
       0
      ],
