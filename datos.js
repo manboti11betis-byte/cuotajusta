@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-08-24",
+ "actualizado": "2026-08-25",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6881,7 +6881,17 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Alejandro Baena",
+      "DEL",
+      0
+     ],
+     [
       "Alexander Sørloth",
+      "DEL",
+      0
+     ],
+     [
+      "Arnau Ortiz",
       "DEL",
       0
      ],
@@ -6901,27 +6911,7 @@ window.DATOS_LIGAS = {
       1
      ],
      [
-      "Miguel Cubo",
-      "DEL",
-      0
-     ],
-     [
-      "Rayane Belaid",
-      "DEL",
-      0
-     ],
-     [
-      "Arnau Ortiz",
-      "MED",
-      0
-     ],
-     [
       "Johnny",
-      "MED",
-      0
-     ],
-     [
-      "Jorge Castillo",
       "MED",
       0
      ],
@@ -6932,6 +6922,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Koke",
+      "MED",
+      0
+     ],
+     [
+      "Morten Hjulmand",
       "MED",
       0
      ],
@@ -6951,27 +6946,12 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Taufik",
-      "MED",
-      0
-     ],
-     [
       "Thomas Lemar",
       "MED",
       0
      ],
      [
-      "Álex Baena",
-      "MED",
-      0
-     ],
-     [
       "Alejandro Grimaldo",
-      "DEF",
-      0
-     ],
-     [
-      "Aleksa Puric",
       "DEF",
       0
      ],
@@ -6987,11 +6967,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Dávid Hancko",
-      "DEF",
-      0
-     ],
-     [
-      "Javier Boñar",
       "DEF",
       0
      ],
@@ -7016,7 +6991,12 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Morten Hjulmand",
+      "Matteo Ruggeri",
+      "DEF",
+      0
+     ],
+     [
+      "Nahuel Molina",
       "DEF",
       0
      ],
@@ -7032,11 +7012,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Juan Musso",
-      "POR",
-      0
-     ],
-     [
-      "Mario de Luis",
       "POR",
       0
      ]
@@ -7074,6 +7049,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Rubén García",
+      "DEL",
+      0
+     ],
+     [
+      "Unai Santos",
       "DEL",
       0
      ],
@@ -7298,11 +7278,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Jesse Bisiwu",
-      "DEL",
-      0
-     ],
-     [
-      "Jordi Pesquer",
       "DEL",
       0
      ],
@@ -9402,11 +9377,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Hugo Pérez",
-      "DEL",
-      0
-     ],
-     [
       "Iñigo Vicente",
       "DEL",
       0
@@ -9511,16 +9481,6 @@ window.DATOS_LIGAS = {
     "Santander": "https://crests.football-data.org/5335.png"
    },
    "partidos": [
-    [
-     "Osasuna",
-     "Levante",
-     "2026-08-24T17:30:00Z"
-    ],
-    [
-     "Málaga",
-     "Deportivo",
-     "2026-08-24T19:30:00Z"
-    ],
     [
      "Valencia",
      "Real Betis",
@@ -9797,11 +9757,6 @@ window.DATOS_LIGAS = {
     "Coventry City": "https://crests.football-data.org/1076.png"
    },
    "partidos": [
-    [
-     "Fulham",
-     "Chelsea",
-     "2026-08-24T19:00:00Z"
-    ],
     [
      "Crystal Palace",
      "Man City",
@@ -13406,16 +13361,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Bologna",
-     "Lazio",
-     "2026-08-24T16:30:00Z"
-    ],
-    [
-     "Roma",
-     "Fiorentina",
-     "2026-08-24T18:45:00Z"
-    ],
-    [
      "Milan",
      "Venezia FC",
      "2026-08-28T18:45:00Z"
@@ -13682,6 +13627,16 @@ window.DATOS_LIGAS = {
     "Fiorentina": [
      [
       "Albert Guðmundsson",
+      "DEL",
+      0
+     ],
+     [
+      "Brando Mazzeo",
+      "DEL",
+      0
+     ],
+     [
+      "Federico Croci",
       "DEL",
       0
      ],
@@ -14118,6 +14073,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Jonathan Rowe",
+      "DEL",
+      0
+     ],
+     [
+      "Marco Libra",
       "DEL",
       0
      ],
