@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-08-25",
+ "actualizado": "2026-08-26",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -9481,11 +9481,6 @@ window.DATOS_LIGAS = {
     "Santander": "https://crests.football-data.org/5335.png"
    },
    "partidos": [
-    [
-     "Valencia",
-     "Real Betis",
-     "2026-08-25T19:00:00Z"
-    ],
     [
      "Real Madrid",
      "Real Sociedad",
