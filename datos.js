@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-08-27",
+ "actualizado": "2026-08-28",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6598,127 +6598,91 @@ window.DATOS_LIGAS = {
   "LaLiga (España)": {
    "codigo": "PD",
    "neutral": false,
-   "nota": "Medias por partido, temporada 25-26",
+   "nota": "Medias por partido de la temporada en curso",
    "equipos": {
     "Alavés": [
-     1.2,
-     1.1,
-     0.8,
-     1.4
-    ],
-    "Athletic Club": [
-     1.7,
-     0.8,
-     1.2,
+     3.0,
+     0.3,
+     1.0,
      1.0
     ],
-    "Atlético de Madrid": [
-     1.9,
-     0.7,
-     1.4,
-     0.9
-    ],
-    "Barcelona": [
-     2.5,
+    "Athletic": [
      1.0,
-     2.1,
-     1.2
+     3.0,
+     0.1,
+     2.0
     ],
-    "Betis": [
-     1.7,
-     1.1,
-     1.3,
-     1.3
+    "Barça": [
+     2.0,
+     0.3,
+     5.0,
+     0.3
     ],
     "Celta": [
-     1.5,
-     1.2,
-     1.1,
-     1.4
+     1.0,
+     2.0,
+     0.1,
+     0.3
+    ],
+    "Deportivo": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
     ],
     "Elche": [
-     1.2,
-     1.3,
-     0.8,
-     1.6
-    ],
-    "Espanyol": [
-     1.3,
-     1.2,
-     0.9,
-     1.5
+     0.1,
+     5.0,
+     1.0,
+     1.0
     ],
     "Getafe": [
-     1.1,
-     0.9,
-     0.8,
-     1.2
-    ],
-    "Girona": [
-     1.5,
-     1.3,
-     1.1,
-     1.6
-    ],
-    "Levante": [
-     1.3,
-     1.4,
-     0.9,
-     1.7
-    ],
-    "Mallorca": [
-     1.2,
      1.0,
-     0.8,
-     1.3
+     0.3,
+     0.1,
+     3.0
+    ],
+    "Málaga": [
+     1.0,
+     1.0,
+     0.1,
+     2.0
     ],
     "Osasuna": [
-     1.4,
-     1.1,
-     0.9,
-     1.4
-    ],
-    "Oviedo": [
-     1.0,
-     1.4,
-     0.7,
-     1.8
-    ],
-    "Rayo Vallecano": [
-     1.4,
-     1.2,
-     1.0,
-     1.3
-    ],
-    "Real Madrid": [
-     2.4,
-     0.8,
+     0.1,
+     0.3,
      2.0,
      1.0
     ],
-    "Real Sociedad": [
-     1.5,
+    "Rayo Vallecano": [
      1.0,
-     1.1,
-     1.2
-    ],
-    "Sevilla": [
-     1.4,
-     1.2,
      1.0,
-     1.5
+     1.0,
+     2.0
     ],
-    "Valencia": [
-     1.3,
-     1.1,
-     0.9,
-     1.4
+    "Real Betis": [
+     1.0,
+     0.3,
+     1.0,
+     0.3
     ],
-    "Villarreal": [
-     1.9,
-     1.1,
-     1.5,
-     1.3
+    "Real Madrid": [
+     4.0,
+     1.0,
+     2.0,
+     1.0
+    ],
+    "Santander": [
+     2.0,
+     2.0,
+     0.1,
+     1.0
+    ],
+    "Sevilla FC": [
+     2.0,
+     1.0,
+     3.0,
+     1.0
     ]
    },
    "plantillas": {
@@ -7019,6 +6983,11 @@ window.DATOS_LIGAS = {
     "Osasuna": [
      [
       "Ante Budimir",
+      "DEL",
+      0
+     ],
+     [
+      "Asier Bonel",
       "DEL",
       0
      ],
@@ -9482,21 +9451,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Celta",
-     "Osasuna",
-     "2026-08-27T18:30:00Z"
-    ],
-    [
-     "Barça",
-     "Athletic",
-     "2026-08-27T19:00:00Z"
-    ],
-    [
-     "Santander",
-     "Elche",
-     "2026-08-28T17:00:00Z"
-    ],
-    [
      "Alavés",
      "Villarreal",
      "2026-08-28T19:30:00Z"
@@ -10235,6 +10189,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Reggie Watson",
+      "DEL",
+      0
+     ],
+     [
       "Cole Palmer",
       "MED",
       1
@@ -10524,6 +10483,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Bradley Slade",
+      "DEL",
+      0
+     ],
+     [
       "Gonzalo García",
       "DEL",
       0
@@ -10535,6 +10499,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Kevin Santos",
+      "DEL",
+      0
+     ],
+     [
+      "Macauley Zepa",
       "DEL",
       0
      ],
@@ -13454,6 +13423,11 @@ window.DATOS_LIGAS = {
      "Udinese",
      "Lazio",
      "2026-09-07T18:45:00Z"
+    ],
+    [
+     "Venezia FC",
+     "Fiorentina",
+     "2026-09-11T18:45:00Z"
     ]
    ],
    "plantillas": {
@@ -16893,6 +16867,11 @@ window.DATOS_LIGAS = {
      "Frankfurt",
      "Augsburg",
      "2026-09-06T15:30:00Z"
+    ],
+    [
+     "Union Berlin",
+     "Schalke",
+     "2026-09-11T18:30:00Z"
     ]
    ],
    "plantillas": {
@@ -20113,6 +20092,11 @@ window.DATOS_LIGAS = {
      "Marseille",
      "Paris FC",
      "2026-09-06T18:45:00Z"
+    ],
+    [
+     "Stade Rennais",
+     "Marseille",
+     "2026-09-11T18:45:00Z"
     ]
    ],
    "plantillas": {
