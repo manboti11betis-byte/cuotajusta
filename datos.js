@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-08-31",
+ "actualizado": "2026-09-01",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6609,8 +6609,8 @@ window.DATOS_LIGAS = {
     "Athletic": [
      1.0,
      3.0,
-     0.1,
-     2.0
+     1.0,
+     1.0
     ],
     "Atleti": [
      2.0,
@@ -6619,19 +6619,19 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Barça": [
-     2.0,
-     0.3,
+     3.5,
+     1.0,
      5.0,
      0.3
     ],
     "Celta": [
-     1.0,
+     0.5,
      2.0,
      0.1,
      0.3
     ],
     "Deportivo": [
-     1.0,
+     2.0,
      1.0,
      1.0,
      1.0
@@ -6652,7 +6652,7 @@ window.DATOS_LIGAS = {
      1.0,
      0.3,
      0.1,
-     3.0
+     2.0
     ],
     "Levante": [
      5.0,
@@ -6667,7 +6667,7 @@ window.DATOS_LIGAS = {
      3.0
     ],
     "Osasuna": [
-     0.1,
+     0.5,
      0.3,
      2.0,
      1.0
@@ -6675,8 +6675,8 @@ window.DATOS_LIGAS = {
     "Rayo Vallecano": [
      1.0,
      1.0,
-     1.0,
-     2.0
+     1.5,
+     3.5
     ],
     "Real Betis": [
      1.0,
@@ -6707,6 +6707,12 @@ window.DATOS_LIGAS = {
      2.0,
      3.0,
      1.0
+    ],
+    "Valencia": [
+     0.1,
+     0.5,
+     1.0,
+     3.0
     ]
    },
    "plantillas": {
@@ -7463,6 +7469,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Martin Satriano",
+      "DEL",
+      0
+     ],
+     [
+      "Moha Achraf",
       "DEL",
       0
      ],
@@ -9555,16 +9566,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Osasuna",
-     "Getafe",
-     "2026-08-31T17:30:00Z"
-    ],
-    [
-     "Barça",
-     "Rayo Vallecano",
-     "2026-08-31T19:30:00Z"
-    ],
-    [
      "Real Sociedad",
      "Celta",
      "2026-09-03T19:00:00Z"
@@ -9620,54 +9621,69 @@ window.DATOS_LIGAS = {
      "2026-09-07T19:30:00Z"
     ],
     [
-     "Getafe",
-     "Deportivo",
-     "2026-09-13T00:00:00Z"
-    ],
-    [
      "Sevilla FC",
      "Valencia",
-     "2026-09-13T00:00:00Z"
+     "2026-09-11T19:00:00Z"
     ],
     [
      "Santander",
      "Alavés",
-     "2026-09-13T00:00:00Z"
-    ],
-    [
-     "Villarreal",
-     "Real Betis",
-     "2026-09-13T00:00:00Z"
-    ],
-    [
-     "Celta",
-     "Málaga",
-     "2026-09-13T00:00:00Z"
+     "2026-09-12T12:00:00Z"
     ],
     [
      "Osasuna",
      "Espanyol",
-     "2026-09-13T00:00:00Z"
-    ],
-    [
-     "Real Sociedad",
-     "Atleti",
-     "2026-09-13T00:00:00Z"
-    ],
-    [
-     "Levante",
-     "Barça",
-     "2026-09-13T00:00:00Z"
+     "2026-09-12T14:15:00Z"
     ],
     [
      "Athletic",
      "Elche",
-     "2026-09-13T00:00:00Z"
+     "2026-09-12T16:30:00Z"
     ],
     [
      "Real Madrid",
      "Rayo Vallecano",
-     "2026-09-13T00:00:00Z"
+     "2026-09-12T19:00:00Z"
+    ],
+    [
+     "Celta",
+     "Málaga",
+     "2026-09-13T12:00:00Z"
+    ],
+    [
+     "Levante",
+     "Barça",
+     "2026-09-13T14:15:00Z"
+    ],
+    [
+     "Getafe",
+     "Deportivo",
+     "2026-09-13T16:30:00Z"
+    ],
+    [
+     "Real Sociedad",
+     "Atleti",
+     "2026-09-13T19:00:00Z"
+    ],
+    [
+     "Villarreal",
+     "Real Betis",
+     "2026-09-14T19:00:00Z"
+    ],
+    [
+     "Rayo Vallecano",
+     "Espanyol",
+     "2026-09-15T17:00:00Z"
+    ],
+    [
+     "Alavés",
+     "Valencia",
+     "2026-09-15T18:00:00Z"
+    ],
+    [
+     "Elche",
+     "Real Madrid",
+     "2026-09-15T19:30:00Z"
     ]
    ]
   },
@@ -9676,6 +9692,18 @@ window.DATOS_LIGAS = {
    "neutral": false,
    "nota": "Medias por partido de la temporada en curso",
    "equipos": {
+    "Arsenal": [
+     3.0,
+     0.3,
+     1.0,
+     0.3
+    ],
+    "Aston Villa": [
+     0.1,
+     1.0,
+     0.1,
+     4.0
+    ],
     "Bournemouth": [
      1.0,
      1.0,
@@ -13291,11 +13319,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Aston Villa",
-     "Arsenal",
-     "2026-08-31T19:00:00Z"
-    ],
-    [
      "Ipswich Town",
      "Liverpool",
      "2026-09-04T19:00:00Z"
@@ -13400,263 +13423,117 @@ window.DATOS_LIGAS = {
   "Serie A (Italia)": {
    "codigo": "SA",
    "neutral": false,
-   "nota": "Medias por partido, temporada 25-26",
+   "nota": "Medias por partido de la temporada en curso",
    "equipos": {
-    "Atalanta": [
-     2.0,
-     1.0,
-     1.6,
-     1.2
-    ],
     "Bologna": [
-     1.6,
+     0.1,
      1.0,
-     1.2,
-     1.1
+     0.1,
+     1.0
     ],
     "Cagliari": [
-     1.2,
-     1.3,
-     0.8,
-     1.5
-    ],
-    "Como": [
-     1.5,
-     1.1,
-     1.1,
-     1.3
-    ],
-    "Cremonese": [
+     0.1,
      1.0,
-     1.4,
-     0.7,
-     1.7
+     1.0,
+     0.3
     ],
     "Fiorentina": [
-     1.5,
-     1.1,
-     1.1,
-     1.3
+     0.1,
+     3.0,
+     0.1,
+     4.0
+    ],
+    "Frosinone": [
+     0.1,
+     1.0,
+     3.0,
+     0.3
     ],
     "Genoa": [
-     1.2,
-     1.1,
-     0.8,
-     1.3
+     0.1,
+     2.0,
+     0.1,
+     1.0
     ],
     "Inter": [
-     2.2,
-     0.8,
-     1.7,
-     1.0
+     4.0,
+     1.0,
+     1.0,
+     0.3
     ],
     "Juventus": [
-     1.7,
-     0.8,
-     1.3,
-     1.0
+     2.0,
+     0.3,
+     1.0,
+     0.3
     ],
     "Lazio": [
-     1.5,
      1.0,
-     1.2,
-     1.2
+     0.3,
+     1.0,
+     0.3
     ],
     "Lecce": [
-     1.1,
-     1.3,
-     0.7,
-     1.5
+     0.1,
+     4.0,
+     2.0,
+     0.3
     ],
     "Milan": [
-     1.8,
+     2.0,
+     0.3,
+     2.0,
+     1.0
+    ],
+    "Monza": [
+     2.0,
+     3.0,
      1.0,
-     1.4,
-     1.2
+     4.0
     ],
     "Napoli": [
-     1.9,
-     0.8,
-     1.4,
-     0.9
+     1.0,
+     2.0,
+     2.0,
+     0.3
     ],
     "Parma": [
-     1.2,
-     1.3,
-     0.8,
-     1.5
-    ],
-    "Pisa": [
+     0.1,
      1.0,
-     1.4,
-     0.7,
-     1.7
+     0.1,
+     2.0
     ],
     "Roma": [
-     1.6,
-     0.9,
-     1.2,
-     1.1
+     4.0,
+     0.3,
+     4.0,
+     0.3
     ],
     "Sassuolo": [
-     1.3,
-     1.4,
-     0.9,
-     1.6
+     2.0,
+     1.0,
+     1.0,
+     2.0
     ],
     "Torino": [
-     1.2,
-     1.1,
-     0.9,
-     1.3
+     1.0,
+     2.0,
+     1.0,
+     2.0
     ],
     "Udinese": [
-     1.3,
-     1.2,
-     0.9,
-     1.4
-    ],
-    "Verona": [
      1.0,
-     1.3,
-     0.7,
-     1.6
+     1.0,
+     3.0,
+     2.0
+    ],
+    "Venezia FC": [
+     0.1,
+     2.0,
+     0.1,
+     2.0
     ]
    },
-   "escudos": {
-    "Milan": "https://crests.football-data.org/98.png",
-    "Fiorentina": "https://crests.football-data.org/99.png",
-    "Roma": "https://crests.football-data.org/100.png",
-    "Atalanta": "https://crests.football-data.org/102.png",
-    "Bologna": "https://crests.football-data.org/103.png",
-    "Cagliari": "https://crests.football-data.org/104.png",
-    "Genoa": "https://crests.football-data.org/107.png",
-    "Inter": "https://crests.football-data.org/108.png",
-    "Juventus": "https://crests.football-data.org/109.png",
-    "Lazio": "https://crests.football-data.org/110.png",
-    "Parma": "https://crests.football-data.org/112.png",
-    "Napoli": "https://crests.football-data.org/113.png",
-    "Udinese": "https://crests.football-data.org/115.png",
-    "Venezia FC": "https://crests.football-data.org/454.png",
-    "Frosinone": "https://crests.football-data.org/470.png",
-    "Sassuolo": "https://crests.football-data.org/471.png",
-    "Torino": "https://crests.football-data.org/586.png",
-    "Lecce": "https://crests.football-data.org/5890.png",
-    "Monza": "https://crests.football-data.org/5911.png",
-    "Como 1907": "https://crests.football-data.org/7397.png"
-   },
-   "partidos": [
-    [
-     "Lecce",
-     "Roma",
-     "2026-08-31T16:30:00Z"
-    ],
-    [
-     "Atalanta",
-     "Bologna",
-     "2026-08-31T18:45:00Z"
-    ],
-    [
-     "Genoa",
-     "Como 1907",
-     "2026-09-04T18:45:00Z"
-    ],
-    [
-     "Fiorentina",
-     "Torino",
-     "2026-09-05T13:00:00Z"
-    ],
-    [
-     "Inter",
-     "Napoli",
-     "2026-09-05T16:00:00Z"
-    ],
-    [
-     "Roma",
-     "Atalanta",
-     "2026-09-05T18:45:00Z"
-    ],
-    [
-     "Parma",
-     "Monza",
-     "2026-09-06T13:00:00Z"
-    ],
-    [
-     "Frosinone",
-     "Venezia FC",
-     "2026-09-06T13:00:00Z"
-    ],
-    [
-     "Bologna",
-     "Sassuolo",
-     "2026-09-06T16:00:00Z"
-    ],
-    [
-     "Juventus",
-     "Milan",
-     "2026-09-06T18:45:00Z"
-    ],
-    [
-     "Cagliari",
-     "Lecce",
-     "2026-09-07T16:30:00Z"
-    ],
-    [
-     "Udinese",
-     "Lazio",
-     "2026-09-07T18:45:00Z"
-    ],
-    [
-     "Venezia FC",
-     "Fiorentina",
-     "2026-09-11T18:45:00Z"
-    ],
-    [
-     "Genoa",
-     "Frosinone",
-     "2026-09-12T13:00:00Z"
-    ],
-    [
-     "Sassuolo",
-     "Juventus",
-     "2026-09-12T16:00:00Z"
-    ],
-    [
-     "Atalanta",
-     "Cagliari",
-     "2026-09-12T18:45:00Z"
-    ],
-    [
-     "Torino",
-     "Roma",
-     "2026-09-13T10:30:00Z"
-    ],
-    [
-     "Como 1907",
-     "Parma",
-     "2026-09-13T13:00:00Z"
-    ],
-    [
-     "Lecce",
-     "Monza",
-     "2026-09-13T13:00:00Z"
-    ],
-    [
-     "Napoli",
-     "Bologna",
-     "2026-09-13T16:00:00Z"
-    ],
-    [
-     "Lazio",
-     "Milan",
-     "2026-09-13T18:45:00Z"
-    ],
-    [
-     "Inter",
-     "Udinese",
-     "2026-09-14T18:45:00Z"
-    ]
-   ],
    "plantillas": {
     "Milan": [
      [
@@ -16983,7 +16860,131 @@ window.DATOS_LIGAS = {
       0
      ]
     ]
-   }
+   },
+   "escudos": {
+    "Milan": "https://crests.football-data.org/98.png",
+    "Fiorentina": "https://crests.football-data.org/99.png",
+    "Roma": "https://crests.football-data.org/100.png",
+    "Atalanta": "https://crests.football-data.org/102.png",
+    "Bologna": "https://crests.football-data.org/103.png",
+    "Cagliari": "https://crests.football-data.org/104.png",
+    "Genoa": "https://crests.football-data.org/107.png",
+    "Inter": "https://crests.football-data.org/108.png",
+    "Juventus": "https://crests.football-data.org/109.png",
+    "Lazio": "https://crests.football-data.org/110.png",
+    "Parma": "https://crests.football-data.org/112.png",
+    "Napoli": "https://crests.football-data.org/113.png",
+    "Udinese": "https://crests.football-data.org/115.png",
+    "Venezia FC": "https://crests.football-data.org/454.png",
+    "Frosinone": "https://crests.football-data.org/470.png",
+    "Sassuolo": "https://crests.football-data.org/471.png",
+    "Torino": "https://crests.football-data.org/586.png",
+    "Lecce": "https://crests.football-data.org/5890.png",
+    "Monza": "https://crests.football-data.org/5911.png",
+    "Como 1907": "https://crests.football-data.org/7397.png"
+   },
+   "partidos": [
+    [
+     "Genoa",
+     "Como 1907",
+     "2026-09-04T18:45:00Z"
+    ],
+    [
+     "Fiorentina",
+     "Torino",
+     "2026-09-05T13:00:00Z"
+    ],
+    [
+     "Inter",
+     "Napoli",
+     "2026-09-05T16:00:00Z"
+    ],
+    [
+     "Roma",
+     "Atalanta",
+     "2026-09-05T18:45:00Z"
+    ],
+    [
+     "Parma",
+     "Monza",
+     "2026-09-06T13:00:00Z"
+    ],
+    [
+     "Frosinone",
+     "Venezia FC",
+     "2026-09-06T13:00:00Z"
+    ],
+    [
+     "Bologna",
+     "Sassuolo",
+     "2026-09-06T16:00:00Z"
+    ],
+    [
+     "Juventus",
+     "Milan",
+     "2026-09-06T18:45:00Z"
+    ],
+    [
+     "Cagliari",
+     "Lecce",
+     "2026-09-07T16:30:00Z"
+    ],
+    [
+     "Udinese",
+     "Lazio",
+     "2026-09-07T18:45:00Z"
+    ],
+    [
+     "Venezia FC",
+     "Fiorentina",
+     "2026-09-11T18:45:00Z"
+    ],
+    [
+     "Genoa",
+     "Frosinone",
+     "2026-09-12T13:00:00Z"
+    ],
+    [
+     "Lazio",
+     "Milan",
+     "2026-09-12T16:00:00Z"
+    ],
+    [
+     "Atalanta",
+     "Cagliari",
+     "2026-09-12T18:45:00Z"
+    ],
+    [
+     "Lecce",
+     "Monza",
+     "2026-09-13T13:00:00Z"
+    ],
+    [
+     "Napoli",
+     "Bologna",
+     "2026-09-13T16:00:00Z"
+    ],
+    [
+     "Sassuolo",
+     "Juventus",
+     "2026-09-13T18:45:00Z"
+    ],
+    [
+     "Como 1907",
+     "Parma",
+     "2026-09-14T16:30:00Z"
+    ],
+    [
+     "Torino",
+     "Roma",
+     "2026-09-14T16:30:00Z"
+    ],
+    [
+     "Inter",
+     "Udinese",
+     "2026-09-14T18:45:00Z"
+    ]
+   ]
   },
   "Bundesliga (Alemania)": {
    "codigo": "BL1",
@@ -20280,6 +20281,18 @@ window.DATOS_LIGAS = {
      1.0,
      2.0,
      0.1,
+     0.3
+    ],
+    "Marseille": [
+     4.0,
+     0.3,
+     0.1,
+     2.0
+    ],
+    "Monaco": [
+     2.0,
+     0.3,
+     1.0,
      0.3
     ],
     "Nice": [
