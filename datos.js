@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-09-03",
+ "actualizado": "2026-09-04",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -9356,9 +9356,9 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Real Sociedad",
-     "Celta",
-     "2026-09-03T19:00:00Z"
+     "Athletic",
+     "Atleti",
+     "2026-09-05T14:15:00Z"
     ],
     [
      "Rayo Vallecano",
@@ -9494,6 +9494,11 @@ window.DATOS_LIGAS = {
      "Málaga",
      "Villarreal",
      "2026-09-17T19:30:00Z"
+    ],
+    [
+     "Espanyol",
+     "Elche",
+     "2026-09-18T19:00:00Z"
     ]
    ]
   },
@@ -12562,6 +12567,11 @@ window.DATOS_LIGAS = {
      "Leeds United",
      "Newcastle",
      "2026-09-14T19:00:00Z"
+    ],
+    [
+     "Brentford",
+     "Chelsea",
+     "2026-09-18T19:00:00Z"
     ]
    ]
   },
@@ -15748,6 +15758,11 @@ window.DATOS_LIGAS = {
      "Inter",
      "Udinese",
      "2026-09-14T18:45:00Z"
+    ],
+    [
+     "Monza",
+     "Sassuolo",
+     "2026-09-18T18:45:00Z"
     ]
    ]
   },
@@ -15975,6 +15990,11 @@ window.DATOS_LIGAS = {
      "Elversberg",
      "Bayern",
      "2026-09-13T15:30:00Z"
+    ],
+    [
+     "Bayern",
+     "Union Berlin",
+     "2026-09-18T18:30:00Z"
     ]
    ],
    "plantillas": {
@@ -18664,7 +18684,7 @@ window.DATOS_LIGAS = {
     "Lille": [
      2.0,
      2.0,
-     2.0,
+     1.5,
      0.3
     ],
     "Lorient": [
@@ -18717,7 +18737,7 @@ window.DATOS_LIGAS = {
     ],
     "Toulouse": [
      0.1,
-     2.0,
+     1.5,
      2.0,
      2.0
     ],
@@ -21128,11 +21148,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Toulouse",
-     "Lille",
-     "2026-09-03T18:45:00Z"
-    ],
-    [
      "Olympique Lyon",
      "Auxerre",
      "2026-09-04T17:00:00Z"
@@ -21216,6 +21231,11 @@ window.DATOS_LIGAS = {
      "Brest",
      "PSG",
      "2026-09-13T18:45:00Z"
+    ],
+    [
+     "Monaco",
+     "RC Lens",
+     "2026-09-18T18:45:00Z"
     ]
    ]
   }
