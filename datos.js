@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-09-04",
+ "actualizado": "2026-09-05",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6687,12 +6687,12 @@ window.DATOS_LIGAS = {
     "Real Madrid": [
      4.0,
      0.5,
-     2.0,
+     1.0,
      1.0
     ],
     "Real Sociedad": [
-     2.0,
      1.0,
+     0.5,
      0.5,
      2.5
     ],
@@ -9499,6 +9499,26 @@ window.DATOS_LIGAS = {
      "Espanyol",
      "Elche",
      "2026-09-18T19:00:00Z"
+    ],
+    [
+     "Osasuna",
+     "Rayo Vallecano",
+     "2026-09-19T12:00:00Z"
+    ],
+    [
+     "Athletic",
+     "Alavés",
+     "2026-09-19T14:15:00Z"
+    ],
+    [
+     "Celta",
+     "Santander",
+     "2026-09-19T16:30:00Z"
+    ],
+    [
+     "Sevilla FC",
+     "Barça",
+     "2026-09-19T19:00:00Z"
     ]
    ]
   },
@@ -9574,8 +9594,8 @@ window.DATOS_LIGAS = {
      0.3
     ],
     "Ipswich Town": [
-     2.0,
      1.0,
+     1.5,
      2.0,
      5.0
     ],
@@ -9589,7 +9609,7 @@ window.DATOS_LIGAS = {
      2.0,
      2.0,
      2.0,
-     2.0
+     1.0
     ],
     "Man City": [
      2.0,
@@ -9642,11 +9662,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Kai Havertz",
-      "DEL",
-      0
-     ],
-     [
-      "Martinelli",
       "DEL",
       0
      ],
@@ -9773,12 +9788,12 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Ibrahim M'Baye",
+      "George Hemmings",
       "DEL",
       0
      ],
      [
-      "Leon Bailey",
+      "Ibrahim M'Baye",
       "DEL",
       0
      ],
@@ -9804,11 +9819,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Emiliano Buendía",
-      "MED",
-      0
-     ],
-     [
-      "George Hemmings",
       "MED",
       0
      ],
@@ -10448,22 +10458,12 @@ window.DATOS_LIGAS = {
       1
      ],
      [
-      "Jeremy Monga",
-      "DEL",
-      0
-     ],
-     [
       "Ryan McAidoo",
       "DEL",
       0
      ],
      [
       "Ayyoub Bouaddi",
-      "MED",
-      0
-     ],
-     [
-      "Claudio Echeverri",
       "MED",
       0
      ],
@@ -10879,11 +10879,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Simon Adingra",
-      "DEL",
-      0
-     ],
-     [
       "Wilson Isidor",
       "DEL",
       0
@@ -11269,11 +11264,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Matt Targett",
-      "DEF",
-      0
-     ],
-     [
-      "Matty Jacob",
       "DEF",
       0
      ],
@@ -11746,11 +11736,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Romain Esse",
-      "DEL",
-      0
-     ],
-     [
       "Yeremi Pino",
       "DEL",
       0
@@ -11777,11 +11762,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Jefferson Lerma",
-      "MED",
-      0
-     ],
-     [
-      "Justin Devenny",
       "MED",
       0
      ],
@@ -11914,6 +11894,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Diego Gómez",
+      "MED",
+      0
+     ],
+     [
+      "Femi Azeez",
       "MED",
       0
      ],
@@ -12469,11 +12454,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Ipswich Town",
-     "Liverpool",
-     "2026-09-04T19:00:00Z"
-    ],
-    [
      "Newcastle",
      "Bournemouth",
      "2026-09-05T11:30:00Z"
@@ -12572,6 +12552,31 @@ window.DATOS_LIGAS = {
      "Brentford",
      "Chelsea",
      "2026-09-18T19:00:00Z"
+    ],
+    [
+     "Tottenham",
+     "Aston Villa",
+     "2026-09-19T11:30:00Z"
+    ],
+    [
+     "Everton",
+     "Ipswich Town",
+     "2026-09-19T14:00:00Z"
+    ],
+    [
+     "Brighton Hove",
+     "Arsenal",
+     "2026-09-19T14:00:00Z"
+    ],
+    [
+     "Newcastle",
+     "Hull City",
+     "2026-09-19T14:00:00Z"
+    ],
+    [
+     "Nottingham",
+     "Coventry City",
+     "2026-09-19T16:30:00Z"
     ]
    ]
   },
@@ -12605,8 +12610,8 @@ window.DATOS_LIGAS = {
      0.3
     ],
     "Genoa": [
-     0.1,
-     2.0,
+     0.5,
+     3.0,
      0.1,
      1.0
     ],
@@ -15660,11 +15665,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Genoa",
-     "Como 1907",
-     "2026-09-04T18:45:00Z"
-    ],
-    [
      "Fiorentina",
      "Torino",
      "2026-09-05T13:00:00Z"
@@ -15763,6 +15763,26 @@ window.DATOS_LIGAS = {
      "Monza",
      "Sassuolo",
      "2026-09-18T18:45:00Z"
+    ],
+    [
+     "Bologna",
+     "Torino",
+     "2026-09-19T13:00:00Z"
+    ],
+    [
+     "Udinese",
+     "Cagliari",
+     "2026-09-19T13:00:00Z"
+    ],
+    [
+     "Roma",
+     "Inter",
+     "2026-09-19T16:00:00Z"
+    ],
+    [
+     "Venezia FC",
+     "Lazio",
+     "2026-09-19T18:45:00Z"
     ]
    ]
   },
@@ -15902,11 +15922,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Stuttgart",
-     "1. FC Köln",
-     "2026-09-04T18:30:00Z"
-    ],
-    [
      "Bremen",
      "RB Leipzig",
      "2026-09-05T13:30:00Z"
@@ -15995,6 +16010,31 @@ window.DATOS_LIGAS = {
      "Bayern",
      "Union Berlin",
      "2026-09-18T18:30:00Z"
+    ],
+    [
+     "HSV",
+     "1. FC Köln",
+     "2026-09-19T13:30:00Z"
+    ],
+    [
+     "M'gladbach",
+     "Mainz",
+     "2026-09-19T13:30:00Z"
+    ],
+    [
+     "Bremen",
+     "Augsburg",
+     "2026-09-19T13:30:00Z"
+    ],
+    [
+     "Frankfurt",
+     "Freiburg",
+     "2026-09-19T13:30:00Z"
+    ],
+    [
+     "Stuttgart",
+     "Dortmund",
+     "2026-09-19T16:30:00Z"
     ]
    ],
    "plantillas": {
@@ -18660,8 +18700,8 @@ window.DATOS_LIGAS = {
     "Auxerre": [
      1.0,
      3.0,
-     2.0,
-     5.0
+     1.5,
+     4.0
     ],
     "Brest": [
      2.0,
@@ -18702,8 +18742,8 @@ window.DATOS_LIGAS = {
     "Monaco": [
      2.0,
      0.3,
-     1.0,
-     0.3
+     1.5,
+     0.5
     ],
     "Nice": [
      0.1,
@@ -18712,10 +18752,16 @@ window.DATOS_LIGAS = {
      3.0
     ],
     "Olympique Lyon": [
-     1.0,
+     2.0,
      1.0,
      2.0,
      0.3
+    ],
+    "PSG": [
+     1.0,
+     2.0,
+     2.0,
+     2.0
     ],
     "Paris FC": [
      3.0,
@@ -21148,16 +21194,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Olympique Lyon",
-     "Auxerre",
-     "2026-09-04T17:00:00Z"
-    ],
-    [
-     "PSG",
-     "Monaco",
-     "2026-09-04T19:05:00Z"
-    ],
-    [
      "RC Lens",
      "Lorient",
      "2026-09-05T15:15:00Z"
@@ -21236,6 +21272,31 @@ window.DATOS_LIGAS = {
      "Monaco",
      "RC Lens",
      "2026-09-18T18:45:00Z"
+    ],
+    [
+     "Paris FC",
+     "Strasbourg",
+     "2026-09-19T15:15:00Z"
+    ],
+    [
+     "Le Mans",
+     "Lorient",
+     "2026-09-19T18:45:00Z"
+    ],
+    [
+     "Toulouse",
+     "Le Havre",
+     "2026-09-19T18:45:00Z"
+    ],
+    [
+     "Angers SCO",
+     "Troyes",
+     "2026-09-19T18:45:00Z"
+    ],
+    [
+     "Olympique Lyon",
+     "Stade Rennais",
+     "2026-09-19T18:45:00Z"
     ]
    ]
   }
