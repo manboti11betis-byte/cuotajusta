@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-09-05",
+ "actualizado": "2026-09-06",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6607,16 +6607,16 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Athletic": [
-     1.0,
-     3.0,
+     2.0,
+     1.5,
      1.0,
      1.0
     ],
     "Atleti": [
      2.0,
      1.0,
-     3.0,
-     1.0
+     1.5,
+     2.0
     ],
     "Barça": [
      3.5,
@@ -6633,8 +6633,8 @@ window.DATOS_LIGAS = {
     "Deportivo": [
      2.0,
      1.0,
-     1.0,
-     1.0
+     2.0,
+     1.5
     ],
     "Elche": [
      0.1,
@@ -6673,8 +6673,8 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Rayo Vallecano": [
-     1.0,
-     1.0,
+     2.0,
+     1.5,
      1.5,
      3.5
     ],
@@ -6699,8 +6699,8 @@ window.DATOS_LIGAS = {
     "Santander": [
      2.5,
      2.0,
-     0.1,
-     1.0
+     1.0,
+     2.0
     ],
     "Sevilla FC": [
      1.5,
@@ -6713,6 +6713,12 @@ window.DATOS_LIGAS = {
      0.5,
      1.0,
      3.0
+    ],
+    "Villarreal": [
+     2.0,
+     3.0,
+     1.33,
+     1.67
     ]
    },
    "plantillas": {
@@ -9356,21 +9362,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Athletic",
-     "Atleti",
-     "2026-09-05T14:15:00Z"
-    ],
-    [
-     "Rayo Vallecano",
-     "Santander",
-     "2026-09-05T16:30:00Z"
-    ],
-    [
-     "Villarreal",
-     "Deportivo",
-     "2026-09-05T19:00:00Z"
-    ],
-    [
      "Valencia",
      "Barça",
      "2026-09-06T14:15:00Z"
@@ -9519,6 +9510,31 @@ window.DATOS_LIGAS = {
      "Sevilla FC",
      "Barça",
      "2026-09-19T19:00:00Z"
+    ],
+    [
+     "Getafe",
+     "Málaga",
+     "2026-09-20T12:00:00Z"
+    ],
+    [
+     "Atleti",
+     "Real Madrid",
+     "2026-09-20T14:15:00Z"
+    ],
+    [
+     "Deportivo",
+     "Real Betis",
+     "2026-09-20T16:30:00Z"
+    ],
+    [
+     "Villarreal",
+     "Levante",
+     "2026-09-20T16:30:00Z"
+    ],
+    [
+     "Valencia",
+     "Real Sociedad",
+     "2026-09-20T19:00:00Z"
     ]
    ]
   },
@@ -9537,23 +9553,23 @@ window.DATOS_LIGAS = {
      0.1,
      1.0,
      0.1,
-     4.0
+     2.0
     ],
     "Bournemouth": [
      1.0,
      1.0,
-     1.0,
+     1.5,
      2.0
     ],
     "Brentford": [
-     3.0,
-     0.3,
+     2.0,
+     0.5,
      1.0,
      1.0
     ],
     "Brighton Hove": [
-     4.0,
-     0.3,
+     2.5,
+     0.5,
      3.0,
      4.0
     ],
@@ -9567,12 +9583,12 @@ window.DATOS_LIGAS = {
      0.1,
      1.0,
      0.1,
-     3.0
+     2.0
     ],
     "Crystal Palace": [
      1.0,
      4.0,
-     0.1,
+     1.5,
      2.0
     ],
     "Everton": [
@@ -9588,7 +9604,7 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Hull City": [
-     2.0,
+     1.0,
      0.3,
      1.0,
      0.3
@@ -9603,7 +9619,7 @@ window.DATOS_LIGAS = {
      1.0,
      1.0,
      1.0,
-     0.3
+     0.5
     ],
     "Liverpool": [
      2.0,
@@ -9612,8 +9628,8 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Man City": [
-     2.0,
-     1.0,
+     1.5,
+     0.5,
      4.0,
      1.0
     ],
@@ -9631,7 +9647,7 @@ window.DATOS_LIGAS = {
     ],
     "Nottingham": [
      0.1,
-     1.0,
+     0.5,
      2.0,
      2.0
     ],
@@ -9639,13 +9655,13 @@ window.DATOS_LIGAS = {
      1.0,
      0.3,
      1.0,
-     2.0
+     1.5
     ],
     "Tottenham": [
      0.1,
      2.0,
      0.1,
-     3.0
+     1.5
     ]
    },
    "plantillas": {
@@ -12454,41 +12470,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Newcastle",
-     "Bournemouth",
-     "2026-09-05T11:30:00Z"
-    ],
-    [
-     "Nottingham",
-     "Tottenham",
-     "2026-09-05T14:00:00Z"
-    ],
-    [
-     "Man City",
-     "Coventry City",
-     "2026-09-05T14:00:00Z"
-    ],
-    [
-     "Brighton Hove",
-     "Leeds United",
-     "2026-09-05T14:00:00Z"
-    ],
-    [
-     "Brentford",
-     "Sunderland",
-     "2026-09-05T14:00:00Z"
-    ],
-    [
-     "Fulham",
-     "Crystal Palace",
-     "2026-09-05T14:00:00Z"
-    ],
-    [
-     "Hull City",
-     "Aston Villa",
-     "2026-09-05T16:30:00Z"
-    ],
-    [
      "Everton",
      "Man United",
      "2026-09-06T13:00:00Z"
@@ -12577,6 +12558,26 @@ window.DATOS_LIGAS = {
      "Nottingham",
      "Coventry City",
      "2026-09-19T16:30:00Z"
+    ],
+    [
+     "Bournemouth",
+     "Liverpool",
+     "2026-09-20T13:00:00Z"
+    ],
+    [
+     "Leeds United",
+     "Crystal Palace",
+     "2026-09-20T13:00:00Z"
+    ],
+    [
+     "Man City",
+     "Sunderland",
+     "2026-09-20T13:00:00Z"
+    ],
+    [
+     "Fulham",
+     "Man United",
+     "2026-09-20T15:30:00Z"
     ]
    ]
   },
@@ -12585,6 +12586,12 @@ window.DATOS_LIGAS = {
    "neutral": false,
    "nota": "Medias por partido de la temporada en curso",
    "equipos": {
+    "Atalanta": [
+     1.5,
+     0.5,
+     1.0,
+     2.0
+    ],
     "Bologna": [
      0.1,
      1.0,
@@ -12598,8 +12605,8 @@ window.DATOS_LIGAS = {
      0.3
     ],
     "Fiorentina": [
-     0.1,
-     3.0,
+     0.5,
+     2.5,
      0.1,
      4.0
     ],
@@ -12616,8 +12623,8 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Inter": [
-     4.0,
-     1.0,
+     3.5,
+     1.5,
      1.0,
      0.3
     ],
@@ -12655,7 +12662,7 @@ window.DATOS_LIGAS = {
      1.0,
      2.0,
      2.0,
-     0.3
+     1.5
     ],
     "Parma": [
      0.1,
@@ -12664,8 +12671,8 @@ window.DATOS_LIGAS = {
      2.0
     ],
     "Roma": [
-     4.0,
-     0.3,
+     3.0,
+     0.5,
      4.0,
      0.3
     ],
@@ -12678,8 +12685,8 @@ window.DATOS_LIGAS = {
     "Torino": [
      1.0,
      2.0,
-     1.0,
-     2.0
+     1.5,
+     1.5
     ],
     "Udinese": [
      1.0,
@@ -15665,21 +15672,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Fiorentina",
-     "Torino",
-     "2026-09-05T13:00:00Z"
-    ],
-    [
-     "Inter",
-     "Napoli",
-     "2026-09-05T16:00:00Z"
-    ],
-    [
-     "Roma",
-     "Atalanta",
-     "2026-09-05T18:45:00Z"
-    ],
-    [
      "Parma",
      "Monza",
      "2026-09-06T13:00:00Z"
@@ -15783,260 +15775,124 @@ window.DATOS_LIGAS = {
      "Venezia FC",
      "Lazio",
      "2026-09-19T18:45:00Z"
+    ],
+    [
+     "Fiorentina",
+     "Napoli",
+     "2026-09-20T10:30:00Z"
+    ],
+    [
+     "Frosinone",
+     "Como 1907",
+     "2026-09-20T13:00:00Z"
+    ],
+    [
+     "Parma",
+     "Genoa",
+     "2026-09-20T13:00:00Z"
+    ],
+    [
+     "Juventus",
+     "Atalanta",
+     "2026-09-20T16:00:00Z"
+    ],
+    [
+     "Milan",
+     "Lecce",
+     "2026-09-20T18:45:00Z"
     ]
    ]
   },
   "Bundesliga (Alemania)": {
    "codigo": "BL1",
    "neutral": false,
-   "nota": "Medias por partido, temporada 25-26",
+   "nota": "Medias por partido de la temporada en curso",
    "equipos": {
-    "Augsburgo": [
-     1.3,
-     1.4,
-     0.9,
-     1.6
-    ],
-    "Bayern de Múnich": [
-     2.8,
-     0.8,
-     2.3,
-     1.0
-    ],
-    "Bayer Leverkusen": [
-     2.1,
-     1.0,
-     1.7,
-     1.2
-    ],
-    "Borussia Dortmund": [
+    "1. FC Köln": [
+     3.0,
      2.0,
      1.0,
-     1.6,
-     1.2
+     4.0
     ],
-    "Colonia": [
-     1.3,
-     1.4,
-     0.9,
-     1.6
-    ],
-    "Eintracht Fráncfort": [
-     1.9,
-     1.2,
-     1.5,
-     1.5
-    ],
-    "Friburgo": [
-     1.5,
-     1.2,
-     1.2,
-     1.4
-    ],
-    "Hamburgo": [
-     1.2,
-     1.4,
-     0.9,
-     1.6
-    ],
-    "Heidenheim": [
+    "Bayern": [
+     5.0,
      1.0,
-     1.6,
-     0.7,
-     1.9
+     0.1,
+     0.3
+    ],
+    "Bremen": [
+     3.0,
+     1.0,
+     1.0,
+     4.0
+    ],
+    "Dortmund": [
+     2.0,
+     0.3,
+     3.0,
+     2.0
+    ],
+    "Elversberg": [
+     3.0,
+     2.0,
+     4.0,
+     3.0
+    ],
+    "Freiburg": [
+     4.0,
+     1.0,
+     1.0,
+     0.3
     ],
     "Hoffenheim": [
-     1.6,
-     1.4,
-     1.2,
-     1.6
+     2.0,
+     3.0,
+     2.0,
+     3.0
     ],
-    "Leipzig": [
-     1.9,
-     1.1,
-     1.5,
-     1.3
+    "Leverkusen": [
+     4.0,
+     0.3,
+     2.0,
+     3.0
     ],
-    "Maguncia": [
-     1.3,
-     1.3,
+    "M'gladbach": [
+     3.0,
+     4.0,
+     0.1,
+     3.0
+    ],
+    "RB Leipzig": [
+     3.0,
+     0.3,
      1.0,
-     1.4
+     3.0
     ],
-    "Mönchengladbach": [
-     1.5,
-     1.4,
-     1.1,
-     1.6
+    "SC Paderborn": [
+     0.1,
+     1.0,
+     0.1,
+     0.3
     ],
-    "St. Pauli": [
-     1.1,
-     1.2,
-     0.8,
-     1.4
+    "Schalke": [
+     0.1,
+     0.3,
+     0.1,
+     3.0
     ],
     "Stuttgart": [
-     1.8,
-     1.2,
-     1.4,
-     1.4
+     4.0,
+     1.0,
+     1.0,
+     5.0
     ],
-    "Unión Berlín": [
-     1.3,
-     1.3,
-     0.9,
-     1.5
-    ],
-    "Werder Bremen": [
-     1.5,
-     1.4,
-     1.1,
-     1.6
-    ],
-    "Wolfsburgo": [
-     1.4,
-     1.3,
-     1.1,
-     1.5
+    "Union Berlin": [
+     3.0,
+     3.0,
+     0.1,
+     4.0
     ]
    },
-   "escudos": {
-    "1. FC Köln": "https://crests.football-data.org/1.png",
-    "Hoffenheim": "https://crests.football-data.org/2.png",
-    "Leverkusen": "https://crests.football-data.org/3.png",
-    "Dortmund": "https://crests.football-data.org/4.png",
-    "Bayern": "https://crests.football-data.org/5.png",
-    "Schalke": "https://crests.football-data.org/6.png",
-    "HSV": "https://crests.football-data.org/7.png",
-    "Stuttgart": "https://crests.football-data.org/10.png",
-    "Bremen": "https://crests.football-data.org/12.png",
-    "Mainz": "https://crests.football-data.org/15.png",
-    "Augsburg": "https://crests.football-data.org/16.png",
-    "Freiburg": "https://crests.football-data.org/17.png",
-    "M'gladbach": "https://crests.football-data.org/18.png",
-    "Frankfurt": "https://crests.football-data.org/19.png",
-    "Union Berlin": "https://crests.football-data.org/28.png",
-    "SC Paderborn": "https://crests.football-data.org/29.png",
-    "Elversberg": "https://crests.football-data.org/719.png",
-    "RB Leipzig": "https://crests.football-data.org/721.png"
-   },
-   "partidos": [
-    [
-     "Bremen",
-     "RB Leipzig",
-     "2026-09-05T13:30:00Z"
-    ],
-    [
-     "Hoffenheim",
-     "Dortmund",
-     "2026-09-05T13:30:00Z"
-    ],
-    [
-     "Leverkusen",
-     "Union Berlin",
-     "2026-09-05T13:30:00Z"
-    ],
-    [
-     "M'gladbach",
-     "Elversberg",
-     "2026-09-05T13:30:00Z"
-    ],
-    [
-     "SC Paderborn",
-     "Freiburg",
-     "2026-09-05T13:30:00Z"
-    ],
-    [
-     "Schalke",
-     "Bayern",
-     "2026-09-05T16:30:00Z"
-    ],
-    [
-     "HSV",
-     "Mainz",
-     "2026-09-06T13:30:00Z"
-    ],
-    [
-     "Frankfurt",
-     "Augsburg",
-     "2026-09-06T15:30:00Z"
-    ],
-    [
-     "Union Berlin",
-     "Schalke",
-     "2026-09-11T18:30:00Z"
-    ],
-    [
-     "Hoffenheim",
-     "Stuttgart",
-     "2026-09-12T13:30:00Z"
-    ],
-    [
-     "Dortmund",
-     "SC Paderborn",
-     "2026-09-12T13:30:00Z"
-    ],
-    [
-     "Augsburg",
-     "Leverkusen",
-     "2026-09-12T13:30:00Z"
-    ],
-    [
-     "Mainz",
-     "Frankfurt",
-     "2026-09-12T13:30:00Z"
-    ],
-    [
-     "Freiburg",
-     "M'gladbach",
-     "2026-09-12T13:30:00Z"
-    ],
-    [
-     "1. FC Köln",
-     "Bremen",
-     "2026-09-12T16:30:00Z"
-    ],
-    [
-     "RB Leipzig",
-     "HSV",
-     "2026-09-13T13:30:00Z"
-    ],
-    [
-     "Elversberg",
-     "Bayern",
-     "2026-09-13T15:30:00Z"
-    ],
-    [
-     "Bayern",
-     "Union Berlin",
-     "2026-09-18T18:30:00Z"
-    ],
-    [
-     "HSV",
-     "1. FC Köln",
-     "2026-09-19T13:30:00Z"
-    ],
-    [
-     "M'gladbach",
-     "Mainz",
-     "2026-09-19T13:30:00Z"
-    ],
-    [
-     "Bremen",
-     "Augsburg",
-     "2026-09-19T13:30:00Z"
-    ],
-    [
-     "Frankfurt",
-     "Freiburg",
-     "2026-09-19T13:30:00Z"
-    ],
-    [
-     "Stuttgart",
-     "Dortmund",
-     "2026-09-19T16:30:00Z"
-    ]
-   ],
    "plantillas": {
     "1. FC Köln": [
      [
@@ -18684,7 +18540,129 @@ window.DATOS_LIGAS = {
       0
      ]
     ]
-   }
+   },
+   "escudos": {
+    "1. FC Köln": "https://crests.football-data.org/1.png",
+    "Hoffenheim": "https://crests.football-data.org/2.png",
+    "Leverkusen": "https://crests.football-data.org/3.png",
+    "Dortmund": "https://crests.football-data.org/4.png",
+    "Bayern": "https://crests.football-data.org/5.png",
+    "Schalke": "https://crests.football-data.org/6.png",
+    "HSV": "https://crests.football-data.org/7.png",
+    "Stuttgart": "https://crests.football-data.org/10.png",
+    "Bremen": "https://crests.football-data.org/12.png",
+    "Mainz": "https://crests.football-data.org/15.png",
+    "Augsburg": "https://crests.football-data.org/16.png",
+    "Freiburg": "https://crests.football-data.org/17.png",
+    "M'gladbach": "https://crests.football-data.org/18.png",
+    "Frankfurt": "https://crests.football-data.org/19.png",
+    "Union Berlin": "https://crests.football-data.org/28.png",
+    "SC Paderborn": "https://crests.football-data.org/29.png",
+    "Elversberg": "https://crests.football-data.org/719.png",
+    "RB Leipzig": "https://crests.football-data.org/721.png"
+   },
+   "partidos": [
+    [
+     "HSV",
+     "Mainz",
+     "2026-09-06T13:30:00Z"
+    ],
+    [
+     "Frankfurt",
+     "Augsburg",
+     "2026-09-06T15:30:00Z"
+    ],
+    [
+     "Union Berlin",
+     "Schalke",
+     "2026-09-11T18:30:00Z"
+    ],
+    [
+     "Hoffenheim",
+     "Stuttgart",
+     "2026-09-12T13:30:00Z"
+    ],
+    [
+     "Dortmund",
+     "SC Paderborn",
+     "2026-09-12T13:30:00Z"
+    ],
+    [
+     "Augsburg",
+     "Leverkusen",
+     "2026-09-12T13:30:00Z"
+    ],
+    [
+     "Mainz",
+     "Frankfurt",
+     "2026-09-12T13:30:00Z"
+    ],
+    [
+     "Freiburg",
+     "M'gladbach",
+     "2026-09-12T13:30:00Z"
+    ],
+    [
+     "1. FC Köln",
+     "Bremen",
+     "2026-09-12T16:30:00Z"
+    ],
+    [
+     "RB Leipzig",
+     "HSV",
+     "2026-09-13T13:30:00Z"
+    ],
+    [
+     "Elversberg",
+     "Bayern",
+     "2026-09-13T15:30:00Z"
+    ],
+    [
+     "Bayern",
+     "Union Berlin",
+     "2026-09-18T18:30:00Z"
+    ],
+    [
+     "HSV",
+     "1. FC Köln",
+     "2026-09-19T13:30:00Z"
+    ],
+    [
+     "M'gladbach",
+     "Mainz",
+     "2026-09-19T13:30:00Z"
+    ],
+    [
+     "Bremen",
+     "Augsburg",
+     "2026-09-19T13:30:00Z"
+    ],
+    [
+     "Frankfurt",
+     "Freiburg",
+     "2026-09-19T13:30:00Z"
+    ],
+    [
+     "Stuttgart",
+     "Dortmund",
+     "2026-09-19T16:30:00Z"
+    ],
+    [
+     "Leverkusen",
+     "RB Leipzig",
+     "2026-09-20T13:30:00Z"
+    ],
+    [
+     "Schalke",
+     "Elversberg",
+     "2026-09-20T15:30:00Z"
+    ],
+    [
+     "SC Paderborn",
+     "Hoffenheim",
+     "2026-09-20T17:30:00Z"
+    ]
+   ]
   },
   "Ligue 1 (Francia)": {
    "codigo": "FL1",
@@ -18707,19 +18685,19 @@ window.DATOS_LIGAS = {
      2.0,
      2.0,
      2.0,
-     2.0
+     1.5
     ],
     "Le Havre": [
-     0.1,
-     1.0,
+     0.5,
+     1.5,
      1.0,
      1.0
     ],
     "Le Mans": [
      2.0,
      2.0,
-     2.0,
-     3.0
+     1.5,
+     2.0
     ],
     "Lille": [
      2.0,
@@ -18730,7 +18708,7 @@ window.DATOS_LIGAS = {
     "Lorient": [
      1.0,
      2.0,
-     0.1,
+     0.5,
      0.3
     ],
     "Marseille": [
@@ -18746,8 +18724,8 @@ window.DATOS_LIGAS = {
      0.5
     ],
     "Nice": [
-     0.1,
-     0.3,
+     0.5,
+     0.5,
      0.1,
      3.0
     ],
@@ -18770,8 +18748,8 @@ window.DATOS_LIGAS = {
      0.3
     ],
     "RC Lens": [
-     5.0,
-     2.0,
+     2.5,
+     1.5,
      1.0,
      2.0
     ],
@@ -21194,21 +21172,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "RC Lens",
-     "Lorient",
-     "2026-09-05T15:15:00Z"
-    ],
-    [
-     "Le Havre",
-     "Brest",
-     "2026-09-05T18:45:00Z"
-    ],
-    [
-     "Nice",
-     "Le Mans",
-     "2026-09-05T18:45:00Z"
-    ],
-    [
      "Troyes",
      "Strasbourg",
      "2026-09-06T13:00:00Z"
@@ -21297,6 +21260,21 @@ window.DATOS_LIGAS = {
      "Olympique Lyon",
      "Stade Rennais",
      "2026-09-19T18:45:00Z"
+    ],
+    [
+     "Auxerre",
+     "Brest",
+     "2026-09-20T13:00:00Z"
+    ],
+    [
+     "Nice",
+     "Lille",
+     "2026-09-20T15:15:00Z"
+    ],
+    [
+     "Marseille",
+     "PSG",
+     "2026-09-20T18:45:00Z"
     ]
    ]
   }
