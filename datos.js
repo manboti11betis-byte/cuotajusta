@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-09-07",
+ "actualizado": "2026-09-08",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -2888,12 +2888,12 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Jesper Karlström",
+      "Herman Johansson",
       "MED",
       0
      ],
      [
-      "Ken Sema",
+      "Jesper Karlström",
       "MED",
       0
      ],
@@ -2938,11 +2938,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Herman Johansson",
-      "DEF",
-      0
-     ],
-     [
       "Hjalmar Ekdal",
       "DEF",
       0
@@ -2951,6 +2946,11 @@ window.DATOS_LIGAS = {
       "Isak Hien",
       "DEF",
       1
+     ],
+     [
+      "Ken Sema",
+      "DEF",
+      0
      ],
      [
       "Victor Nilsson-Lindelöf",
@@ -2981,6 +2981,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Jan Kuchta",
+      "DEL",
+      0
+     ],
+     [
+      "Lukáš Provod",
       "DEL",
       0
      ],
@@ -3021,11 +3026,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Ladislav Krejčí",
-      "MED",
-      0
-     ],
-     [
-      "Lukáš Provod",
       "MED",
       0
      ],
@@ -3533,11 +3533,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "İrfan Kahveci",
-      "DEL",
-      0
-     ],
-     [
       "Arda Guler",
       "MED",
       0
@@ -3559,6 +3554,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Salih Özcan",
+      "MED",
+      0
+     ],
+     [
+      "İrfan Kahveci",
       "MED",
       0
      ],
@@ -6627,8 +6627,8 @@ window.DATOS_LIGAS = {
     "Celta": [
      0.5,
      2.0,
-     0.1,
-     0.3
+     0.33,
+     0.33
     ],
     "Deportivo": [
      2.0,
@@ -6637,8 +6637,8 @@ window.DATOS_LIGAS = {
      1.5
     ],
     "Elche": [
-     0.1,
-     5.0,
+     1.0,
+     4.0,
      1.5,
      2.0
     ],
@@ -6650,7 +6650,7 @@ window.DATOS_LIGAS = {
     ],
     "Getafe": [
      1.0,
-     0.3,
+     0.5,
      0.1,
      2.0
     ],
@@ -6693,8 +6693,8 @@ window.DATOS_LIGAS = {
     "Real Sociedad": [
      1.0,
      0.5,
-     0.5,
-     2.5
+     1.33,
+     2.33
     ],
     "Santander": [
      2.5,
@@ -9366,16 +9366,6 @@ window.DATOS_LIGAS = {
     "Santander": "https://crests.football-data.org/5335.png"
    },
    "partidos": [
-    [
-     "Getafe",
-     "Celta",
-     "2026-09-07T17:00:00Z"
-    ],
-    [
-     "Elche",
-     "Real Sociedad",
-     "2026-09-07T19:30:00Z"
-    ],
     [
      "Sevilla FC",
      "Valencia",
@@ -12574,8 +12564,8 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Cagliari": [
-     0.1,
-     1.0,
+     0.5,
+     0.5,
      1.0,
      0.3
     ],
@@ -12612,14 +12602,14 @@ window.DATOS_LIGAS = {
     "Lazio": [
      1.0,
      0.3,
-     1.0,
-     0.3
+     1.5,
+     0.5
     ],
     "Lecce": [
      0.1,
      4.0,
-     2.0,
-     0.3
+     1.0,
+     0.5
     ],
     "Milan": [
      2.0,
@@ -12665,7 +12655,7 @@ window.DATOS_LIGAS = {
     ],
     "Udinese": [
      1.0,
-     1.0,
+     1.5,
      3.0,
      2.0
     ],
@@ -14241,11 +14231,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Costantino Favasuli",
-      "MED",
-      0
-     ],
-     [
       "Kevin De Bruyne",
       "MED",
       1
@@ -14272,6 +14257,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Benoît Badiashile",
+      "DEF",
+      0
+     ],
+     [
+      "Costantino Favasuli",
       "DEF",
       0
      ],
@@ -15646,16 +15636,6 @@ window.DATOS_LIGAS = {
     "Como 1907": "https://crests.football-data.org/7397.png"
    },
    "partidos": [
-    [
-     "Cagliari",
-     "Lecce",
-     "2026-09-07T16:30:00Z"
-    ],
-    [
-     "Udinese",
-     "Lazio",
-     "2026-09-07T18:45:00Z"
-    ],
     [
      "Venezia FC",
      "Fiorentina",
