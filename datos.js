@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-09-10",
+ "actualizado": "2026-09-11",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -15483,6 +15483,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Jesús Rodríguez",
+      "DEL",
+      0
+     ],
+     [
+      "Lorenzo Ginelli",
       "DEL",
       0
      ],
