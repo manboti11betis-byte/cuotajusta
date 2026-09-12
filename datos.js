@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-09-11",
+ "actualizado": "2026-09-12",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -2315,7 +2315,17 @@ window.DATOS_LIGAS = {
     ],
     "Australia": [
      [
+      "Awer Mabil",
+      "DEL",
+      0
+     ],
+     [
       "Cristian Volpato",
+      "DEL",
+      0
+     ],
+     [
+      "Mathew Leckie",
       "DEL",
       0
      ],
@@ -2350,11 +2360,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Awer Mabil",
-      "MED",
-      0
-     ],
-     [
       "Cameron Devlin",
       "MED",
       0
@@ -2366,11 +2371,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Jackson Irvine",
-      "MED",
-      0
-     ],
-     [
-      "Mathew Leckie",
       "MED",
       0
      ],
@@ -2467,11 +2467,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Lachlan Bayliss",
-      "DEL",
-      0
-     ],
-     [
       "Logan Rogerson",
       "DEL",
       0
@@ -2493,6 +2488,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Joe Bell",
+      "MED",
+      0
+     ],
+     [
+      "Lachlan Bayliss",
       "MED",
       0
      ],
@@ -6703,16 +6703,16 @@ window.DATOS_LIGAS = {
      2.0
     ],
     "Sevilla FC": [
-     1.5,
-     2.0,
+     1.33,
+     1.33,
      2.0,
      1.0
     ],
     "Valencia": [
      0.1,
      2.0,
-     1.0,
-     3.0
+     0.5,
+     2.0
     ],
     "Villarreal": [
      2.0,
@@ -9366,11 +9366,6 @@ window.DATOS_LIGAS = {
     "Santander": "https://crests.football-data.org/5335.png"
    },
    "partidos": [
-    [
-     "Sevilla FC",
-     "Valencia",
-     "2026-09-11T19:00:00Z"
-    ],
     [
      "Santander",
      "Alavés",
@@ -12572,8 +12567,8 @@ window.DATOS_LIGAS = {
     "Fiorentina": [
      0.5,
      2.5,
-     0.1,
-     4.0
+     2.0,
+     3.0
     ],
     "Frosinone": [
      1.5,
@@ -12660,8 +12655,8 @@ window.DATOS_LIGAS = {
      2.0
     ],
     "Venezia FC": [
-     0.1,
-     2.0,
+     1.0,
+     3.0,
      1.0,
      2.5
     ]
@@ -15642,11 +15637,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Venezia FC",
-     "Fiorentina",
-     "2026-09-11T18:45:00Z"
-    ],
-    [
      "Genoa",
      "Frosinone",
      "2026-09-12T13:00:00Z"
@@ -15841,8 +15831,8 @@ window.DATOS_LIGAS = {
     "Schalke": [
      0.1,
      0.3,
-     0.1,
-     3.0
+     1.5,
+     2.0
     ],
     "Stuttgart": [
      4.0,
@@ -15851,7 +15841,7 @@ window.DATOS_LIGAS = {
      5.0
     ],
     "Union Berlin": [
-     3.0,
+     2.0,
      3.0,
      0.1,
      4.0
@@ -18527,11 +18517,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Union Berlin",
-     "Schalke",
-     "2026-09-11T18:30:00Z"
-    ],
-    [
      "Hoffenheim",
      "Stuttgart",
      "2026-09-12T13:30:00Z"
@@ -18669,7 +18654,7 @@ window.DATOS_LIGAS = {
      3.0,
      1.5,
      0.1,
-     2.0
+     1.5
     ],
     "Monaco": [
      2.0,
@@ -18708,8 +18693,8 @@ window.DATOS_LIGAS = {
      2.0
     ],
     "Stade Rennais": [
-     2.5,
      2.0,
+     1.33,
      2.0,
      1.0
     ],
@@ -21136,11 +21121,6 @@ window.DATOS_LIGAS = {
     "Paris FC": "https://crests.football-data.org/1045.png"
    },
    "partidos": [
-    [
-     "Stade Rennais",
-     "Marseille",
-     "2026-09-11T18:45:00Z"
-    ],
     [
      "Strasbourg",
      "Monaco",
