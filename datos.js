@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-09-14",
+ "actualizado": "2026-09-15",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6681,8 +6681,8 @@ window.DATOS_LIGAS = {
     "Real Betis": [
      1.0,
      0.3,
-     1.5,
-     2.5
+     1.67,
+     2.0
     ],
     "Real Madrid": [
      4.0,
@@ -6715,8 +6715,8 @@ window.DATOS_LIGAS = {
      2.0
     ],
     "Villarreal": [
-     2.0,
-     3.0,
+     1.5,
+     2.5,
      1.33,
      1.67
     ]
@@ -9367,11 +9367,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Villarreal",
-     "Real Betis",
-     "2026-09-14T19:00:00Z"
-    ],
-    [
      "Rayo Vallecano",
      "Espanyol",
      "2026-09-15T17:00:00Z"
@@ -9546,7 +9541,7 @@ window.DATOS_LIGAS = {
      3.5
     ],
     "Leeds United": [
-     1.0,
+     2.5,
      1.0,
      1.0,
      0.5
@@ -9572,8 +9567,8 @@ window.DATOS_LIGAS = {
     "Newcastle": [
      2.0,
      2.0,
-     2.0,
-     0.3
+     1.5,
+     2.0
     ],
     "Nottingham": [
      0.1,
@@ -10674,6 +10669,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Jacob Murphy",
+      "DEL",
+      0
+     ],
+     [
+      "Mason Miley",
       "DEL",
       0
      ],
@@ -12405,11 +12405,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Leeds United",
-     "Newcastle",
-     "2026-09-14T19:00:00Z"
-    ],
-    [
      "Brentford",
      "Chelsea",
      "2026-09-18T19:00:00Z"
@@ -12484,6 +12479,12 @@ window.DATOS_LIGAS = {
      1.5,
      0.5
     ],
+    "Como 1907": [
+     2.0,
+     1.0,
+     2.33,
+     1.0
+    ],
     "Fiorentina": [
      0.5,
      2.5,
@@ -12503,8 +12504,8 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Inter": [
-     3.5,
-     1.5,
+     4.0,
+     2.0,
      1.0,
      0.3
     ],
@@ -12547,13 +12548,13 @@ window.DATOS_LIGAS = {
     "Parma": [
      0.5,
      1.0,
-     0.1,
+     0.5,
      2.0
     ],
     "Roma": [
      3.0,
      0.5,
-     4.0,
+     3.0,
      0.3
     ],
     "Sassuolo": [
@@ -12563,7 +12564,7 @@ window.DATOS_LIGAS = {
      2.0
     ],
     "Torino": [
-     1.0,
+     0.5,
      2.0,
      1.5,
      1.5
@@ -12572,7 +12573,7 @@ window.DATOS_LIGAS = {
      1.0,
      1.5,
      3.0,
-     2.0
+     3.5
     ],
     "Venezia FC": [
      1.0,
@@ -15561,21 +15562,6 @@ window.DATOS_LIGAS = {
     "Como 1907": "https://crests.football-data.org/7397.png"
    },
    "partidos": [
-    [
-     "Como 1907",
-     "Parma",
-     "2026-09-14T16:30:00Z"
-    ],
-    [
-     "Torino",
-     "Roma",
-     "2026-09-14T16:30:00Z"
-    ],
-    [
-     "Inter",
-     "Udinese",
-     "2026-09-14T18:45:00Z"
-    ],
     [
      "Monza",
      "Sassuolo",
