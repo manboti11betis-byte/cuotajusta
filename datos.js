@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-09-15",
+ "actualizado": "2026-09-16",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6601,8 +6601,8 @@ window.DATOS_LIGAS = {
    "nota": "Medias por partido de la temporada en curso",
    "equipos": {
     "Alavés": [
-     3.0,
-     0.67,
+     2.25,
+     0.75,
      1.0,
      1.5
     ],
@@ -6637,16 +6637,16 @@ window.DATOS_LIGAS = {
      1.33
     ],
     "Elche": [
-     1.0,
-     4.0,
+     1.33,
+     3.67,
      1.33,
      1.67
     ],
     "Espanyol": [
      1.67,
      1.0,
-     1.5,
-     1.0
+     1.33,
+     1.33
     ],
     "Getafe": [
      1.0,
@@ -6674,7 +6674,7 @@ window.DATOS_LIGAS = {
     ],
     "Rayo Vallecano": [
      2.0,
-     1.5,
+     1.33,
      1.33,
      3.67
     ],
@@ -6687,8 +6687,8 @@ window.DATOS_LIGAS = {
     "Real Madrid": [
      4.0,
      0.67,
-     1.0,
-     1.0
+     1.67,
+     1.33
     ],
     "Real Sociedad": [
      0.67,
@@ -6711,8 +6711,8 @@ window.DATOS_LIGAS = {
     "Valencia": [
      0.1,
      2.0,
-     0.5,
-     2.0
+     0.67,
+     1.33
     ],
     "Villarreal": [
      1.5,
@@ -9366,21 +9366,6 @@ window.DATOS_LIGAS = {
     "Santander": "https://crests.football-data.org/5335.png"
    },
    "partidos": [
-    [
-     "Rayo Vallecano",
-     "Espanyol",
-     "2026-09-15T17:00:00Z"
-    ],
-    [
-     "Alavés",
-     "Valencia",
-     "2026-09-15T18:00:00Z"
-    ],
-    [
-     "Elche",
-     "Real Madrid",
-     "2026-09-15T19:30:00Z"
-    ],
     [
      "Deportivo",
      "Sevilla FC",
