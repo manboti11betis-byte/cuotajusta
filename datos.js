@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-09-16",
+ "actualizado": "2026-09-17",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6613,14 +6613,14 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Atleti": [
-     2.0,
-     1.0,
+     2.67,
+     0.67,
      2.0,
      1.33
     ],
     "Barça": [
-     3.5,
-     1.0,
+     4.67,
+     1.33,
      4.67,
      0.67
     ],
@@ -6631,7 +6631,7 @@ window.DATOS_LIGAS = {
      0.33
     ],
     "Deportivo": [
-     2.0,
+     1.33,
      1.0,
      1.67,
      1.33
@@ -6669,8 +6669,8 @@ window.DATOS_LIGAS = {
     "Osasuna": [
      0.33,
      0.67,
-     2.0,
-     3.0
+     1.33,
+     3.33
     ],
     "Rayo Vallecano": [
      2.0,
@@ -6699,14 +6699,14 @@ window.DATOS_LIGAS = {
     "Santander": [
      2.33,
      1.67,
-     1.0,
-     2.0
+     1.33,
+     3.67
     ],
     "Sevilla FC": [
      1.33,
      1.33,
-     2.0,
-     1.0
+     1.67,
+     0.67
     ],
     "Valencia": [
      0.1,
@@ -9366,26 +9366,6 @@ window.DATOS_LIGAS = {
     "Santander": "https://crests.football-data.org/5335.png"
    },
    "partidos": [
-    [
-     "Deportivo",
-     "Sevilla FC",
-     "2026-09-16T17:00:00Z"
-    ],
-    [
-     "Atleti",
-     "Osasuna",
-     "2026-09-16T17:00:00Z"
-    ],
-    [
-     "Levante",
-     "Athletic",
-     "2026-09-16T19:30:00Z"
-    ],
-    [
-     "Barça",
-     "Santander",
-     "2026-09-16T19:30:00Z"
-    ],
     [
      "Real Betis",
      "Getafe",
