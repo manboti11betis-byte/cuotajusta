@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-09-17",
+ "actualizado": "2026-09-18",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6652,7 +6652,7 @@ window.DATOS_LIGAS = {
      1.0,
      0.67,
      0.1,
-     2.0
+     1.67
     ],
     "Levante": [
      3.5,
@@ -6661,8 +6661,8 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Málaga": [
-     0.5,
-     0.5,
+     0.67,
+     1.33,
      0.33,
      2.33
     ],
@@ -6717,8 +6717,8 @@ window.DATOS_LIGAS = {
     "Villarreal": [
      1.5,
      2.5,
-     1.33,
-     1.67
+     1.75,
+     1.5
     ]
    },
    "plantillas": {
@@ -9366,16 +9366,6 @@ window.DATOS_LIGAS = {
     "Santander": "https://crests.football-data.org/5335.png"
    },
    "partidos": [
-    [
-     "Real Betis",
-     "Getafe",
-     "2026-09-17T17:00:00Z"
-    ],
-    [
-     "Málaga",
-     "Villarreal",
-     "2026-09-17T19:30:00Z"
-    ],
     [
      "Espanyol",
      "Elche",
