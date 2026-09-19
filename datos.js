@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-09-18",
+ "actualizado": "2026-09-19",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6639,12 +6639,12 @@ window.DATOS_LIGAS = {
     "Elche": [
      1.33,
      3.67,
-     1.33,
-     1.67
+     1.75,
+     1.5
     ],
     "Espanyol": [
-     1.67,
-     1.0,
+     1.5,
+     1.5,
      1.33,
      1.33
     ],
@@ -7136,6 +7136,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Tyrhys Dolan",
+      "DEL",
+      0
+     ],
+     [
+      "Víctor Mullerat",
       "DEL",
       0
      ],
@@ -9367,11 +9372,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Espanyol",
-     "Elche",
-     "2026-09-18T19:00:00Z"
-    ],
-    [
      "Osasuna",
      "Rayo Vallecano",
      "2026-09-19T12:00:00Z"
@@ -9442,8 +9442,8 @@ window.DATOS_LIGAS = {
      2.0
     ],
     "Brentford": [
-     2.0,
-     0.5,
+     2.33,
+     0.33,
      1.5,
      1.5
     ],
@@ -9456,8 +9456,8 @@ window.DATOS_LIGAS = {
     "Chelsea": [
      3.0,
      2.5,
-     2.0,
-     2.0
+     1.33,
+     2.33
     ],
     "Coventry City": [
      0.1,
@@ -9832,6 +9832,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "João Pedro",
+      "DEL",
+      0
+     ],
+     [
+      "Mahdi Nicoll-Jazuli",
       "DEL",
       0
      ],
@@ -12360,11 +12365,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Brentford",
-     "Chelsea",
-     "2026-09-18T19:00:00Z"
-    ],
-    [
      "Tottenham",
      "Aston Villa",
      "2026-09-19T11:30:00Z"
@@ -12490,7 +12490,7 @@ window.DATOS_LIGAS = {
     ],
     "Monza": [
      2.0,
-     3.0,
+     2.0,
      1.33,
      2.67
     ],
@@ -12515,7 +12515,7 @@ window.DATOS_LIGAS = {
     "Sassuolo": [
      2.5,
      1.5,
-     1.5,
+     1.33,
      2.0
     ],
     "Torino": [
@@ -15518,11 +15518,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Monza",
-     "Sassuolo",
-     "2026-09-18T18:45:00Z"
-    ],
-    [
      "Bologna",
      "Torino",
      "2026-09-19T13:00:00Z"
@@ -15587,8 +15582,8 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Bayern": [
-     5.0,
-     1.0,
+     6.0,
+     0.5,
      1.0,
      0.5
     ],
@@ -15680,7 +15675,7 @@ window.DATOS_LIGAS = {
      2.0,
      3.0,
      0.1,
-     4.0
+     5.5
     ]
    },
    "plantillas": {
@@ -18353,11 +18348,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Bayern",
-     "Union Berlin",
-     "2026-09-18T18:30:00Z"
-    ],
-    [
      "HSV",
      "1. FC Köln",
      "2026-09-19T13:30:00Z"
@@ -18454,7 +18444,7 @@ window.DATOS_LIGAS = {
     ],
     "Monaco": [
      2.0,
-     0.3,
+     0.5,
      1.33,
      0.67
     ],
@@ -18485,7 +18475,7 @@ window.DATOS_LIGAS = {
     "RC Lens": [
      2.5,
      1.5,
-     1.5,
+     1.33,
      2.0
     ],
     "Stade Rennais": [
@@ -20937,11 +20927,6 @@ window.DATOS_LIGAS = {
     "Paris FC": "https://crests.football-data.org/1045.png"
    },
    "partidos": [
-    [
-     "Monaco",
-     "RC Lens",
-     "2026-09-18T18:45:00Z"
-    ],
     [
      "Paris FC",
      "Strasbourg",
