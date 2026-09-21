@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-09-20",
+ "actualizado": "2026-09-21",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6613,8 +6613,8 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Atleti": [
-     2.67,
-     0.67,
+     2.5,
+     0.75,
      2.0,
      1.33
     ],
@@ -6631,7 +6631,7 @@ window.DATOS_LIGAS = {
      0.33
     ],
     "Deportivo": [
-     1.33,
+     1.25,
      1.0,
      1.67,
      1.33
@@ -6650,21 +6650,21 @@ window.DATOS_LIGAS = {
     ],
     "Getafe": [
      1.0,
-     0.67,
+     0.5,
      0.1,
      1.67
     ],
     "Levante": [
      3.5,
      3.0,
-     0.1,
-     1.0
+     0.25,
+     1.5
     ],
     "Málaga": [
      0.67,
      1.33,
-     0.33,
-     2.33
+     0.25,
+     2.0
     ],
     "Osasuna": [
      0.5,
@@ -6681,20 +6681,20 @@ window.DATOS_LIGAS = {
     "Real Betis": [
      1.0,
      0.3,
-     1.67,
-     2.0
+     1.5,
+     1.75
     ],
     "Real Madrid": [
      4.0,
      0.67,
-     1.67,
-     1.33
+     1.5,
+     1.5
     ],
     "Real Sociedad": [
      0.67,
      1.33,
-     1.33,
-     2.33
+     1.75,
+     2.25
     ],
     "Santander": [
      2.33,
@@ -6709,14 +6709,14 @@ window.DATOS_LIGAS = {
      0.67
     ],
     "Valencia": [
-     0.1,
-     2.0,
+     0.5,
+     2.25,
      0.67,
      1.33
     ],
     "Villarreal": [
-     1.5,
-     2.5,
+     2.0,
+     2.0,
      1.75,
      1.5
     ]
@@ -9375,33 +9375,7 @@ window.DATOS_LIGAS = {
     "Deportivo": "https://crests.football-data.org/560.png",
     "Santander": "https://crests.football-data.org/5335.png"
    },
-   "partidos": [
-    [
-     "Getafe",
-     "Málaga",
-     "2026-09-20T12:00:00Z"
-    ],
-    [
-     "Atleti",
-     "Real Madrid",
-     "2026-09-20T14:15:00Z"
-    ],
-    [
-     "Deportivo",
-     "Real Betis",
-     "2026-09-20T16:30:00Z"
-    ],
-    [
-     "Villarreal",
-     "Levante",
-     "2026-09-20T16:30:00Z"
-    ],
-    [
-     "Valencia",
-     "Real Sociedad",
-     "2026-09-20T19:00:00Z"
-    ]
-   ]
+   "partidos": []
   },
   "Premier League (Inglaterra)": {
    "codigo": "PL",
@@ -9421,8 +9395,8 @@ window.DATOS_LIGAS = {
      2.0
     ],
     "Bournemouth": [
-     1.5,
-     1.5,
+     1.0,
+     1.33,
      1.5,
      2.0
     ],
@@ -9453,8 +9427,8 @@ window.DATOS_LIGAS = {
     "Crystal Palace": [
      1.5,
      3.5,
-     1.5,
-     2.0
+     1.0,
+     1.33
     ],
     "Everton": [
      1.67,
@@ -9463,8 +9437,8 @@ window.DATOS_LIGAS = {
      0.5
     ],
     "Fulham": [
-     2.0,
-     3.0,
+     1.67,
+     2.33,
      0.1,
      0.5
     ],
@@ -9481,20 +9455,20 @@ window.DATOS_LIGAS = {
      2.67
     ],
     "Leeds United": [
-     2.5,
-     1.0,
+     1.67,
+     0.67,
      1.0,
      0.5
     ],
     "Liverpool": [
      1.0,
      1.0,
-     2.0,
-     1.0
+     1.67,
+     0.67
     ],
     "Man City": [
-     1.5,
-     0.5,
+     2.67,
+     1.33,
      2.5,
      0.5
     ],
@@ -9502,7 +9476,7 @@ window.DATOS_LIGAS = {
      2.5,
      1.5,
      1.0,
-     2.0
+     1.67
     ],
     "Newcastle": [
      2.0,
@@ -9519,8 +9493,8 @@ window.DATOS_LIGAS = {
     "Sunderland": [
      0.5,
      1.0,
-     1.0,
-     1.5
+     1.67,
+     2.67
     ],
     "Tottenham": [
      0.67,
@@ -12358,28 +12332,7 @@ window.DATOS_LIGAS = {
     "Bournemouth": "https://crests.football-data.org/bournemouth.png",
     "Coventry City": "https://crests.football-data.org/1076.png"
    },
-   "partidos": [
-    [
-     "Bournemouth",
-     "Liverpool",
-     "2026-09-20T13:00:00Z"
-    ],
-    [
-     "Leeds United",
-     "Crystal Palace",
-     "2026-09-20T13:00:00Z"
-    ],
-    [
-     "Man City",
-     "Sunderland",
-     "2026-09-20T13:00:00Z"
-    ],
-    [
-     "Fulham",
-     "Man United",
-     "2026-09-20T15:30:00Z"
-    ]
-   ]
+   "partidos": []
   },
   "Serie A (Italia)": {
    "codigo": "SA",
@@ -12389,7 +12342,7 @@ window.DATOS_LIGAS = {
     "Atalanta": [
      1.33,
      1.0,
-     1.0,
+     0.5,
      2.0
     ],
     "Bologna": [
@@ -12407,26 +12360,26 @@ window.DATOS_LIGAS = {
     "Como 1907": [
      2.0,
      1.0,
-     2.33,
-     1.0
+     1.75,
+     1.25
     ],
     "Fiorentina": [
-     0.5,
-     2.5,
+     0.67,
+     2.0,
      2.0,
      3.0
     ],
     "Frosinone": [
-     1.5,
-     1.5,
+     1.67,
+     1.0,
      2.0,
      0.5
     ],
     "Genoa": [
      0.67,
      2.33,
-     0.1,
-     1.0
+     0.5,
+     1.5
     ],
     "Inter": [
      4.0,
@@ -12435,8 +12388,8 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Juventus": [
-     1.5,
-     0.5,
+     1.67,
+     0.33,
      1.5,
      1.5
     ],
@@ -12449,11 +12402,11 @@ window.DATOS_LIGAS = {
     "Lecce": [
      1.5,
      3.0,
-     1.0,
-     0.5
+     0.67,
+     1.33
     ],
     "Milan": [
-     2.0,
+     2.5,
      0.3,
      1.67,
      1.33
@@ -12467,11 +12420,11 @@ window.DATOS_LIGAS = {
     "Napoli": [
      1.0,
      1.0,
-     2.0,
-     1.5
+     1.67,
+     1.33
     ],
     "Parma": [
-     0.5,
+     1.0,
      1.0,
      0.5,
      2.0
@@ -15486,33 +15439,7 @@ window.DATOS_LIGAS = {
     "Monza": "https://crests.football-data.org/5911.png",
     "Como 1907": "https://crests.football-data.org/7397.png"
    },
-   "partidos": [
-    [
-     "Fiorentina",
-     "Napoli",
-     "2026-09-20T10:30:00Z"
-    ],
-    [
-     "Frosinone",
-     "Como 1907",
-     "2026-09-20T13:00:00Z"
-    ],
-    [
-     "Parma",
-     "Genoa",
-     "2026-09-20T13:00:00Z"
-    ],
-    [
-     "Juventus",
-     "Atalanta",
-     "2026-09-20T16:00:00Z"
-    ],
-    [
-     "Milan",
-     "Lecce",
-     "2026-09-20T18:45:00Z"
-    ]
-   ]
+   "partidos": []
   },
   "Bundesliga (Alemania)": {
    "codigo": "BL1",
@@ -15552,8 +15479,8 @@ window.DATOS_LIGAS = {
     "Elversberg": [
      2.0,
      2.0,
-     4.0,
-     3.0
+     2.0,
+     1.5
     ],
     "Frankfurt": [
      1.5,
@@ -15576,11 +15503,11 @@ window.DATOS_LIGAS = {
     "Hoffenheim": [
      2.0,
      2.0,
-     2.0,
+     1.5,
      3.0
     ],
     "Leverkusen": [
-     4.0,
+     3.0,
      0.3,
      2.0,
      2.5
@@ -15600,11 +15527,11 @@ window.DATOS_LIGAS = {
     "RB Leipzig": [
      4.0,
      0.3,
-     1.0,
-     3.0
+     0.5,
+     2.5
     ],
     "SC Paderborn": [
-     0.1,
+     1.5,
      1.0,
      0.1,
      1.5
@@ -18296,23 +18223,7 @@ window.DATOS_LIGAS = {
     "Elversberg": "https://crests.football-data.org/719.png",
     "RB Leipzig": "https://crests.football-data.org/721.png"
    },
-   "partidos": [
-    [
-     "Leverkusen",
-     "RB Leipzig",
-     "2026-09-20T13:30:00Z"
-    ],
-    [
-     "Schalke",
-     "Elversberg",
-     "2026-09-20T15:30:00Z"
-    ],
-    [
-     "SC Paderborn",
-     "Hoffenheim",
-     "2026-09-20T17:30:00Z"
-    ]
-   ]
+   "partidos": []
   },
   "Ligue 1 (Francia)": {
    "codigo": "FL1",
@@ -18326,16 +18237,16 @@ window.DATOS_LIGAS = {
      0.5
     ],
     "Auxerre": [
-     1.0,
-     1.5,
+     1.33,
+     1.33,
      1.5,
      4.0
     ],
     "Brest": [
      1.0,
      1.5,
-     2.0,
-     1.5
+     1.67,
+     1.67
     ],
     "Le Havre": [
      0.33,
@@ -18352,8 +18263,8 @@ window.DATOS_LIGAS = {
     "Lille": [
      2.0,
      1.0,
-     1.5,
-     0.3
+     1.33,
+     0.67
     ],
     "Lorient": [
      1.5,
@@ -18362,8 +18273,8 @@ window.DATOS_LIGAS = {
      0.67
     ],
     "Marseille": [
-     3.0,
-     1.5,
+     2.33,
+     1.67,
      0.1,
      1.5
     ],
@@ -18374,8 +18285,8 @@ window.DATOS_LIGAS = {
      0.67
     ],
     "Nice": [
-     0.5,
-     0.5,
+     1.0,
+     0.67,
      0.1,
      2.0
     ],
@@ -18388,8 +18299,8 @@ window.DATOS_LIGAS = {
     "PSG": [
      1.0,
      2.0,
-     1.67,
-     1.33
+     1.75,
+     1.25
     ],
     "Paris FC": [
      1.67,
@@ -20845,29 +20756,13 @@ window.DATOS_LIGAS = {
     "Troyes": "https://crests.football-data.org/531.png",
     "Angers SCO": "https://crests.football-data.org/532.png",
     "Le Havre": "https://crests.football-data.org/533.png",
-    "Le Mans": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg",
+    "Le Mans": "https://crests.football-data.org/535.png",
     "RC Lens": "https://crests.football-data.org/546.png",
     "Monaco": "https://crests.football-data.org/548.png",
     "Strasbourg": "https://crests.football-data.org/576.png",
     "Paris FC": "https://crests.football-data.org/1045.png"
    },
-   "partidos": [
-    [
-     "Auxerre",
-     "Brest",
-     "2026-09-20T13:00:00Z"
-    ],
-    [
-     "Nice",
-     "Lille",
-     "2026-09-20T15:15:00Z"
-    ],
-    [
-     "Marseille",
-     "PSG",
-     "2026-09-20T18:45:00Z"
-    ]
-   ]
+   "partidos": []
   }
  }
 };
