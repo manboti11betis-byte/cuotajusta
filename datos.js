@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-09-21",
+ "actualizado": "2026-09-22",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -9566,6 +9566,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Myles Lewis-Skelly",
+      "MED",
+      0
+     ],
+     [
       "Ben White",
       "DEF",
       0
@@ -9587,11 +9592,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Jurrien Timber",
-      "DEF",
-      0
-     ],
-     [
-      "Myles Lewis-Skelly",
       "DEF",
       0
      ],
@@ -11626,6 +11626,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Anan Khalaili",
+      "MED",
+      0
+     ],
+     [
       "Cheick Doucouré",
       "MED",
       0
@@ -11648,11 +11653,6 @@ window.DATOS_LIGAS = {
      [
       "Will Hughes",
       "MED",
-      0
-     ],
-     [
-      "Anan Khalaili",
-      "DEF",
       0
      ],
      [
@@ -14942,6 +14942,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Joel Monteiro",
+      "DEL",
+      0
+     ],
+     [
       "Konan N'Dri",
       "DEL",
       0
@@ -14973,11 +14978,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Ivan Ilić",
-      "MED",
-      0
-     ],
-     [
-      "Joel Monteiro",
       "MED",
       0
      ],
@@ -17960,6 +17960,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Felix Keidel",
+      "MED",
+      0
+     ],
+     [
       "Francis Onyeka",
       "MED",
       0
@@ -17977,11 +17982,6 @@ window.DATOS_LIGAS = {
      [
       "Łukasz Poręba",
       "MED",
-      0
-     ],
-     [
-      "Felix Keidel",
-      "DEF",
       0
      ],
      [
