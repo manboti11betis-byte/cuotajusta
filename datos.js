@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-09-24",
+ "actualizado": "2026-09-25",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -9375,7 +9375,13 @@ window.DATOS_LIGAS = {
     "Deportivo": "https://crests.football-data.org/560.png",
     "Santander": "https://crests.football-data.org/5335.png"
    },
-   "partidos": []
+   "partidos": [
+    [
+     "Málaga",
+     "Espanyol",
+     "2026-10-09T19:00:00Z"
+    ]
+   ]
   },
   "Premier League (Inglaterra)": {
    "codigo": "PL",
@@ -18223,7 +18229,13 @@ window.DATOS_LIGAS = {
     "Elversberg": "https://crests.football-data.org/719.png",
     "RB Leipzig": "https://crests.football-data.org/721.png"
    },
-   "partidos": []
+   "partidos": [
+    [
+     "Dortmund",
+     "Bremen",
+     "2026-10-09T18:30:00Z"
+    ]
+   ]
   },
   "Ligue 1 (Francia)": {
    "codigo": "FL1",
@@ -20762,7 +20774,13 @@ window.DATOS_LIGAS = {
     "Strasbourg": "https://crests.football-data.org/576.png",
     "Paris FC": "https://crests.football-data.org/1045.png"
    },
-   "partidos": []
+   "partidos": [
+    [
+     "RC Lens",
+     "Olympique Lyon",
+     "2026-10-09T18:45:00Z"
+    ]
+   ]
   }
  }
 };
