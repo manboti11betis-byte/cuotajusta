@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-09-25",
+ "actualizado": "2026-09-26",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -9380,6 +9380,26 @@ window.DATOS_LIGAS = {
      "Málaga",
      "Espanyol",
      "2026-10-09T19:00:00Z"
+    ],
+    [
+     "Rayo Vallecano",
+     "Athletic",
+     "2026-10-10T12:00:00Z"
+    ],
+    [
+     "Alavés",
+     "Atleti",
+     "2026-10-10T14:15:00Z"
+    ],
+    [
+     "Barça",
+     "Getafe",
+     "2026-10-10T16:30:00Z"
+    ],
+    [
+     "Real Madrid",
+     "Villarreal",
+     "2026-10-10T19:00:00Z"
     ]
    ]
   },
@@ -12338,7 +12358,38 @@ window.DATOS_LIGAS = {
     "Bournemouth": "https://crests.football-data.org/bournemouth.png",
     "Coventry City": "https://crests.football-data.org/1076.png"
    },
-   "partidos": []
+   "partidos": [
+    [
+     "Arsenal",
+     "Leeds United",
+     "2026-10-10T11:30:00Z"
+    ],
+    [
+     "Sunderland",
+     "Brighton Hove",
+     "2026-10-10T14:00:00Z"
+    ],
+    [
+     "Chelsea",
+     "Bournemouth",
+     "2026-10-10T14:00:00Z"
+    ],
+    [
+     "Ipswich Town",
+     "Fulham",
+     "2026-10-10T14:00:00Z"
+    ],
+    [
+     "Aston Villa",
+     "Brentford",
+     "2026-10-10T14:00:00Z"
+    ],
+    [
+     "Man United",
+     "Tottenham",
+     "2026-10-10T16:30:00Z"
+    ]
+   ]
   },
   "Serie A (Italia)": {
    "codigo": "SA",
@@ -15445,7 +15496,23 @@ window.DATOS_LIGAS = {
     "Monza": "https://crests.football-data.org/5911.png",
     "Como 1907": "https://crests.football-data.org/7397.png"
    },
-   "partidos": []
+   "partidos": [
+    [
+     "Genoa",
+     "Fiorentina",
+     "2026-10-10T13:00:00Z"
+    ],
+    [
+     "Inter",
+     "Parma",
+     "2026-10-10T16:00:00Z"
+    ],
+    [
+     "Napoli",
+     "Frosinone",
+     "2026-10-10T18:45:00Z"
+    ]
+   ]
   },
   "Bundesliga (Alemania)": {
    "codigo": "BL1",
@@ -18234,6 +18301,36 @@ window.DATOS_LIGAS = {
      "Dortmund",
      "Bremen",
      "2026-10-09T18:30:00Z"
+    ],
+    [
+     "Mainz",
+     "Leverkusen",
+     "2026-10-10T13:30:00Z"
+    ],
+    [
+     "SC Paderborn",
+     "Stuttgart",
+     "2026-10-10T13:30:00Z"
+    ],
+    [
+     "Union Berlin",
+     "Elversberg",
+     "2026-10-10T13:30:00Z"
+    ],
+    [
+     "Hoffenheim",
+     "HSV",
+     "2026-10-10T13:30:00Z"
+    ],
+    [
+     "Augsburg",
+     "Bayern",
+     "2026-10-10T13:30:00Z"
+    ],
+    [
+     "RB Leipzig",
+     "Frankfurt",
+     "2026-10-10T16:30:00Z"
     ]
    ]
   },
@@ -20779,6 +20876,31 @@ window.DATOS_LIGAS = {
      "RC Lens",
      "Olympique Lyon",
      "2026-10-09T18:45:00Z"
+    ],
+    [
+     "Lille",
+     "Le Havre",
+     "2026-10-10T15:15:00Z"
+    ],
+    [
+     "Brest",
+     "Angers SCO",
+     "2026-10-10T18:45:00Z"
+    ],
+    [
+     "Lorient",
+     "Paris FC",
+     "2026-10-10T18:45:00Z"
+    ],
+    [
+     "PSG",
+     "Le Mans",
+     "2026-10-10T18:45:00Z"
+    ],
+    [
+     "Monaco",
+     "Toulouse",
+     "2026-10-10T18:45:00Z"
     ]
    ]
   }
