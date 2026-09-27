@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-09-26",
+ "actualizado": "2026-09-27",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -9400,6 +9400,26 @@ window.DATOS_LIGAS = {
      "Real Madrid",
      "Villarreal",
      "2026-10-10T19:00:00Z"
+    ],
+    [
+     "Elche",
+     "Celta",
+     "2026-10-11T12:00:00Z"
+    ],
+    [
+     "Real Sociedad",
+     "Deportivo",
+     "2026-10-11T14:15:00Z"
+    ],
+    [
+     "Real Betis",
+     "Osasuna",
+     "2026-10-11T16:30:00Z"
+    ],
+    [
+     "Santander",
+     "Valencia",
+     "2026-10-11T19:00:00Z"
     ]
    ]
   },
@@ -12388,6 +12408,21 @@ window.DATOS_LIGAS = {
      "Man United",
      "Tottenham",
      "2026-10-10T16:30:00Z"
+    ],
+    [
+     "Hull City",
+     "Everton",
+     "2026-10-11T13:00:00Z"
+    ],
+    [
+     "Crystal Palace",
+     "Nottingham",
+     "2026-10-11T13:00:00Z"
+    ],
+    [
+     "Liverpool",
+     "Man City",
+     "2026-10-11T15:30:00Z"
     ]
    ]
   },
@@ -15511,6 +15546,31 @@ window.DATOS_LIGAS = {
      "Napoli",
      "Frosinone",
      "2026-10-10T18:45:00Z"
+    ],
+    [
+     "Como 1907",
+     "Roma",
+     "2026-10-11T10:30:00Z"
+    ],
+    [
+     "Lecce",
+     "Bologna",
+     "2026-10-11T13:00:00Z"
+    ],
+    [
+     "Lazio",
+     "Monza",
+     "2026-10-11T13:00:00Z"
+    ],
+    [
+     "Sassuolo",
+     "Milan",
+     "2026-10-11T16:00:00Z"
+    ],
+    [
+     "Cagliari",
+     "Juventus",
+     "2026-10-11T18:45:00Z"
     ]
    ]
   },
@@ -18331,6 +18391,16 @@ window.DATOS_LIGAS = {
      "RB Leipzig",
      "Frankfurt",
      "2026-10-10T16:30:00Z"
+    ],
+    [
+     "1. FC Köln",
+     "M'gladbach",
+     "2026-10-11T13:30:00Z"
+    ],
+    [
+     "Freiburg",
+     "Schalke",
+     "2026-10-11T15:30:00Z"
     ]
    ]
   },
@@ -20901,6 +20971,21 @@ window.DATOS_LIGAS = {
      "Monaco",
      "Toulouse",
      "2026-10-10T18:45:00Z"
+    ],
+    [
+     "Nice",
+     "Strasbourg",
+     "2026-10-11T13:00:00Z"
+    ],
+    [
+     "Stade Rennais",
+     "Auxerre",
+     "2026-10-11T15:15:00Z"
+    ],
+    [
+     "Troyes",
+     "Marseille",
+     "2026-10-11T18:45:00Z"
     ]
    ]
   }
