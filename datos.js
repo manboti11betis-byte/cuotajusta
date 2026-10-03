@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-10-02",
+ "actualizado": "2026-10-03",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -9430,6 +9430,26 @@ window.DATOS_LIGAS = {
      "Deportivo",
      "Levante",
      "2026-10-16T19:00:00Z"
+    ],
+    [
+     "Espanyol",
+     "Atleti",
+     "2026-10-17T12:00:00Z"
+    ],
+    [
+     "Villarreal",
+     "Elche",
+     "2026-10-17T14:15:00Z"
+    ],
+    [
+     "Real Betis",
+     "Barça",
+     "2026-10-17T16:30:00Z"
+    ],
+    [
+     "Valencia",
+     "Athletic",
+     "2026-10-17T19:00:00Z"
     ]
    ]
   },
@@ -12438,6 +12458,31 @@ window.DATOS_LIGAS = {
      "Coventry City",
      "Newcastle",
      "2026-10-12T19:00:00Z"
+    ],
+    [
+     "Everton",
+     "Chelsea",
+     "2026-10-17T11:30:00Z"
+    ],
+    [
+     "Fulham",
+     "Hull City",
+     "2026-10-17T14:00:00Z"
+    ],
+    [
+     "Man City",
+     "Ipswich Town",
+     "2026-10-17T14:00:00Z"
+    ],
+    [
+     "Brentford",
+     "Liverpool",
+     "2026-10-17T14:00:00Z"
+    ],
+    [
+     "Newcastle",
+     "Aston Villa",
+     "2026-10-17T16:30:00Z"
     ]
    ]
   },
@@ -15601,6 +15646,21 @@ window.DATOS_LIGAS = {
      "Frosinone",
      "Sassuolo",
      "2026-10-16T18:45:00Z"
+    ],
+    [
+     "Venezia FC",
+     "Napoli",
+     "2026-10-17T13:00:00Z"
+    ],
+    [
+     "Bologna",
+     "Inter",
+     "2026-10-17T16:00:00Z"
+    ],
+    [
+     "Roma",
+     "Genoa",
+     "2026-10-17T18:45:00Z"
     ]
    ]
   },
@@ -18436,6 +18496,36 @@ window.DATOS_LIGAS = {
      "Frankfurt",
      "1. FC Köln",
      "2026-10-16T18:30:00Z"
+    ],
+    [
+     "Union Berlin",
+     "Dortmund",
+     "2026-10-17T13:30:00Z"
+    ],
+    [
+     "HSV",
+     "Stuttgart",
+     "2026-10-17T13:30:00Z"
+    ],
+    [
+     "Bremen",
+     "SC Paderborn",
+     "2026-10-17T13:30:00Z"
+    ],
+    [
+     "Elversberg",
+     "Augsburg",
+     "2026-10-17T13:30:00Z"
+    ],
+    [
+     "Schalke",
+     "Mainz",
+     "2026-10-17T13:30:00Z"
+    ],
+    [
+     "Bayern",
+     "RB Leipzig",
+     "2026-10-17T16:30:00Z"
     ]
    ]
   },
@@ -21026,6 +21116,21 @@ window.DATOS_LIGAS = {
      "Le Mans",
      "Toulouse",
      "2026-10-16T18:45:00Z"
+    ],
+    [
+     "Strasbourg",
+     "PSG",
+     "2026-10-17T15:15:00Z"
+    ],
+    [
+     "Troyes",
+     "RC Lens",
+     "2026-10-17T18:45:00Z"
+    ],
+    [
+     "Lille",
+     "Brest",
+     "2026-10-17T18:45:00Z"
     ]
    ]
   }
