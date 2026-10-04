@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-10-03",
+ "actualizado": "2026-10-04",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -9450,6 +9450,26 @@ window.DATOS_LIGAS = {
      "Valencia",
      "Athletic",
      "2026-10-17T19:00:00Z"
+    ],
+    [
+     "Osasuna",
+     "Santander",
+     "2026-10-18T12:00:00Z"
+    ],
+    [
+     "Celta",
+     "Alavés",
+     "2026-10-18T14:15:00Z"
+    ],
+    [
+     "Málaga",
+     "Real Sociedad",
+     "2026-10-18T16:30:00Z"
+    ],
+    [
+     "Real Madrid",
+     "Sevilla FC",
+     "2026-10-18T19:00:00Z"
     ]
    ]
   },
@@ -12483,6 +12503,26 @@ window.DATOS_LIGAS = {
      "Newcastle",
      "Aston Villa",
      "2026-10-17T16:30:00Z"
+    ],
+    [
+     "Bournemouth",
+     "Sunderland",
+     "2026-10-18T13:00:00Z"
+    ],
+    [
+     "Leeds United",
+     "Man United",
+     "2026-10-18T13:00:00Z"
+    ],
+    [
+     "Brighton Hove",
+     "Crystal Palace",
+     "2026-10-18T13:00:00Z"
+    ],
+    [
+     "Nottingham",
+     "Arsenal",
+     "2026-10-18T15:30:00Z"
     ]
    ]
   },
@@ -15661,6 +15701,26 @@ window.DATOS_LIGAS = {
      "Roma",
      "Genoa",
      "2026-10-17T18:45:00Z"
+    ],
+    [
+     "Udinese",
+     "Lecce",
+     "2026-10-18T10:30:00Z"
+    ],
+    [
+     "Fiorentina",
+     "Como 1907",
+     "2026-10-18T13:00:00Z"
+    ],
+    [
+     "Milan",
+     "Atalanta",
+     "2026-10-18T16:00:00Z"
+    ],
+    [
+     "Juventus",
+     "Lazio",
+     "2026-10-18T18:45:00Z"
     ]
    ]
   },
@@ -18526,6 +18586,16 @@ window.DATOS_LIGAS = {
      "Bayern",
      "RB Leipzig",
      "2026-10-17T16:30:00Z"
+    ],
+    [
+     "Leverkusen",
+     "Freiburg",
+     "2026-10-18T13:30:00Z"
+    ],
+    [
+     "M'gladbach",
+     "Hoffenheim",
+     "2026-10-18T15:30:00Z"
     ]
    ]
   },
@@ -21131,6 +21201,31 @@ window.DATOS_LIGAS = {
      "Lille",
      "Brest",
      "2026-10-17T18:45:00Z"
+    ],
+    [
+     "Angers SCO",
+     "Marseille",
+     "2026-10-18T13:00:00Z"
+    ],
+    [
+     "Lorient",
+     "Monaco",
+     "2026-10-18T15:15:00Z"
+    ],
+    [
+     "Paris FC",
+     "Stade Rennais",
+     "2026-10-18T15:15:00Z"
+    ],
+    [
+     "Le Havre",
+     "Auxerre",
+     "2026-10-18T15:15:00Z"
+    ],
+    [
+     "Olympique Lyon",
+     "Nice",
+     "2026-10-18T18:45:00Z"
     ]
    ]
   }
