@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-10-04",
+ "actualizado": "2026-10-05",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -9470,6 +9470,11 @@ window.DATOS_LIGAS = {
      "Real Madrid",
      "Sevilla FC",
      "2026-10-18T19:00:00Z"
+    ],
+    [
+     "Getafe",
+     "Rayo Vallecano",
+     "2026-10-19T19:00:00Z"
     ]
    ]
   },
@@ -12523,6 +12528,11 @@ window.DATOS_LIGAS = {
      "Nottingham",
      "Arsenal",
      "2026-10-18T15:30:00Z"
+    ],
+    [
+     "Tottenham",
+     "Coventry City",
+     "2026-10-19T19:00:00Z"
     ]
    ]
   },
@@ -15721,6 +15731,16 @@ window.DATOS_LIGAS = {
      "Juventus",
      "Lazio",
      "2026-10-18T18:45:00Z"
+    ],
+    [
+     "Monza",
+     "Cagliari",
+     "2026-10-19T16:30:00Z"
+    ],
+    [
+     "Parma",
+     "Torino",
+     "2026-10-19T18:45:00Z"
     ]
    ]
   },

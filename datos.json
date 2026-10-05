@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-04",
+ "actualizado": "2026-10-05",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -9469,6 +9469,11 @@
      "Real Madrid",
      "Sevilla FC",
      "2026-10-18T19:00:00Z"
+    ],
+    [
+     "Getafe",
+     "Rayo Vallecano",
+     "2026-10-19T19:00:00Z"
     ]
    ]
   },
@@ -12522,6 +12527,11 @@
      "Nottingham",
      "Arsenal",
      "2026-10-18T15:30:00Z"
+    ],
+    [
+     "Tottenham",
+     "Coventry City",
+     "2026-10-19T19:00:00Z"
     ]
    ]
   },
@@ -15720,6 +15730,16 @@
      "Juventus",
      "Lazio",
      "2026-10-18T18:45:00Z"
+    ],
+    [
+     "Monza",
+     "Cagliari",
+     "2026-10-19T16:30:00Z"
+    ],
+    [
+     "Parma",
+     "Torino",
+     "2026-10-19T18:45:00Z"
     ]
    ]
   },
