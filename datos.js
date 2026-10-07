@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-10-06",
+ "actualizado": "2026-10-07",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -9475,6 +9475,11 @@ window.DATOS_LIGAS = {
      "Getafe",
      "Rayo Vallecano",
      "2026-10-19T19:00:00Z"
+    ],
+    [
+     "Levante",
+     "Athletic",
+     "2026-10-21T18:00:00Z"
     ]
    ]
   },
