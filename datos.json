@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-08",
+ "actualizado": "2026-10-09",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -9479,6 +9479,11 @@
      "Levante",
      "Athletic",
      "2026-10-21T18:00:00Z"
+    ],
+    [
+     "Alavés",
+     "Málaga",
+     "2026-10-23T19:00:00Z"
     ]
    ]
   },
@@ -12537,6 +12542,11 @@
      "Tottenham",
      "Coventry City",
      "2026-10-19T19:00:00Z"
+    ],
+    [
+     "Ipswich Town",
+     "Nottingham",
+     "2026-10-23T19:00:00Z"
     ]
    ]
   },
@@ -15745,6 +15755,11 @@
      "Parma",
      "Torino",
      "2026-10-19T18:45:00Z"
+    ],
+    [
+     "Torino",
+     "Monza",
+     "2026-10-23T18:45:00Z"
     ]
    ]
   },
@@ -18620,6 +18635,11 @@
      "M'gladbach",
      "Hoffenheim",
      "2026-10-18T15:30:00Z"
+    ],
+    [
+     "Stuttgart",
+     "M'gladbach",
+     "2026-10-23T18:30:00Z"
     ]
    ]
   },
@@ -21250,6 +21270,11 @@
      "Olympique Lyon",
      "Nice",
      "2026-10-18T18:45:00Z"
+    ],
+    [
+     "Brest",
+     "Nice",
+     "2026-10-23T18:45:00Z"
     ]
    ]
   }
