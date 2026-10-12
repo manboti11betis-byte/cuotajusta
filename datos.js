@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-10-11",
+ "actualizado": "2026-10-12",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6627,18 +6627,18 @@ window.DATOS_LIGAS = {
     "Celta": [
      1.75,
      1.25,
-     0.33,
-     0.33
+     0.25,
+     0.3
     ],
     "Deportivo": [
      1.25,
      1.0,
-     1.67,
-     1.33
+     1.75,
+     1.75
     ],
     "Elche": [
-     1.33,
-     3.67,
+     1.0,
+     2.75,
      1.75,
      1.5
     ],
@@ -6669,8 +6669,8 @@ window.DATOS_LIGAS = {
     "Osasuna": [
      0.5,
      0.75,
-     1.33,
-     3.33
+     1.5,
+     3.75
     ],
     "Rayo Vallecano": [
      2.0,
@@ -6679,8 +6679,8 @@ window.DATOS_LIGAS = {
      3.0
     ],
     "Real Betis": [
-     1.0,
-     0.3,
+     2.0,
+     0.5,
      1.5,
      1.75
     ],
@@ -6691,14 +6691,14 @@ window.DATOS_LIGAS = {
      1.5
     ],
     "Real Sociedad": [
-     0.67,
-     1.33,
+     1.25,
+     1.5,
      1.75,
      2.25
     ],
     "Santander": [
-     2.33,
-     1.67,
+     2.25,
+     1.75,
      1.0,
      4.0
     ],
@@ -6711,8 +6711,8 @@ window.DATOS_LIGAS = {
     "Valencia": [
      0.5,
      2.25,
-     0.67,
-     1.33
+     1.0,
+     1.5
     ],
     "Villarreal": [
      2.0,
@@ -6999,6 +6999,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Kike Barja",
+      "DEL",
+      0
+     ],
+     [
+      "Mikel Bermejo",
       "DEL",
       0
      ],
@@ -9382,26 +9387,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Elche",
-     "Celta",
-     "2026-10-11T12:00:00Z"
-    ],
-    [
-     "Real Sociedad",
-     "Deportivo",
-     "2026-10-11T14:15:00Z"
-    ],
-    [
-     "Real Betis",
-     "Osasuna",
-     "2026-10-11T16:30:00Z"
-    ],
-    [
-     "Santander",
-     "Valencia",
-     "2026-10-11T19:00:00Z"
-    ],
-    [
      "Levante",
      "Sevilla FC",
      "2026-10-12T19:00:00Z"
@@ -9505,6 +9490,11 @@ window.DATOS_LIGAS = {
      "Barça",
      "Real Madrid",
      "2026-10-25T20:00:00Z"
+    ],
+    [
+     "Sevilla FC",
+     "Osasuna",
+     "2026-10-26T20:00:00Z"
     ]
    ]
   },
@@ -9556,16 +9546,16 @@ window.DATOS_LIGAS = {
      1.33
     ],
     "Crystal Palace": [
-     1.5,
-     3.5,
+     2.0,
+     2.67,
      1.0,
      1.33
     ],
     "Everton": [
      1.67,
      0.67,
-     0.5,
-     0.5
+     1.0,
+     1.0
     ],
     "Fulham": [
      1.67,
@@ -9574,8 +9564,8 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Hull City": [
-     1.0,
-     0.3,
+     1.33,
+     0.67,
      1.33,
      1.33
     ],
@@ -9592,16 +9582,16 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Liverpool": [
-     1.0,
-     1.0,
+     0.67,
+     1.67,
      1.67,
      0.67
     ],
     "Man City": [
      2.67,
      1.33,
-     2.5,
-     0.5
+     2.67,
+     0.33
     ],
     "Man United": [
      2.0,
@@ -9618,8 +9608,8 @@ window.DATOS_LIGAS = {
     "Nottingham": [
      0.1,
      0.67,
-     2.0,
-     1.5
+     1.67,
+     2.0
     ],
     "Sunderland": [
      0.33,
@@ -9884,6 +9874,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "James Wright",
+      "POR",
+      0
+     ],
+     [
       "Marco Bizot",
       "POR",
       0
@@ -9926,11 +9921,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Mahdi Nicoll-Jazuli",
-      "DEL",
-      0
-     ],
-     [
       "Pedro Neto",
       "DEL",
       0
@@ -9946,17 +9936,17 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Mahdi Nicoll-Jazuli",
+      "MED",
+      0
+     ],
+     [
       "Moisés Caicedo",
       "MED",
       0
      ],
      [
       "Morgan Rogers",
-      "MED",
-      0
-     ],
-     [
-      "Ray Paez",
       "MED",
       0
      ],
@@ -10044,6 +10034,11 @@ window.DATOS_LIGAS = {
     "Everton": [
      [
       "Brennan Johnson",
+      "DEL",
+      0
+     ],
+     [
+      "Briaden Graham",
       "DEL",
       0
      ],
@@ -10150,11 +10145,6 @@ window.DATOS_LIGAS = {
     ],
     "Fulham": [
      [
-      "Alex Iwobi",
-      "DEL",
-      0
-     ],
-     [
       "Gonzalo García",
       "DEL",
       0
@@ -10177,6 +10167,11 @@ window.DATOS_LIGAS = {
      [
       "Rodrigo Muniz",
       "DEL",
+      0
+     ],
+     [
+      "Alex Iwobi",
+      "MED",
       0
      ],
      [
@@ -10255,11 +10250,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Luc De Fougerolles",
-      "DEF",
-      0
-     ],
-     [
       "Ryan Sessegnon",
       "DEF",
       0
@@ -10312,6 +10302,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Lewis Koumas",
+      "DEL",
+      0
+     ],
+     [
       "Rio Ngumoha",
       "DEL",
       0
@@ -10335,6 +10330,11 @@ window.DATOS_LIGAS = {
       "Florian Wirtz",
       "MED",
       1
+     ],
+     [
+      "James McConnell",
+      "MED",
+      0
      ],
      [
       "Ryan Gravenberch",
@@ -10489,11 +10489,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Josh Wilson-Esbrand",
-      "DEF",
-      0
-     ],
-     [
       "Joško Gvardiol",
       "DEF",
       1
@@ -10602,11 +10597,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Carlos Baleba",
-      "MED",
-      0
-     ],
-     [
-      "Jack Fletcher",
       "MED",
       0
      ],
@@ -10723,22 +10713,7 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Kyran Thompson",
-      "DEL",
-      0
-     ],
-     [
-      "Mason Miley",
-      "DEL",
-      0
-     ],
-     [
       "Matias Fernandez-Pardo",
-      "DEL",
-      0
-     ],
-     [
-      "Michael Mills",
       "DEL",
       0
      ],
@@ -10803,11 +10778,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Leo Shahar",
-      "DEF",
-      0
-     ],
-     [
       "Lewis Hall",
       "DEF",
       0
@@ -10850,6 +10820,11 @@ window.DATOS_LIGAS = {
     ],
     "Sunderland": [
      [
+      "Abdoullah Ba",
+      "DEL",
+      0
+     ],
+     [
       "Brian Brobbey",
       "DEL",
       0
@@ -10861,11 +10836,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Jocelin Bi",
-      "DEL",
-      0
-     ],
-     [
-      "Juan Angulo",
       "DEL",
       0
      ],
@@ -10887,11 +10857,6 @@ window.DATOS_LIGAS = {
      [
       "Wilson Isidor",
       "DEL",
-      0
-     ],
-     [
-      "Abdoullah Ba",
-      "MED",
       0
      ],
      [
@@ -11139,7 +11104,7 @@ window.DATOS_LIGAS = {
     ],
     "Hull City": [
      [
-      "David Akintola",
+      "Abdülkadir Ömür",
       "DEL",
       0
      ],
@@ -11184,11 +11149,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Abdülkadir Ömür",
-      "MED",
-      0
-     ],
-     [
       "Christos Mouzakitis",
       "MED",
       0
@@ -11220,11 +11180,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Lucas Gourna-Douath",
-      "MED",
-      0
-     ],
-     [
-      "Matty Crooks",
       "MED",
       0
      ],
@@ -11463,6 +11418,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Kasey McAteer",
+      "DEL",
+      0
+     ],
+     [
       "Sindre Egeli",
       "DEL",
       0
@@ -11501,11 +11461,6 @@ window.DATOS_LIGAS = {
       "Julio Enciso",
       "MED",
       1
-     ],
-     [
-      "Kasey McAteer",
-      "MED",
-      0
      ],
      [
       "Marcelino Núñez",
@@ -11727,17 +11682,7 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Jesurun Rak-Sakyi",
-      "DEL",
-      0
-     ],
-     [
       "Jørgen Strand Larsen",
-      "DEL",
-      0
-     ],
-     [
-      "Matheus Franca",
       "DEL",
       0
      ],
@@ -11753,11 +11698,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Adam Wharton",
-      "MED",
-      0
-     ],
-     [
-      "Anan Khalaili",
       "MED",
       0
      ],
@@ -11784,6 +11724,11 @@ window.DATOS_LIGAS = {
      [
       "Will Hughes",
       "MED",
+      0
+     ],
+     [
+      "Anan Khalaili",
+      "DEF",
       0
      ],
      [
@@ -11859,6 +11804,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Femi Azeez",
+      "DEL",
+      0
+     ],
+     [
       "Georginio Rutter",
       "DEL",
       0
@@ -11889,11 +11839,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Younes Ibrahim",
-      "DEL",
-      0
-     ],
-     [
       "Zadok Yohanna",
       "DEL",
       0
@@ -11905,11 +11850,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Diego Gómez",
-      "MED",
-      0
-     ],
-     [
-      "Femi Azeez",
       "MED",
       0
      ],
@@ -12056,11 +11996,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Keane Lewis-Potter",
-      "MED",
-      0
-     ],
-     [
       "Mamadou Sangare",
       "MED",
       0
@@ -12107,6 +12042,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Ji-soo Kim",
+      "DEF",
+      0
+     ],
+     [
+      "Keane Lewis-Potter",
       "DEF",
       0
      ],
@@ -12188,6 +12128,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Marcus Tavernier",
+      "DEL",
+      0
+     ],
+     [
       "Rayan",
       "DEL",
       0
@@ -12203,22 +12148,12 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Ben Winterburn",
-      "MED",
-      0
-     ],
-     [
       "Justin Kluivert",
       "MED",
       0
      ],
      [
       "Lewis Cook",
-      "MED",
-      0
-     ],
-     [
-      "Marcus Tavernier",
       "MED",
       0
      ],
@@ -12338,6 +12273,11 @@ window.DATOS_LIGAS = {
       "Tatsuhiro Sakamoto",
       "DEL",
       1
+     ],
+     [
+      "Yann Gboho",
+      "DEL",
+      0
      ],
      [
       "Caleb Yirenkyi",
@@ -12465,21 +12405,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Hull City",
-     "Everton",
-     "2026-10-11T13:00:00Z"
-    ],
-    [
-     "Crystal Palace",
-     "Nottingham",
-     "2026-10-11T13:00:00Z"
-    ],
-    [
-     "Liverpool",
-     "Man City",
-     "2026-10-11T15:30:00Z"
-    ],
-    [
      "Coventry City",
      "Newcastle",
      "2026-10-12T19:00:00Z"
@@ -12600,18 +12525,18 @@ window.DATOS_LIGAS = {
     "Bologna": [
      1.0,
      1.33,
-     0.1,
+     0.67,
      1.0
     ],
     "Cagliari": [
-     0.5,
-     0.5,
+     0.67,
+     0.67,
      1.33,
      0.33
     ],
     "Como 1907": [
-     2.0,
      1.0,
+     0.5,
      1.75,
      1.25
     ],
@@ -12642,32 +12567,32 @@ window.DATOS_LIGAS = {
     "Juventus": [
      1.67,
      0.33,
-     1.5,
-     1.5
+     1.33,
+     1.33
     ],
     "Lazio": [
-     1.5,
+     2.0,
      1.0,
      1.67,
      0.33
     ],
     "Lecce": [
-     1.5,
-     3.0,
+     1.33,
+     2.67,
      0.67,
      1.33
     ],
     "Milan": [
      2.5,
      0.3,
-     1.67,
-     1.33
+     1.5,
+     1.25
     ],
     "Monza": [
      2.0,
      2.0,
-     1.33,
-     2.67
+     1.25,
+     2.75
     ],
     "Napoli": [
      1.67,
@@ -12684,12 +12609,12 @@ window.DATOS_LIGAS = {
     "Roma": [
      2.67,
      1.0,
-     3.0,
+     2.0,
      0.3
     ],
     "Sassuolo": [
-     2.5,
-     1.5,
+     2.0,
+     1.33,
      1.33,
      2.0
     ],
@@ -15698,26 +15623,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Lecce",
-     "Bologna",
-     "2026-10-11T13:00:00Z"
-    ],
-    [
-     "Lazio",
-     "Monza",
-     "2026-10-11T13:00:00Z"
-    ],
-    [
-     "Sassuolo",
-     "Milan",
-     "2026-10-11T16:00:00Z"
-    ],
-    [
-     "Cagliari",
-     "Juventus",
-     "2026-10-11T18:45:00Z"
-    ],
-    [
      "Atalanta",
      "Venezia FC",
      "2026-10-12T16:30:00Z"
@@ -15836,7 +15741,7 @@ window.DATOS_LIGAS = {
    "equipos": {
     "1. FC Köln": [
      2.0,
-     1.5,
+     1.33,
      1.0,
      3.0
     ],
@@ -15877,8 +15782,8 @@ window.DATOS_LIGAS = {
      3.33
     ],
     "Freiburg": [
-     4.5,
-     0.5,
+     3.67,
+     0.67,
      1.5,
      1.0
     ],
@@ -15903,8 +15808,8 @@ window.DATOS_LIGAS = {
     "M'gladbach": [
      3.0,
      4.0,
-     0.1,
-     4.0
+     0.33,
+     3.33
     ],
     "Mainz": [
      1.33,
@@ -15927,7 +15832,7 @@ window.DATOS_LIGAS = {
     "Schalke": [
      0.1,
      0.3,
-     1.5,
+     1.33,
      2.0
     ],
     "Stuttgart": [
@@ -18613,16 +18518,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "1. FC Köln",
-     "M'gladbach",
-     "2026-10-11T13:30:00Z"
-    ],
-    [
-     "Freiburg",
-     "Schalke",
-     "2026-10-11T15:30:00Z"
-    ],
-    [
      "Frankfurt",
      "1. FC Köln",
      "2026-10-16T18:30:00Z"
@@ -18728,7 +18623,7 @@ window.DATOS_LIGAS = {
     "Auxerre": [
      1.33,
      1.33,
-     1.5,
+     1.33,
      4.0
     ],
     "Brest": [
@@ -18764,8 +18659,8 @@ window.DATOS_LIGAS = {
     "Marseille": [
      2.33,
      1.67,
-     0.1,
-     1.5
+     0.67,
+     1.0
     ],
     "Monaco": [
      2.0,
@@ -18774,8 +18669,8 @@ window.DATOS_LIGAS = {
      0.67
     ],
     "Nice": [
-     1.0,
-     0.67,
+     1.25,
+     0.75,
      0.1,
      2.0
     ],
@@ -18804,16 +18699,16 @@ window.DATOS_LIGAS = {
      2.0
     ],
     "Stade Rennais": [
-     2.0,
-     1.33,
+     2.5,
+     1.25,
      1.0,
      2.5
     ],
     "Strasbourg": [
      1.5,
      1.0,
-     2.33,
-     2.67
+     2.0,
+     2.5
     ],
     "Toulouse": [
      1.0,
@@ -18822,8 +18717,8 @@ window.DATOS_LIGAS = {
      2.0
     ],
     "Troyes": [
-     1.0,
-     3.0,
+     0.67,
+     2.67,
      0.67,
      1.67
     ]
@@ -19228,6 +19123,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Xiangxin Wei",
+      "DEL",
+      0
+     ],
+     [
+      "Youssef Khoudda",
       "DEL",
       0
      ],
@@ -21252,21 +21152,6 @@ window.DATOS_LIGAS = {
     "Paris FC": "https://crests.football-data.org/1045.png"
    },
    "partidos": [
-    [
-     "Nice",
-     "Strasbourg",
-     "2026-10-11T13:00:00Z"
-    ],
-    [
-     "Stade Rennais",
-     "Auxerre",
-     "2026-10-11T15:15:00Z"
-    ],
-    [
-     "Troyes",
-     "Marseille",
-     "2026-10-11T18:45:00Z"
-    ],
     [
      "Le Mans",
      "Toulouse",
