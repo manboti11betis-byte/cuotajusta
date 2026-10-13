@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-10-12",
+ "actualizado": "2026-10-13",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6655,7 +6655,7 @@ window.DATOS_LIGAS = {
      2.0
     ],
     "Levante": [
-     3.5,
+     3.33,
      3.0,
      0.25,
      1.5
@@ -6705,8 +6705,8 @@ window.DATOS_LIGAS = {
     "Sevilla FC": [
      1.25,
      1.75,
-     1.67,
-     0.67
+     2.0,
+     1.25
     ],
     "Valencia": [
      0.5,
@@ -8079,11 +8079,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Iker Losada",
-      "DEL",
-      0
-     ],
-     [
       "Rodrigo Riquelme",
       "DEL",
       0
@@ -8105,6 +8100,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Giovani Lo Celso",
+      "MED",
+      0
+     ],
+     [
+      "Iker Losada",
       "MED",
       0
      ],
@@ -9387,11 +9387,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Levante",
-     "Sevilla FC",
-     "2026-10-12T19:00:00Z"
-    ],
-    [
      "Deportivo",
      "Levante",
      "2026-10-16T19:00:00Z"
@@ -9540,8 +9535,8 @@ window.DATOS_LIGAS = {
      2.33
     ],
     "Coventry City": [
-     0.1,
-     3.0,
+     1.33,
+     2.33,
      0.33,
      1.33
     ],
@@ -9602,8 +9597,8 @@ window.DATOS_LIGAS = {
     "Newcastle": [
      2.0,
      1.67,
-     1.5,
-     2.0
+     1.33,
+     2.67
     ],
     "Nottingham": [
      0.1,
@@ -12405,11 +12400,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Coventry City",
-     "Newcastle",
-     "2026-10-12T19:00:00Z"
-    ],
-    [
      "Everton",
      "Chelsea",
      "2026-10-17T11:30:00Z"
@@ -12517,7 +12507,7 @@ window.DATOS_LIGAS = {
    "nota": "Medias por partido de la temporada en curso",
    "equipos": {
     "Atalanta": [
-     1.33,
+     1.75,
      1.0,
      0.5,
      2.0
@@ -12619,22 +12609,22 @@ window.DATOS_LIGAS = {
      2.0
     ],
     "Torino": [
-     0.5,
-     2.0,
+     1.0,
+     1.67,
      1.33,
      1.33
     ],
     "Udinese": [
      0.67,
      1.33,
-     3.0,
-     3.5
+     2.33,
+     3.0
     ],
     "Venezia FC": [
      0.67,
      2.67,
      1.0,
-     2.5
+     2.67
     ]
    },
    "plantillas": {
@@ -13142,6 +13132,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Marco Sportiello",
+      "POR",
+      0
+     ],
+     [
+      "Mattia Sonzogni",
       "POR",
       0
      ],
@@ -14157,11 +14152,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Claudio Pugliese",
-      "DEL",
-      0
-     ],
-     [
       "David Neres",
       "DEL",
       0
@@ -14278,6 +14268,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Alex Meret",
+      "POR",
+      0
+     ],
+     [
+      "Claudio Pugliese",
       "POR",
       0
      ],
@@ -15623,16 +15618,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Atalanta",
-     "Venezia FC",
-     "2026-10-12T16:30:00Z"
-    ],
-    [
-     "Torino",
-     "Udinese",
-     "2026-10-12T18:45:00Z"
-    ],
-    [
      "Frosinone",
      "Sassuolo",
      "2026-10-16T18:45:00Z"
@@ -15731,6 +15716,21 @@ window.DATOS_LIGAS = {
      "Udinese",
      "Milan",
      "2026-10-25T19:45:00Z"
+    ],
+    [
+     "Sassuolo",
+     "Lazio",
+     "2026-10-27T17:30:00Z"
+    ],
+    [
+     "Roma",
+     "Cagliari",
+     "2026-10-27T19:45:00Z"
+    ],
+    [
+     "Torino",
+     "Como 1907",
+     "2026-10-27T19:45:00Z"
     ]
    ]
   },
