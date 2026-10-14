@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-10-13",
+ "actualizado": "2026-10-14",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -9637,6 +9637,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Maalik Hashi",
+      "DEL",
+      0
+     ],
+     [
       "Max Dowman",
       "DEL",
       0
@@ -10552,6 +10557,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Bryan Mbeumo",
+      "DEL",
+      0
+     ],
+     [
+      "Daniel Armer",
       "DEL",
       0
      ],
@@ -15731,6 +15741,31 @@ window.DATOS_LIGAS = {
      "Torino",
      "Como 1907",
      "2026-10-27T19:45:00Z"
+    ],
+    [
+     "Milan",
+     "Bologna",
+     "2026-10-28T17:30:00Z"
+    ],
+    [
+     "Venezia FC",
+     "Inter",
+     "2026-10-28T17:30:00Z"
+    ],
+    [
+     "Parma",
+     "Udinese",
+     "2026-10-28T17:30:00Z"
+    ],
+    [
+     "Genoa",
+     "Juventus",
+     "2026-10-28T19:45:00Z"
+    ],
+    [
+     "Monza",
+     "Napoli",
+     "2026-10-28T19:45:00Z"
     ]
    ]
   },
@@ -15741,7 +15776,7 @@ window.DATOS_LIGAS = {
    "equipos": {
     "1. FC Köln": [
      2.0,
-     1.33,
+     1.5,
      1.0,
      3.0
     ],
@@ -15782,8 +15817,8 @@ window.DATOS_LIGAS = {
      3.33
     ],
     "Freiburg": [
-     3.67,
-     0.67,
+     4.5,
+     0.5,
      1.5,
      1.0
     ],
@@ -15808,8 +15843,8 @@ window.DATOS_LIGAS = {
     "M'gladbach": [
      3.0,
      4.0,
-     0.33,
-     3.33
+     0.1,
+     4.0
     ],
     "Mainz": [
      1.33,
@@ -15832,7 +15867,7 @@ window.DATOS_LIGAS = {
     "Schalke": [
      0.1,
      0.3,
-     1.33,
+     1.5,
      2.0
     ],
     "Stuttgart": [
@@ -16448,6 +16483,11 @@ window.DATOS_LIGAS = {
      ]
     ],
     "Bayern": [
+     [
+      "David Podar-Stiube",
+      "DEL",
+      0
+     ],
      [
       "Harry Kane",
       "DEL",
