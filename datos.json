@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-14",
+ "actualizado": "2026-10-15",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -10301,6 +10301,11 @@
       0
      ],
      [
+      "Joshua Sonni-Lambie",
+      "DEL",
+      0
+     ],
+     [
       "Lewis Koumas",
       "DEL",
       0
@@ -11632,11 +11637,6 @@
       "Ola Aina",
       "DEF",
       0
-     ],
-     [
-      "Ousmane Diomande",
-      "DEF",
-      1
      ],
      [
       "John",
@@ -15765,6 +15765,16 @@
      "Monza",
      "Napoli",
      "2026-10-28T19:45:00Z"
+    ],
+    [
+     "Frosinone",
+     "Lecce",
+     "2026-10-29T17:30:00Z"
+    ],
+    [
+     "Fiorentina",
+     "Atalanta",
+     "2026-10-29T19:45:00Z"
     ]
    ]
   },
@@ -19713,6 +19723,11 @@
      ]
     ],
     "PSG": [
+     [
+      "Adam Mouak",
+      "DEL",
+      0
+     ],
      [
       "Desire Doue",
       "DEL",

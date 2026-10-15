@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-10-14",
+ "actualizado": "2026-10-15",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -10302,6 +10302,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Joshua Sonni-Lambie",
+      "DEL",
+      0
+     ],
+     [
       "Lewis Koumas",
       "DEL",
       0
@@ -11633,11 +11638,6 @@ window.DATOS_LIGAS = {
       "Ola Aina",
       "DEF",
       0
-     ],
-     [
-      "Ousmane Diomande",
-      "DEF",
-      1
      ],
      [
       "John",
@@ -15766,6 +15766,16 @@ window.DATOS_LIGAS = {
      "Monza",
      "Napoli",
      "2026-10-28T19:45:00Z"
+    ],
+    [
+     "Frosinone",
+     "Lecce",
+     "2026-10-29T17:30:00Z"
+    ],
+    [
+     "Fiorentina",
+     "Atalanta",
+     "2026-10-29T19:45:00Z"
     ]
    ]
   },
@@ -19714,6 +19724,11 @@ window.DATOS_LIGAS = {
      ]
     ],
     "PSG": [
+     [
+      "Adam Mouak",
+      "DEL",
+      0
+     ],
      [
       "Desire Doue",
       "DEL",
