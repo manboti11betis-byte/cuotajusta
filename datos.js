@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-10-15",
+ "actualizado": "2026-10-16",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -9490,6 +9490,11 @@ window.DATOS_LIGAS = {
      "Sevilla FC",
      "Osasuna",
      "2026-10-26T20:00:00Z"
+    ],
+    [
+     "Villarreal",
+     "Espanyol",
+     "2026-10-30T20:00:00Z"
     ]
    ]
   },
@@ -15786,7 +15791,7 @@ window.DATOS_LIGAS = {
    "equipos": {
     "1. FC Köln": [
      2.0,
-     1.5,
+     1.33,
      1.0,
      3.0
     ],
@@ -15827,8 +15832,8 @@ window.DATOS_LIGAS = {
      3.33
     ],
     "Freiburg": [
-     4.5,
-     0.5,
+     3.67,
+     0.67,
      1.5,
      1.0
     ],
@@ -15853,8 +15858,8 @@ window.DATOS_LIGAS = {
     "M'gladbach": [
      3.0,
      4.0,
-     0.1,
-     4.0
+     0.33,
+     3.33
     ],
     "Mainz": [
      1.33,
@@ -15877,7 +15882,7 @@ window.DATOS_LIGAS = {
     "Schalke": [
      0.1,
      0.3,
-     1.5,
+     1.33,
      2.0
     ],
     "Stuttgart": [
@@ -18656,6 +18661,11 @@ window.DATOS_LIGAS = {
      "Freiburg",
      "Bayern",
      "2026-10-25T16:30:00Z"
+    ],
+    [
+     "Elversberg",
+     "Mainz",
+     "2026-10-30T19:30:00Z"
     ]
    ]
   },
@@ -18673,7 +18683,7 @@ window.DATOS_LIGAS = {
     "Auxerre": [
      1.33,
      1.33,
-     1.33,
+     1.5,
      4.0
     ],
     "Brest": [
@@ -18709,8 +18719,8 @@ window.DATOS_LIGAS = {
     "Marseille": [
      2.33,
      1.67,
-     0.67,
-     1.0
+     0.1,
+     1.5
     ],
     "Monaco": [
      2.0,
@@ -18719,8 +18729,8 @@ window.DATOS_LIGAS = {
      0.67
     ],
     "Nice": [
-     1.25,
-     0.75,
+     1.0,
+     0.67,
      0.1,
      2.0
     ],
@@ -18749,16 +18759,16 @@ window.DATOS_LIGAS = {
      2.0
     ],
     "Stade Rennais": [
-     2.5,
-     1.25,
+     2.0,
+     1.33,
      1.0,
      2.5
     ],
     "Strasbourg": [
      1.5,
      1.0,
-     2.0,
-     2.5
+     2.33,
+     2.67
     ],
     "Toulouse": [
      1.0,
@@ -18767,8 +18777,8 @@ window.DATOS_LIGAS = {
      2.0
     ],
     "Troyes": [
-     0.67,
-     2.67,
+     1.0,
+     3.0,
      0.67,
      1.67
     ]
@@ -21296,6 +21306,16 @@ window.DATOS_LIGAS = {
      "PSG",
      "Olympique Lyon",
      "2026-10-25T19:45:00Z"
+    ],
+    [
+     "Le Havre",
+     "PSG",
+     "2026-10-30T18:00:00Z"
+    ],
+    [
+     "Lille",
+     "RC Lens",
+     "2026-10-30T20:05:00Z"
     ]
    ]
   }
