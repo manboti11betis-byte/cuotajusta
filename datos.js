@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-10-19",
+ "actualizado": "2026-10-20",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6650,7 +6650,7 @@ window.DATOS_LIGAS = {
     ],
     "Getafe": [
      1.0,
-     0.5,
+     0.6,
      0.1,
      2.0
     ],
@@ -6675,8 +6675,8 @@ window.DATOS_LIGAS = {
     "Rayo Vallecano": [
      2.0,
      1.33,
-     1.25,
-     3.0
+     1.2,
+     2.6
     ],
     "Real Betis": [
      2.0,
@@ -9392,11 +9392,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Getafe",
-     "Rayo Vallecano",
-     "2026-10-19T19:00:00Z"
-    ],
-    [
      "Levante",
      "Athletic",
      "2026-10-21T18:00:00Z"
@@ -9547,8 +9542,8 @@ window.DATOS_LIGAS = {
     "Coventry City": [
      1.33,
      2.33,
-     0.33,
-     1.33
+     0.5,
+     1.75
     ],
     "Crystal Palace": [
      2.0,
@@ -9623,8 +9618,8 @@ window.DATOS_LIGAS = {
      2.5
     ],
     "Tottenham": [
-     0.67,
-     1.67,
+     1.25,
+     1.5,
      0.33,
      1.33
     ]
@@ -12420,11 +12415,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Tottenham",
-     "Coventry City",
-     "2026-10-19T19:00:00Z"
-    ],
-    [
      "Ipswich Town",
      "Nottingham",
      "2026-10-23T19:00:00Z"
@@ -12546,8 +12536,8 @@ window.DATOS_LIGAS = {
     "Cagliari": [
      0.67,
      0.67,
-     1.33,
-     0.33
+     1.0,
+     1.25
     ],
     "Como 1907": [
      1.0,
@@ -12604,8 +12594,8 @@ window.DATOS_LIGAS = {
      1.25
     ],
     "Monza": [
-     2.0,
-     2.0,
+     2.67,
+     1.33,
      1.25,
      2.75
     ],
@@ -12616,8 +12606,8 @@ window.DATOS_LIGAS = {
      1.25
     ],
     "Parma": [
-     1.0,
-     1.0,
+     0.75,
+     1.5,
      0.33,
      2.33
     ],
@@ -12636,8 +12626,8 @@ window.DATOS_LIGAS = {
     "Torino": [
      1.0,
      1.67,
-     1.33,
-     1.33
+     1.75,
+     1.0
     ],
     "Udinese": [
      0.5,
@@ -15647,16 +15637,6 @@ window.DATOS_LIGAS = {
     "Como 1907": "https://crests.football-data.org/7397.png"
    },
    "partidos": [
-    [
-     "Monza",
-     "Cagliari",
-     "2026-10-19T16:30:00Z"
-    ],
-    [
-     "Parma",
-     "Torino",
-     "2026-10-19T18:45:00Z"
-    ],
     [
      "Torino",
      "Monza",
