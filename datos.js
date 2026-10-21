@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-10-20",
+ "actualizado": "2026-10-21",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -1015,11 +1015,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Neymar",
-      "DEL",
-      0
-     ],
-     [
       "Raphinha",
       "DEL",
       1
@@ -1061,6 +1056,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Lucas Paquetá",
+      "MED",
+      0
+     ],
+     [
+      "Neymar",
       "MED",
       0
      ],
@@ -2711,12 +2711,22 @@ window.DATOS_LIGAS = {
     ],
     "Ecuador": [
      [
+      "Alan Minda",
+      "DEL",
+      0
+     ],
+     [
       "Anthony Valencia",
       "DEL",
       0
      ],
      [
       "Enner Valencia",
+      "DEL",
+      0
+     ],
+     [
+      "Gonzalo Plata",
       "DEL",
       0
      ],
@@ -2751,17 +2761,7 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Alan Minda",
-      "MED",
-      0
-     ],
-     [
       "Denil Castillo",
-      "MED",
-      0
-     ],
-     [
-      "Gonzalo Plata",
       "MED",
       0
      ],
@@ -4183,6 +4183,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Jhon Arias",
+      "DEL",
+      0
+     ],
+     [
       "Jhon Córdoba",
       "DEL",
       0
@@ -4209,11 +4214,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Jefferson Lerma",
-      "MED",
-      0
-     ],
-     [
-      "Jhon Arias",
       "MED",
       0
      ],
@@ -7283,6 +7283,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Roony Bardghji",
+      "DEL",
+      0
+     ],
+     [
+      "Álex Campos",
       "DEL",
       0
      ],
