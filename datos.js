@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-10-21",
+ "actualizado": "2026-10-22",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6609,8 +6609,8 @@ window.DATOS_LIGAS = {
     "Athletic": [
      1.25,
      1.0,
-     0.67,
-     0.67
+     0.75,
+     1.25
     ],
     "Atleti": [
      2.5,
@@ -6655,8 +6655,8 @@ window.DATOS_LIGAS = {
      2.0
     ],
     "Levante": [
-     3.33,
-     3.0,
+     3.25,
+     2.5,
      0.4,
      1.4
     ],
@@ -6917,11 +6917,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Obed Vargas",
-      "MED",
-      0
-     ],
-     [
-      "Pablo Barrios",
       "MED",
       0
      ],
@@ -7201,11 +7196,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Leandro Cabrera",
-      "DEF",
-      0
-     ],
-     [
-      "Omar El Hilali",
       "DEF",
       0
      ],
@@ -7601,11 +7591,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Angel Recio",
-      "DEF",
-      0
-     ],
-     [
       "Diego Murillo",
       "DEF",
       0
@@ -7637,6 +7622,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Rafa Garrido",
+      "DEF",
+      0
+     ],
+     [
+      "Ángel Recio",
       "DEF",
       0
      ],
@@ -8749,6 +8739,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Ruben Sanchez",
+      "DEL",
+      0
+     ],
+     [
       "Tete Morente",
       "DEL",
       0
@@ -8820,11 +8815,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Roy Revivo",
-      "DEF",
-      0
-     ],
-     [
-      "Rubén Sánchez",
       "DEF",
       0
      ],
@@ -9396,11 +9386,6 @@ window.DATOS_LIGAS = {
     "Santander": "https://crests.football-data.org/5335.png"
    },
    "partidos": [
-    [
-     "Levante",
-     "Athletic",
-     "2026-10-21T18:00:00Z"
-    ],
     [
      "Alavés",
      "Málaga",
@@ -13193,11 +13178,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Nicolò Cambiaghi",
-      "DEL",
-      0
-     ],
-     [
       "Riccardo Orsolini",
       "DEL",
       0
@@ -14855,11 +14835,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Cristian Volpato",
-      "MED",
-      0
-     ],
-     [
       "Daniel Boloca",
       "MED",
       0
@@ -16310,11 +16285,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Guéla Doué",
-      "DEF",
-      0
-     ],
-     [
       "Jarell Quansah",
       "DEF",
       0
@@ -16398,11 +16368,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Felix Kalu Nmecha",
-      "MED",
-      0
-     ],
-     [
-      "Giannis Konstantelias",
       "MED",
       0
      ],
@@ -16955,11 +16920,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Justin Diehl",
-      "DEL",
-      0
-     ],
-     [
       "Leo Sauer",
       "DEL",
       0
@@ -17218,11 +17178,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Alexander Schlager",
-      "POR",
-      0
-     ],
-     [
-      "Karl Hein",
       "POR",
       0
      ],
@@ -18913,11 +18868,6 @@ window.DATOS_LIGAS = {
     ],
     "Brest": [
      [
-      "Axel Camblan",
-      "DEL",
-      0
-     ],
-     [
       "Enzo Monchatre",
       "DEL",
       0
@@ -18940,6 +18890,11 @@ window.DATOS_LIGAS = {
      [
       "Pathé Mboup",
       "DEL",
+      0
+     ],
+     [
+      "Axel Camblan",
+      "MED",
       0
      ],
      [
@@ -20010,11 +19965,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Esteban Lepaul",
-      "DEL",
-      0
-     ],
-     [
-      "Issa Soumaré",
       "DEL",
       0
      ],
@@ -21228,11 +21178,6 @@ window.DATOS_LIGAS = {
      "2026-10-23T18:45:00Z"
     ],
     [
-     "Toulouse",
-     "Troyes",
-     "2026-10-24T15:15:00Z"
-    ],
-    [
      "RC Lens",
      "Paris FC",
      "2026-10-24T18:45:00Z"
@@ -21255,6 +21200,11 @@ window.DATOS_LIGAS = {
     [
      "Angers SCO",
      "Lorient",
+     "2026-10-25T16:15:00Z"
+    ],
+    [
+     "Toulouse",
+     "Troyes",
      "2026-10-25T16:15:00Z"
     ],
     [
