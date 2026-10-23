@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-10-22",
+ "actualizado": "2026-10-23",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -9485,6 +9485,11 @@ window.DATOS_LIGAS = {
      "Deportivo",
      "Osasuna",
      "2026-11-02T20:00:00Z"
+    ],
+    [
+     "Sevilla FC",
+     "Alavés",
+     "2026-11-06T20:00:00Z"
     ]
    ]
   },
@@ -12503,6 +12508,11 @@ window.DATOS_LIGAS = {
      "Newcastle",
      "Everton",
      "2026-11-02T20:00:00Z"
+    ],
+    [
+     "Everton",
+     "Coventry City",
+     "2026-11-06T20:00:00Z"
     ]
    ]
   },
@@ -15766,6 +15776,11 @@ window.DATOS_LIGAS = {
      "Atalanta",
      "Parma",
      "2026-11-02T19:45:00Z"
+    ],
+    [
+     "Venezia FC",
+     "Udinese",
+     "2026-11-06T19:45:00Z"
     ]
    ]
   },
@@ -18626,6 +18641,11 @@ window.DATOS_LIGAS = {
      "Frankfurt",
      "HSV",
      "2026-11-01T16:30:00Z"
+    ],
+    [
+     "HSV",
+     "M'gladbach",
+     "2026-11-06T19:30:00Z"
     ]
    ]
   },
@@ -18996,6 +19016,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Faris Moumbagna",
+      "DEL",
+      0
+     ],
+     [
+      "Ibrahim Gomis",
       "DEL",
       0
      ],
@@ -19579,6 +19604,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Rémi Himbert",
+      "DEL",
+      0
+     ],
+     [
+      "Ángel García",
       "DEL",
       0
      ],
@@ -21261,6 +21291,11 @@ window.DATOS_LIGAS = {
      "Marseille",
      "Toulouse",
      "2026-11-01T19:45:00Z"
+    ],
+    [
+     "Toulouse",
+     "Strasbourg",
+     "2026-11-06T19:45:00Z"
     ]
    ]
   }
