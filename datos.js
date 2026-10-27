@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-10-26",
+ "actualizado": "2026-10-27",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6607,8 +6607,8 @@ window.DATOS_LIGAS = {
      1.25
     ],
     "Athletic": [
-     1.25,
-     1.0,
+     1.8,
+     0.8,
      0.75,
      1.25
     ],
@@ -6619,14 +6619,14 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Barça": [
-     4.25,
-     1.0,
+     3.6,
+     1.2,
      4.4,
      1.0
     ],
     "Celta": [
-     1.8,
-     1.2,
+     1.5,
+     1.0,
      0.25,
      0.3
     ],
@@ -6652,13 +6652,13 @@ window.DATOS_LIGAS = {
      1.0,
      0.6,
      0.1,
-     2.0
+     2.4
     ],
     "Levante": [
      3.25,
      2.5,
-     0.4,
-     1.4
+     0.5,
+     1.5
     ],
     "Málaga": [
      1.0,
@@ -6669,8 +6669,8 @@ window.DATOS_LIGAS = {
     "Osasuna": [
      0.8,
      0.6,
-     1.5,
-     3.75
+     1.2,
+     3.4
     ],
     "Rayo Vallecano": [
      1.5,
@@ -6681,18 +6681,18 @@ window.DATOS_LIGAS = {
     "Real Betis": [
      2.0,
      1.4,
-     1.5,
-     1.75
+     1.2,
+     1.4
     ],
     "Real Madrid": [
      3.4,
      0.6,
-     1.5,
-     1.5
+     1.6,
+     1.4
     ],
     "Real Sociedad": [
-     1.25,
-     1.5,
+     1.4,
+     1.4,
      2.4,
      2.2
     ],
@@ -6703,8 +6703,8 @@ window.DATOS_LIGAS = {
      3.6
     ],
     "Sevilla FC": [
-     1.25,
-     1.75,
+     1.4,
+     1.4,
      1.8,
      1.8
     ],
@@ -9396,11 +9396,6 @@ window.DATOS_LIGAS = {
     "Santander": "https://crests.football-data.org/5335.png"
    },
    "partidos": [
-    [
-     "Sevilla FC",
-     "Osasuna",
-     "2026-10-26T20:00:00Z"
-    ],
     [
      "Villarreal",
      "Espanyol",
@@ -18732,12 +18727,12 @@ window.DATOS_LIGAS = {
     "Olympique Lyon": [
      2.5,
      0.75,
-     1.0,
-     0.67
+     0.75,
+     1.0
     ],
     "PSG": [
      2.0,
-     1.5,
+     1.0,
      2.0,
      1.2
     ],
@@ -21227,11 +21222,6 @@ window.DATOS_LIGAS = {
     "Paris FC": "https://crests.football-data.org/1045.png"
    },
    "partidos": [
-    [
-     "PSG",
-     "Olympique Lyon",
-     "2026-10-26T19:30:00Z"
-    ],
     [
      "Le Havre",
      "PSG",
