@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-10-28",
+ "actualizado": "2026-10-29",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -12530,8 +12530,8 @@ window.DATOS_LIGAS = {
     "Bologna": [
      1.0,
      1.75,
-     1.0,
-     0.75
+     1.6,
+     1.0
     ],
     "Cagliari": [
      0.5,
@@ -12558,8 +12558,8 @@ window.DATOS_LIGAS = {
      2.0
     ],
     "Genoa": [
-     1.0,
-     1.6,
+     1.17,
+     1.33,
      0.33,
      1.67
     ],
@@ -12567,13 +12567,13 @@ window.DATOS_LIGAS = {
      3.4,
      1.4,
      2.0,
-     1.0
+     0.75
     ],
     "Juventus": [
      1.25,
      1.0,
-     1.5,
-     1.0
+     1.2,
+     1.2
     ],
     "Lazio": [
      2.0,
@@ -12588,26 +12588,26 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Milan": [
-     2.67,
-     0.67,
+     2.5,
+     1.5,
      1.6,
      1.0
     ],
     "Monza": [
-     2.67,
-     1.33,
+     2.25,
+     2.0,
      1.4,
      2.8
     ],
     "Napoli": [
      2.0,
      1.25,
-     1.25,
-     1.25
+     1.8,
+     1.2
     ],
     "Parma": [
-     0.75,
-     1.5,
+     0.6,
+     1.2,
      0.5,
      2.25
     ],
@@ -12632,11 +12632,11 @@ window.DATOS_LIGAS = {
     "Udinese": [
      0.4,
      1.8,
-     2.33,
-     3.0
+     1.75,
+     2.25
     ],
     "Venezia FC": [
-     0.75,
+     0.6,
      2.0,
      0.75,
      2.25
@@ -15647,31 +15647,6 @@ window.DATOS_LIGAS = {
     "Como 1907": "https://crests.football-data.org/7397.png"
    },
    "partidos": [
-    [
-     "Milan",
-     "Bologna",
-     "2026-10-28T17:30:00Z"
-    ],
-    [
-     "Venezia FC",
-     "Inter",
-     "2026-10-28T17:30:00Z"
-    ],
-    [
-     "Parma",
-     "Udinese",
-     "2026-10-28T17:30:00Z"
-    ],
-    [
-     "Genoa",
-     "Juventus",
-     "2026-10-28T19:45:00Z"
-    ],
-    [
-     "Monza",
-     "Napoli",
-     "2026-10-28T19:45:00Z"
-    ],
     [
      "Frosinone",
      "Lecce",
