@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-10-29",
+ "actualizado": "2026-10-30",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -12524,8 +12524,8 @@ window.DATOS_LIGAS = {
     "Atalanta": [
      2.2,
      1.6,
-     1.0,
-     2.33
+     1.25,
+     2.25
     ],
     "Bologna": [
      1.0,
@@ -12546,14 +12546,14 @@ window.DATOS_LIGAS = {
      1.17
     ],
     "Fiorentina": [
-     0.75,
-     2.25,
+     1.0,
+     2.2,
      1.5,
      2.5
     ],
     "Frosinone": [
-     2.25,
-     1.25,
+     2.8,
+     1.2,
      2.0,
      2.0
     ],
@@ -12584,8 +12584,8 @@ window.DATOS_LIGAS = {
     "Lecce": [
      1.0,
      2.5,
-     1.25,
-     1.0
+     1.2,
+     1.8
     ],
     "Milan": [
      2.5,
@@ -12808,6 +12808,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Beto",
+      "DEL",
+      0
+     ],
+     [
+      "Dennis Beldenti",
       "DEL",
       0
      ],
@@ -15647,16 +15652,6 @@ window.DATOS_LIGAS = {
     "Como 1907": "https://crests.football-data.org/7397.png"
    },
    "partidos": [
-    [
-     "Frosinone",
-     "Lecce",
-     "2026-10-29T17:30:00Z"
-    ],
-    [
-     "Fiorentina",
-     "Atalanta",
-     "2026-10-29T19:45:00Z"
-    ],
     [
      "Bologna",
      "Monza",
