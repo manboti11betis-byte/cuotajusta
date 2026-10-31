@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-10-30",
+ "actualizado": "2026-10-31",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6645,8 +6645,8 @@ window.DATOS_LIGAS = {
     "Espanyol": [
      1.2,
      1.4,
-     1.2,
-     1.4
+     1.17,
+     1.17
     ],
     "Getafe": [
      1.0,
@@ -6715,8 +6715,8 @@ window.DATOS_LIGAS = {
      1.5
     ],
     "Villarreal": [
-     1.5,
-     1.5,
+     1.2,
+     1.4,
      1.5,
      1.33
     ]
@@ -7105,11 +7105,6 @@ window.DATOS_LIGAS = {
     ],
     "Espanyol": [
      [
-      "Bryan Zaragoza",
-      "DEL",
-      0
-     ],
-     [
       "Javi Puado",
       "DEL",
       0
@@ -7155,22 +7150,12 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Javier Hernández",
-      "MED",
-      0
-     ],
-     [
       "Moscardo",
       "MED",
       0
      ],
      [
       "Pol Lozano",
-      "MED",
-      0
-     ],
-     [
-      "Rafel Bauzà",
       "MED",
       0
      ],
@@ -9396,11 +9381,6 @@ window.DATOS_LIGAS = {
     "Santander": "https://crests.football-data.org/5335.png"
    },
    "partidos": [
-    [
-     "Villarreal",
-     "Espanyol",
-     "2026-10-30T20:00:00Z"
-    ],
     [
      "Levante",
      "Atleti",
@@ -15790,8 +15770,8 @@ window.DATOS_LIGAS = {
      0.67
     ],
     "Elversberg": [
-     2.67,
-     2.33,
+     3.0,
+     2.0,
      1.0,
      2.0
     ],
@@ -15834,8 +15814,8 @@ window.DATOS_LIGAS = {
     "Mainz": [
      1.5,
      2.5,
-     3.33,
-     1.0
+     2.75,
+     1.75
     ],
     "RB Leipzig": [
      4.5,
@@ -18523,11 +18503,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Elversberg",
-     "Mainz",
-     "2026-10-30T19:30:00Z"
-    ],
-    [
      "M'gladbach",
      "SC Paderborn",
      "2026-10-31T14:30:00Z"
@@ -18638,8 +18613,8 @@ window.DATOS_LIGAS = {
      1.5
     ],
     "Le Havre": [
-     0.5,
-     1.5,
+     0.6,
+     2.2,
      1.5,
      2.25
     ],
@@ -18650,8 +18625,8 @@ window.DATOS_LIGAS = {
      2.0
     ],
     "Lille": [
-     1.5,
-     0.75,
+     1.4,
+     0.6,
      1.25,
      0.75
     ],
@@ -18674,8 +18649,8 @@ window.DATOS_LIGAS = {
      0.75
     ],
     "Nice": [
-     1.25,
-     0.75,
+     2.0,
+     1.0,
      0.75,
      1.75
     ],
@@ -18688,8 +18663,8 @@ window.DATOS_LIGAS = {
     "PSG": [
      2.0,
      1.0,
-     2.0,
-     1.2
+     2.5,
+     1.17
     ],
     "Paris FC": [
      2.25,
@@ -18700,14 +18675,14 @@ window.DATOS_LIGAS = {
     "RC Lens": [
      2.25,
      1.25,
-     1.75,
-     1.75
+     1.4,
+     1.6
     ],
     "Stade Rennais": [
      2.6,
      1.0,
-     1.67,
-     3.0
+     1.75,
+     3.5
     ],
     "Strasbourg": [
      1.33,
@@ -21177,21 +21152,6 @@ window.DATOS_LIGAS = {
     "Paris FC": "https://crests.football-data.org/1045.png"
    },
    "partidos": [
-    [
-     "Le Havre",
-     "PSG",
-     "2026-10-30T18:00:00Z"
-    ],
-    [
-     "Nice",
-     "Stade Rennais",
-     "2026-10-30T18:00:00Z"
-    ],
-    [
-     "Lille",
-     "RC Lens",
-     "2026-10-30T20:05:00Z"
-    ],
     [
      "Troyes",
      "Le Mans",
