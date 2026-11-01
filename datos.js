@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-10-31",
+ "actualizado": "2026-11-01",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6603,8 +6603,8 @@ window.DATOS_LIGAS = {
     "Alavés": [
      1.83,
      1.0,
-     0.75,
-     1.25
+     0.8,
+     2.2
     ],
     "Athletic": [
      1.8,
@@ -6615,20 +6615,20 @@ window.DATOS_LIGAS = {
     "Atleti": [
      2.2,
      0.6,
-     1.8,
-     1.0
+     1.83,
+     0.83
     ],
     "Barça": [
-     3.6,
-     1.2,
+     4.0,
+     1.17,
      4.4,
      1.0
     ],
     "Celta": [
      1.5,
      1.0,
-     0.25,
-     0.3
+     0.2,
+     0.8
     ],
     "Deportivo": [
      1.2,
@@ -6655,16 +6655,16 @@ window.DATOS_LIGAS = {
      2.4
     ],
     "Levante": [
-     3.25,
-     2.5,
+     2.6,
+     2.4,
      0.5,
      1.5
     ],
     "Málaga": [
      1.0,
      2.0,
-     0.4,
-     1.8
+     0.5,
+     1.83
     ],
     "Osasuna": [
      0.8,
@@ -6673,14 +6673,14 @@ window.DATOS_LIGAS = {
      3.4
     ],
     "Rayo Vallecano": [
-     1.5,
-     1.75,
+     1.8,
+     1.4,
      1.2,
      2.6
     ],
     "Real Betis": [
      2.0,
-     1.4,
+     1.33,
      1.2,
      1.4
     ],
@@ -7218,6 +7218,11 @@ window.DATOS_LIGAS = {
     "Barça": [
      [
       "Anthony Gordon",
+      "DEL",
+      0
+     ],
+     [
+      "Ebrima Tunkara",
       "DEL",
       0
      ],
@@ -9382,26 +9387,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Levante",
-     "Atleti",
-     "2026-10-31T13:00:00Z"
-    ],
-    [
-     "Rayo Vallecano",
-     "Celta",
-     "2026-10-31T15:15:00Z"
-    ],
-    [
-     "Real Betis",
-     "Málaga",
-     "2026-10-31T17:30:00Z"
-    ],
-    [
-     "Barça",
-     "Alavés",
-     "2026-10-31T20:00:00Z"
-    ],
-    [
      "Getafe",
      "Sevilla FC",
      "2026-11-01T13:00:00Z"
@@ -9490,46 +9475,46 @@ window.DATOS_LIGAS = {
      0.75
     ],
     "Aston Villa": [
-     1.25,
-     1.5,
+     1.2,
+     1.4,
      1.0,
      1.5
     ],
     "Bournemouth": [
-     1.25,
-     1.0,
+     1.4,
+     0.8,
      1.75,
      2.25
     ],
     "Brentford": [
      2.0,
-     0.75,
+     0.6,
      1.5,
      1.5
     ],
     "Brighton Hove": [
      3.25,
      0.3,
-     2.5,
-     1.5
+     2.2,
+     1.2
     ],
     "Chelsea": [
-     2.75,
-     2.0,
+     2.6,
+     1.6,
      1.5,
      1.75
     ],
     "Coventry City": [
-     1.0,
-     2.0,
+     1.4,
+     1.8,
      0.5,
      1.75
     ],
     "Crystal Palace": [
      1.5,
      2.5,
-     0.75,
-     2.25
+     0.6,
+     2.2
     ],
     "Everton": [
      1.25,
@@ -9540,26 +9525,26 @@ window.DATOS_LIGAS = {
     "Fulham": [
      1.5,
      1.75,
-     0.5,
-     0.75
+     0.6,
+     0.8
     ],
     "Hull City": [
-     1.25,
-     0.75,
+     1.4,
+     1.0,
      1.0,
      1.25
     ],
     "Ipswich Town": [
      1.25,
      1.25,
-     1.75,
-     2.75
+     1.8,
+     2.6
     ],
     "Leeds United": [
      1.5,
      0.75,
-     0.75,
-     0.75
+     0.6,
+     1.0
     ],
     "Liverpool": [
      1.0,
@@ -9568,16 +9553,16 @@ window.DATOS_LIGAS = {
      0.75
     ],
     "Man City": [
-     2.75,
-     1.5,
+     2.2,
+     1.4,
      2.25,
      0.75
     ],
     "Man United": [
      1.5,
      1.75,
-     1.0,
-     1.5
+     0.8,
+     1.6
     ],
     "Newcastle": [
      1.5,
@@ -9588,18 +9573,18 @@ window.DATOS_LIGAS = {
     "Nottingham": [
      0.1,
      0.75,
-     1.5,
-     1.75
+     1.2,
+     1.8
     ],
     "Sunderland": [
      0.25,
      1.0,
-     1.25,
-     2.5
+     1.2,
+     2.6
     ],
     "Tottenham": [
-     1.25,
-     1.5,
+     1.4,
+     1.2,
      0.75,
      1.0
     ]
@@ -12395,46 +12380,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Chelsea",
-     "Man United",
-     "2026-10-31T12:30:00Z"
-    ],
-    [
-     "Man City",
-     "Brighton Hove",
-     "2026-10-31T15:00:00Z"
-    ],
-    [
-     "Bournemouth",
-     "Leeds United",
-     "2026-10-31T15:00:00Z"
-    ],
-    [
-     "Coventry City",
-     "Sunderland",
-     "2026-10-31T15:00:00Z"
-    ],
-    [
-     "Hull City",
-     "Ipswich Town",
-     "2026-10-31T15:00:00Z"
-    ],
-    [
-     "Brentford",
-     "Nottingham",
-     "2026-10-31T15:00:00Z"
-    ],
-    [
-     "Tottenham",
-     "Crystal Palace",
-     "2026-10-31T17:30:00Z"
-    ],
-    [
-     "Aston Villa",
-     "Fulham",
-     "2026-10-31T20:00:00Z"
-    ],
-    [
      "Liverpool",
      "Arsenal",
      "2026-11-01T16:30:00Z"
@@ -12508,8 +12453,8 @@ window.DATOS_LIGAS = {
      2.25
     ],
     "Bologna": [
-     1.0,
-     1.75,
+     1.2,
+     1.6,
      1.6,
      1.0
     ],
@@ -12546,8 +12491,8 @@ window.DATOS_LIGAS = {
     "Inter": [
      3.4,
      1.4,
-     2.0,
-     0.75
+     1.8,
+     1.2
     ],
     "Juventus": [
      1.25,
@@ -12568,16 +12513,16 @@ window.DATOS_LIGAS = {
      1.8
     ],
     "Milan": [
-     2.5,
-     1.5,
+     2.6,
+     1.4,
      1.6,
      1.0
     ],
     "Monza": [
      2.25,
      2.0,
-     1.4,
-     2.8
+     1.33,
+     2.67
     ],
     "Napoli": [
      2.0,
@@ -12594,8 +12539,8 @@ window.DATOS_LIGAS = {
     "Roma": [
      2.8,
      1.0,
-     2.25,
-     0.75
+     2.8,
+     1.0
     ],
     "Sassuolo": [
      2.0,
@@ -12610,8 +12555,8 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Udinese": [
-     0.4,
-     1.8,
+     0.67,
+     2.33,
      1.75,
      2.25
     ],
@@ -15633,26 +15578,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Bologna",
-     "Monza",
-     "2026-10-31T14:00:00Z"
-    ],
-    [
-     "Udinese",
-     "Roma",
-     "2026-10-31T17:00:00Z"
-    ],
-    [
-     "Milan",
-     "Inter",
-     "2026-10-31T19:45:00Z"
-    ],
-    [
-     "Como 1907",
-     "Venezia FC",
-     "2026-11-01T11:30:00Z"
-    ],
-    [
      "Frosinone",
      "Torino",
      "2026-11-01T14:00:00Z"
@@ -15746,28 +15671,28 @@ window.DATOS_LIGAS = {
      2.33
     ],
     "Augsburg": [
-     2.0,
-     1.25,
+     1.8,
+     1.4,
      3.0,
      2.67
     ],
     "Bayern": [
-     6.0,
-     0.67,
+     5.0,
+     1.0,
      1.75,
      1.0
     ],
     "Bremen": [
-     2.67,
-     1.67,
+     2.5,
+     1.25,
      1.75,
      2.25
     ],
     "Dortmund": [
      2.0,
      0.5,
-     1.33,
-     0.67
+     1.5,
+     1.0
     ],
     "Elversberg": [
      3.0,
@@ -15784,8 +15709,8 @@ window.DATOS_LIGAS = {
     "Freiburg": [
      3.0,
      1.25,
-     1.33,
-     1.33
+     1.5,
+     1.25
     ],
     "HSV": [
      1.0,
@@ -15796,18 +15721,18 @@ window.DATOS_LIGAS = {
     "Hoffenheim": [
      2.25,
      1.75,
-     1.67,
-     2.33
+     1.25,
+     2.25
     ],
     "Leverkusen": [
-     2.67,
-     0.33,
+     2.5,
+     1.25,
      2.0,
      2.75
     ],
     "M'gladbach": [
-     2.33,
-     3.33,
+     1.75,
+     2.5,
      1.0,
      3.0
     ],
@@ -15820,25 +15745,25 @@ window.DATOS_LIGAS = {
     "RB Leipzig": [
      4.5,
      0.3,
-     0.67,
-     3.67
+     1.0,
+     2.75
     ],
     "SC Paderborn": [
      1.0,
      1.0,
-     0.67,
-     1.67
+     0.5,
+     1.25
     ],
     "Schalke": [
      0.1,
-     0.33,
+     0.75,
      1.0,
      1.5
     ],
     "Stuttgart": [
      2.0,
      1.67,
-     1.0,
+     1.6,
      2.0
     ],
     "Union Berlin": [
@@ -16156,6 +16081,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Christian Kofane",
+      "DEL",
+      0
+     ],
+     [
+      "Dustin Buck",
       "DEL",
       0
      ],
@@ -18503,36 +18433,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "M'gladbach",
-     "SC Paderborn",
-     "2026-10-31T14:30:00Z"
-    ],
-    [
-     "Schalke",
-     "RB Leipzig",
-     "2026-10-31T14:30:00Z"
-    ],
-    [
-     "Augsburg",
-     "Freiburg",
-     "2026-10-31T14:30:00Z"
-    ],
-    [
-     "Bremen",
-     "Hoffenheim",
-     "2026-10-31T14:30:00Z"
-    ],
-    [
-     "Leverkusen",
-     "Stuttgart",
-     "2026-10-31T14:30:00Z"
-    ],
-    [
-     "Bayern",
-     "Dortmund",
-     "2026-10-31T17:30:00Z"
-    ],
-    [
      "Union Berlin",
      "1. FC Köln",
      "2026-11-01T14:30:00Z"
@@ -18621,7 +18521,7 @@ window.DATOS_LIGAS = {
     "Le Mans": [
      1.5,
      2.0,
-     1.25,
+     1.0,
      2.0
     ],
     "Lille": [
@@ -18697,8 +18597,8 @@ window.DATOS_LIGAS = {
      1.5
     ],
     "Troyes": [
-     0.75,
-     2.75,
+     1.0,
+     2.2,
      0.5,
      1.25
     ]
@@ -21152,11 +21052,6 @@ window.DATOS_LIGAS = {
     "Paris FC": "https://crests.football-data.org/1045.png"
    },
    "partidos": [
-    [
-     "Troyes",
-     "Le Mans",
-     "2026-10-31T19:45:00Z"
-    ],
     [
      "Strasbourg",
      "Auxerre",
