@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-11-02",
+ "actualizado": "2026-11-03",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6631,7 +6631,7 @@ window.DATOS_LIGAS = {
      0.8
     ],
     "Deportivo": [
-     1.2,
+     1.33,
      1.0,
      1.4,
      1.6
@@ -6669,8 +6669,8 @@ window.DATOS_LIGAS = {
     "Osasuna": [
      0.8,
      0.6,
-     1.2,
-     3.4
+     1.17,
+     3.17
     ],
     "Rayo Vallecano": [
      1.8,
@@ -9392,11 +9392,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Deportivo",
-     "Osasuna",
-     "2026-11-02T20:00:00Z"
-    ],
-    [
      "Sevilla FC",
      "Alavés",
      "2026-11-06T20:00:00Z"
@@ -9504,8 +9499,8 @@ window.DATOS_LIGAS = {
     "Everton": [
      1.25,
      1.0,
-     0.75,
-     1.25
+     0.8,
+     1.0
     ],
     "Fulham": [
      1.5,
@@ -9550,8 +9545,8 @@ window.DATOS_LIGAS = {
      1.6
     ],
     "Newcastle": [
-     1.5,
-     1.5,
+     1.2,
+     1.4,
      1.5,
      2.0
     ],
@@ -12365,11 +12360,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Newcastle",
-     "Everton",
-     "2026-11-02T20:00:00Z"
-    ],
-    [
      "Everton",
      "Coventry City",
      "2026-11-06T20:00:00Z"
@@ -12427,8 +12417,8 @@ window.DATOS_LIGAS = {
    "nota": "Medias por partido de la temporada en curso",
    "equipos": {
     "Atalanta": [
-     2.2,
-     1.6,
+     1.83,
+     1.83,
      1.25,
      2.25
     ],
@@ -12453,8 +12443,8 @@ window.DATOS_LIGAS = {
     "Fiorentina": [
      1.0,
      2.2,
-     1.5,
-     2.5
+     2.0,
+     2.4
     ],
     "Frosinone": [
      2.67,
@@ -12513,8 +12503,8 @@ window.DATOS_LIGAS = {
     "Parma": [
      0.6,
      1.2,
-     0.5,
-     2.25
+     1.0,
+     1.8
     ],
     "Roma": [
      2.8,
@@ -12524,7 +12514,7 @@ window.DATOS_LIGAS = {
     ],
     "Sassuolo": [
      2.0,
-     2.5,
+     2.8,
      1.2,
      2.4
     ],
@@ -15573,16 +15563,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Sassuolo",
-     "Fiorentina",
-     "2026-11-02T17:30:00Z"
-    ],
-    [
-     "Atalanta",
-     "Parma",
-     "2026-11-02T19:45:00Z"
-    ],
-    [
      "Venezia FC",
      "Udinese",
      "2026-11-06T19:45:00Z"
@@ -18479,8 +18459,8 @@ window.DATOS_LIGAS = {
     "Brest": [
      2.0,
      1.5,
-     1.5,
-     1.5
+     1.6,
+     1.2
     ],
     "Le Havre": [
      0.6,
@@ -18501,8 +18481,8 @@ window.DATOS_LIGAS = {
      0.75
     ],
     "Lorient": [
-     1.25,
      1.0,
+     1.2,
      0.5,
      0.5
     ],
@@ -21027,11 +21007,6 @@ window.DATOS_LIGAS = {
     "Paris FC": "https://crests.football-data.org/1045.png"
    },
    "partidos": [
-    [
-     "Lorient",
-     "Brest",
-     "2026-11-02T19:45:00Z"
-    ],
     [
      "Toulouse",
      "Strasbourg",
