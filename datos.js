@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-11-05",
+ "actualizado": "2026-11-06",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -1456,6 +1456,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Luis Romo",
+      "MED",
+      0
+     ],
+     [
       "Obed Vargas",
       "MED",
       0
@@ -1492,11 +1497,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Jorge Sánchez",
-      "DEF",
-      0
-     ],
-     [
-      "Luis Romo",
       "DEF",
       0
      ],
@@ -6467,6 +6467,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Livano Comenencia",
+      "MED",
+      0
+     ],
+     [
       "Tahith Chong",
       "MED",
       0
@@ -6498,11 +6503,6 @@ window.DATOS_LIGAS = {
      ],
      [
       "Juriën Gaari",
-      "DEF",
-      0
-     ],
-     [
-      "Livano Comenencia",
       "DEF",
       0
      ],
@@ -9277,11 +9277,6 @@ window.DATOS_LIGAS = {
       0
      ],
      [
-      "Pablo García",
-      "DEL",
-      0
-     ],
-     [
       "Yassir Zabiri",
       "DEL",
       0
@@ -9333,6 +9328,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "José Manuel",
+      "DEF",
+      0
+     ],
+     [
+      "Pablo García",
       "DEF",
       0
      ],
@@ -9440,6 +9440,11 @@ window.DATOS_LIGAS = {
      "Atleti",
      "Barça",
      "2026-11-08T20:00:00Z"
+    ],
+    [
+     "Athletic",
+     "Espanyol",
+     "2026-11-20T20:00:00Z"
     ]
    ]
   },
@@ -11668,6 +11673,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Jefferson Lerma",
+      "MED",
+      0
+     ],
+     [
+      "Nathanael Kalembo",
       "MED",
       0
      ],
@@ -18441,6 +18451,11 @@ window.DATOS_LIGAS = {
      "Hoffenheim",
      "Schalke",
      "2026-11-08T18:30:00Z"
+    ],
+    [
+     "Bayern",
+     "1. FC Köln",
+     "2026-11-20T19:30:00Z"
     ]
    ]
   },
@@ -21066,6 +21081,11 @@ window.DATOS_LIGAS = {
      "RC Lens",
      "Marseille",
      "2026-11-08T19:45:00Z"
+    ],
+    [
+     "Troyes",
+     "Le Havre",
+     "2026-11-20T19:45:00Z"
     ]
    ]
   }

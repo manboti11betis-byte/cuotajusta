@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-05",
+ "actualizado": "2026-11-06",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -1455,6 +1455,11 @@
       0
      ],
      [
+      "Luis Romo",
+      "MED",
+      0
+     ],
+     [
       "Obed Vargas",
       "MED",
       0
@@ -1491,11 +1496,6 @@
      ],
      [
       "Jorge Sánchez",
-      "DEF",
-      0
-     ],
-     [
-      "Luis Romo",
       "DEF",
       0
      ],
@@ -6466,6 +6466,11 @@
       0
      ],
      [
+      "Livano Comenencia",
+      "MED",
+      0
+     ],
+     [
       "Tahith Chong",
       "MED",
       0
@@ -6497,11 +6502,6 @@
      ],
      [
       "Juriën Gaari",
-      "DEF",
-      0
-     ],
-     [
-      "Livano Comenencia",
       "DEF",
       0
      ],
@@ -9276,11 +9276,6 @@
       0
      ],
      [
-      "Pablo García",
-      "DEL",
-      0
-     ],
-     [
       "Yassir Zabiri",
       "DEL",
       0
@@ -9332,6 +9327,11 @@
      ],
      [
       "José Manuel",
+      "DEF",
+      0
+     ],
+     [
+      "Pablo García",
       "DEF",
       0
      ],
@@ -9439,6 +9439,11 @@
      "Atleti",
      "Barça",
      "2026-11-08T20:00:00Z"
+    ],
+    [
+     "Athletic",
+     "Espanyol",
+     "2026-11-20T20:00:00Z"
     ]
    ]
   },
@@ -11667,6 +11672,11 @@
      ],
      [
       "Jefferson Lerma",
+      "MED",
+      0
+     ],
+     [
+      "Nathanael Kalembo",
       "MED",
       0
      ],
@@ -18440,6 +18450,11 @@
      "Hoffenheim",
      "Schalke",
      "2026-11-08T18:30:00Z"
+    ],
+    [
+     "Bayern",
+     "1. FC Köln",
+     "2026-11-20T19:30:00Z"
     ]
    ]
   },
@@ -21065,6 +21080,11 @@
      "RC Lens",
      "Marseille",
      "2026-11-08T19:45:00Z"
+    ],
+    [
+     "Troyes",
+     "Le Havre",
+     "2026-11-20T19:45:00Z"
     ]
    ]
   }
