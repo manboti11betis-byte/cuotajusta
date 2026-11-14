@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-11-13",
+ "actualizado": "2026-11-14",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -9450,6 +9450,26 @@ window.DATOS_LIGAS = {
      "Levante",
      "Santander",
      "2026-11-27T20:00:00Z"
+    ],
+    [
+     "Real Betis",
+     "Rayo Vallecano",
+     "2026-11-28T13:00:00Z"
+    ],
+    [
+     "Málaga",
+     "Athletic",
+     "2026-11-28T15:15:00Z"
+    ],
+    [
+     "Elche",
+     "Atleti",
+     "2026-11-28T17:30:00Z"
+    ],
+    [
+     "Real Madrid",
+     "Alavés",
+     "2026-11-28T20:00:00Z"
     ]
    ]
   },
@@ -12428,6 +12448,21 @@ window.DATOS_LIGAS = {
      "Nottingham",
      "Chelsea",
      "2026-11-27T20:00:00Z"
+    ],
+    [
+     "Leeds United",
+     "Coventry City",
+     "2026-11-28T15:00:00Z"
+    ],
+    [
+     "Man United",
+     "Brentford",
+     "2026-11-28T15:00:00Z"
+    ],
+    [
+     "Ipswich Town",
+     "Aston Villa",
+     "2026-11-28T17:30:00Z"
     ]
    ]
   },
@@ -15641,6 +15676,21 @@ window.DATOS_LIGAS = {
      "Venezia FC",
      "Bologna",
      "2026-11-27T19:45:00Z"
+    ],
+    [
+     "Frosinone",
+     "Parma",
+     "2026-11-28T14:00:00Z"
+    ],
+    [
+     "Torino",
+     "Lazio",
+     "2026-11-28T17:00:00Z"
+    ],
+    [
+     "Inter",
+     "Genoa",
+     "2026-11-28T19:45:00Z"
     ]
    ]
   },
@@ -18471,6 +18521,31 @@ window.DATOS_LIGAS = {
      "Bremen",
      "M'gladbach",
      "2026-11-27T19:30:00Z"
+    ],
+    [
+     "1. FC Köln",
+     "Elversberg",
+     "2026-11-28T14:30:00Z"
+    ],
+    [
+     "Mainz",
+     "Union Berlin",
+     "2026-11-28T14:30:00Z"
+    ],
+    [
+     "SC Paderborn",
+     "Schalke",
+     "2026-11-28T14:30:00Z"
+    ],
+    [
+     "HSV",
+     "Bayern",
+     "2026-11-28T14:30:00Z"
+    ],
+    [
+     "Stuttgart",
+     "Frankfurt",
+     "2026-11-28T17:30:00Z"
     ]
    ]
   },
@@ -21111,6 +21186,31 @@ window.DATOS_LIGAS = {
      "Brest",
      "Paris FC",
      "2026-11-27T19:45:00Z"
+    ],
+    [
+     "Angers SCO",
+     "RC Lens",
+     "2026-11-28T16:15:00Z"
+    ],
+    [
+     "Le Mans",
+     "Lille",
+     "2026-11-28T19:45:00Z"
+    ],
+    [
+     "Nice",
+     "Troyes",
+     "2026-11-28T19:45:00Z"
+    ],
+    [
+     "Le Havre",
+     "Strasbourg",
+     "2026-11-28T19:45:00Z"
+    ],
+    [
+     "PSG",
+     "Lorient",
+     "2026-11-28T19:45:00Z"
     ]
    ]
   }
