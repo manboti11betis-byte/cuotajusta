@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-11-23",
+ "actualizado": "2026-11-24",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -6639,7 +6639,7 @@ window.DATOS_LIGAS = {
     "Elche": [
      0.67,
      2.33,
-     1.67,
+     1.57,
      1.0
     ],
     "Espanyol": [
@@ -6655,8 +6655,8 @@ window.DATOS_LIGAS = {
      2.33
     ],
     "Levante": [
-     2.6,
-     2.4,
+     2.33,
+     2.17,
      0.43,
      1.29
     ],
@@ -9413,11 +9413,6 @@ window.DATOS_LIGAS = {
    "partidos": [
     [
      "Levante",
-     "Elche",
-     "2026-11-23T20:00:00Z"
-    ],
-    [
-     "Levante",
      "Santander",
      "2026-11-27T20:00:00Z"
     ],
@@ -9552,8 +9547,8 @@ window.DATOS_LIGAS = {
      2.0
     ],
     "Brentford": [
-     2.0,
-     0.6,
+     2.33,
+     0.5,
      1.2,
      1.6
     ],
@@ -9584,8 +9579,8 @@ window.DATOS_LIGAS = {
     "Everton": [
      1.6,
      1.0,
-     0.8,
-     1.0
+     0.67,
+     1.5
     ],
     "Fulham": [
      1.4,
@@ -12455,11 +12450,6 @@ window.DATOS_LIGAS = {
    },
    "partidos": [
     [
-     "Brentford",
-     "Everton",
-     "2026-11-23T20:00:00Z"
-    ],
-    [
      "Nottingham",
      "Chelsea",
      "2026-11-27T20:00:00Z"
@@ -12643,8 +12633,8 @@ window.DATOS_LIGAS = {
     "Fiorentina": [
      1.17,
      2.17,
-     2.0,
-     2.4
+     1.67,
+     2.5
     ],
     "Frosinone": [
      2.67,
@@ -12689,8 +12679,8 @@ window.DATOS_LIGAS = {
      1.0
     ],
     "Monza": [
-     1.8,
-     1.8,
+     2.0,
+     1.5,
      1.33,
      2.67
     ],
@@ -15777,11 +15767,6 @@ window.DATOS_LIGAS = {
     "Como 1907": "https://crests.football-data.org/7397.png"
    },
    "partidos": [
-    [
-     "Monza",
-     "Fiorentina",
-     "2026-11-23T19:45:00Z"
-    ],
     [
      "Venezia FC",
      "Bologna",
