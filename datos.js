@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-11-24",
+ "actualizado": "2026-11-25",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -11062,6 +11062,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Luca Williams-Barnett",
+      "MED",
+      0
+     ],
+     [
       "Lucas Bergvall",
       "MED",
       0
@@ -15593,6 +15598,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Cristian Mazzara",
+      "DEL",
+      0
+     ],
+     [
       "Federico Grilli",
       "DEL",
       0
@@ -18510,6 +18520,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Toni Langsteiner",
+      "DEL",
+      0
+     ],
+     [
       "Andrija Maksimović",
       "MED",
       0
@@ -20780,6 +20795,11 @@ window.DATOS_LIGAS = {
      ],
      [
       "Junior Kadile",
+      "DEL",
+      0
+     ],
+     [
+      "Léopold Joursky",
       "DEL",
       0
      ],
