@@ -1,6 +1,6 @@
 // Este archivo lo actualiza automaticamente la GitHub Action.
 window.DATOS_LIGAS = {
- "actualizado": "2026-11-26",
+ "actualizado": "2026-11-27",
  "competiciones": {
   "Mundial 2026": {
    "codigo": "WC",
@@ -9530,6 +9530,11 @@ window.DATOS_LIGAS = {
      "Rayo Vallecano",
      "Athletic",
      "2026-12-09T19:00:00Z"
+    ],
+    [
+     "Elche",
+     "Sevilla FC",
+     "2026-12-11T20:00:00Z"
     ]
    ]
   },
@@ -10895,6 +10900,11 @@ window.DATOS_LIGAS = {
       0
      ],
      [
+      "Joe Cowan",
+      "DEL",
+      0
+     ],
+     [
       "Malick Fofana",
       "DEL",
       0
@@ -11706,6 +11716,11 @@ window.DATOS_LIGAS = {
      ]
     ],
     "Crystal Palace": [
+     [
+      "Charlie Walker-Smith",
+      "DEL",
+      0
+     ],
      [
       "Darío Osorio",
       "DEL",
@@ -15886,6 +15901,11 @@ window.DATOS_LIGAS = {
      "Fiorentina",
      "Cagliari",
      "2026-12-07T19:45:00Z"
+    ],
+    [
+     "Udinese",
+     "Frosinone",
+     "2026-12-11T19:45:00Z"
     ]
    ]
   },
@@ -18761,6 +18781,11 @@ window.DATOS_LIGAS = {
      "Elversberg",
      "Stuttgart",
      "2026-12-06T16:30:00Z"
+    ],
+    [
+     "HSV",
+     "Schalke",
+     "2026-12-11T19:30:00Z"
     ]
    ]
   },
@@ -21461,6 +21486,11 @@ window.DATOS_LIGAS = {
      "Marseille",
      "Nice",
      "2026-12-06T19:45:00Z"
+    ],
+    [
+     "Auxerre",
+     "Toulouse",
+     "2026-12-11T19:45:00Z"
     ]
    ]
   }
